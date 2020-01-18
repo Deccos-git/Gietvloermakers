@@ -1,0 +1,1354 @@
+#kiezer{
+  text-align: center;
+  align-self: center;
+  margin: 100px 50px 0px 50px;
+  font-size: 70px;
+  color: #A00025;
+}
+
+#kiezerdiv{
+  
+  margin-bottom: 100px;
+  height: auto;
+  width: 100%;
+}
+  
+.style{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: 'Prata', serif;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.style h2{
+  margin: 5px;
+  padding: 5px;
+  color: #3d3d3d;
+  border-bottom: 1px solid #3d3d3d;    
+  border-top: 1px solid #3d3d3d;
+  border-color: #A00025;
+}
+
+.style h2:hover{
+  color: #3d3d3d;
+  border: 1px solid #A00025;
+}
+
+.style a:link{
+  text-decoration: none;
+}
+
+#industrieel{
+  display: flex;
+  margin: 20px;
+}
+
+#sportief{
+  display: flex;
+  margin: 20px;
+  display: none;
+}
+
+#stedelijk{
+  display: flex;
+  margin: 20px;
+  display: none;
+}
+
+#minimalistisch{
+  display: flex;
+  margin: 20px;
+  display: none;
+}
+
+#organisch{
+  display: flex;
+  margin: 20px;
+  display: none;
+}
+
+#speels{
+  display: flex;
+  margin: 20px;
+  display: none;
+}
+
+#cultuur{
+  display: flex;
+  margin: 20px;
+  display: none;
+}
+
+#luxe{
+  display: flex;
+  margin: 20px;
+  display: none;
+}
+
+#klassiekers{
+  display: flex;
+  margin: 20px;
+  display: none;
+}
+
+.impressie{
+  height: 1000px;
+  width: 98%;
+}
+
+.selector{
+  color: #fff;
+  text-align: center;
+}
+
+.selectie{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.selectie p{
+  color: #fff;
+  text-align: center;
+}
+
+.sCart{
+  background-image: url("../Images/Choppingcart.png");
+}
+
+.kleurvlak{
+  height: vh;
+  width: 100%;
+  background-color: #fff;
+  margin: 0px;
+  padding:0px;
+  border: 1px solid #3d3d3d;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.kleurvlakSpr{
+  height: auto;
+  width: 100%;
+  background-color: #fff;
+  margin-top: 0px;
+  padding:0px;
+  border: 1px solid #3d3d3d;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.kleurvlakStd{
+  height: auto;
+  width: 100%;
+  background-color: #fff;
+  margin-top: 0px;
+  padding:0px;
+  border: 1px solid #3d3d3d;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.kleurvlakMnm{
+  height: auto;
+  width: 100%;
+  background-color: #fff;
+  margin-top: 0px;
+  padding:0px;
+  border: 1px solid #3d3d3d;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.kleurvlakOrg{
+  height: auto;
+  width: 100%;
+  background-color: #fff;
+  margin-top: 0px;
+  padding:0px;
+  border: 1px solid #3d3d3d;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.kleurvlakSpl{
+  height: auto;
+  width: 100%;
+  background-color: #fff;
+  margin-top: 0px;
+  padding:0px;
+  border: 1px solid #3d3d3d;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.kleurvlakClt{
+  height: auto;
+  width: 100%;
+  background-color: #fff;
+  margin-top: 0px;
+  padding:0px;
+  border: 1px solid #3d3d3d;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.kleurvlakLux{
+  height: auto;
+  width: 100%;
+  background-color: #fff;
+  margin-top: 0px;
+  padding:0px;
+  border: 1px solid #3d3d3d;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.kleurvlakKls{
+  height: auto;
+  width: 100%;
+  background-color: #fff;
+  margin-top: 0px;
+  padding:0px;
+  border: 1px solid #3d3d3d;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+#bestel{
+  color: #fff;
+  width: 60%;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 80px;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+/* Industrieel */
+
+#ind-rood{
+      height: 200px;
+      width: 200px;
+      background-image: url(../Arturo-kleuren/ind-rood.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin: 20px;
+      box-shadow: 5px 5px 5px #3d3d3d;
+      cursor: pointer;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+  }
+
+  #ind-lichtgrijs{
+    height: 200px;
+      width: 200px;
+      background-image: url(../Arturo-kleuren/ind-lichtgrijs.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin: 20px;
+      box-shadow: 5px 5px 5px #3d3d3d;
+      cursor: pointer;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+  }
+
+  #ind-blauw{
+    height: 200px;
+      width: 200px;
+      background-image: url(../Arturo-kleuren/ind-blauw.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin: 20px;
+      box-shadow: 5px 5px 5px #3d3d3d;
+      cursor: pointer;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+  }
+
+  #ind-donkergrijs{
+    height: 200px;
+      width: 200px;
+      background-image: url(../Arturo-kleuren/ind-donkergrijs.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin: 20px;
+      box-shadow: 5px 5px 5px #3d3d3d;
+      cursor: pointer;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+  }
+
+  #ind-bt-grijs{
+    height: 200px;
+      width: 200px;
+      background-image: url(../Arturo-kleuren/ind-bt-grijs.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin: 20px;
+      box-shadow: 5px 5px 5px #3d3d3d;
+      cursor: pointer;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+  }
+
+  #ind-bt-lichtgrijs{
+    height: 200px;
+      width: 200px;
+      background-image: url(../Arturo-kleuren/ind-bt-lichtgrijs.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin: 20px;
+      box-shadow: 5px 5px 5px #3d3d3d;
+      cursor: pointer;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+  }
+
+  /* Sportief */
+
+#spr-blauw{
+  height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/spr-blauw.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#spr-geel{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/spr-geel.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#spr-lichtblauw{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/spr-lichtblauw.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#spr-rood{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/spr-rood.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#spr-bt-donkergrijs{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/spr-bt-donkergrijs.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#spr-bt-lichtgrijs{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/spr-bt-lichtgrijs.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+/* Stedelijk */
+
+#std-blauw{
+  height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/std-blauw.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#std-groen{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/std-groen.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#std-taupe{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/std-taupe.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#std-violet{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/std-violet.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#std-bt-blauw{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/std-bt-blauw.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#std-bt-grijs{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/std-bt-grijs.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+/* Minimalistisch */
+
+#mnm-blauw{
+  height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/mnm-blauw.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#mnm-grijs{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/mnm-grijs.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#mnm-lichtgrijs{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/mnm-lichtgrijs.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#mnm-wit{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/mnm-wit.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#mnm-bt-klei{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/mnm-bt-klei.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#mnm-bt-lichtgrijs{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/mnm-bt-lichtgrijs.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+/* Organisch */
+
+#org-beige{
+  height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/org-beige.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#org-bruingroen{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/org-bruingroen.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#org-geelgroen{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/org-geelgroen.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#org-groen{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/org-groen.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#org-bt-donkergrijs{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/org-bt-donkergrijs.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#org-bt-lichtgrijs{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/org-bt-lichtgrijs.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+/* Speels */
+
+#spl-blauw{
+  height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/spl-blauw.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#spl-groen{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/spl-groen.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#spl-roze{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/spl-roze.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#spl-wit{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/spl-wit.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#spl-bt-blauw{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/spl-bt-blauw.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#spl-bt-rood{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/spl-bt-rood.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+/* Cultuur */
+
+#clt-beige{
+  height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/clt-beige.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#clt-goud{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/clt-goud.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#clt-grijs{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/clt-grijs.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#clt-terracotta{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/clt-terracotta.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#clt-bt-bruin{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/clt-bt-bruin.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#clt-bt-lichtgrijs{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/clt-bt-lichtgrijs.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+/* Luxe */
+
+#lux-brons{
+  height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/lux-brons.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#lux-bruin{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/lux-bruin.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#lux-grijs{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/lux-grijs.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#lux-groen{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/lux-groen.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#lux-bt-groen{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/lux-bt-groen.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#lux-bt-paars{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/lux-bt-paars.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+/* Klassiekers */
+
+#kls-blauwgrijs{
+  height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/kls-blauwgrijs.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#kls-bruingrijs{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/kls-bruingrijs.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#kls-grijs{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/kls-grijs.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#kls-grijsgrijs{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/kls-grijsgrijs.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#kls-lichtgrijs{
+  height: 200px;
+    width: 200px;
+    background-image: url(../Arturo-kleuren/kls-lichtgrijs.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 20px;
+    box-shadow: 5px 5px 5px #3d3d3d;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+  }
+  
+  #kls-roodgrijs{
+  height: 200px;
+    width: 200px;
+    background-image: url(../Arturo-kleuren/kls-roodgrijs.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 20px;
+    box-shadow: 5px 5px 5px #3d3d3d;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+  }
+  
+  #kls-wit{
+  height: 200px;
+    width: 200px;
+    background-image: url(../Arturo-kleuren/kls-wit.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 20px;
+    box-shadow: 5px 5px 5px #3d3d3d;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+  }
+
+#kls-bt-blauwgrijs{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/kls-bt-blauwgrijs.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#kls-bt-donkergrijs{
+height: 200px;
+  width: 200px;
+  background-image: url(../Arturo-kleuren/kls-bt-donkergrijs.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+}
+
+#kls-bt-grijs{
+  height: 200px;
+    width: 200px;
+    background-image: url(../Arturo-kleuren/kls-bt-grijs.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 20px;
+    box-shadow: 5px 5px 5px #3d3d3d;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+  }
+  
+  #kls-bt-lichtgrijs{
+  height: 200px;
+    width: 200px;
+    background-image: url(../Arturo-kleuren/kls-bt-lichtgrijs.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 20px;
+    box-shadow: 5px 5px 5px #3d3d3d;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+  }
+
+  #kls-bt-lichtroze{
+    height: 200px;
+      width: 200px;
+      background-image: url(../Arturo-kleuren/kls-bt-lichtroze.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin: 20px;
+      box-shadow: 5px 5px 5px #3d3d3d;
+      cursor: pointer;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+    
+    #kls-bt-roze{
+    height: 200px;
+      width: 200px;
+      background-image: url(../Arturo-kleuren/kls-bt-roze.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin: 20px;
+      box-shadow: 5px 5px 5px #3d3d3d;
+      cursor: pointer;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+
+    #kls-bt-zand{
+      height: 200px;
+        width: 200px;
+        background-image: url(../Arturo-kleuren/kls-bt-zand.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 20px;
+        box-shadow: 5px 5px 5px #3d3d3d;
+        cursor: pointer;
+        border-radius: 10px;
+        display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      }
+      
+      #kls-bt-zandgrijs{
+      height: 200px;
+        width: 200px;
+        background-image: url(../Arturo-kleuren/kls-bt-zandgrijs.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 20px;
+        box-shadow: 5px 5px 5px #3d3d3d;
+        cursor: pointer;
+        border-radius: 10px;
+        display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      }
+  
+      /* Media queries */
+
+@media only screen and (max-width: 500px){
+    #kiezer{
+      font-size: 35px;
+      margin: 100px 0px 0px 0px;
+  }
+}

@@ -1,0 +1,1143 @@
+@media screen and (min-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+  }
+
+h1{
+  margin: 100px 0px 50px 0px;
+  color: #3d3d3d;
+  font-size: 40px;
+  text-align: center;
+}
+
+#kiezer{
+    text-align: center;
+    align-self: center;
+    margin: 100px;
+    font-size: 70px;
+    vertical-align: middle;
+    color: #A00025;
+  }
+
+#stappenHeadDiv{
+    height: auto;
+    width: 100%;
+}
+
+.overzichtdagen{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-family: 'Prata', serif;
+        margin-bottom: 50px;
+        cursor: pointer;
+}
+
+.overzichtdagen h2{
+    margin: 5px;
+    padding: 5px;
+    color: #3d3d3d;
+    border-bottom: 1px solid #3d3d3d;
+    border-top: 1px solid #3d3d3d;
+    border-color: #A00025;
+
+}
+
+.overzichtdagen h2:hover{
+    color: #3d3d3d;
+    border: 1px solid #A00025;
+}
+
+#Dag1{
+    margin-bottom: 100px;
+}
+  
+#Dag2{
+    display: none;
+    margin-bottom: 100px;
+}
+
+#Dag3{
+    display: none;
+    margin-bottom: 100px;
+}
+
+#Dag4{
+    display: none;
+    margin-bottom: 100px;
+}
+
+#Dag5{
+    display: none;
+    margin-bottom: 100px;
+}
+
+#stappenoverzicht{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 20px 100px; 
+    margin-left: 10%;
+}
+
+.dagen{
+    display: flex;
+    height: 100px;
+    width: auto;
+    cursor: pointer;
+}
+
+.dagen h2{
+    color: #3d3d3d;
+    text-align: left;
+    font-size: 50px;
+    margin: 20px;
+}
+
+.dagen h3{
+    font-size: 50px;
+    color: #A00025;
+    margin: 25px 15px 0px 15px;
+
+}
+
+#overzicht1{
+    display: none;
+}
+
+.onderwerp{
+    display: flex;
+    margin: 0px 15px 0px 15px;
+    border-bottom: 1px solid #3d3d3d; 
+    height: auto;
+    width: auto;
+    text-align: center; 
+}
+
+.onderwerp h2{
+    margin-bottom: 20px;
+}
+
+.onderwerp h3{
+    margin: 30px 15px 20px 0px;
+    font-size: 25px;
+}
+
+#voorbeeld{
+    text-decoration: line-through;
+    color: #999999;
+}
+
+#voorbeeldKlik{
+    color: #A00025;
+}
+
+#voorbeeldDiv{
+    display: flex;
+}
+
+.deel1{
+    display: flex;
+    flex-direction: column;
+}
+
+.benodigdheden{
+    display: flex;
+    height: auto;
+    width: auto;
+    margin: 0px 0px 0px 50px;
+    border-bottom: 1px solid #3d3d3d; 
+}
+
+.benodigdheden h3{
+    font-size: 25px;
+    margin: 10px;
+}
+
+.benodigdheden li{
+    margin-right: 15px;
+    color: #3d3d3d;
+    cursor: pointer;
+}
+
+.benodigdheden li:hover{
+    color: #A00025;
+}
+
+.stappen h3{
+    font-size: 25px;
+    margin: 0px;
+}
+
+.container{
+    display: flex;
+    height: auto;
+}
+
+.container h2{
+    color: #A00025;
+    font-size: 25px;
+}
+
+.main{
+    margin: 0px 0px 10px 15px;
+}
+
+.stappen{
+    margin: 10px 0px 10px 100px;
+    border-bottom: 1px solid #3d3d3d; 
+}
+
+.stap{
+    display: flex;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    height: auto;
+}
+
+.stap p{
+    cursor: pointer;
+    margin: 0px;
+}
+
+.stap p:hover{
+    color: #A00025;
+}
+
+
+/* Modal */
+.modalBG{
+  display: flex; /* Hidden by default */
+  flex-direction: column;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  align-items: center;
+}
+
+.modal{
+    background-color: #fff;
+    margin: 10px 100px 100px 100px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.modal div{
+    width: 30%;
+    margin: 30px 100px 30px 100px;
+    text-align: center;
+}
+
+.weg{
+    margin-left: 90px;
+    cursor: pointer;
+}
+
+/* Afvinken */
+
+#checkvb{
+    background-image: url(../Images/check-groen.png);
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check1{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin:3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check2{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check3{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check4{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check5{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check6{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check7{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check8{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check9{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check10{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check11{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check12{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check13{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check14{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check15{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check16{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check17{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check18{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check19{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin:3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check20{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check21{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check22{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check23{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check24{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check25{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check26{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check27{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check28{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check29{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check30{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check31{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check32{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check33{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check34{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check35{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check36{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check37{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check38{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check39{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check40{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check41{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check42{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check43{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check44{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check45{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check46{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check47{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check48{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check49{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check50{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin:3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check51{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check52{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check53{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check54{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check55{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check56{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check57{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check58{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check59{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check60{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check61{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check62{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check63{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+#check64{
+    background-image: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    margin: 3px 15px 0px 20px;
+    float: right;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 500px){
+    .onderwerp{
+        flex-direction: column;
+    }
+
+    .onderwerp h3{
+        color: #A00025;
+    }
+
+    .benodigdheden{
+        flex-direction: column;
+    }
+
+    .benodigdheden h3{
+        text-align: center;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .main{
+        margin: 0px 0px 10px 0px;
+    }
+
+    .stappen{
+        margin: 20px 0px 0px 0px;
+    }
+
+    .stappen h3{
+        font-size: 25px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #kiezer{
+        font-size: 35px;
+        margin: 20px 0px 20px 0px;
+
+    }
+
+    #stappenoverzicht{
+        margin: 0px 10px 20px 10px; 
+    }
+
+    .dagen {
+        display: flex;
+        justify-content: center;
+    }
+}
