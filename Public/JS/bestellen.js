@@ -141,7 +141,11 @@ selecteer.addEventListener("click", () => {
 // Naar controleren
 
 function bestel(){
-    window.open("controleer.html")
+    const prijs = document.getElementById("prijs-vloer");
+    console.log(prijs.innerHTML)
+    const prijsAssistentie = document.getElementById("prijs-assistentie")
+    console.log(prijsAssistentie.innerHTML)
+    // window.open("controleer.html")
 }
 
 // Gekozen kleur inladen

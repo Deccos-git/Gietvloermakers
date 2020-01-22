@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bestellen</title>
+    <script>src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"</script>
+    <script>src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"</script>
     <link rel="stylesheet" href="CSS/style.css"></link>
     <link rel="stylesheet" href="CSS/bestellen.css"></link>
     <link href="https://fonts.googleapis.com/css?family=Lato|Prata&display=swap" rel="stylesheet">
@@ -32,14 +34,24 @@
                 <h1 id="kiezer">Maak uw bestelling compleet</h1>
             <div id="controle-overzicht">
                 <div id="summary">
-                    <h2>Uw bestelling</h2>
-                    <p>Aantal m2</p>
+                    
                     <p>Kleur</p>
                     <p>Assistentie</p>
                     <p>Gereedschappen</p>
                     <p>Totale prijs</p>
                 </div>
-                <form id="controlleer-form" action="api/user" method="POST" >
+                <form id="controlleer-form" action="api/user" method="post" enctype="application/x-www-form-urlencoded">
+                    <h2>Uw bestelling</h2>
+                    <p>Aantal m2</p>
+                    <input type="text" name="aantalM2" id="aantalM2">
+                    <p>Kleur</p>
+                    <input type="text" name="kleur" id="kleur">
+                    <p>Assistentie</p>
+                    <input type="text" name="assistentie" id="assistentie">
+                    <p>Gereedschappen</p>
+                    <input type="text" name="gereedschappen" id="gereedschappen">
+                    <p>Totale prijs</p>
+                    <input type="text" name="totale-prijs" id="totale-prijs">
                     <h2>Uw gegevens</h2>
                     <p>Voornaam</p>
                     <input type="text" name="voornaam" placeholder="Voornaam">
@@ -49,13 +61,13 @@
                     <input type="tel" name="telefoonnummer" placeholder="Telefoonnummer">
                     <p>Emailadres</p>
                     <input type="email" name="email" placeholder="Emailadres">
-                    <input type="submit">
+                    <input type="submit"> 
                 </form>
             </div>
 
                 <div id="notice">
                     <h2>Besteld, en nu?</h2>
-                    <p>Nadat u op de knop "verzenden" heeft geklikt krijgt ons een kantoor een mailtje
+                    <p>Nadat u op de knop "Plaats bestelling" heeft geklikt krijgt ons een kantoor een mailtje
                         met daarin uw bestelling en uw contactgegevens. Wij zullen altijd even contact met u opnemen
                         om eventuele vragen door te nemen en het proces met u door te nemen. Aansluitend op dit gesprek 
                         maken wij de bestelling voor u in orde. U ontvangt uw bestelling doorgaand 
@@ -87,6 +99,7 @@
     </footer>
     
 </body>
+<script type="text/javascript" src="JS/Firebase.js"></script>
 <script type="text/javascript" src="JS/index.js"></script>
-<script type="text/javascript" src="JS/bestellen.js"></script>
+<script type="text/javascript" src="JS/controleer.js"></script>
 </html>
