@@ -33,41 +33,39 @@
  
                 <h1 id="kiezer">Maak uw bestelling compleet</h1>
             <div id="controle-overzicht">
-                <div id="summary">
-                    
-                    <p>Kleur</p>
-                    <p>Assistentie</p>
-                    <p>Gereedschappen</p>
-                    <p>Totale prijs</p>
-                </div>
                 <form id="controlleer-form" action="api/user" method="post" enctype="application/x-www-form-urlencoded">
-                    <h2>Uw bestelling</h2>
-                    <p>Aantal m2</p>
-                    <input type="text" name="aantalM2" id="aantalM2">
-                    <p>Kleur</p>
-                    <input type="text" name="kleur" id="kleur">
-                    <p>Assistentie</p>
-                    <input type="text" name="assistentie" id="assistentie">
-                    <p>Gereedschappen</p>
-                    <input type="text" name="gereedschappen" id="gereedschappen">
-                    <p>Totale prijs</p>
-                    <input type="text" name="totale-prijs" id="totale-prijs">
-                    <h2>Uw gegevens</h2>
-                    <p>Voornaam</p>
-                    <input type="text" name="voornaam" placeholder="Voornaam">
-                    <p>Achternaam</p>
-                    <input type="text" name="Achternaam" placeholder="Achternaam">
-                    <p>Telefoonnummer</p>
-                    <input type="tel" name="telefoonnummer" placeholder="Telefoonnummer">
-                    <p>Emailadres</p>
-                    <input type="email" name="email" placeholder="Emailadres">
-                    <input type="submit"> 
+                    <div class="controleer-div">
+                        <h2>Uw bestelling</h2>
+                        <p>Aantal m2</p>
+                        <input type="text" name="aantalM2" id="aantalM2">
+                        <p>Kleur</p>
+                        <input type="text" name="kleur" id="kleur">
+                        <p>Assistentie</p>
+                        <input type="text" name="assistentie" id="assistentie">
+                        <p>Gereedschappen</p>
+                        <input type="text" name="gereedschappen" id="gereedschappen">
+                        <p>Totale prijs</p>
+                        <input type="text" name="totale-prijs" id="totale-prijs">
+                        <a href="bestellen.html"><p id="andere-kleur">Bestelling aanpassen</p></a>
+                    </div>
+                    <div class="controleer-div">
+                        <h2>Uw gegevens</h2>
+                        <p>Voornaam</p>
+                        <input type="text" name="voornaam" placeholder="Voornaam">
+                        <p>Achternaam</p>
+                        <input type="text" name="Achternaam" placeholder="Achternaam">
+                        <p>Telefoonnummer</p>
+                        <input type="tel" name="telefoonnummer" placeholder="Telefoonnummer">
+                        <p>Emailadres</p>
+                        <input type="email" name="email" placeholder="Emailadres"><br>
+                        <input type="submit"> 
+                    </div>
                 </form>
             </div>
 
                 <div id="notice">
                     <h2>Besteld, en nu?</h2>
-                    <p>Nadat u op de knop "Plaats bestelling" heeft geklikt krijgt ons een kantoor een mailtje
+                    <p>Nadat u op de knop "Verzenden" heeft geklikt krijgt ons een kantoor een mailtje
                         met daarin uw bestelling en uw contactgegevens. Wij zullen altijd even contact met u opnemen
                         om eventuele vragen door te nemen en het proces met u door te nemen. Aansluitend op dit gesprek 
                         maken wij de bestelling voor u in orde. U ontvangt uw bestelling doorgaand 
@@ -99,7 +97,6 @@
     </footer>
     
 </body>
-<script type="text/javascript" src="JS/Firebase.js"></script>
 <script type="text/javascript" src="JS/index.js"></script>
 <script type="text/javascript" src="JS/controleer.js"></script>
 </html>

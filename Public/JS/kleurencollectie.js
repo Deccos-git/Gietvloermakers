@@ -653,31 +653,31 @@ window.open("bestellen.html", "_self");
 function selectIndLichtgrijs(){
     const kleur = document.getElementById("ind-lichtgrijs").outerHTML
     localStorage.setItem('kleur', kleur)
-    window.open("bestellen.html");
+    window.open("bestellen.html", "_self");
     }
 
     function selectIndBlauw(){
         const kleur = document.getElementById("ind-blauw").outerHTML
         localStorage.setItem('kleur', kleur)
-        window.open("bestellen.html");
+        window.open("bestellen.html", "_self");
         }
 
         function selectIndDonkergrijs(){
             const kleur = document.getElementById("ind-donkergrijs").outerHTML
             localStorage.setItem('kleur', kleur)
-            window.open("bestellen.html");
+            window.open("bestellen.html", "_self");
             }
 
             function selectIndBtLichtgrijs(){
                 const kleur = document.getElementById("ind-bt-lichtgrijs").outerHTML
                 localStorage.setItem('kleur', kleur)
-                window.open("bestellen.html");
+                window.open("bestellen.html", "_self");
                 }
 
                 function selectIndBtGrijs(){
                     const kleur = document.getElementById("ind-bt-grijs").outerHTML
                     localStorage.setItem('kleur', kleur)
-                    window.open("bestellen.html");
+                    window.open("bestellen.html", "_self");
                     }
 
 //Sportief
@@ -685,37 +685,37 @@ function selectIndLichtgrijs(){
 function selectSprBlauw(){
     const kleur = document.getElementById("spr-blauw").outerHTML
     localStorage.setItem('kleur', kleur)
-    window.open("bestellen.html");
+    window.open("bestellen.html", "_self");
     }
 
     function selectSprGeel(){
         const kleur = document.getElementById("spr-geel").outerHTML
         localStorage.setItem('kleur', kleur)
-        window.open("bestellen.html");
+        window.open("bestellen.html", "_self");
         }
 
         function selectSprLichtblauw(){
             const kleur = document.getElementById("spr-lichtblauw").outerHTML
             localStorage.setItem('kleur', kleur)
-            window.open("bestellen.html");
+            window.open("bestellen.html", "_self");
             }
 
             function selectSprRood(){
                 const kleur = document.getElementById("spr-rood").outerHTML
                 localStorage.setItem('kleur', kleur)
-                window.open("bestellen.html");
+                window.open("bestellen.html", "_self");
                 }
 
                 function selectSprBtDonkergrijs(){
                     const kleur = document.getElementById("spr-bt-donkergrijs").outerHTML
                     localStorage.setItem('kleur', kleur)
-                    window.open("bestellen.html");
+                    window.open("bestellen.html", "_self");
                     }
 
                     function selectSprBtLichtgrijs(){
                         const kleur = document.getElementById("spr-bt-lichtgrijs").outerHTML
                         localStorage.setItem('kleur', kleur)
-                        window.open("bestellen.html");
+                        window.open("bestellen.html", "_self");
                         }
 
 //Stedelijk
@@ -723,37 +723,37 @@ function selectSprBlauw(){
 function selectStdBlauw(){
     const kleur = document.getElementById("std-blauw").outerHTML
     localStorage.setItem('kleur', kleur)
-    window.open("bestellen.html");
+    window.open("bestellen.html", "_self");
     }
 
     function selectStdGroen(){
         const kleur = document.getElementById("std-groen").outerHTML
         localStorage.setItem('kleur', kleur)
-        window.open("bestellen.html");
+        window.open("bestellen.html", "_self");
         }
 
         function selectStdTaupe(){
             const kleur = document.getElementById("std-taupe").outerHTML
             localStorage.setItem('kleur', kleur)
-            window.open("bestellen.html");
+            window.open("bestellen.html", "_self");
             }
 
             function selectStdViolet(){
                 const kleur = document.getElementById("std-violet").outerHTML
                 localStorage.setItem('kleur', kleur)
-                window.open("bestellen.html");
+                window.open("bestellen.html", "_self");
                 }
 
                 function selectStdBtBlauw(){
                     const kleur = document.getElementById("std-bt-blauw").outerHTML
                     localStorage.setItem('kleur', kleur)
-                    window.open("bestellen.html");
+                    window.open("bestellen.html", "_self");
                     }
 
                     function selectStdBtGrijs(){
                         const kleur = document.getElementById("std-bt-grijs").outerHTML
                         localStorage.setItem('kleur', kleur)
-                        window.open("bestellen.html");
+                        window.open("bestellen.html", "_self");
                         }
 
 //Minimalistisch
@@ -761,37 +761,37 @@ function selectStdBlauw(){
 function selectMnmBlauw(){
     const kleur = document.getElementById("mnm-blauw").outerHTML
     localStorage.setItem('kleur', kleur)
-    window.open("bestellen.html");
+    window.open("bestellen.html", "_self");
     }
 
     function selectMnmGrijs(){
         const kleur = document.getElementById("mnm-grijs").outerHTML
         localStorage.setItem('kleur', kleur)
-        window.open("bestellen.html");
+        window.open("bestellen.html", "_self");
         }
 
         function selectMnmLichtgrijs(){
             const kleur = document.getElementById("mnm-lichtgrijs").outerHTML
             localStorage.setItem('kleur', kleur)
-            window.open("bestellen.html");
+            window.open("bestellen.html", "_self");
             }
 
             function selectMnmWit(){
                 const kleur = document.getElementById("mnm-wit").outerHTML
                 localStorage.setItem('kleur', kleur)
-                window.open("bestellen.html");
+                window.open("bestellen.html", "_self");
                 }
 
                 function selectMnmBtKlei(){
                     const kleur = document.getElementById("mnm-bt-klei").outerHTML
                     localStorage.setItem('kleur', kleur)
-                    window.open("bestellen.html");
+                    window.open("bestellen.html", "_self");
                     }
 
                     function selectMnmBtLichtgrijs(){
                         const kleur = document.getElementById("mnm-bt-lichtgrijs").outerHTML
                         localStorage.setItem('kleur', kleur)
-                        window.open("bestellen.html");
+                        window.open("bestellen.html", "_self");
                         }
 
 //Organisch
@@ -799,37 +799,37 @@ function selectMnmBlauw(){
 function selectOrgBeige(){
     const kleur = document.getElementById("org-beige").outerHTML
     localStorage.setItem('kleur', kleur)
-    window.open("bestellen.html");
+    window.open("bestellen.html", "_self");
     }
 
     function selectOrgBruingroen(){
         const kleur = document.getElementById("org-bruingroen").outerHTML
         localStorage.setItem('kleur', kleur)
-        window.open("bestellen.html");
+        window.open("bestellen.html", "_self");
         }
 
         function selectOrgGeelgroen(){
             const kleur = document.getElementById("org-geelgroen").outerHTML
             localStorage.setItem('kleur', kleur)
-            window.open("bestellen.html");
+            window.open("bestellen.html", "_self");
             }
 
             function selectOrgGroen(){
                 const kleur = document.getElementById("org-groen").outerHTML
                 localStorage.setItem('kleur', kleur)
-                window.open("bestellen.html");
+                window.open("bestellen.html", "_self");
                 }
 
                 function selectOrgBtDonkergrijs(){
                     const kleur = document.getElementById("org-bt-donkergrijs").outerHTML
                     localStorage.setItem('kleur', kleur)
-                    window.open("bestellen.html");
+                    window.open("bestellen.html", "_self");
                     }
 
                     function selectOrgBtLichtgrijs(){
                         const kleur = document.getElementById("org-bt-lichtgrijs").outerHTML
                         localStorage.setItem('kleur', kleur)
-                        window.open("bestellen.html");
+                        window.open("bestellen.html", "_self");
                         }
 
 //Speels
@@ -837,37 +837,37 @@ function selectOrgBeige(){
 function selectSplBlauw(){
     const kleur = document.getElementById("spl-blauw").outerHTML
     localStorage.setItem('kleur', kleur)
-    window.open("bestellen.html");
+    window.open("bestellen.html", "_self");
     }
 
     function selectSplGroen(){
         const kleur = document.getElementById("spl-groen").outerHTML
         localStorage.setItem('kleur', kleur)
-        window.open("bestellen.html");
+        window.open("bestellen.html", "_self");
         }
 
         function selectSplRoze(){
             const kleur = document.getElementById("spl-roze").outerHTML
             localStorage.setItem('kleur', kleur)
-            window.open("bestellen.html");
+            window.open("bestellen.html", "_self");
             }
 
             function selectSplWit(){
                 const kleur = document.getElementById("spl-wit").outerHTML
                 localStorage.setItem('kleur', kleur)
-                window.open("bestellen.html");
+                window.open("bestellen.html", "_self");
                 }
 
                 function selectSplBtBlauw(){
                     const kleur = document.getElementById("spl-bt-blauw").outerHTML
                     localStorage.setItem('kleur', kleur)
-                    window.open("bestellen.html");
+                    window.open("bestellen.html", "_self");
                     }
 
                     function selectSplBtRood(){
                         const kleur = document.getElementById("spl-bt-rood").outerHTML
                         localStorage.setItem('kleur', kleur)
-                        window.open("bestellen.html");
+                        window.open("bestellen.html", "_self");
                         }
 
 //Cultuur
@@ -875,37 +875,37 @@ function selectSplBlauw(){
 function selectCltBeige(){
     const kleur = document.getElementById("clt-beige").outerHTML
     localStorage.setItem('kleur', kleur)
-    window.open("bestellen.html");
+    window.open("bestellen.html", "_self");
     }
 
     function selectCltGoud(){
         const kleur = document.getElementById("clt-goud").outerHTML
         localStorage.setItem('kleur', kleur)
-        window.open("bestellen.html");
+        window.open("bestellen.html", "_self");
         }
 
         function selectCltGrijs(){
             const kleur = document.getElementById("clt-grijs").outerHTML
             localStorage.setItem('kleur', kleur)
-            window.open("bestellen.html");
+            window.open("bestellen.html", "_self");
             }
 
             function selectCltTerracotta(){
                 const kleur = document.getElementById("clt-terracotta").outerHTML
                 localStorage.setItem('kleur', kleur)
-                window.open("bestellen.html");
+                window.open("bestellen.html", "_self");
                 }
 
                 function selectCltBtBruin(){
                     const kleur = document.getElementById("clt-bt-bruin").outerHTML
                     localStorage.setItem('kleur', kleur)
-                    window.open("bestellen.html");
+                    window.open("bestellen.html", "_self");
                     }
 
                     function selectCltBtLichtgrijs(){
                         const kleur = document.getElementById("clt-bt-lichtgrijs").outerHTML
                         localStorage.setItem('kleur', kleur)
-                        window.open("bestellen.html");
+                        window.open("bestellen.html", "_self");
                         }
 
 //Luxe
@@ -913,41 +913,41 @@ function selectCltBeige(){
 function selectLuxBrons(){
     const kleur = document.getElementById("lux-brons").outerHTML
     localStorage.setItem('kleur', kleur)
-    window.open("bestellen.html");
+    window.open("bestellen.html", "_self");
     }
 
     function selectLuxBruin(){
         const kleur = document.getElementById("lux-bruin").outerHTML
         localStorage.setItem('kleur', kleur)
-        window.open("bestellen.html");
+        window.open("bestellen.html", "_self");
         }
 
         
         function selectLuxGrijs(){
             const kleur = document.getElementById("lux-grijs").outerHTML
             localStorage.setItem('kleur', kleur)
-            window.open("bestellen.html");
+            window.open("bestellen.html", "_self");
             }
 
             
             function selectLuxGroen(){
                 const kleur = document.getElementById("lux-groen").outerHTML
                 localStorage.setItem('kleur', kleur)
-                window.open("bestellen.html");
+                window.open("bestellen.html", "_self");
                 }
 
                 
                 function selectLuxBtGroen(){
                     const kleur = document.getElementById("lux-bt-groen").outerHTML
                     localStorage.setItem('kleur', kleur)
-                    window.open("bestellen.html");
+                    window.open("bestellen.html", "_self");
                     }
 
                     
                     function selectLuxBtPaars(){
                         const kleur = document.getElementById("lux-bt-paars").outerHTML
                         localStorage.setItem('kleur', kleur)
-                        window.open("bestellen.html");
+                        window.open("bestellen.html", "_self");
                         }
 
 //Klassiekers
@@ -955,81 +955,81 @@ function selectLuxBrons(){
 function selectKlsBlauwgrijs(){
     const kleur = document.getElementById("kls-blauwgrijs").outerHTML
     localStorage.setItem('kleur', kleur)
-    window.open("bestellen.html");
+    window.open("bestellen.html", "_self");
     }
 
     function selectKlsBruingrijs(){
         const kleur = document.getElementById("kls-bruingrijs").outerHTML
         localStorage.setItem('kleur', kleur)
-        window.open("bestellen.html");
+        window.open("bestellen.html", "_self");
         }    
         
         function selectKlsGrijs(){
             const kleur = document.getElementById("kls-grijs").outerHTML
             localStorage.setItem('kleur', kleur)
-            window.open("bestellen.html");
+            window.open("bestellen.html", "_self");
             }
                 
             function selectKlsGrijsgrijs(){
                 const kleur = document.getElementById("kls-grijsgrijs").outerHTML
                 localStorage.setItem('kleur', kleur)
-                window.open("bestellen.html");
+                window.open("bestellen.html", "_self");
                 }
                 
                 function selectKlsLichtgrijs(){
                     const kleur = document.getElementById("kls-lichtgrijs").outerHTML
                     localStorage.setItem('kleur', kleur)
-                    window.open("bestellen.html");
+                    window.open("bestellen.html", "_self");
                     }
                 
                     function selectKlsRoodgrijs(){
                         const kleur = document.getElementById("kls-roodgrijs").outerHTML
                         localStorage.setItem('kleur', kleur)
-                        window.open("bestellen.html");
+                        window.open("bestellen.html", "_self");
                         }
 
                         function selectKlsWit(){
                             const kleur = document.getElementById("kls-wit").outerHTML
                             localStorage.setItem('kleur', kleur)
-                            window.open("bestellen.html");
+                            window.open("bestellen.html", "_self");
                             }
                         
                         function selectKlsBtBlauwgrijs(){
                             const kleur = document.getElementById("kls-bt-blauwgrijs").outerHTML
                             localStorage.setItem('kleur', kleur)
-                            window.open("bestellen.html", "_self");
+                            window.open("bestellen.html", "_self", "_self");
                             }
 
                             function selectKlsBtDonkergrijs(){
                                 const kleur = document.getElementById("kls-bt-donkergrijs").outerHTML
                                 localStorage.setItem('kleur', kleur)
-                                window.open("bestellen.html");
+                                window.open("bestellen.html", "_self");
                                 }
 
                                 function selectKlsBtGrijs(){
                                     const kleur = document.getElementById("kls-bt-grijs").outerHTML
                                     localStorage.setItem('kleur', kleur)
-                                    window.open("bestellen.html");
+                                    window.open("bestellen.html", "_self");
                                     }
                                     function selectKlsBtLichtgrijs(){
                                         const kleur = document.getElementById("kls-bt-lichtgrijs").outerHTML
                                         localStorage.setItem('kleur', kleur)
-                                        window.open("bestellen.html");
+                                        window.open("bestellen.html", "_self");
                                         }
                                         function selectKlsBtRoze(){
                                             const kleur = document.getElementById("kls-bt-roze").outerHTML
                                             localStorage.setItem('kleur', kleur)
-                                            window.open("bestellen.html");
+                                            window.open("bestellen.html", "_self");
                                             }
                                             function selectKlsBtZand(){
                                                 const kleur = document.getElementById("kls-bt-zand").outerHTML
                                                 localStorage.setItem('kleur', kleur)
-                                                window.open("bestellen.html");
+                                                window.open("bestellen.html", "_self");
                                                 }
                                                 function selectKlsBtZandgrijs(){
                                                     const kleur = document.getElementById("kls-bt-zandgrijs").outerHTML
                                                     localStorage.setItem('kleur', kleur)
-                                                    window.open("bestellen.html");
+                                                    window.open("bestellen.html", "_self");
                                                     }
                                                                                                                                                                                                                                                                                                                                     
                                                                     

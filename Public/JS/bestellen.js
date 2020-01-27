@@ -7,6 +7,10 @@ function bereken(){
 
     const m2value = m2.value;
 
+            // m2 naar localStorage
+            localStorage.setItem('prijs-m2', m2value)
+
+
     let prijsVariable = 0
     if (m2value == 0){
         alert("U bent vergeten om uw gietvloer oppervlakte in te vullen")
@@ -83,7 +87,12 @@ function bereken(){
     const ass = document.getElementById("assistentie");
     const assOptions = ass.options;
     const assSelect = assOptions[assOptions.selectedIndex].value;
+
+    console.log(assSelect)  
     const assNumber = parseInt(assSelect, 10)
+
+            // Assistentie naar localStorage
+            localStorage.setItem('assistentie', assSelect)
 
     const prijsAssistentie = document.getElementById("prijs-assistentie");
     prijsAssistentie.innerHTML = "€ " + assNumber;
@@ -91,12 +100,19 @@ function bereken(){
     //Gereedschappen
     const tools = document.querySelectorAll(".tool")
 
-    const arrayTools = []
+    const arrayTools = [];
+
+    const arrayID = [];
+            
   
     tools.forEach(t => {
     
         if(t.checked == true){
     const toolPrijs = t.value;
+
+    const toolID = t.id
+
+    arrayID.push(toolID) 
 
     const toolNumber = parseInt(toolPrijs, 10)
 
@@ -104,6 +120,9 @@ function bereken(){
     
     }   
     }) 
+
+            // Assistentie naar localStorage
+            localStorage.setItem('tools', arrayID)
 
     const DOM = document.getElementById("prijs-gereedschappen");
 
@@ -124,36 +143,33 @@ totaal.innerHTML = "€ " + totaalEuro
     
 };
 
-// Dropdown voor gereedschappen
-
-const toolMenu = document.getElementById("tool-menu")
-const selecteer = document.getElementById("selecteer");
-
-selecteer.addEventListener("click", () => {
-
-    if (toolMenu.style.display = "none") {
-    toolMenu.style.display = " block"
-    } else {
-        toolMenu.style.display = "none"
-    }
-});
-
 // Naar controleren
 
 function bestel(){
-    const prijs = document.getElementById("prijs-vloer");
-    console.log(prijs.innerHTML)
-    const prijsAssistentie = document.getElementById("prijs-assistentie")
-    console.log(prijsAssistentie.innerHTML)
-    // window.open("controleer.html")
+   const totaal = document.getElementById("totaal")
+   localStorage.setItem('totaal-prijs', totaal.innerHTML)
+
+    window.open("controleer.html", "_self")
 }
 
 // Gekozen kleur inladen
+// const bestelnone = document.getElementById("bestel");
+// bestelnone.style.display = "none";
 
-const bestelnone = document.getElementById("bestel");
 const kleurSelect = document.getElementById("kleurselect");
 
 const kleurKeuze = localStorage.getItem('kleur');
 
 kleurSelect.innerHTML = kleurKeuze;
-bestelnone.style.display = "none";
+
+
+        // Vloerkleur naar localstorage voor controle
+        const kleurID = document.getElementsByClassName("colour");
+        // kleurID.forEach(colour => {
+        //     const colourID = colour.id
+
+        //     console.log(colourID)
+
+        localStorage.setItem('vloerkleur', kleurID.id)
+    
+
