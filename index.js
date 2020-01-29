@@ -11,11 +11,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const urlencodedParser = bodyParser.urlencoded({extended: true});
 
 app.post("/api/user", urlencodedParser, (req, res) => {
-  res.send("Je bestelling is verstuurd!")
+  res.send("Bedankt, je bestelling is verstuurd!")
   console.log(req.body)
   const persGegevens = req.body
 
-  const string = JSON.stringify(persGegevens, null, 10)
+  const stringGegevens = JSON.stringify(persGegevens, null, 10)
 
   var transporter = nodemailer.createTransport({
         service: 'gmail',
@@ -29,7 +29,7 @@ app.post("/api/user", urlencodedParser, (req, res) => {
         from: 'gietvloermakers@gmail.com',
         to: 'gvbeusekom84@hotmail.com',
         subject: 'Nieuwe bestelling op Gietvloermakers',
-        html: string
+        html: stringGegevens
       };
       
       transporter.sendMail(mailOptions, function(error, info){

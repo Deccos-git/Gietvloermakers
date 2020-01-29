@@ -37,8 +37,9 @@
 <div class="main">
         <section class="main-bestel">
                 <h2>Uw bestelling</h2>
-                <p>Aantal m2</p>
+                <p id="aantal-m2">Aantal m2</p>
                 <input id="m2" type="number">
+                <div id="alert-m2"><p>U bent vergeten uw gewenste aantal vierkante meters in te vullen!</p></div>
                 <p>Uw kleur</p>
                 <div id="kleurselect">Nog geen kleur gekozen? Bekijk de<a href="kleuren.html" >Kleurencollectie</a></div>
                 <a href="kleuren.html"><p id="andere-kleur">Kies een andere kleur</p></a>
@@ -50,64 +51,65 @@
                 <p>Gereedschappen</p>
                 <div id="tool-menu">
                     <form id="tools">
-                        <input class="tool" type="checkbox" id="folie" value=10> Folie van 50 cm x 50 18-cm (€10)</br>
-                        <input class="tool" type="checkbox" id="Zeil" value=10> Plastic zeil van 2m x 2m (€10)</br>
+                        <input class="tool" type="checkbox" id="Folie" value=10> Folie van 50 cm x 50 18-cm (€10)</br>
+                        <input class="tool" type="checkbox" id="Plastic zeil" value=10> Plastic zeil van 2m x 2m (€10)</br>
                         <input class="tool" type="checkbox" id="Plakband" value=5> Plakband (€5)</br>
-                        <input class="tool" type="checkbox" id="folie" value=10> Boormachine</br>
-                        <input class="tool" type="checkbox" id="Plakband" value=5> Mengspiraal</br>
-                        <input class="tool" type="checkbox" id="Zeil" value=10> Vlakke spaan</br>
-                        <input class="tool" type="checkbox" id="folie" value=10> Wegwerpkwast</br>
-                        <input class="tool" type="checkbox" id="Plakband" value=5> Handschoenen</br>
-                        <input class="tool" type="checkbox" id="Zeil" value=10> Veiligheidsbril</br>
-                        <input class="tool" type="checkbox" id="folie" value=10> Kniebeschermers</br>
-                        <input class="tool" type="checkbox" id="Plakband" value=5> Reinigingsdoekjes</br>
-                        <input class="tool" type="checkbox" id="Zeil" value=10> Kwast</br>
-                        <input class="tool" type="checkbox" id="folie" value=10> 12 liter emmers</br>
-                        <input class="tool" type="checkbox" id="Plakband" value=5> Schuurpapier 220 korrel</br>
-                        <input class="tool" type="checkbox" id="Zeil" value=10> Microvezel roller 25 cm</br>
-                        <input class="tool" type="checkbox" id="Plakband" value=5> Beugel voor microvezel roller 25 cm</br>
-                        <input class="tool" type="checkbox" id="Zeil" value=10> Stok voor beugel</br>
+                        <input class="tool" type="checkbox" id="Boormachine" value=10> Boormachine</br>
+                        <input class="tool" type="checkbox" id="Mengspiraal" value=5> Mengspiraal</br>
+                        <input class="tool" type="checkbox" id="Vlakke spaan" value=10> Vlakke spaan</br>
+                        <input class="tool" type="checkbox" id="Wegwerpkwast" value=10> Wegwerpkwast</br>
+                        <input class="tool" type="checkbox" id="Handschoenen" value=5> Handschoenen</br>
+                        <input class="tool" type="checkbox" id="Veiligheidsbril" value=10> Veiligheidsbril</br>
+                        <input class="tool" type="checkbox" id="Kniebeschermers" value=10> Kniebeschermers</br>
+                        <input class="tool" type="checkbox" id="Reinigingsdoekjes" value=5> Reinigingsdoekjes</br>
+                        <input class="tool" type="checkbox" id="Kwast" value=10> Kwast</br>
+                        <input class="tool" type="checkbox" id="12 litter emmers" value=10> 12 liter emmers</br>
+                        <input class="tool" type="checkbox" id="Schuurpapier" value=5> Schuurpapier 220 korrel</br>
+                        <input class="tool" type="checkbox" id="Microvezel roller" value=10> Microvezel roller 25 cm</br>
+                        <input class="tool" type="checkbox" id="Beugel" value=5> Beugel voor microvezel roller 25 cm</br>
+                        <input class="tool" type="checkbox" id="Stok" value=10> Stok voor beugel</br>
                     </form>
                 </div>
                 <button onclick="bereken()" id="button2">Bereken uw prijs</button>
         </section>
 
             <section class="main-prijs">
-                    <h2>Uw prijs</h2>
-                    <p> Primer, gietvloer en lak</p>
-                    <p id="prijs-vloer">€0</p>
-                    <p>1 dag assistentie</p>
-                    <p id="prijs-assistentie">€0</p>
-                    <p>Gereedschappen</p>
-                    <p id="prijs-gereedschappen">€0</p>
-                    <p id="totaal-prijs">Totaal</p>
-                    <p id="totaal">€0</p>
-                    <button onclick="bestel()" id="button2">Bestel</button>
+                    <h2 id="uw-prijs">Uw prijs</h2>
+                    <p class="main-prijs-titel"> Primer, gietvloer en lak</p>
+                    <p class="prijs" id="prijs-vloer">€0</p>
+                    <p class="main-prijs-titel">1 dag assistentie</p>
+                    <p class="prijs" id="prijs-assistentie">€0</p>
+                    <p class="main-prijs-titel">Gereedschappen</p>
+                    <p class="prijs" id="prijs-gereedschappen">€0</p>
+                    <div id="total-prijs">
+                        <p id="totaal-prijs">Totaal</p>
+                        <p id="totaal">€0</p>
+                    </div>
+                    <button onclick="bestel()" id="button2">Naar winkelwagen</button>
             </section>
 </div>
 
 
 <footer id="footer">
-        <div class="footer-div">
-            <h1>GietvloerMakers</h1>
-            <h3>Maak je eigen unieke gietvloer</h3>
-        </div>
-        <div class="footer-div">
-                <h1>Menu</h1>
-                <a href="kleuren.html"><h3>Kleurencollectie</h3></a>
-                <a href="stappenplan.html"></a><h3>Stappenplan</h3></a>
-                <a href="bestellen.html"></a><h3>Bestellen</h3></a>
-                <a href="experts.html"></a><h3>Onze experts</h3></a>
-        </div>
-        <div class="footer-div">
-                <h1>Contact</h1>
-                <p><img src="Images/tel.png" height=20px>06 432 378 66</p>
-                <p><img src="Images/mail.png" height=20px>info@gietvloermakers.nl</li></p>
-        </div>
-    </footer>
-    
+    <div class="footer-div">
+        <h1>GietvloerMakers</h1>
+        <h3>Maak eenvoudig je eigen gietvloer</h3>
+    </div>
+    <div class="footer-div">
+            <h1>Menu</h1>
+            <a href="kleuren.html"><h3>Kleurencollectie</h3></a>
+            <a href="stappenplan.html"><h3>Stappenplan</h3></a>
+            <a href="bestellen.html"><h3>Bestellen</h3></a>
+            <a href="experts.html"><h3>Onze experts</h3></a>
+    </div>
+    <div class="footer-div">
+            <h1>Contact</h1>
+            <p><img class="icon" src="Images/tel.png" height=20px>06 432 378 66</p>
+            <p><img class="icon" src="Images/mail.png" height=20px>info@gietvloermakers.nl</li></p>
+    </div>
+</footer>
+
 </body>
-<script type="text/javascript" src="JS/Firebase.js"></script>
 <script type="text/javascript" src="JS/index.js"></script>
 <script type="text/javascript" src="JS/bestellen.js"></script>
 <script type="text/javascript" src="JS/controleer.js"></script>

@@ -45,8 +45,9 @@ h1{
 }
 
 .overzichtdagen h2:hover{
-    color: #3d3d3d;
-    border: 1px solid #A00025;
+    border-bottom: 2px solid #3d3d3d;
+    border-top: 2px solid #3d3d3d;
+    border-color: #A00025;
 }
 
 #Dag1{
@@ -207,7 +208,7 @@ h1{
 
 /* Modal */
 .modalBG{
-  display: flex; /* Hidden by default */
+  display: none; /* Hidden by default */
   flex-direction: column;
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -223,7 +224,7 @@ h1{
 
 .modal{
     background-color: #fff;
-    margin: 10px 100px 100px 100px;
+    margin: 0px;
     padding: 20px;
     width: 100%;
     display: flex;
@@ -238,7 +239,7 @@ h1{
 }
 
 .weg{
-    margin-left: 90px;
+    align-self: center;
     cursor: pointer;
 }
 

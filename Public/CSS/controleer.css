@@ -1,0 +1,52 @@
+
+#notice{
+    margin: 50px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+#controlleer-form{
+    display: flex;
+    margin: 15px 15px 0px 15px;
+    padding: 10px;
+}
+
+#controlleer-form input{
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#controle-overzicht{
+    display: flex;
+    justify-content: center;
+}
+
+.controleer-div{
+    margin: 15px;
+}
+
+#summary{
+    padding: 15px;
+    margin: 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+#verzenden{
+    margin-top: 25px;
+    border: 1px solid #A00025;
+    color: #A00025;
+    padding: 15px;
+}
+
+.controle-input{
+    border: 1px solid black;
+}
+
+#andere-kleur{
+    font-size: 10px;
+    margin: 10px;
+  }

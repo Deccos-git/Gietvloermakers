@@ -4,7 +4,10 @@ const m2Local = localStorage.getItem('prijs-m2')
 aantalM2.value = m2Local;
 
 const kleur = document.getElementById("kleur");
-const kleurLocal = localStorage.getItem('kleur');
+const kleurLocal = localStorage.getItem('vloerkleur');
+
+console.log(kleurLocal)
+
 kleur.value = kleurLocal
 
 const assistentie = document.getElementById("assistentie");

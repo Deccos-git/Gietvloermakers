@@ -76,7 +76,6 @@ function wegPlakband(){
     folieW.style.display = "none";
 }
 
-
 //check
 function click(){
     const checken = document.getElementByID("checkvb");
@@ -85,17 +84,33 @@ function click(){
     checken.style.backgroundImage = "url('Images/check-groen.png)"
     lineThru.style.textDecoration = "line-through"
     lineThru.style.color = "#999999";
-
 }
 
 function click1(){
-    const checken = document.getElementById("check1");
-    const lineThru = document.getElementById("1.1");
+    const checken1 = document.getElementById("check1");
+    const lineThru1 = document.getElementById("1.1");
 
-    checken.style.backgroundImage = "url('Images/check-groen.png')"
-    lineThru.style.textDecoration = "line-through"
-    lineThru.style.color = "#999999";
+    checken1.style.backgroundImage = "url('Images/check-groen.png')"
+    lineThru1.style.textDecoration = "line-through"
+    lineThru1.style.color = "#999999";
+
+    localStorage.setItem("checked", checken1)
+    localStorage.setItem("line", lineThru1)
 }
+
+//localstorage
+const image = style.backgroundImage = "url('Images/check-groen.png)"
+const line = style.textDecoration = "line-through"
+const colour = style.color = "#999999";
+
+const checked = localStorage.getItem("checked")
+const lineThru = localStorage.getItem("line")
+
+console.log(checked)
+
+checked.image
+lineThru.line
+lineThru.colour
 
 function click2(){
     const checken = document.getElementById("check2");

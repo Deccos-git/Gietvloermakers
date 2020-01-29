@@ -9,6 +9,7 @@
     <script>src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"</script>
     <link rel="stylesheet" href="CSS/style.css"></link>
     <link rel="stylesheet" href="CSS/bestellen.css"></link>
+    <link rel="stylesheet" href="CSS/controleer.css"></link>
     <link href="https://fonts.googleapis.com/css?family=Lato|Prata&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -37,15 +38,15 @@
                     <div class="controleer-div">
                         <h2>Uw bestelling</h2>
                         <p>Aantal m2</p>
-                        <input type="text" name="aantalM2" id="aantalM2">
+                        <input class="controle-input" type="text" name="aantalM2" id="aantalM2" readonly>
                         <p>Kleur</p>
-                        <input type="text" name="kleur" id="kleur">
+                        <input class="controle-input" type="text" name="kleur" id="kleur" readonly>
                         <p>Assistentie</p>
-                        <input type="text" name="assistentie" id="assistentie">
+                        <input class="controle-input" type="text" name="assistentie" id="assistentie" readonly>
                         <p>Gereedschappen</p>
-                        <input type="text" name="gereedschappen" id="gereedschappen">
+                        <input class="controle-input" type="text" name="gereedschappen" id="gereedschappen" readonly>
                         <p>Totale prijs</p>
-                        <input type="text" name="totale-prijs" id="totale-prijs">
+                        <input  class="controle-input" type="text" name="totale-prijs" id="totale-prijs" readonly>
                         <a href="bestellen.html"><p id="andere-kleur">Bestelling aanpassen</p></a>
                     </div>
                     <div class="controleer-div">
@@ -58,7 +59,7 @@
                         <input type="tel" name="telefoonnummer" placeholder="Telefoonnummer">
                         <p>Emailadres</p>
                         <input type="email" name="email" placeholder="Emailadres"><br>
-                        <input type="submit"> 
+                        <input id="verzenden" type="submit"> 
                     </div>
                 </form>
             </div>
@@ -78,23 +79,23 @@
 
 
 <footer id="footer">
-        <div class="footer-div">
-            <h1>GietvloerMakers</h1>
-            <h3>Maak je eigen unieke gietvloer</h3>
-        </div>
-        <div class="footer-div">
-                <h1>Menu</h1>
-                <a href="kleuren.html"><h3>Kleurencollectie</h3></a>
-                <a href="stappenplan.html"></a><h3>Stappenplan</h3></a>
-                <a href="bestellen.html"></a><h3>Bestellen</h3></a>
-                <a href="experts.html"></a><h3>Onze experts</h3></a>
-        </div>
-        <div class="footer-div">
-                <h1>Contact</h1>
-                <p><img src="Images/tel.png" height=20px>06 432 378 66</p>
-                <p><img src="Images/mail.png" height=20px>info@gietvloermakers.nl</li></p>
-        </div>
-    </footer>
+    <div class="footer-div">
+        <h1>GietvloerMakers</h1>
+        <h3>Maak eenvoudig je eigen gietvloer</h3>
+    </div>
+    <div class="footer-div">
+            <h1>Menu</h1>
+            <a href="kleuren.html"><h3>Kleurencollectie</h3></a>
+            <a href="stappenplan.html"><h3>Stappenplan</h3></a>
+            <a href="bestellen.html"><h3>Bestellen</h3></a>
+            <a href="experts.html"><h3>Onze experts</h3></a>
+    </div>
+    <div class="footer-div">
+            <h1>Contact</h1>
+            <p><img class="icon" src="Images/tel.png" height=20px>06 432 378 66</p>
+            <p><img class="icon" src="Images/mail.png" height=20px>info@gietvloermakers.nl</li></p>
+    </div>
+</footer>
     
 </body>
 <script type="text/javascript" src="JS/index.js"></script>

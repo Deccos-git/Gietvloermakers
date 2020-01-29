@@ -32,8 +32,9 @@
 }
 
 .style h2:hover{
-  color: #3d3d3d;
-  border: 1px solid #A00025;
+  border-bottom: 2px solid #3d3d3d;
+  border-top: 2px solid #3d3d3d;
+  border-color: #A00025;
 }
 
 .style a:link{

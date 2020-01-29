@@ -10,10 +10,18 @@ function bereken(){
             // m2 naar localStorage
             localStorage.setItem('prijs-m2', m2value)
 
+    // Alert uit DOM halen        
+    const alert = document.getElementById("alert-m2")
 
+    // Prijs variabelen doorlopen
     let prijsVariable = 0
     if (m2value == 0){
-        alert("U bent vergeten om uw gietvloer oppervlakte in te vullen")
+
+
+        window.location.href = "#aantal-m2";
+        m2.style.borderColor = "red"
+        alert.style.display = "block"
+            
     }
    else if (m2value > 0 && m2value < 11){
         prijsVariable = 454
@@ -140,7 +148,13 @@ const totaal = document.getElementById("totaal");
 const totaalEuro =  m2Number + assNumber + toolTotal
 
 totaal.innerHTML = "€ " + totaalEuro 
-    
+
+      // Anchor link naar prijsoverzicht
+      if (m2value > 0){
+        m2.style.borderColor = "black"
+        alert.style.display = "none"
+window.location.href = "#uw-prijs";
+      }
 };
 
 // Naar controleren
@@ -153,8 +167,6 @@ function bestel(){
 }
 
 // Gekozen kleur inladen
-// const bestelnone = document.getElementById("bestel");
-// bestelnone.style.display = "none";
 
 const kleurSelect = document.getElementById("kleurselect");
 
@@ -165,11 +177,9 @@ kleurSelect.innerHTML = kleurKeuze;
 
         // Vloerkleur naar localstorage voor controle
         const kleurID = document.getElementsByClassName("colour");
-        // kleurID.forEach(colour => {
-        //     const colourID = colour.id
 
-        //     console.log(colourID)
+        const kleurSend = kleurID[0].id
 
-        localStorage.setItem('vloerkleur', kleurID.id)
+        localStorage.setItem('vloerkleur', kleurSend)
     
 
