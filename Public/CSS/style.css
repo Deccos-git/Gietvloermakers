@@ -82,6 +82,18 @@ option{
     border-radius: 15px;
 }
 
+#button3{
+    border: #A00025 1px solid;
+    padding: 15px;
+    font-size: 20px;
+    margin: 50px 10px 50px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #A00025;
+    border-radius: 15px;
+}
+
 /* Menu */
 
 #logo {
@@ -133,6 +145,10 @@ option{
 
 #menuItems{
     display: none;
+}
+
+#winkelwagen{
+    align-self: flex-end;
 }
 
 /* Header */

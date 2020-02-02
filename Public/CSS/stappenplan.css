@@ -238,8 +238,16 @@ h1{
     text-align: center;
 }
 
+#uitleg{
+    width: 60%;
+}
+
 .weg{
     align-self: center;
+    cursor: pointer;
+}
+
+.bestel-item{
     cursor: pointer;
 }
 

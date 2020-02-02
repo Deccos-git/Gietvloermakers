@@ -77,40 +77,70 @@ function wegPlakband(){
 }
 
 //check
+function check(x,y,z,a,b){
+    x.style.backgroundImage = "url('Images/check-groen.png')"
+    y.style.textDecoration = "line-through"
+    z.style.color = "#999999";
+
+    localStorage.setItem(a, "yes")
+    localStorage.setItem(b, "yes")
+    }
+
+    // const button = document.getElementById("button");
+    // var x = document.getElementById("hello");
+    
+    // button.addEventListener("click", () => {
+    //     function myFunction() {
+    //         if (x.style.display === "block") {
+    //           x.style.display = "none";
+    //         } else {
+    //           x.style.display = "block";
+    //         }
+    //       }
+    // myFunction();
+        
+    // });
+    
+    
+
+function klik(c){
+    if(c.style.backgroundImage == "none"){
+        c.style.backgroundImage = "url('../Images/check-groen.png')"
+    } else{
+        c.style.backgroundImage = "none"
+    }
+}
+
 function click(){
+
     const checken = document.getElementByID("checkvb");
     const lineThru = document.getElementById("voorbeeld");
 
-    checken.style.backgroundImage = "url('Images/check-groen.png)"
-    lineThru.style.textDecoration = "line-through"
-    lineThru.style.color = "#999999";
+    check(checken, lineThru, lineThru);  
+    klik(checken)
 }
 
 function click1(){
     const checken1 = document.getElementById("check1");
     const lineThru1 = document.getElementById("1.1");
 
-    checken1.style.backgroundImage = "url('Images/check-groen.png')"
-    lineThru1.style.textDecoration = "line-through"
-    lineThru1.style.color = "#999999";
-
-    localStorage.setItem("checked", checken1)
-    localStorage.setItem("line", lineThru1)
+    check(checken1, lineThru1, lineThru1, checken1, lineThru1);  
+    klik(checken1);
 }
 
 //localstorage
-const image = style.backgroundImage = "url('Images/check-groen.png)"
-const line = style.textDecoration = "line-through"
-const colour = style.color = "#999999";
+// const image = style.backgroundImage = "url('Images/check-groen.png)"
+// const line = style.textDecoration = "line-through"
+// const colour = style.color = "#999999";
 
-const checked = localStorage.getItem("checked")
-const lineThru = localStorage.getItem("line")
+// const checked = localStorage.getItem("checked")
+// const lineThru = localStorage.getItem("line")
 
-console.log(checked)
+// console.log(checked)
 
-checked.image
-lineThru.line
-lineThru.colour
+// checked.image
+// lineThru.line
+// lineThru.colour
 
 function click2(){
     const checken = document.getElementById("check2");
@@ -679,7 +709,13 @@ function click64(){
     lineThru.style.color = "#999999";
 }
 
+// In winkelwagen
 
+function bestelFolie(){
+    localStorage.setItem('bestel-item', "folie");
+
+    window.open("bestellen.html#GereedschappenTitel", "_self");
+}
 
 
 

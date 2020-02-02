@@ -15,7 +15,16 @@ app.post("/api/user", urlencodedParser, (req, res) => {
   console.log(req.body)
   const persGegevens = req.body
 
-  const stringGegevens = JSON.stringify(persGegevens, null, 10)
+  const string = JSON.stringify(persGegevens, (key, value) =>{
+
+    if (typeof value === "string"){
+      return value.toUpperCase();
+  } else {
+      return value
+  }
+
+
+}, 1);
 
   var transporter = nodemailer.createTransport({
         service: 'gmail',
@@ -29,7 +38,7 @@ app.post("/api/user", urlencodedParser, (req, res) => {
         from: 'gietvloermakers@gmail.com',
         to: 'gvbeusekom84@hotmail.com',
         subject: 'Nieuwe bestelling op Gietvloermakers',
-        html: stringGegevens
+        html: string
       };
       
       transporter.sendMail(mailOptions, function(error, info){
@@ -41,20 +50,9 @@ app.post("/api/user", urlencodedParser, (req, res) => {
       });
     });
 
-// app.use(bodyParser.json())
-
-// const jsonParser = bodyParser.json()
-
-// app.post("/api/user", jsonParser, (req, res) => {
-//   res.send("Je bestelling is verstuurd")
-//   console.log(req.body)
-
 
   app.listen(port);
 
   console.log(port)
-// // Create and Deploy Your First Cloud Functions
-// // https://firebase.google.com/docs/functions/write-firebase-functions
-//
 
 

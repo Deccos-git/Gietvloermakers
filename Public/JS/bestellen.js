@@ -1,3 +1,26 @@
+
+
+// m2 uit localstorage
+const m2 = document.getElementById("m2");
+const m2Storage = localStorage.getItem('prijs-m2');
+
+m2.value = m2Storage
+
+// Assistentie uit localstorage
+const ass = document.getElementById("assistentie");
+const assStorage = localStorage.getItem('assistentie');
+
+ass.value = assStorage
+
+// Gereedschappen uit localstorage
+const bestelItem = localStorage.getItem('bestel-item');
+if (bestelItem == "folie"){
+
+    
+const folie = document.getElementById("Folie")
+folie.checked = true;
+}
+
 //Prijs berekenen
 
 function bereken(){
@@ -160,11 +183,26 @@ window.location.href = "#uw-prijs";
 // Naar controleren
 
 function bestel(){
-   const totaal = document.getElementById("totaal")
-   localStorage.setItem('totaal-prijs', totaal.innerHTML)
+   const totaal = document.getElementById("totaal");
+   localStorage.setItem('totaal-prijs', totaal.innerHTML);
+   const bereken = document.getElementById("button2");
+   const controleer = document.getElementById("button3")
 
+   console.log(totaal)
+
+   if (totaal.innerHTML == "€0"){
+       function berekenen(){
+        bereken.click()
+       }
+       berekenen().then( () => {
+
+        controleer.click()
+        });
+    
+   } else {
     window.open("controleer.html", "_self")
-}
+   }
+};
 
 // Gekozen kleur inladen
 
@@ -174,12 +212,9 @@ const kleurKeuze = localStorage.getItem('kleur');
 
 kleurSelect.innerHTML = kleurKeuze;
 
-
         // Vloerkleur naar localstorage voor controle
         const kleurID = document.getElementsByClassName("colour");
 
         const kleurSend = kleurID[0].id
 
         localStorage.setItem('vloerkleur', kleurSend)
-    
-
