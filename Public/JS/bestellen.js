@@ -152,7 +152,7 @@ function bereken(){
     }   
     }) 
 
-            // Assistentie naar localStorage
+            // gereedschappen naar localStorage
             localStorage.setItem('tools', arrayID)
 
     const DOM = document.getElementById("prijs-gereedschappen");
