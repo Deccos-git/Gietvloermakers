@@ -94,6 +94,18 @@ option{
     border-radius: 15px;
 }
 
+#button4{
+    border: #A00025 1px solid;
+    padding: 15px;
+    font-size: 25px;
+    margin: 50px 10px 50px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #A00025;
+    border-radius: 15px;
+}
+
 /* Menu */
 
 #logo {
@@ -191,6 +203,7 @@ option{
     color: #3d3d3d;
     margin: 0px 0px 30px 10px;
     font-size: 45px;
+    font-weight: 100;
 }
 
 /* Info */
@@ -355,15 +368,6 @@ option{
         margin: 30px;
     }
 
-    #sectionA{
-        background-image: url(../Images/jackyactiefCleanIII.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        height: 100%;
-        width: 100%;
-    }
-
     #header{
         background-attachment: scroll;
     }
@@ -388,10 +392,18 @@ option{
         display: none;
         flex-direction: column;
         align-items: center;
-        background-color: #ffffff;
+        background-color: rgba(227, 227, 227, 0.5);
         width: 100%;
         padding: 15px;
         list-style: none;
+    }
+
+    #mobile-menu{
+        text-align: left;
+    }
+
+    #menuItems li{
+        text-align: left;
     }
 
     #menuItems a:link{
@@ -423,8 +435,8 @@ option{
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        width: 50px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
         align-self: center;
         }
     }
