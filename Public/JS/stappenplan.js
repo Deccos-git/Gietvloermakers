@@ -55,6 +55,7 @@ function dag5(){
 
     // Modal creeren
     function creerModal (image,youtube,data){
+        
         const DOM = document.getElementById("modalDOM");
                     
         const modalBG = document.createElement("section")
@@ -113,10 +114,8 @@ function dag5(){
         modalDiv.appendChild(vraag)
         vraag.appendChild(vraagH2)
         vraag.appendChild(vraagLink)
-
     }
-
-    creerModal()
+    creerModal();
 
     //Kruisje
         const weg = document.getElementsByClassName("weg");
@@ -124,11 +123,13 @@ function dag5(){
         const wegArray = Array.from(weg)
 
         wegArray.forEach(w => {
-            
-            w.addEventListener("click", (e) => {
+            console.log(w)
+            w.addEventListener("click", () => {
                 const modal = document.getElementsByClassName("modalBG")
                 const modalArray = Array.from(modal)
+                console.log(modalArray)
                     modalArray.forEach(m => {
+                        console.log(m)
                         m.style.display = "none";
                     }) 
             })   
@@ -143,12 +144,21 @@ function dag5(){
     }
 
     function folie(){
+        creerModal("Images/folie.jpeg","https://www.youtube.com/embed/tgbNymZ7vqY","Folie")
         modal(0)
     }
 
     function plakband(){
+        creerModal("Images/stoel.jpg","https://www.youtube.com/embed/tgbNymZ7vqY","Plakband")
         modal(1)
     }
+
+    function boormachine(){
+        creerModal("Images/tel.png","https://www.youtube.com/embed/tgbNymZ7vqY","Boormachine")
+        modal(2)
+    }
+
+    
 
     // In winkelwagen
     const winkel = document.getElementsByClassName("bestel-item");

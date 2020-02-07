@@ -202,7 +202,7 @@ h1{
 
 /* Modal */
 .modalBG{
-  display: block; /* Hidden by default */
+  display: none; /* Hidden by default */
   flex-direction: column;
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
