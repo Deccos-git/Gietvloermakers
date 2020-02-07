@@ -53,6 +53,71 @@ function dag5(){
 
 //Modal
 
+    // Modal creeren
+    function creerModal (image,youtube,data){
+        const DOM = document.getElementById("modalDOM");
+                    
+        const modalBG = document.createElement("section")
+                modalBG.setAttribute("class", "modalBG")
+        const kruisje = document.createElement("img")
+                kruisje.setAttribute("class", "weg")
+                kruisje.setAttribute("src","Images/kruis.png")
+                kruisje.setAttribute("height", "28")
+                kruisje.setAttribute("width", "55")
+        const modalDiv = document.createElement("div")
+            modalDiv.setAttribute("class", "modal")
+        const div = document.createElement("div")
+        const h2 = document.createElement("h2")
+        const img = document.createElement("img")
+            img.setAttribute("src", image)
+            img.setAttribute("height", "158")
+            img.setAttribute("width", "210")
+        const uitleg = document.createElement("div")
+            uitleg.setAttribute("id", "uitleg")
+        const uitlegH2 = document.createElement("h2")
+        const iframe = document.createElement("iframe")
+            iframe.setAttribute("src", youtube)
+            iframe.setAttribute("height", "315")
+            iframe.setAttribute("width", "420")
+        const bestel = document.createElement("div")
+        const bestelH2 = document.createElement("h2")
+        const shoppingcart = document.createElement("img")
+            shoppingcart.setAttribute("class", "bestel-item")
+            shoppingcart.setAttribute("data-tool", data)
+            shoppingcart.setAttribute("src", "Images/Choppingcart.png")
+            shoppingcart.setAttribute("height", "50")
+        const vraag = document.createElement("div")
+        const vraagH2 = document.createElement("h2")
+        const vraagLink = document.createElement("a")
+            vraagLink.setAttribute("href", "experts.html")
+
+
+        h2.innerHTML = "Voorbeeld"
+        uitlegH2.innerHTML = "Uitleg"
+        bestelH2.innerHTML = "In winkelwagen"
+        vraagH2.innerHTML = "Toch nog een vraag?"
+        vraagLink.innerHTML = "Neem contact op met onze experts voor meer ondersteuning"
+
+        DOM.appendChild(modalBG)
+        modalBG.appendChild(kruisje)
+        modalBG.appendChild(modalDiv)
+        modalDiv.appendChild(div)
+        div.appendChild(h2)
+        div.appendChild(img)
+        modalDiv.appendChild(uitleg)
+        uitleg.appendChild(uitlegH2)
+        uitleg.appendChild(iframe)
+        modalDiv.appendChild(bestel)
+        bestel.appendChild(bestelH2)
+        bestelH2.appendChild(shoppingcart)
+        modalDiv.appendChild(vraag)
+        vraag.appendChild(vraagH2)
+        vraag.appendChild(vraagLink)
+
+    }
+
+    creerModal()
+
     //Kruisje
         const weg = document.getElementsByClassName("weg");
 
@@ -69,6 +134,7 @@ function dag5(){
             })   
         });
 
+    // Modal diplay block bij onclick
     function modal(a){
         const modalBG = document.getElementsByClassName("modalBG");
 
