@@ -10,36 +10,7 @@ const assStorage = localStorage.getItem('assistentie');
 
 ass.value = assStorage
 
-// Gereedschappen uit localstorage
-
-const winkeltje = document.getElementsByClassName("tool");
-
-        const winkeltjeArray = Array.from(winkeltje);
-
-console.log(winkeltjeArray)
-
-        winkeltjeArray.forEach(w => {
-
-            console.log(w)
-           
-            const tool = w.dataset.id
-
-                const storage = localStorage.getItem('bestel-item' + tool);
-
-                const afvinken = document.getElementById(storage)
-
-                afvinken.checked = true
-                
-
-               
-            
-            
-
-            
-        })
-
 // 100 km rond Zwolle -alert bij Assistentie
-
 function zwolle(){
 
     const ass = document.getElementById("assistentie");
@@ -255,4 +226,22 @@ kleurSelect.innerHTML = kleurKeuze;
         localStorage.setItem('vloerkleur', kleurSend)
 
 
- 
+ // Gereedschappen uit localstorage
+
+const winkeltje = document.getElementsByClassName("tool");
+
+const winkeltjeArray = Array.from(winkeltje);
+
+winkeltjeArray.forEach(w => {
+   
+    const tool = w.dataset.id
+
+        const storage = localStorage.getItem('bestel-item' + tool);
+
+        const afvinken = document.getElementById(storage)
+
+        console.log(afvinken)
+
+        afvinken.checked = true
+       
+})

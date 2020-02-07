@@ -53,69 +53,18 @@ function dag5(){
 
 //Modal
 
-    // Modal creeren
-    function creerModal (image,youtube,data){
-        
-        const DOM = document.getElementById("modalDOM");
-                    
-        const modalBG = document.createElement("section")
-                modalBG.setAttribute("class", "modalBG")
-        const kruisje = document.createElement("img")
-                kruisje.setAttribute("class", "weg")
-                kruisje.setAttribute("src","Images/kruis.png")
-                kruisje.setAttribute("height", "28")
-                kruisje.setAttribute("width", "55")
-        const modalDiv = document.createElement("div")
-            modalDiv.setAttribute("class", "modal")
-        const div = document.createElement("div")
-        const h2 = document.createElement("h2")
-        const img = document.createElement("img")
-            img.setAttribute("src", image)
-            img.setAttribute("height", "158")
-            img.setAttribute("width", "210")
-        const uitleg = document.createElement("div")
-            uitleg.setAttribute("id", "uitleg")
-        const uitlegH2 = document.createElement("h2")
-        const iframe = document.createElement("iframe")
-            iframe.setAttribute("src", youtube)
-            iframe.setAttribute("height", "315")
-            iframe.setAttribute("width", "420")
-        const bestel = document.createElement("div")
-        const bestelH2 = document.createElement("h2")
-        const shoppingcart = document.createElement("img")
-            shoppingcart.setAttribute("class", "bestel-item")
-            shoppingcart.setAttribute("data-tool", data)
-            shoppingcart.setAttribute("src", "Images/Choppingcart.png")
-            shoppingcart.setAttribute("height", "50")
-        const vraag = document.createElement("div")
-        const vraagH2 = document.createElement("h2")
-        const vraagLink = document.createElement("a")
-            vraagLink.setAttribute("href", "experts.html")
+    // In winkelwagen
+    const winkel = document.getElementsByClassName("bestel-item");
+    const winkelArray = Array.from(winkel);
 
-
-        h2.innerHTML = "Voorbeeld"
-        uitlegH2.innerHTML = "Uitleg"
-        bestelH2.innerHTML = "In winkelwagen"
-        vraagH2.innerHTML = "Toch nog een vraag?"
-        vraagLink.innerHTML = "Neem contact op met onze experts voor meer ondersteuning"
-
-        DOM.appendChild(modalBG)
-        modalBG.appendChild(kruisje)
-        modalBG.appendChild(modalDiv)
-        modalDiv.appendChild(div)
-        div.appendChild(h2)
-        div.appendChild(img)
-        modalDiv.appendChild(uitleg)
-        uitleg.appendChild(uitlegH2)
-        uitleg.appendChild(iframe)
-        modalDiv.appendChild(bestel)
-        bestel.appendChild(bestelH2)
-        bestelH2.appendChild(shoppingcart)
-        modalDiv.appendChild(vraag)
-        vraag.appendChild(vraagH2)
-        vraag.appendChild(vraagLink)
-    }
-    creerModal();
+    winkelArray.forEach(w => {
+        w.addEventListener("click", (e) => {
+    
+    const tool = w.dataset.tool
+    localStorage.setItem('bestel-item' + tool, tool);
+    window.open("bestellen.html#GereedschappenTitel", "_self");
+        })
+    })
 
     //Kruisje
         const weg = document.getElementsByClassName("weg");
@@ -123,55 +72,16 @@ function dag5(){
         const wegArray = Array.from(weg)
 
         wegArray.forEach(w => {
-            console.log(w)
             w.addEventListener("click", () => {
                 const modal = document.getElementsByClassName("modalBG")
                 const modalArray = Array.from(modal)
-                console.log(modalArray)
                     modalArray.forEach(m => {
-                        console.log(m)
                         m.style.display = "none";
                     }) 
             })   
         });
 
-    // Modal diplay block bij onclick
-    function modal(a){
-        const modalBG = document.getElementsByClassName("modalBG");
-
-        const mode = modalBG[a]
-        mode.style.display = "block";
-    }
-
-    function folie(){
-        creerModal("Images/folie.jpeg","https://www.youtube.com/embed/tgbNymZ7vqY","Folie")
-        modal(0)
-    }
-
-    function plakband(){
-        creerModal("Images/stoel.jpg","https://www.youtube.com/embed/tgbNymZ7vqY","Plakband")
-        modal(1)
-    }
-
-    function boormachine(){
-        creerModal("Images/tel.png","https://www.youtube.com/embed/tgbNymZ7vqY","Boormachine")
-        modal(2)
-    }
-
     
-
-    // In winkelwagen
-    const winkel = document.getElementsByClassName("bestel-item");
-        const winkelArray = Array.from(winkel);
-
-        winkelArray.forEach(w => {
-            w.addEventListener("click", (e) => {
-           
-           const tool = w.dataset.tool
-           localStorage.setItem('bestel-item' + tool, tool);
-           window.open("bestellen.html#GereedschappenTitel", "_self");
-            })
-        })
 
 //check
 function check(x,y,z,a){
@@ -725,6 +635,81 @@ function click64(){
     check(checken, lineThru, lineThru, data); 
 }
 
+// Modal diplay block bij onclick
+function modal(a){
+    const modalBG = document.getElementsByClassName("modalBG");
+    const mode = modalBG[a]
+    mode.style.display = "block";
+}
 
+modal()
+
+function folie(){
+    modal(0)
+}
+
+function plakband(){
+    modal(1)
+}
+
+function plasticZeil(){
+    modal(2)
+}
+
+function boormachine(){
+    modal(3)
+}
+
+function mengspiraal(){
+    modal(4)
+}
+
+function vlakkeSpaan(){
+    modal(5)
+}
+
+function wegwerpkwast(){
+    modal(5)
+}
+
+function handschoenen(){
+    modal(7)
+}
+
+function veiligheidsbril(){
+    modal(8)
+}
+
+function kniebeschermers(){
+    modal(9)
+}
+
+function reinigingsdoekjes(){
+    modal(10)
+}
+
+function kwast(){
+    modal(11)
+}
+
+function emmers(){
+    modal(12)
+}
+
+function schuurpapier(){
+    modal(13)
+}
+
+function microvezelRoller(){
+    modal(14)
+}
+
+function rollerBeugel(){
+    modal(15)
+}
+
+function beugelStok(){
+    modal(16)
+}
 
 
