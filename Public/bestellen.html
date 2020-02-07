@@ -41,33 +41,35 @@
                 <input id="m2" type="number">
                 <div id="alert-m2"><p>U bent vergeten uw gewenste aantal vierkante meters in te vullen!</p></div>
                 <p>Uw kleur</p>
-                <div id="kleurselect">Nog geen kleur gekozen? Bekijk de<a href="kleuren.html" >Kleurencollectie</a></div>
+                <div id="kleurselect">Nog geen kleur gekozen? Bekijk de <a href="kleuren.html" >Kleurencollectie</a></div>
                 <a href="kleuren.html"><p id="andere-kleur">Kies een andere kleur</p></a>
                 <p>1 dag assistentie bij het gieten van de kleur </p>
-                <select id="assistentie">
+                <select id="assistentie" onchange="zwolle()">
                     <option type="number" value=0>Nee, bedankt (€0)</option>
                     <option type="number" value=500>Graag (€500)</option>
                 </select>
+                <p id="zwolle"><b>Let op:</b> woont u meer dan €100 rond Zwolle, dan geldt er een meerprijs van €0,19 per km.</p>
+
                 <p id="GereedschappenTitel">Gereedschappen</p>
                 <div id="tool-menu">
                     <form id="tools">
-                        <input class="tool" type="checkbox" id="Folie" value=10> Folie van 50 cm x 50 18-cm (€10)</br>
-                        <input class="tool" type="checkbox" id="Plastic zeil" value=10> Plastic zeil van 2m x 2m (€10)</br>
-                        <input class="tool" type="checkbox" id="Plakband" value=5> Plakband (€5)</br>
+                        <input class="tool" type="checkbox" data-id="Folie" id="Folie" value=10> Folie van 50 cm x 50 18-cm (€10)</br>
+                        <input class="tool" type="checkbox" data-id="Plakband" id="Plakband" value=5> Plakband (€5)</br>
+                        <input class="tool" type="checkbox" id="Plastic-zeil" value=10> Plastic zeil van 2m x 2m (€10)</br>
                         <input class="tool" type="checkbox" id="Boormachine" value=10> Boormachine</br>
                         <input class="tool" type="checkbox" id="Mengspiraal" value=5> Mengspiraal</br>
-                        <input class="tool" type="checkbox" id="Vlakke spaan" value=10> Vlakke spaan</br>
-                        <input class="tool" type="checkbox" id="Wegwerpkwast" value=10> Wegwerpkwast</br>
+                        <input class="tool" type="checkbox" id="Vlakke-spaan" value=10> Vlakke spaan</br>
+                        <input class="tool" type="checkbox" id="Wegwerpwast" value=10> Wegwerpkwast</br>
                         <input class="tool" type="checkbox" id="Handschoenen" value=5> Handschoenen</br>
                         <input class="tool" type="checkbox" id="Veiligheidsbril" value=10> Veiligheidsbril</br>
                         <input class="tool" type="checkbox" id="Kniebeschermers" value=10> Kniebeschermers</br>
                         <input class="tool" type="checkbox" id="Reinigingsdoekjes" value=5> Reinigingsdoekjes</br>
                         <input class="tool" type="checkbox" id="Kwast" value=10> Kwast</br>
-                        <input class="tool" type="checkbox" id="12 litter emmers" value=10> 12 liter emmers</br>
+                        <input class="tool" type="checkbox" id="12-liter-emmers" value=10> 12 liter emmers</br>
                         <input class="tool" type="checkbox" id="Schuurpapier" value=5> Schuurpapier 220 korrel</br>
-                        <input class="tool" type="checkbox" id="Microvezel roller" value=10> Microvezel roller 25 cm</br>
-                        <input class="tool" type="checkbox" id="Beugel" value=5> Beugel voor microvezel roller 25 cm</br>
-                        <input class="tool" type="checkbox" id="Stok" value=10> Stok voor beugel</br>
+                        <input class="tool" type="checkbox" id="Microvezel-roller" value=10> Microvezel roller 25 cm</br>
+                        <input class="tool" type="checkbox" id="Roller-beugel" value=5> Beugel voor microvezel roller 25 cm</br>
+                        <input class="tool" type="checkbox" id="Beugel-stok" value=10> Stok voor beugel</br>
                     </form>
                     <a href="stappenplan.html"><p id="andere-kleur">Bekijk het stappenplan</p></a>
                 </div>
@@ -113,5 +115,4 @@
 </body>
 <script type="text/javascript" src="JS/index.js"></script>
 <script type="text/javascript" src="JS/bestellen.js"></script>
-<script type="text/javascript" src="JS/controleer.js"></script>
 </html>

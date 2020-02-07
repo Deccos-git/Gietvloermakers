@@ -1,5 +1,3 @@
-
-
 // m2 uit localstorage
 const m2 = document.getElementById("m2");
 const m2Storage = localStorage.getItem('prijs-m2');
@@ -13,12 +11,47 @@ const assStorage = localStorage.getItem('assistentie');
 ass.value = assStorage
 
 // Gereedschappen uit localstorage
-const bestelItem = localStorage.getItem('bestel-item');
-if (bestelItem == "folie"){
 
-    
-const folie = document.getElementById("Folie")
-folie.checked = true;
+const winkeltje = document.getElementsByClassName("tool");
+
+        const winkeltjeArray = Array.from(winkeltje);
+
+console.log(winkeltjeArray)
+
+        winkeltjeArray.forEach(w => {
+
+            console.log(w)
+           
+            const tool = w.dataset.id
+
+                const storage = localStorage.getItem('bestel-item' + tool);
+
+                const afvinken = document.getElementById(storage)
+
+                afvinken.checked = true
+                
+
+               
+            
+            
+
+            
+        })
+
+// 100 km rond Zwolle -alert bij Assistentie
+
+function zwolle(){
+
+    const ass = document.getElementById("assistentie");
+    const assOptions = ass.options;
+    const assSelect = assOptions[assOptions.selectedIndex].value;
+
+    if (assSelect == 500){
+    const zwolle = document.getElementById("zwolle");
+    zwolle.style.display = "block"
+    } else {
+        zwolle.style.display = "none"
+    }
 }
 
 //Prijs berekenen
@@ -117,8 +150,10 @@ function bereken(){
     // Assistentie
     const ass = document.getElementById("assistentie");
     const assOptions = ass.options;
-    const assSelect = assOptions[assOptions.selectedIndex].value;
+console.log(assOptions)
 
+    const assSelect = assOptions[assOptions.selectedIndex].value;
+    
     console.log(assSelect)  
     const assNumber = parseInt(assSelect, 10)
 
@@ -153,7 +188,7 @@ function bereken(){
     }) 
 
             // gereedschappen naar localStorage
-            localStorage.setItem('tools', arrayID)
+            localStorage.setItem('bestelItem' + arrayID, arrayID)
 
     const DOM = document.getElementById("prijs-gereedschappen");
 
@@ -218,3 +253,6 @@ kleurSelect.innerHTML = kleurKeuze;
         const kleurSend = kleurID[0].id
 
         localStorage.setItem('vloerkleur', kleurSend)
+
+
+ 

@@ -6,8 +6,6 @@ aantalM2.value = m2Local;
 const kleur = document.getElementById("kleur");
 const kleurLocal = localStorage.getItem('vloerkleur');
 
-console.log(kleurLocal)
-
 kleur.value = kleurLocal
 
 const assistentie = document.getElementById("assistentie");
@@ -20,7 +18,7 @@ if (assistentieLocal == 0){
 }
 
 const tools = document.getElementById("gereedschappen");
-const toolsLocal = localStorage.getItem('tools');
+const toolsLocal = localStorage.getItem('bestelItem');
 
 if(toolsLocal === 0){
     tools.value = "Geen"

@@ -44,9 +44,11 @@
             <h2 onclick = "dag5()">Dag 5</h2>
         </div>
 
-    <!-- Modals-->
+<!-- Modals Gereedschappen-->
+
+    <!-- Folie-->
     <section class= "modalBG">
-        <img onclick="weg()" class="weg" src="Images/kruis.png" width="55" height="28">
+        <img class="weg" src="Images/kruis.png" width="55" height="28">
             <div class="modal">
                 <div>
                     <h2>Voorbeeld</h2>
@@ -60,7 +62,32 @@
                 </div>
                 <div>
                     <h2>In winkelwagen</h2>
-                    <img class="bestel-item" onclick="bestelFolie()" src="Images/Choppingcart.png" height="50px">
+                    <img class="bestel-item" data-tool="Folie" src="Images/Choppingcart.png" height="50px">
+                </div>
+                <div>
+                    <h2>Toch nog een vraag?</h2>
+                    <a href="experts.html">Neem contact op met onze experts voor meer ondersteuning</a>
+                </div>
+            </div>
+    </section>
+
+
+    <section class= "modalBG">
+        <img class="weg" src="Images/kruis.png" width="55" height="28">
+            <div class="modal">
+                <div>
+                    <h2>Voorbeeld</h2>
+                    <img src="Images/bucket.png" width="210" height="158">
+                </div>
+                <div id="uitleg">
+                    <h2>Uitleg</h2>
+                    <iframe width="420" height="315"
+                    src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    </iframe>
+                </div>
+                <div>
+                    <h2>In winkelwagen</h2>
+                    <img class="bestel-item" data-tool="Plakband" src="Images/Choppingcart.png" height="50px">
                 </div>
                 <div>
                     <h2>Toch nog een vraag?</h2>
@@ -641,4 +668,5 @@
     </body>
     <script type="text/javascript" src="JS/index.js"></script>
     <script type="text/javascript" src="JS/stappenplan.js"></script>
+    <script type="text/javascript" src="JS/bestellen.js"></script>
     </html>

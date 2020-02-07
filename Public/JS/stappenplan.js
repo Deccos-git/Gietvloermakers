@@ -1,3 +1,5 @@
+// localStorage.clear()
+
 //dagen
 const overzicht1 = document.getElementById("Dag1");
 const overzicht2 = document.getElementById("Dag2");
@@ -51,45 +53,66 @@ function dag5(){
 
 //Modal
 
+    //Kruisje
+        const weg = document.getElementsByClassName("weg");
 
-function folie(){
-    const folie = document.getElementsByClassName("modalBG")[0];
-    if (folie.style.display = "none")
-    folie.style.display = "block";
+        const wegArray = Array.from(weg)
 
-}
+        wegArray.forEach(w => {
+            
+            w.addEventListener("click", (e) => {
+                const modal = document.getElementsByClassName("modalBG")
+                const modalArray = Array.from(modal)
+                    modalArray.forEach(m => {
+                        m.style.display = "none";
+                    }) 
+            })   
+        });
 
-function weg(){
-    const folieW = document.getElementsByClassName("modalBG")[0];
-    folieW.style.display = "none";
-}
+    function modal(a){
+        const modalBG = document.getElementsByClassName("modalBG");
 
-function plakband(){
-    const folie = document.getElementsByClassName("modalPlakband")[0];
-    if (folie.style.display = "none")
-    folie.style.display = "block";
+        const mode = modalBG[a]
+        mode.style.display = "block";
+    }
 
-}
+    function folie(){
+        modal(0)
+    }
 
-function wegPlakband(){
-    const folieW = document.getElementsByClassName("modalPlakband")[0];
-    folieW.style.display = "none";
-}
+    function plakband(){
+        modal(1)
+    }
+
+    // In winkelwagen
+    const winkel = document.getElementsByClassName("bestel-item");
+        const winkelArray = Array.from(winkel);
+
+        winkelArray.forEach(w => {
+            w.addEventListener("click", (e) => {
+           
+           const tool = w.dataset.tool
+           localStorage.setItem('bestel-item' + tool, tool);
+           window.open("bestellen.html#GereedschappenTitel", "_self");
+            })
+        })
 
 //check
 function check(x,y,z,a){
-        if (x.style.display == "url('Images/check-groen.png')"){
-        x.style.display = "none"
+
+    if (x.style.backgroundImage == "url('Images/check-groen.png')" ){
+        x.style.backgroundImage = "none" 
         y.style.textDecoration = "none"
         z.style.color = "black";
         } else {
-        x.style.display = "url('Images/check-groen.png')" 
-        y.style.textDecoration = "line-through"
-        z.style.color = "#999999";
+            x.style.backgroundImage = "url('Images/check-groen.png')" 
+            y.style.textDecoration = "line-through"
+            z.style.color = "#999999";  
         }
-    localStorage.setItem("checked" + a, a)
+        localStorage.setItem("checked" + a, a)
 }
 
+// Check from local storage
 const checkId = document.querySelectorAll(".check-id");
 const arrayCheck = Array.from(checkId);
 
@@ -105,6 +128,7 @@ arrayCheck.forEach(check => {
     getLineThru.style.color = "#999999";
 })
 
+// Checken
 function click(){
 
     const checken = document.getElementByID("checkvb");
@@ -625,13 +649,6 @@ function click64(){
     check(checken, lineThru, lineThru, data); 
 }
 
-// In winkelwagen
-
-function bestelFolie(){
-    localStorage.setItem('bestel-item', "folie");
-
-    window.open("bestellen.html#GereedschappenTitel", "_self");
-}
 
 
 
