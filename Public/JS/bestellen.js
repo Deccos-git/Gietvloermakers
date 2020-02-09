@@ -137,12 +137,14 @@ console.log(assOptions)
     //Gereedschappen
     const tools = document.querySelectorAll(".tool")
 
+            // array met tool prijs
     const arrayTools = [];
-
+            // array met tool id's
     const arrayID = [];
             
   
     tools.forEach(t => {
+
     
         if(t.checked == true){
     const toolPrijs = t.value;
@@ -159,16 +161,18 @@ console.log(assOptions)
     }) 
 
             // gereedschappen naar localStorage
-            localStorage.setItem('bestelItem' + arrayID, arrayID)
+            localStorage.setItem('bestelItem', arrayID)
 
-    const DOM = document.getElementById("prijs-gereedschappen");
+            console.log(arrayID)
 
-    function getSum(total, num) {
-        return total + num;
-      }
-    const toolTotal = arrayTools.reduce(getSum, 0)
+            const DOM = document.getElementById("prijs-gereedschappen");
 
-    DOM.innerHTML = "€ " + toolTotal
+            function getSum(total, num) {
+                return total + num;
+            }
+            const toolTotal = arrayTools.reduce(getSum, 0)
+
+            DOM.innerHTML = "€ " + toolTotal
 
         // Totaal
 
@@ -234,14 +238,18 @@ const winkeltjeArray = Array.from(winkeltje);
 
 winkeltjeArray.forEach(w => {
    
-    const tool = w.dataset.id
+    const tool = w.id
 
         const storage = localStorage.getItem('bestel-item' + tool);
 
         const afvinken = document.getElementById(storage)
 
-        console.log(afvinken)
+        if(afvinken == null){
+            return console.log("Disregard error")
+        } else {
+            afvinken.checked = true
+        }
 
-        afvinken.checked = true
+        
        
 })

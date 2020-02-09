@@ -227,8 +227,8 @@ h1{
 }
 
 .modal div{
-    width: 30%;
-    margin: 30px 100px 30px 100px;
+    width: 100%;
+    margin: 30px 0px 30px 0px;
     text-align: center;
 }
 
@@ -239,6 +239,7 @@ h1{
 .weg{
     align-self: center;
     cursor: pointer;
+    position: fixed;
 }
 
 .bestel-item{
