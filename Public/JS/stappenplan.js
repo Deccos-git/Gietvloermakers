@@ -81,7 +81,115 @@ function dag5(){
             })   
         });
 
-    
+        //youtube functie
+
+        function youtube(a,b){
+            const DOM = document.getElementsByClassName("youtube");
+            const node = DOM[a]
+
+            console.log(node)
+
+            const h2 = document.createElement("h2")
+            const iframe = document.createElement("iframe")
+                iframe.setAttribute("height", "315")
+                iframe.setAttribute("width", "420")
+                iframe.setAttribute("src", b)
+
+            console.log(b)
+                
+            h2.innerHTML= "Uitleg"
+
+            node.appendChild(h2)
+            node.appendChild(iframe)
+        }
+
+        // Modal diplay block bij onclick
+        function modal(a,b){
+            const modalBG = document.getElementsByClassName("modalBG");
+            const mode = modalBG[a]
+
+            if(mode == undefined){
+                return console.log("disregard error")
+            } else {
+            mode.style.display = "block";
+            }
+            
+        }
+
+        modal()
+
+        function folie(){
+            modal(0)
+            youtube(0, "https://www.youtube.com/embed/tgbNymZ7vqY")
+        }
+
+        function plakband(){
+            modal(1)
+            youtube(1, "https://www.youtube.com/embed/tgbNymZ7vqY")
+        }
+
+        function plasticZeil(){
+            modal(2)
+            youtube(2, "https://www.youtube.com/embed/tgbNymZ7vqY")
+        }
+
+        function boormachine(){
+            modal(3)
+        }
+
+        function mengspiraal(){
+            modal(4)
+        }
+
+        function vlakkeSpaan(){
+            modal(5)
+        }
+
+        function wegwerpkwast(){
+            modal(5)
+        }
+
+        function handschoenen(){
+            modal(7)
+        }
+
+        function veiligheidsbril(){
+            modal(8)
+        }
+
+        function kniebeschermers(){
+            modal(9)
+        }
+
+        function reinigingsdoekjes(){
+            modal(10)
+        }
+
+        function kwast(){
+            modal(11)
+        }
+
+        function emmers(){
+            modal(12)
+        }
+
+        function schuurpapier(){
+            modal(13)
+        }
+
+        function microvezelRoller(){
+            modal(14)
+        }
+
+        function rollerBeugel(){
+            modal(15)
+        }
+
+        function beugelStok(){
+            modal(16)
+        }
+
+
 
 //check
 function check(x,y,z,a){
@@ -108,7 +216,13 @@ arrayCheck.forEach(check => {
     const getData = localStorage.getItem("checked" + data)
 
     const getChecken = document.getElementById("check" + getData);
-    getChecken.style.backgroundImage = "url('Images/check-groen.png')"
+
+    if(getChecken == null){
+        return (console.log("disregard error"))
+    } else {
+        getChecken.style.backgroundImage = "url('Images/check-groen.png')"
+    }
+
     const getLineThru = document.getElementById("1." + getData);
     getLineThru.style.textDecoration = "line-through"
     getLineThru.style.color = "#999999";
@@ -633,83 +747,6 @@ function click64(){
     const data = checken.dataset.nr
     
     check(checken, lineThru, lineThru, data); 
-}
-
-// Modal diplay block bij onclick
-function modal(a){
-    const modalBG = document.getElementsByClassName("modalBG");
-    const mode = modalBG[a]
-    mode.style.display = "block";
-}
-
-modal()
-
-function folie(){
-    modal(0)
-}
-
-function plakband(){
-    modal(1)
-}
-
-function plasticZeil(){
-    modal(2)
-}
-
-function boormachine(){
-    modal(3)
-}
-
-function mengspiraal(){
-    modal(4)
-}
-
-function vlakkeSpaan(){
-    modal(5)
-}
-
-function wegwerpkwast(){
-    modal(5)
-}
-
-function handschoenen(){
-    modal(7)
-}
-
-function veiligheidsbril(){
-    modal(8)
-}
-
-function kniebeschermers(){
-    modal(9)
-}
-
-function reinigingsdoekjes(){
-    modal(10)
-}
-
-function kwast(){
-    modal(11)
-}
-
-function emmers(){
-    modal(12)
-}
-
-function schuurpapier(){
-    modal(13)
-}
-
-function microvezelRoller(){
-    modal(14)
-}
-
-function rollerBeugel(){
-    modal(15)
-}
-
-function beugelStok(){
-    modal(16)
 }
 
 

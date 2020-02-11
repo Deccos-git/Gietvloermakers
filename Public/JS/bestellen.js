@@ -1,16 +1,16 @@
+// localStorage.clear()
+
 // m2 uit localstorage
 const m2 = document.getElementById("m2");
 const m2Storage = localStorage.getItem('prijs-m2');
 
-m2.value = m2Storage
+if(m2 == null){
+    console.log("disregard error")
+} else {
+    m2.value = m2Storage
+}
 
-// Assistentie uit localstorage
-const ass = document.getElementById("assistentie");
-const assStorage = localStorage.getItem('assistentie');
-
-ass.value = assStorage
-
-// 100 km rond Zwolle -alert bij Assistentie
+// // 100 km rond Zwolle -alert bij Assistentie
 function zwolle(){
 
     const ass = document.getElementById("assistentie");
@@ -20,14 +20,42 @@ function zwolle(){
     if (assSelect == 500){
     const zwolle = document.getElementById("zwolle");
     zwolle.style.display = "block"
-    } else {
+    } else if(assSelect == 0){
         zwolle.style.display = "none"
+    } else {
+        console.log("disregard error")
     }
 }
 
-//Prijs berekenen
+// // Assistentie uit localstorage
+const ass = document.getElementById("assistentie");
+const assStorage = localStorage.getItem('assistentie');
 
+if(assStorage == null){
+    console.log("disregard error")
+} else {
+    ass.value = assStorage
+}
+
+//Prijs berekenen
 function bereken(){
+
+    // kleurkeuze alert
+    const kleurSelect = document.getElementById("kleurselect");
+
+    // if(kleurSelect.innerHTML == ""){
+    //     kleurSelect.style.borderWidth = "1px"
+    //     kleurSelect.style.borderStyle = "solid"
+    //     kleurSelect.style.borderColor = "rgb(206, 74, 105)"
+    //     kleurSelect.style.backgroundColor = "rgb(206, 74, 105)"
+    //     kleurSelect.style.color = "white"
+    //     kleurSelect.innerHTML = "Nog geen kleur gekozen? Bekijk de <a href='kleuren.html' >Kleurencollectie</a>"
+    //     window.location.href = "#uw-kleur"
+
+
+    // } else {
+    //     console.log("kleur gekozen")
+    // }
 
     // m2
     const m2 = document.getElementById("m2");
@@ -42,15 +70,17 @@ function bereken(){
 
     // Prijs variabelen doorlopen
     let prijsVariable = 0
-    if (m2value == 0){
+//     if (m2value == 0){
 
 
-        window.location.href = "#aantal-m2";
-        m2.style.borderColor = "red"
-        alert.style.display = "block"
+//         window.location.href = "#aantal-m2";
+//         m2.style.borderColor = "red"
+//         alert.style.display = "block"
             
-    }
-   else if (m2value > 0 && m2value < 11){
+//     }
+//    else 
+
+    if (m2value > 0 && m2value < 11){
         prijsVariable = 454
     } else if (m2value > 10 && m2value < 16) {
         prijsVariable = 523    
@@ -107,7 +137,12 @@ function bereken(){
     } else if (m2value > 145 && m2value < 151) {
         prijsVariable = 3789                           
     } else {
-        alert (" Uw aanvraag is dermate groot, dat wij u willen vragen even contact op te nemen met een van onze adviseurs op info@gietvloermakers.nl of 06 432 378 66")     
+        alert.innerHTML = " Uw aanvraag is dermate groot, dat wij u willen vragen even contact op te nemen met een van onze adviseurs op info@gietvloermakers.nl of 06 432 378 66" 
+        window.location.href = "#aantal-m2";  
+        alert.style.display = "block" 
+        m2.style.borderColor = "red"
+        alert.style.color = "white"
+        alert.style.padding = "5px" 
     }
 
     const m2Number =  parseInt(prijsVariable, 10)
@@ -120,12 +155,13 @@ function bereken(){
 
     // Assistentie
     const ass = document.getElementById("assistentie");
-    const assOptions = ass.options;
-console.log(assOptions)
 
-    const assSelect = assOptions[assOptions.selectedIndex].value;
-    
-    console.log(assSelect)  
+    const assOptions = ass.options;
+
+    const assValue = assOptions[assOptions.selectedIndex]
+
+    const assSelect = assValue.value;
+  
     const assNumber = parseInt(assSelect, 10)
 
             // Assistentie naar localStorage
@@ -183,10 +219,20 @@ const totaalEuro =  m2Number + assNumber + toolTotal
 totaal.innerHTML = "€ " + totaalEuro 
 
       // Anchor link naar prijsoverzicht
-      if (m2value > 0){
-        m2.style.borderColor = "black"
-        alert.style.display = "none"
-window.location.href = "#uw-prijs";
+      if (m2value == 0){
+        window.location.href = "#aantal-m2";
+        m2.style.borderColor = "red"
+        alert.style.display = "block"
+      } else if (kleurSelect.innerHTML == ""){
+        kleurSelect.style.borderWidth = "1px"
+        kleurSelect.style.borderStyle = "solid"
+        kleurSelect.style.borderColor = "rgb(206, 74, 105)"
+        kleurSelect.style.backgroundColor = "rgb(206, 74, 105)"
+        kleurSelect.style.color = "white"
+        kleurSelect.innerHTML = "Nog geen kleur gekozen? Bekijk de <a href='kleuren.html' >Kleurencollectie</a>"
+        window.location.href = "#uw-kleur"
+      } else {
+        window.location.href = "#uw-prijs";
       }
 };
 
@@ -197,8 +243,7 @@ function bestel(){
    localStorage.setItem('totaal-prijs', totaal.innerHTML);
    const bereken = document.getElementById("button2");
    const controleer = document.getElementById("button3")
-
-   console.log(totaal)
+   const vloerPrijs = document.getElementById("prijs-vloer")
 
    if (totaal.innerHTML == "€0"){
        function berekenen(){
@@ -209,29 +254,42 @@ function bestel(){
         controleer.click()
         });
     
-   } else {
+   } else if (vloerPrijs.innerHTML == "€ 0"){
+    
+    const vloerAlert = document.getElementById("vloer-alert")
+
+    vloerPrijs.style.color = "rgb(206, 74, 105)"
+    vloerAlert.style.display = "block"
+    window.location.href = "#uw-prijs"
+    } else {
     window.open("controleer.html", "_self")
-   }
+   } 
 };
 
 // Gekozen kleur inladen
-
 const kleurSelect = document.getElementById("kleurselect");
 
 const kleurKeuze = localStorage.getItem('kleur');
 
-kleurSelect.innerHTML = kleurKeuze;
+if(kleurSelect == null){
+    console.log("disregard error")
+} else {
+    kleurSelect.innerHTML = kleurKeuze;
+}
+
 
         // Vloerkleur naar localstorage voor controle
         const kleurID = document.getElementsByClassName("colour");
 
-        const kleurSend = kleurID[0].id
+        if(kleurID.length == 0){
+            console.log("disregard error")
+        } else {
+            const kleurSend = kleurID[0].id
 
-        localStorage.setItem('vloerkleur', kleurSend)
-
+            localStorage.setItem('vloerkleur', kleurSend)
+        }
 
  // Gereedschappen uit localstorage
-
 const winkeltje = document.getElementsByClassName("tool");
 
 const winkeltjeArray = Array.from(winkeltje);

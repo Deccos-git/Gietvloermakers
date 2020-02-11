@@ -80,6 +80,10 @@
       height: 200px;
       background-color: white;
       margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
   }
 
   .prijs{
@@ -127,7 +131,7 @@
 }
 
 #andere-kleur{
-  font-size: 10px;
+  font-size: 12px;
   margin: 10px;
 }
 
@@ -144,10 +148,19 @@
 
 #zwolle{
   font-size: 14px;
-  border: 2px solid #A00025;
+  border: 2px solid rgb(206, 74, 105);
   border-radius: 5px;
   padding: 10px;
   display: none;
+}
+
+#vloer-alert{
+  display: none;
+  padding: 5px;
+  border: 1px solid rgb(206, 74, 105);
+  border-radius: 15px;
+  color: white;
+  background-color: rgb(206, 74, 105);
 }
 
 

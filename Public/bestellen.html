@@ -40,12 +40,12 @@
                 <p id="aantal-m2">Aantal m2</p>
                 <input id="m2" type="number">
                 <div id="alert-m2"><p>U bent vergeten uw gewenste aantal vierkante meters in te vullen!</p></div>
-                <p>Uw kleur</p>
+                <p id="uw-kleur">Uw kleur</p>
                 <div id="kleurselect">Nog geen kleur gekozen? Bekijk de <a href="kleuren.html" >Kleurencollectie</a></div>
                 <a href="kleuren.html"><p id="andere-kleur">Kies een andere kleur</p></a>
                 <p>1 dag assistentie bij het gieten van de kleur </p>
                 <select id="assistentie" onchange="zwolle()">
-                    <option type="number" value=0>Nee, bedankt (€0)</option>
+                    <option type="number" value=0 selected>Nee, bedankt (€0)</option>
                     <option type="number" value=500>Graag (€500)</option>
                 </select>
                 <p id="zwolle"><b>Let op:</b> woont u meer dan €100 rond Zwolle, dan geldt er een meerprijs van €0,19 per km.</p>
@@ -80,6 +80,7 @@
                     <h2 id="uw-prijs">Uw prijs</h2>
                     <p class="main-prijs-titel"> Primer, gietvloer en lak</p>
                     <p class="prijs" id="prijs-vloer">€0</p>
+                        <a href="#aantal-m2"><div id="vloer-alert">Selecteer het gewenste vloeroppervlakte</div></a>
                     <p class="main-prijs-titel">1 dag assistentie</p>
                     <p class="prijs" id="prijs-assistentie">€0</p>
                     <p class="main-prijs-titel">Gereedschappen</p>
