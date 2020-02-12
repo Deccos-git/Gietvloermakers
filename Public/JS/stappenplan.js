@@ -206,6 +206,31 @@ function dag5(){
             modal(17)
             youtube(17, "https://www.youtube.com/embed/tgbNymZ7vqY")
         }
+
+        function mengplek(){
+            modal(18)
+            youtube(18, "https://www.youtube.com/embed/tgbNymZ7vqY")
+        }
+
+        function schraplaag(){
+            modal(19)
+            youtube(19, "https://www.youtube.com/embed/tgbNymZ7vqY")
+        }
+
+        function gietvloer(){
+            modal(20)
+            youtube(20, "https://www.youtube.com/embed/tgbNymZ7vqY")
+        }
+
+        function laklaag(){
+            modal(21)
+            youtube(21, "https://www.youtube.com/embed/tgbNymZ7vqY")
+        }
+
+        function afronden(){
+            modal(22)
+            youtube(22, "https://www.youtube.com/embed/tgbNymZ7vqY")
+        }
         
 
 

@@ -410,7 +410,7 @@
     <section class="modalBG">
         <img class="weg" src="Images/kruis.png" width="55" height="28">
             <div class="modal">
-                <h1>Vochtgehalte van de ondergrond bepalen</h1>
+                <h1 class="modal-h1">Vochtgehalte van de ondergrond bepalen</h1>
                 <div class="youtube" id="uitleg"></div>
                 <div>
                     <h2>Tekst</h2>
@@ -423,11 +423,11 @@
             </div>
         </section>
 
-        <!-- Vochtgehalte van de ondergrond bepalen -->
+        <!-- Mengplek maken -->
     <section class="modalBG">
         <img class="weg" src="Images/kruis.png" width="55" height="28">
             <div class="modal">
-                <h1>Vochtgehalte van de ondergrond bepalen</h1>
+                <h1 class="modal-h1">Mengplek maken</h1>
                 <div class="youtube" id="uitleg"></div>
                 <div>
                     <h2>Tekst</h2>
@@ -440,11 +440,11 @@
             </div>
         </section>
 
-        <!-- Vochtgehalte van de ondergrond bepalen -->
+        <!-- Schraplaag aanbrengen -->
     <section class="modalBG">
         <img class="weg" src="Images/kruis.png" width="55" height="28">
             <div class="modal">
-                <h1>Vochtgehalte van de ondergrond bepalen</h1>
+                <h1 class="modal-h1">De schraplaag aanbrengen</h1>
                 <div class="youtube" id="uitleg"></div>
                 <div>
                     <h2>Tekst</h2>
@@ -457,11 +457,11 @@
             </div>
         </section>
 
-        <!-- Vochtgehalte van de ondergrond bepalen -->
+        <!-- Gietvloer aanbrengen -->
     <section class="modalBG">
         <img class="weg" src="Images/kruis.png" width="55" height="28">
             <div class="modal">
-                <h1>Vochtgehalte van de ondergrond bepalen</h1>
+                <h1 class="modal-h1">De gietvloer aanbrengen</h1>
                 <div class="youtube" id="uitleg"></div>
                 <div>
                     <h2>Tekst</h2>
@@ -473,6 +473,42 @@
                 </div>
             </div>
         </section>
+
+        <!-- Laklaag aanbrengen -->
+    <section class="modalBG">
+        <img class="weg" src="Images/kruis.png" width="55" height="28">
+            <div class="modal">
+                <h1 class="modal-h1">De laklaag aanbrengen</h1>
+                <div class="youtube" id="uitleg"></div>
+                <div>
+                    <h2>Tekst</h2>
+                    <p>Lorum Ipsum</p>
+                </div>
+                <div>
+                    <h2>Toch nog een vraag?</h2>
+                    <a href="experts.html">Neem contact op met onze experts voor meer ondersteuning</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Afronden -->
+    <section class="modalBG">
+        <img class="weg" src="Images/kruis.png" width="55" height="28">
+            <div class="modal">
+                <h1 class="modal-h1">Afronden</h1>
+                <div class="youtube" id="uitleg"></div>
+                <div>
+                    <h2>Tekst</h2>
+                    <p>Lorum Ipsum</p>
+                </div>
+                <div>
+                    <h2>Toch nog een vraag?</h2>
+                    <a href="experts.html">Neem contact op met onze experts voor meer ondersteuning</a>
+                </div>
+            </div>
+        </section>
+
+<!-- Stappenoverzicht -->
 
       <!--Dag 1-->  
     <div id="Dag1">
@@ -506,7 +542,7 @@
                         <div class="main">
                             <div class="stap">
                                 <div onclick ="click()" id="checkvb"></div>
-                                    <p id="voorbeeld">1. Besluit je eigen unieke gietvloer te maken met GietvloerMakers</p>
+                                    <p id="voorbeeld">1. Besluit je eigen gietvloer te maken met GietvloerMakers</p>
                                                 
                                 </div>
                             <div class="stap">
@@ -528,7 +564,7 @@
                 <div class="deel1">
                     <div class="onderwerp">
                         <h3>Taak</h3>
-                            <h2>Mengplek maken</h2>
+                            <h2 onclick="mengplek()">Mengplek maken</h2>
                     </div>
                     <div class="benodigdheden">
                         <h3>Benodigdheden</h3>
@@ -555,103 +591,6 @@
                     </div>
                 </div>
             </section>
-
-            <section id="stappenoverzicht">
-                <div class="deel1">
-                    <div class="onderwerp">
-                        <h3>Taak</h3>
-                            <h2>Schraplaag aanbrengen</h2>
-                    </div>
-                    <div class="benodigdheden">
-                        <h3>Benodigdheden</h3>
-                            <ul>
-                                <li onclick="boormachine()">Boormachine</li>
-                                <li onclick="mengspiraal()">Mengspiraal</li>
-                                <li onclick="vlakkeSpaan()">Vlakke spaan</li>
-                                <li onclick="wegwerpKwast()">Wegwerp kwast</li>
-                                <li onclick="schrapmassaE()">Schrapmassa E</li>
-                                <li onclick="handschoenen()">Handschoenen</li>
-                                <li onclick="veiligheidsbril()">Veiligheidsbril</li>
-                                <li onclick="kniebeschermers()">Kniebeschermers</li>
-                            </ul>
-                    </div>                
-                </div>
-                <div class="stappen">
-                    <div class="container">
-                        <h3>Stappen</h3>
-                            <div class="main">
-                                <div class="stap">
-                                    <div class="check-id" data-nr="5" onclick ="click5()" id="check5"></div>
-                                        <p id="1.5">1. Bepaal waar u wilt beginnen met het aanbrengen van de schraplaag en waar u wilt eindigen.</p>
-                                </div>
-                                <div class="stap">
-                                    <div class="check-id" data-nr="6" onclick ="click6()" id="check6"></div>
-                                        <p id="1.6">2. Doe je handschoenen, bril en kniebeschermers aan.</p>                        
-                                        
-                                </div>
-                                <div class="stap">
-                                    <div class="check-id" data-nr="7" onclick ="click7()" id="check7"></div>
-                                        <p id="1.7">3. Maak per keer 1 set aan.</p>                        
-                                        
-                                </div>
-                                <div class="stap">
-                                    <div class="check-id" data-nr="8" onclick ="click8()" id="check8"></div>
-                                        <p id="1.8">4. Giet component B bij component A in het blik.</p>                        
-                                        
-                                </div>
-                                <div class="stap">
-                                    <div class="check-id" data-nr="9" onclick ="click9()" id="check9"></div>
-                                        <p id="1.9">5. Doe de mengspiraal in de boormachine en meng de inhoud van het blik 1 minuut lang door elkaar.</p>                        
-                                        
-                                </div>
-                                <div class="stap">
-                                    <div class="check-id" data-nr="10" onclick ="click10()" id="check10"></div>
-                                        <p id="1.10">6. Breng het mensel met de spaan aan.</p>                        
-                                        
-                                </div>
-                                <div class="stap">
-                                    <div class="check-id" data-nr="11" onclick ="click11()" id="check11"></div>
-                                        <p id="1.11">7. Giet een rilletje van c.a. 4 cm breed uit over de vloer, parallel aan de muur en 1 meter uit de kant.</p>
-                                </div>
-                                <div class="stap">
-                                    <div class="check-id" data-nr="12" onclick ="click12()" id="check12"></div>
-                                        <p id="1.12">8. Houd de spaan 45 graden schuin ten opzichte van de vloer.</p>                        
-                                        
-                                </div>
-                                <div class="stap">
-                                    <div class="check-id" data-nr="13" onclick ="click13()" id="check13"></div>
-                                        <p id="1.13">9. Spaan de massa uit met een lichte druk op de spaan. Zorg dat de spaan de ondergrond raakt. Je hoort een, als je het goed doet, een schrapend geluid.</p>                        
-                                        
-                                </div>
-                                <div class="stap">
-                                    <div class="check-id" data-nr="14" onclick ="click14()" id="check14"></div>
-                                        <p id="1.14">10. Zorg voor een goede verdeling. Voorkom het ontstaan van ribbels</p>                        
-                                        
-                                </div>
-                                <div class="stap">
-                                    <div class="check-id" data-nr="15" onclick ="click15()" id="check15"></div>
-                                        <p id="1.15">11. Giet nu telkens een volgende ril uit en verdeel de ril met de spaan.</p>                        
-                                        
-                                </div>
-                                <div class="stap">
-                                    <div class="check-id" data-nr="16" onclick ="click16()" id="check16"></div>
-                                        <p id="1.16">12. Reinig de spaan met de reinigingsdoekjes.</p>                        
-                                        
-                                </div>
-                                <div class="stap">
-                                    <div class="check-id" data-nr="17" onclick ="click17()" id="check17"></div>
-                                        <p id="1.17">15. Doe als allerlaatste je handschoenen uit.</p>                        
-                                        
-                                </div>
-                                <div class="stap">
-                                    <div class="check-id" data-nr="18" onclick ="click18()" id="check18"></div>
-                                        <p id="1.18">14. Laat al het afval staan op de mengplek.</p>                        
-                                        
-                                </div>
-                            </div>
-                    </div>
-                </div>
-            </section>
         </div>
 
         <!--Dag 2-->  
@@ -664,7 +603,7 @@
                                     <div class="deel1">
                                             <div class="onderwerp">
                                                 <h3>Taak</h3>
-                                                    <h2>De schraplaag aanbrengen</h2>
+                                                    <h2 onclick="schraplaag()">De schraplaag aanbrengen</h2>
                                             </div>
                                             <div class="benodigdheden">
                                                 <h3>Benodigdheden</h3>
@@ -766,7 +705,7 @@
                                 <div class="deel1">
                                         <div class="onderwerp">
                                             <h3>Taak</h3>
-                                                <h2>De gietvloer aanbrengen</h2>
+                                                <h2 onclick="gietvloer()">De gietvloer aanbrengen</h2>
                                         </div>
                                         <div class="benodigdheden">
                                             <h3>Benodigdheden</h3>
@@ -873,7 +812,7 @@
                             <div class="deel1">
                                     <div class="onderwerp">
                                         <h3>Taak</h3>
-                                            <h2>De laklaag aanbrengen</h2>
+                                            <h2 onclick="laklaag()">De laklaag aanbrengen</h2>
                                     </div>
                                     <div class="benodigdheden">
                                         <h3>Benodigdheden</h3>
@@ -998,7 +937,7 @@
                         <div class="deel1">
                                 <div class="onderwerp">
                                     <h3>Taak</h3>
-                                        <h2>Afronden</h2>
+                                        <h2 onclick="afronden()">Afronden</h2>
                                 </div>
                                 <div class="benodigdheden">
                                     <h3>Benodigdheden</h3>
