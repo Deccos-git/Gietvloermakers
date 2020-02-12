@@ -94,17 +94,15 @@ function dag5(){
                 iframe.setAttribute("height", "315")
                 iframe.setAttribute("width", "420")
                 iframe.setAttribute("src", b)
-
-            console.log(b)
                 
-            h2.innerHTML= "Uitleg"
+            h2.innerHTML= "Bekijk video"
 
             node.appendChild(h2)
             node.appendChild(iframe)
         }
 
-        // Modal diplay block bij onclick
-        function modal(a,b){
+        // Modal gereedschappen 
+        function modal(a){
             const modalBG = document.getElementsByClassName("modalBG");
             const mode = modalBG[a]
 
@@ -135,76 +133,98 @@ function dag5(){
 
         function boormachine(){
             modal(3)
+            youtube(3, "https://www.youtube.com/embed/tgbNymZ7vqY")
         }
 
         function mengspiraal(){
             modal(4)
+            youtube(4, "https://www.youtube.com/embed/tgbNymZ7vqY")
         }
 
         function vlakkeSpaan(){
             modal(5)
+            youtube(5, "https://www.youtube.com/embed/tgbNymZ7vqY")
         }
 
         function wegwerpkwast(){
-            modal(5)
+            modal(6)
+            youtube(6, "https://www.youtube.com/embed/tgbNymZ7vqY")
         }
 
         function handschoenen(){
             modal(7)
+            youtube(7, "https://www.youtube.com/embed/tgbNymZ7vqY")
         }
 
         function veiligheidsbril(){
             modal(8)
+            youtube(8, "https://www.youtube.com/embed/tgbNymZ7vqY")
         }
 
         function kniebeschermers(){
             modal(9)
+            youtube(9, "https://www.youtube.com/embed/tgbNymZ7vqY")
         }
 
         function reinigingsdoekjes(){
             modal(10)
+            youtube(10, "https://www.youtube.com/embed/tgbNymZ7vqY")
         }
 
         function kwast(){
             modal(11)
+            youtube(11, "https://www.youtube.com/embed/tgbNymZ7vqY")
         }
 
         function emmers(){
             modal(12)
+            youtube(12, "https://www.youtube.com/embed/tgbNymZ7vqY")
         }
 
         function schuurpapier(){
             modal(13)
+            youtube(13, "https://www.youtube.com/embed/tgbNymZ7vqY")
         }
 
         function microvezelRoller(){
             modal(14)
+            youtube(14, "https://www.youtube.com/embed/tgbNymZ7vqY")
         }
 
         function rollerBeugel(){
             modal(15)
+            youtube(15, "https://www.youtube.com/embed/tgbNymZ7vqY")
         }
 
         function beugelStok(){
             modal(16)
+            youtube(16, "https://www.youtube.com/embed/tgbNymZ7vqY")
         }
 
+        // Modal taken
+        function vocht(){
+            modal(17)
+            youtube(17, "https://www.youtube.com/embed/tgbNymZ7vqY")
+        }
+        
 
 
 //check
 function check(x,y,z,a){
 
-    if (x.style.backgroundImage == "url('Images/check-groen.png')" ){
+    if (x.style.backgroundImage == 'url("Images/check-groen.png")'){
         x.style.backgroundImage = "none" 
         y.style.textDecoration = "none"
-        z.style.color = "black";
+        z.style.color = "#3d3d3d";
+        localStorage.removeItem("checked" + a)
         } else {
-            x.style.backgroundImage = "url('Images/check-groen.png')" 
+            x.style.backgroundImage = 'url("Images/check-groen.png")' 
             y.style.textDecoration = "line-through"
             z.style.color = "#999999";  
-        }
-        localStorage.setItem("checked" + a, a)
+            localStorage.setItem("checked" + a, a)
+        }  
 }
+
 
 // Check from local storage
 const checkId = document.querySelectorAll(".check-id");
