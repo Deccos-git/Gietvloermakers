@@ -32,6 +32,8 @@ function indi(){
     cultuur.style.display = "none";
     luxe.style.display = "none";
     klassiekers.style.display = "none";
+
+    // window.location.href = "#industrieel";  
 }
 
 function sprt(){

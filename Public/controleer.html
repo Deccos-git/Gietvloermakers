@@ -14,28 +14,29 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Prata&display=swap" rel="stylesheet">
 </head>
 <body>
-        <nav>
-            <div id="menu">
-                <a id="logo" href="index.html"><img src="Images/logo350x50Rood.png" height="50px" width="300"></a>
-                <div onclick="hamburgerMenu()" id="hamburger-menu"></div>
-                <ul>
-                    <li><a href="stappenplan.html" >Stappenplan</a></li>
-                    <li><a href="kleuren.html" >Kleurencollectie</a></li>
-                    <li><a href ="bestellen.html">Prijs</a></li>
-                    <li><a href ="experts.html">Onze experts</a></li>
-                </ul>
+    <nav>
+        <div id="menu">
+            <a id="logo" href="index.html"><img src="../Images/logo350x50Rood.png" height="50px" width="300"></a>
+            <div onclick="hamburgerMenu()" id="hamburger-menu"></div>
+            <ul>
+                <li><a href="/stappenplan.html" >Stappenplan</a></li>
+                <li><a href="/kleuren.html" >Kleurencollectie</a></li>
+                <li><a href ="/experts.html">Onze experts</a></li>
+                <li><a href ="/bestellen.html">Prijs</a></li>
+            </ul>
+    </div>
+        <div id="menuItems">
+            <li><a href="../stappenplan.html" >Stappenplan</a></li>
+            <li><a href="../kleuren.html" >Kleurencollectie</a></li>
+            <li><a href ="../experts.html">Onze experts</a></li>
+            <li><a href ="../bestellen.html">Prijs</a></li>
         </div>
-            <div id="menuItems">
-                <li><a href="stappenplan.html" >Stappenplan</a></li>
-                <li><a href="kleuren.html" >Kleurencollectie</a></li>
-                <li><a href ="bestellen.html">Prijs</a></li>
-                <li><a href ="experts.html">Onze experts</a></li>
-            </div>
-        </nav>
+    </nav>
+
  
                 <h1 id="kiezer">Maak uw bestelling compleet</h1>
             <div id="controle-overzicht">
-                <form id="controlleer-form" action="api/user" method="post" enctype="application/x-www-form-urlencoded">
+                <form id="controlleer-form" action="/user" method="post" enctype="application/x-www-form-urlencoded">
                     <div class="controleer-div">
                         <h2>Uw bestelling</h2>
                         <p>Aantal m2</p>
@@ -83,24 +84,29 @@
                 </div>
 
 
-<footer id="footer">
-    <div class="footer-div">
-        <h1>GietvloerMakers</h1>
-        <h3>Maak eenvoudig je eigen gietvloer</h3>
-    </div>
-    <div class="footer-div">
-            <h1>Menu</h1>
-            <a href="kleuren.html"><h3>Kleurencollectie</h3></a>
-            <a href="stappenplan.html"><h3>Stappenplan</h3></a>
-            <a href="bestellen.html"><h3>Bestellen</h3></a>
-            <a href="experts.html"><h3>Onze experts</h3></a>
-    </div>
-    <div class="footer-div">
-            <h1>Contact</h1>
-            <p><img class="icon" src="Images/tel.png" height=20px>06 432 378 66</p>
-            <p><img class="icon" src="Images/mail.png" height=20px>info@gietvloermakers.nl</li></p>
-    </div>
-</footer>
+                <footer id="footer">
+                    <div class="footer-div">
+                        <img src="Images/logo350x50Rood.png" alt="Logo Gietvloermakers">
+                    </div>
+                    <div class="footer-div">
+                        <p id="slogan-footer">Maak eenvoudig <br> 
+                            je eigen gietvloer</p>
+                    </div>
+                    <div class="footer-div" id="socials">
+                        <a href="https://www.youtube.com/channel/UCYdcC12etngH1QN4p8ldUvQ"><img src="Images/logo-youtube.png" alt="Logo youtube Gietvloermakers" height="30px" width="50px"></a>
+                    </div>
+                    <div class="footer-div" id="socials">
+                        <a href="https://www.facebook.com/Gietvloermakers-108859007269670"><img src="Images/Logo-facebook.png" alt="Logo Facebook Gietvloermakers" height="30px" width="30px"></a>
+                    </div>
+                    <div class="footer-div">
+                        <p>Een vraag over het maken <br> 
+                            van je eigen gietvloer?
+                        </p>
+                    </div>
+                    <div class="footer-div">
+                        <a href="experts.html"><h2 id="experts-footer">Onze experts</h2></a>
+                    </div>
+                </footer>
     
 </body>
 <script type="text/javascript" src="JS/index.js"></script>

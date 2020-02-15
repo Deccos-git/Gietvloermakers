@@ -7,39 +7,77 @@ const overzicht3 = document.getElementById("Dag3");
 const overzicht4 = document.getElementById("Dag4");
 const overzicht5 = document.getElementById("Dag5");
 
+    // Submenu gedeeltelijk verbergen
+    const menuDag1 = document.getElementById("dag1")
+    const menuDag2 = document.getElementById("dag2")
+    const menuDag3 = document.getElementById("dag3")
+    const menuDag4 = document.getElementById("dag4")
+    const menuDag5 = document.getElementById("dag5")
+
+
+    function load(){
+        menuDag1.style.display = "none"
+        menuDag2.style.display = "block"
+        menuDag3.style.display = "none"
+        menuDag4.style.display = "none"
+        menuDag5.style.display = "none"
+    }
+    window.onload = load()
+
 function dag1(){
     overzicht1.style.display = "block";
     overzicht2.style.display = "none";
     overzicht3.style.display = "none";
     overzicht4.style.display = "none";
     overzicht5.style.display = "none";
+
+    menuDag1.style.display = "none"
+    menuDag2.style.display = "block"
+    menuDag3.style.display = "none"
+    menuDag4.style.display = "none"
+    menuDag5.style.display = "none"
 }
 
 function dag2(){
-
     overzicht1.style.display = "none";
     overzicht2.style.display = "block";
     overzicht3.style.display = "none";
     overzicht4.style.display = "none";
     overzicht5.style.display = "none";
+
+    menuDag1.style.display = "none"
+    menuDag2.style.display = "none"
+    menuDag3.style.display = "block"
+    menuDag4.style.display = "none"
+    menuDag5.style.display = "none"
 }
 
 function dag3(){
-
     overzicht1.style.display = "none";
     overzicht2.style.display = "none";
     overzicht3.style.display = "block";
     overzicht4.style.display = "none";
     overzicht5.style.display = "none";
+
+    menuDag1.style.display = "none"
+    menuDag2.style.display = "none"
+    menuDag3.style.display = "none"
+    menuDag4.style.display = "block"
+    menuDag5.style.display = "none"
 }
 
 function dag4(){
-
     overzicht1.style.display = "none";
     overzicht2.style.display = "none";
     overzicht3.style.display = "none";
     overzicht4.style.display = "block";
     overzicht5.style.display = "none";
+
+    menuDag1.style.display = "none"
+    menuDag2.style.display = "none"
+    menuDag3.style.display = "none"
+    menuDag4.style.display = "none"
+    menuDag5.style.display = "block"
 }
 
 function dag5(){
@@ -49,6 +87,12 @@ function dag5(){
     overzicht3.style.display = "none";
     overzicht4.style.display = "none";
     overzicht5.style.display = "block";
+
+    menuDag1.style.display = "none"
+    menuDag2.style.display = "none"
+    menuDag3.style.display = "none"
+    menuDag4.style.display = "none"
+    menuDag5.style.display = "none"
 }
 
 //Modal
@@ -86,8 +130,6 @@ function dag5(){
         function youtube(a,b){
             const DOM = document.getElementsByClassName("youtube");
             const node = DOM[a]
-
-            console.log(node)
 
             const h2 = document.createElement("h2")
             const iframe = document.createElement("iframe")

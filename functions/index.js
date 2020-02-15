@@ -1,3 +1,4 @@
+const functions = require('firebase-functions');
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
@@ -10,9 +11,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 const urlencodedParser = bodyParser.urlencoded({extended: true});
 
-app.post("/api/user", urlencodedParser, (req, res) => {
-  res.send("Bedankt, je bestelling is verstuurd!")
-  console.log(req.body)
+app.post("/user", urlencodedParser, (req, res) => {
+  res.sendFile('../Public/bedankt.html', {root: __dirname })
   const persGegevens = req.body
 
   const string = JSON.stringify(persGegevens, (key, value) =>{
@@ -22,8 +22,6 @@ app.post("/api/user", urlencodedParser, (req, res) => {
   } else {
       return value
   }
-
-
 }, 1);
 
   var transporter = nodemailer.createTransport({

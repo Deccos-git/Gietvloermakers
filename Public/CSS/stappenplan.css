@@ -39,33 +39,33 @@ h1{
 }
 
 .overzichtdagen h2:hover{
-    border-bottom: 2px solid #3d3d3d;
-    border-top: 2px solid #3d3d3d;
-    border-color: #A00025;
+    border-bottom: 1px solid rgb(201, 79, 107);
+    border-top: 1px solid rgb(201, 79, 107);;
+    border-color: #fff;;
 }
 
 #Dag1{
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
   
 #Dag2{
     display: none;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 #Dag3{
     display: none;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 #Dag4{
     display: none;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 #Dag5{
     display: none;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 #stappenoverzicht{
@@ -203,25 +203,6 @@ h1{
     margin: 0px;
 }
 
-.cursor-animatie{
-    animation-name: cursor;
-    animation-duration: 4s;
-}
-
-@keyframes cursor{
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-
 /* Modal */
 .modalBG{
   display: none; /* Hidden by default */
@@ -241,7 +222,7 @@ h1{
 .modal{
     background-color: #fff;
     margin: 0px;
-    padding: 20px;
+    padding: 0px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -256,16 +237,22 @@ h1{
 
 .modal-h1{
     width: 100%;
+    font-size: 40px;
 }
 
 #uitleg{
-    width: 60%;
+    width: 100%;
 }
 
 .weg{
     align-self: center;
     cursor: pointer;
     position: fixed;
+    margin: 10px;
+    border: 1px solid #A00025;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
 }
 
 .bestel-item{

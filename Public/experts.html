@@ -4,59 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Experts</title>
+    <title>Kleurencollectie</title>
     <script>src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"</script>
     <script>src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"</script>
     <script>src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"</script>
     <link rel="stylesheet" href="CSS/style.css"></link>
-    <link rel="stylesheet" href="CSS/stappenplan.css"></link>
+    <link rel="stylesheet" href="CSS/experts.css"></link>
     <link rel="shortcut icon" href="Images/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Lato|Prata&display=swap" rel="stylesheet">
 </head>
 <body>
-                <nav>
-                    <div id="menu">
-                        <a id="logo" href="index.html"><img src="Images/logo350x50Rood.png" height="50px" width="300"></a>
-                        <div onclick="hamburgerMenu()" id="hamburger-menu"></div>
-                        <ul>
-                            <li><a href="stappenplan.html" >Stappenplan</a></li>
-                            <li><a href="kleuren.html" >Kleurencollectie</a></li>
-                            <li><a href ="bestellen.html">Prijs</a></li>
-                            <li><a href ="experts.html">Onze experts</a></li>
-                        </ul>
+        <section id="headerGietvloeren">
+            <nav>
+                <div id="menu">
+                    <a id="logo" href="index.html"><img src="../Images/logo350x50Rood.png" height="50px" width="300"></a>
+                    <div onclick="hamburgerMenu()" id="hamburger-menu"></div>
+                    <ul>
+                        <li><a href="/stappenplan.html" >Stappenplan</a></li>
+                        <li><a href="/kleuren.html" >Kleurencollectie</a></li>
+                        <li><a href ="/experts.html">Onze experts</a></li>
+                        <li><a href ="/bestellen.html">Prijs</a></li>
+                    </ul>
+            </div>
+                <div id="menuItems">
+                    <li><a href="../stappenplan.html" >Stappenplan</a></li>
+                    <li><a href="../kleuren.html" >Kleurencollectie</a></li>
+                    <li><a href ="../experts.html">Onze experts</a></li>
+                    <li><a href ="../bestellen.html">Prijs</a></li>
                 </div>
-                    <div id="menuItems">
-                        <li><a href="stappenplan.html" >Stappenplan</a></li>
-                        <li><a href="kleuren.html" >Kleurencollectie</a></li>
-                        <li><a href ="bestellen.html">Prijs</a></li>
-                        <li><a href ="experts.html">Onze experts</a></li>
+            </nav>
+        </section>
+
+        <section>
+            <h1 id="kiezer">Onze experts</h1>
+            <div id="fotos">
+                <div class="foto">
+                    <img src="Images/karelkleurClean.png" alt="foto-van-karel" height="400px" width="100%">
+                    <h2>Karel</h2>
+                    <p>Alles begint met heldere communicatie</p>
+                </div>
+                <div class="foto">
+                    <img src="Images/jackyactiefCleanIII.png" alt="foto-van-jacqueline" height="400px" width="100%">
+                    <h2>Jacqueline</h2>
+                    <p>Alles begint met heldere communicatie</p>
+                </div>
+            </div>
+            <div id="contact-experts">
+                <h2>Contact</h2>
+                <div id="contact-inner-div">
+                    <p>Karel en Jacqueline hebben opgeteld 15 jaar ervaring in het maken van
+                        gietvloeren. Ze zijn beide gespecialiseerd in particuliere projecten. 
+                        Ben je aan het overwegen om een eigen gietvloer te maken of heb je 
+                        al besteld bij Gietvloermakers en kom je er niet helemaal uit? 
+                        Neem gerust contact met Karel en Jacqueline op.  
+                    </p>
+                    <div id="contact-methods">
+                        <p><img class="icon" src="Images/tel.png" height=20px>06 432 378 66</p>
+                        <p><img class="icon" src="Images/mail.png" height=15px>info@gietvloermakers.nl</li></p>
                     </div>
-                        </nav>
-            <main>
-                <h1 id="kiezer">Onze experts</h1>
-                <h2>15 jaar ervaring</h2>
-                <h2>Gespecialiseerd in particuliere projecten</h2>
-            </main>
+                </div>
+            </div>
+        </section>
 
-                <footer id="footer">
-                                <div class="footer-div">
-                                    <h1>GietvloerMakers</h1>
-                                    <h3>Maak je eigen unieke gietvloer</h3>
-                                </div>
-                                <div class="footer-div">
-                                        <h1>Menu</h1>
-                                        <a href="kleuren.html"><h3>Kleurencollectie</h3></a>
-                                        <a href="stappenplan.html"></a><h3>Stappenplan</h3></a>
-                                        <a href="bestellen.html"></a><h3>Bestellen</h3></a>
-                                        <a href="experts.html"></a><h3>Onze experts</h3></a>
-                                </div>
-                                <div class="footer-div">
-                                        <h1>Contact</h1>
-                                        <p><img class="icon" src="Images/tel.png" height=20px>06 432 378 66</p>
-                                        <p><img class="icon" src="Images/mail.png" height=20px>info@gietvloermakers.nl</li></p>
-                                </div>
-                            </footer>
-
-</body>
-<script type="text/javascript" src="JS/index.js"></script>
-</html>
+        <footer id="footer">
+            <div class="footer-div">
+                <img src="Images/logo350x50Rood.png" alt="Logo Gietvloermakers">
+            </div>
+            <div class="footer-div">
+                <p id="slogan-footer">Maak eenvoudig <br> 
+                    je eigen gietvloer</p>
+            </div>
+            <div class="footer-div" id="socials">
+                <a href="https://www.youtube.com/channel/UCYdcC12etngH1QN4p8ldUvQ"><img src="Images/logo-youtube.png" alt="Logo youtube Gietvloermakers" height="30px" width="50px"></a>
+            </div>
+            <div class="footer-div" id="socials">
+                <a href="https://www.facebook.com/Gietvloermakers-108859007269670"><img src="Images/Logo-facebook.png" alt="Logo Facebook Gietvloermakers" height="30px" width="30px"></a>
+            </div>
+            <div class="footer-div">
+                <p>Een vraag over het maken <br> 
+                    van je eigen gietvloer?
+                </p>
+            </div>
+            <div class="footer-div">
+                <a href="experts.html"><h2 id="experts-footer">Onze experts</h2></a>
+            </div>
+        </footer>
+                
+            </body>
+                <script type="text/javascript" src="JS/index.js"></script>
+            </html>

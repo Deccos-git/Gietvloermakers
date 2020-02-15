@@ -199,8 +199,6 @@ function bereken(){
             // gereedschappen naar localStorage
             localStorage.setItem('bestelItem', arrayID)
 
-            console.log(arrayID)
-
             const DOM = document.getElementById("prijs-gereedschappen");
 
             function getSum(total, num) {
