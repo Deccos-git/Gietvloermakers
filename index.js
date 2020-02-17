@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 const urlencodedParser = bodyParser.urlencoded({extended: true});
 
-app.post("/user", urlencodedParser, (req, res) => {
+app.post("/api/user", urlencodedParser, (req, res) => {
   res.sendFile('/Public/bedankt.html', {root: __dirname })
   const persGegevens = req.body
 

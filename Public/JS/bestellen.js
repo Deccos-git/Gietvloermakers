@@ -70,15 +70,6 @@ function bereken(){
 
     // Prijs variabelen doorlopen
     let prijsVariable = 0
-//     if (m2value == 0){
-
-
-//         window.location.href = "#aantal-m2";
-//         m2.style.borderColor = "red"
-//         alert.style.display = "block"
-            
-//     }
-//    else 
 
     if (m2value > 0 && m2value < 11){
         prijsVariable = 454
@@ -136,13 +127,15 @@ function bereken(){
         prijsVariable = 3720
     } else if (m2value > 145 && m2value < 151) {
         prijsVariable = 3789                           
-    } else {
+    } else if (m2value > 150){
         alert.innerHTML = " Uw aanvraag is dermate groot, dat wij u willen vragen even contact op te nemen met een van onze adviseurs op info@gietvloermakers.nl of 06 432 378 66" 
         window.location.href = "#aantal-m2";  
         alert.style.display = "block" 
         m2.style.borderColor = "red"
         alert.style.color = "white"
         alert.style.padding = "5px" 
+    } else {
+        console.log("err")
     }
 
     const m2Number =  parseInt(prijsVariable, 10)

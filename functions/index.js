@@ -2,17 +2,16 @@ const functions = require('firebase-functions');
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-const port = process.env.port || 5600
 const nodemailer = require('nodemailer');
 
-app.use(express.static('Public'));
+const html = '<html><style>body{display:flex; flex-direction: column; align-items: center; background-image: url(../Images/woonkamer.jpg);background-attachment: fixed;background-repeat: no-repeat;background-position: center;background-size: cover; padding: 15px; margin-top: 200px; display:flex; flex-direction: column; align-items: center; } h1{ color: #A00025;} #bedankt{ background-color: rgba(255,255,255,0.9); border: 1px solid #ffffff; border-radius: 15px; display:flex; flex-direction: column; align-items: center; padding: 10px;}</style><head><body><div id="bedankt" ><h1>Bedankt voor uw bestelling</h1><p>Uw bestelling is verzonden. U ontvangt uw bestelling zo spoedig mogelijk.<p><a id="logo" href="../index.html"><img src="../Images/logo350x50Rood.png" height="50px" width="300"></a></div><body><head><html>'
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static('Public'));
 
 const urlencodedParser = bodyParser.urlencoded({extended: true});
 
 app.post("/api/user", urlencodedParser, (req, res) => {
-  res.sendFile('../Public/bedankt.html', {root: __dirname })
+ 
   const persGegevens = req.body
 
   const string = JSON.stringify(persGegevens, (key, value) =>{
@@ -46,12 +45,8 @@ app.post("/api/user", urlencodedParser, (req, res) => {
           console.log('Email sent: ' + info.response);
         }
       });
+      res.send(html)
     });
 
 exports.app1 = functions.https.onRequest(app);
-
-  app.listen(port);
-
-  console.log(port)
-
 
