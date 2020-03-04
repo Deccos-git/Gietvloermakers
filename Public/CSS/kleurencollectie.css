@@ -330,7 +330,7 @@
     height: 200px;
       width: 200px;
       background-image: url(../Arturo-kleuren/ind-bt-grijs.jpg);
-      background-repeat: no-repeat;
+      background-repeat: repeat;
       background-position: center;
       background-size: cover;
       margin: 20px;
@@ -347,7 +347,7 @@
     height: 200px;
       width: 200px;
       background-image: url(../Arturo-kleuren/ind-bt-lichtgrijs.jpg);
-      background-repeat: no-repeat;
+      background-repeat: repeat;
       background-position: center;
       background-size: cover;
       margin: 20px;

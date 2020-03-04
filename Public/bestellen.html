@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158745056-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-158745056-1');
+</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -12,6 +22,23 @@
     <link rel="stylesheet" href="CSS/bestellen.css"></link>
     <link rel="shortcut icon" href="Images/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Lato|Prata&display=swap" rel="stylesheet">
+     <!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '191716128570076');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=191716128570076&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
 </head>
 <body>
     <nav>
@@ -43,34 +70,23 @@
                 <div id="alert-m2"><p>U bent vergeten uw gewenste aantal vierkante meters in te vullen!</p></div>
                 <p id="uw-kleur">Uw kleur</p>
                 <div id="kleurselect">Nog geen kleur gekozen? Bekijk de <a href="kleuren.html" >Kleurencollectie</a></div>
-                <a href="kleuren.html"><p id="andere-kleur">Kies een andere kleur</p></a>
+                <a href="kleuren.html"><p id="andere-kleur">Kies een kleur</p></a>
                 <p>1 dag assistentie bij het gieten van de kleur </p>
                 <select id="assistentie" onchange="zwolle()">
                     <option type="number" value=0 selected>Nee, bedankt (€0)</option>
                     <option type="number" value=500>Graag (€500)</option>
                 </select>
-                <p id="zwolle"><b>Let op:</b> woont u meer dan €100 rond Zwolle, dan geldt er een meerprijs van €0,19 per km.</p>
+                <p id="zwolle"><b>Let op:</b> woont u meer dan €100 van Zwolle, dan geldt er een meerprijs van €0,19 per km.</p>
 
                 <p id="GereedschappenTitel">Gereedschappen</p>
                 <div id="tool-menu">
                     <form id="tools">
-                        <input class="tool" type="checkbox" data-id="Folie" id="Folie" value=10> Folie van 50 cm x 50 18-cm (€10)</br>
-                        <input class="tool" type="checkbox" data-id="Plakband" id="Plakband" value=5> Plakband (€5)</br>
-                        <input class="tool" type="checkbox" id="Plastic-zeil" value=10> Plastic zeil van 2m x 2m (€10)</br>
-                        <input class="tool" type="checkbox" id="Boormachine" value=10> Boormachine</br>
-                        <input class="tool" type="checkbox" id="Mengspiraal" value=5> Mengspiraal</br>
-                        <input class="tool" type="checkbox" id="Vlakke-spaan" value=10> Vlakke spaan</br>
-                        <input class="tool" type="checkbox" id="Wegwerpwast" value=10> Wegwerpkwast</br>
-                        <input class="tool" type="checkbox" id="Handschoenen" value=5> Handschoenen</br>
-                        <input class="tool" type="checkbox" id="Veiligheidsbril" value=10> Veiligheidsbril</br>
-                        <input class="tool" type="checkbox" id="Kniebeschermers" value=10> Kniebeschermers</br>
-                        <input class="tool" type="checkbox" id="Reinigingsdoekjes" value=5> Reinigingsdoekjes</br>
-                        <input class="tool" type="checkbox" id="Kwast" value=10> Kwast</br>
-                        <input class="tool" type="checkbox" id="12-liter-emmers" value=10> 12 liter emmers</br>
-                        <input class="tool" type="checkbox" id="Schuurpapier" value=5> Schuurpapier 220 korrel</br>
-                        <input class="tool" type="checkbox" id="Microvezel-roller" value=10> Microvezel roller 25 cm</br>
-                        <input class="tool" type="checkbox" id="Roller-beugel" value=5> Beugel voor microvezel roller 25 cm</br>
-                        <input class="tool" type="checkbox" id="Beugel-stok" value=10> Stok voor beugel</br>
+                        <input class="tool" type="checkbox" data-id="Plakband" id="Plakband" value=9.50> Plakband - 1 stuks (€9,50)</br>
+                        <input class="tool" type="checkbox" id="Mengspiraal" value=13> Mengspiraal - 1 stuks (€13,00)</br>
+                        <input class="tool" type="checkbox" id="Vlakke-spaan" value=8.50> Vlakke spaan - 1 stuks (€8,50)</br>
+                        <input class="tool" type="checkbox" id="Wegwerpkwast" value=6> Wegwerpkwast - 2 stuks (€6,00)</br>
+                        <input class="tool" type="checkbox" id="Handschoenen" value=9> Handschoenen - 3 stuks van beide (€9,00)</br>
+                        <input class="tool" type="checkbox" id="Microvezel-roller" value=3.75> Microvezel roller - 1 stuks (€3,75)</br>
                     </form>
                     <a href="stappenplan.html"><p id="andere-kleur">Bekijk het stappenplan</p></a>
                 </div>
@@ -86,6 +102,7 @@
                     <p class="prijs" id="prijs-assistentie">€0</p>
                     <p class="main-prijs-titel">Gereedschappen</p>
                     <p class="prijs" id="prijs-gereedschappen">€0</p>
+                    <h5 id="pk-kosten">(Incl. €15,00 pak & verzendkosten)</h5>
                     <div id="total-prijs">
                         <p id="totaal-prijs">Totaal</p>
                         <p id="totaal">€0</p>

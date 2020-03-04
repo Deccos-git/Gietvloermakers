@@ -30,4 +30,8 @@ if(toolsLocal === 0){
 
 const totaal = document.getElementById("totale-prijs");
 const totaalLocal = localStorage.getItem('totaal-prijs');
-totaal.value = totaalLocal
+
+const totaalClean2 = totaalLocal.replace("<h5>", "")
+const totaalClean1 = totaalClean2.replace("</h5>", "")
+
+totaal.value = totaalClean1

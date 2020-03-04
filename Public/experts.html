@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158745056-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-158745056-1');
+</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kleurencollectie</title>
+    <title>Experts</title>
     <script>src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"</script>
     <script>src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"</script>
     <script>src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"</script>
@@ -12,6 +22,23 @@
     <link rel="stylesheet" href="CSS/experts.css"></link>
     <link rel="shortcut icon" href="Images/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Lato|Prata&display=swap" rel="stylesheet">
+     <!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '191716128570076');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=191716128570076&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
 </head>
 <body>
         <section id="headerGietvloeren">
@@ -39,14 +66,18 @@
             <h1 id="kiezer">Onze experts</h1>
             <div id="fotos">
                 <div class="foto">
-                    <img src="Images/karelkleurClean.png" alt="foto-van-karel" height="400px" width="100%">
+                    <img src="Images/Experts-Karel.JPG" alt="foto-van-karel" height="370px" width="250">
                     <h2>Karel</h2>
-                    <p>Alles begint met heldere communicatie</p>
+                    <p>"Het maken van je gietvloer is niet moeilijk. 
+                        Volg de instructies op deze site en je krijgt een prachtig resultaat."</p>
+                    <p><img class="icon" src="Images/tel.png" height=20px>06 432 378 66</p>
                 </div>
                 <div class="foto">
-                    <img src="Images/jackyactiefCleanIII.png" alt="foto-van-jacqueline" height="400px" width="100%">
+                    <img src="Images/Experts-Jacky.JPG" alt="foto-van-jacqueline" height="370px" width="250px">
                     <h2>Jacqueline</h2>
-                    <p>Alles begint met heldere communicatie</p>
+                    <p>"Heb je het gevoel dat je tijdens het aanbrengen toch nog wel wat hulp zou kunnen gebruiken? 
+                        Dan komen wij je graag helpen."</p>
+                    <p><img class="icon" src="Images/tel.png" height=20px>06 552 45 66 13</p>
                 </div>
             </div>
             <div id="contact-experts">
@@ -59,7 +90,6 @@
                         Neem gerust contact op met Karel en Jacqueline.  
                     </p>
                     <div id="contact-methods">
-                        <p><img class="icon" src="Images/tel.png" height=20px>06 432 378 66</p>
                         <p><img class="icon" src="Images/mail.png" height=15px>info@gietvloermakers.nl</li></p>
                     </div>
                 </div>

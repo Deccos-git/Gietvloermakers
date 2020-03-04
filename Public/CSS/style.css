@@ -39,6 +39,12 @@ h4{
     font-size: 20px;
 }
 
+h5{
+    margin-top: 7px;
+    font-size: 14px;
+    font-weight: 100;
+}
+
 a:any-link {
     color: #A00025;
 }
@@ -149,7 +155,7 @@ option{
 }
 
 #menu li{
-    margin-top: 10px;
+    margin-top: 4px;
     padding: 20px;
     color:#3d3d3d;
     font-weight: 800;
@@ -218,7 +224,7 @@ option{
 #subtitel{
     color: #ffffff;
     margin: 0px 0px 30px 10px;
-    font-size: 45px;
+    font-size: 55px;
     font-weight: 100;
     text-shadow: 2px 2px #3d3d3d;
 }
@@ -432,7 +438,8 @@ option{
 
     #header{
         background-attachment: scroll;
-    }
+        background-image: url(../Images/Header-MQ.jpg);
+        }
 
     #menu{
         display: flex;
@@ -511,5 +518,4 @@ option{
         display: flex;
         flex-direction: column;
     }
-
 }

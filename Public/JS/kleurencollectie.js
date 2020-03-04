@@ -166,19 +166,13 @@ function indPickdonkergrijs(){
 function indBtPicklichtgrijs(){
 
     const kleurentest = document.getElementsByClassName("kleurvlak")[0];
-    kleurentest.style.backgroundImage = "url('Arturo-kleuren/ind-bt-lichtgrijs.jpg')",
-    kleurentest.style.backgroundRepeat = "no-repeat";
-    kleurentest.style.backgroundPosition = "center";
-    kleurentest.style.backgroundSize = "cover";
+    kleurentest.style.backgroundImage = "url('Arturo-kleuren/ind-bt-lichtgrijs.jpg')"
     }
 
 function indBtPickgrijs(){
 
     const kleurentest = document.getElementsByClassName("kleurvlak")[0];
     kleurentest.style.backgroundImage = "url('Arturo-kleuren/ind-bt-grijs.jpg')";
-    kleurentest.style.backgroundRepeat = "no-repeat";
-    kleurentest.style.backgroundPosition = "center";
-    kleurentest.style.backgroundSize = "cover";
     }
 
 // Sportief
@@ -213,18 +207,12 @@ function sprBtPickDonkergrijs(){
 
     const kleurentest = document.getElementsByClassName("kleurvlakSpr")[0];
     kleurentest.style.backgroundImage = "url('Arturo-kleuren/spr-bt-donkergrijs.jpg')";
-    kleurentest.style.backgroundRepeat = "no-repeat";
-    kleurentest.style.backgroundPosition = "center";
-    kleurentest.style.backgroundSize = "cover";
     }
 
 function sprBtPickLichtgrijs(){
 
     const kleurentest = document.getElementsByClassName("kleurvlakSpr")[0];
     kleurentest.style.backgroundImage = "url('Arturo-kleuren/spr-bt-lichtgrijs.jpg')";
-    kleurentest.style.backgroundRepeat = "no-repeat";
-    kleurentest.style.backgroundPosition = "center";
-    kleurentest.style.backgroundSize = "cover";
     }
 
 // Stedelijk
@@ -265,18 +253,12 @@ function stdBtPickBlauw(){
 
     const kleurentest = document.getElementsByClassName("kleurvlakStd")[0];
     kleurentest.style.backgroundImage = "url('Arturo-kleuren/std-bt-blauw.jpg')";
-    kleurentest.style.backgroundRepeat = "no-repeat";
-    kleurentest.style.backgroundPosition = "center";
-    kleurentest.style.backgroundSize = "cover";
     }
 
 function stdBtPickGrijs(){
 
     const kleurentest = document.getElementsByClassName("kleurvlakStd")[0];
     kleurentest.style.backgroundImage = "url('Arturo-kleuren/std-bt-grijs.jpg')";
-    kleurentest.style.backgroundRepeat = "no-repeat";
-    kleurentest.style.backgroundPosition = "center";
-    kleurentest.style.backgroundSize = "cover";
     }
 
 // Minimalistisch
@@ -310,19 +292,13 @@ function mnmPickWit(){
 function mnmBtPickLichtgrijs(){
 
     const kleurentest = document.getElementsByClassName("kleurvlakMnm")[0];
-    kleurentest.style.backgroundImage = "url('Arturo-kleuren/mnm-bt-lichtgrijs.jpg')",
-    kleurentest.style.backgroundRepeat = "no-repeat";
-    kleurentest.style.backgroundPosition = "center";
-    kleurentest.style.backgroundSize = "cover";
+    kleurentest.style.backgroundImage = "url('Arturo-kleuren/mnm-bt-lichtgrijs.jpg')"
     }
 
 function mnmBtPickKlei(){
 
     const kleurentest = document.getElementsByClassName("kleurvlakMnm")[0];
     kleurentest.style.backgroundImage = "url('Arturo-kleuren/mnm-bt-klei.jpg')";
-    kleurentest.style.backgroundRepeat = "no-repeat";
-    kleurentest.style.backgroundPosition = "center";
-    kleurentest.style.backgroundSize = "cover";
     }
 
 // Organisch
@@ -359,19 +335,13 @@ function orgPickGroen(){
 function orgBtPickDonkergrijs(){
 
     const kleurentest = document.getElementsByClassName("kleurvlakOrg")[0];
-    kleurentest.style.backgroundImage = "url('Arturo-kleuren/org-bt-donkergrijs.jpg')",
-    kleurentest.style.backgroundRepeat = "no-repeat";
-    kleurentest.style.backgroundPosition = "center";
-    kleurentest.style.backgroundSize = "cover";
+    kleurentest.style.backgroundImage = "url('Arturo-kleuren/org-bt-donkergrijs.jpg')"
     }
 
 function orgBtPickLichtgrijs(){
 
     const kleurentest = document.getElementsByClassName("kleurvlakOrg")[0];
     kleurentest.style.backgroundImage = "url('Arturo-kleuren/org-bt-lichtgrijs.jpg')";
-    kleurentest.style.backgroundRepeat = "no-repeat";
-    kleurentest.style.backgroundPosition = "center";
-    kleurentest.style.backgroundSize = "cover";
     }
 
 // Speels
@@ -408,19 +378,13 @@ function splPickWit(){
 function splBtPickBlauw(){
 
     const kleurentest = document.getElementsByClassName("kleurvlakSpl")[0];
-    kleurentest.style.backgroundImage = "url('Arturo-kleuren/spl-bt-blauw.jpg')",
-    kleurentest.style.backgroundRepeat = "no-repeat";
-    kleurentest.style.backgroundPosition = "center";
-    kleurentest.style.backgroundSize = "cover";
+    kleurentest.style.backgroundImage = "url('Arturo-kleuren/spl-bt-blauw.jpg')"
     }
 
 function splBtPickRood(){
 
     const kleurentest = document.getElementsByClassName("kleurvlakSpl")[0];
     kleurentest.style.backgroundImage = "url('Arturo-kleuren/spl-bt-rood.jpg')";
-    kleurentest.style.backgroundRepeat = "no-repeat";
-    kleurentest.style.backgroundPosition = "center";
-    kleurentest.style.backgroundSize = "cover";
     }
 
 // Cultuur
@@ -460,19 +424,13 @@ function cltPickTerracotta(){
 function cltBtPickLichtgrijs(){
 
     const kleurentest = document.getElementsByClassName("kleurvlakClt")[0];
-    kleurentest.style.backgroundImage = "url('Arturo-kleuren/clt-bt-lichtgrijs.jpg')",
-    kleurentest.style.backgroundRepeat = "no-repeat";
-    kleurentest.style.backgroundPosition = "center";
-    kleurentest.style.backgroundSize = "cover";
+    kleurentest.style.backgroundImage = "url('Arturo-kleuren/clt-bt-lichtgrijs.jpg')"
     }
 
 function cltBtPickBruin(){
 
     const kleurentest = document.getElementsByClassName("kleurvlakClt")[0];
     kleurentest.style.backgroundImage = "url('Arturo-kleuren/clt-bt-bruin.jpg')";
-    kleurentest.style.backgroundRepeat = "no-repeat";
-    kleurentest.style.backgroundPosition = "center";
-    kleurentest.style.backgroundSize = "cover";
     }
 
 // Lux
@@ -506,19 +464,13 @@ function luxPickGroen(){
 function luxBtPickGroen(){
 
     const kleurentest = document.getElementsByClassName("kleurvlakLux")[0];
-    kleurentest.style.backgroundImage = "url('Arturo-kleuren/lux-bt-groen.jpg')",
-    kleurentest.style.backgroundRepeat = "no-repeat";
-    kleurentest.style.backgroundPosition = "center";
-    kleurentest.style.backgroundSize = "cover";
+    kleurentest.style.backgroundImage = "url('Arturo-kleuren/lux-bt-groen.jpg')"
     }
 
 function luxBtPickPaars(){
 
     const kleurentest = document.getElementsByClassName("kleurvlakLux")[0];
     kleurentest.style.backgroundImage = "url('Arturo-kleuren/lux-bt-paars.jpg')";
-    kleurentest.style.backgroundRepeat = "no-repeat";
-    kleurentest.style.backgroundPosition = "center";
-    kleurentest.style.backgroundSize = "cover";
     }
 
 // Klassiekers
@@ -573,73 +525,50 @@ function klsPickWit(){
 function klsBtBlauwgrijs(){
 
     const kleurentest = document.getElementsByClassName("kleurvlakKls")[0];
-    kleurentest.style.backgroundImage = "url('Arturo-kleuren/kls-bt-blauwgrijs.jpg')",
-    kleurentest.style.backgroundRepeat = "no-repeat";
-    kleurentest.style.backgroundPosition = "center";
-    kleurentest.style.backgroundSize = "cover";
+    kleurentest.style.backgroundImage = "url('Arturo-kleuren/kls-bt-blauwgrijs.jpg')"
     }
 
 function klsBtPickDonkergrijs(){
 
     const kleurentest = document.getElementsByClassName("kleurvlakKls")[0];
     kleurentest.style.backgroundImage = "url('Arturo-kleuren/kls-bt-donkergrijs.jpg')";
-    kleurentest.style.backgroundRepeat = "no-repeat";
-    kleurentest.style.backgroundPosition = "center";
-    kleurentest.style.backgroundSize = "cover";
+
     }
 
 function klsBtPickGrijs(){
 
         const kleurentest = document.getElementsByClassName("kleurvlakKls")[0];
-        kleurentest.style.backgroundImage = "url('Arturo-kleuren/kls-bt-grijs.jpg')",
-        kleurentest.style.backgroundRepeat = "no-repeat";
-        kleurentest.style.backgroundPosition = "center";
-        kleurentest.style.backgroundSize = "cover";
+        kleurentest.style.backgroundImage = "url('Arturo-kleuren/kls-bt-grijs.jpg')"
         }
     
 function klsBtPickLichtgrijs(){
     
         const kleurentest = document.getElementsByClassName("kleurvlakKls")[0];
         kleurentest.style.backgroundImage = "url('Arturo-kleuren/kls-bt-lichtgrijs.jpg')";
-        kleurentest.style.backgroundRepeat = "no-repeat";
-        kleurentest.style.backgroundPosition = "center";
-        kleurentest.style.backgroundSize = "cover";
         }
         
 function klsBtPickLichtroze(){
 
             const kleurentest = document.getElementsByClassName("kleurvlakKls")[0];
-            kleurentest.style.backgroundImage = "url('Arturo-kleuren/kls-bt-lichtroze.jpg')",
-            kleurentest.style.backgroundRepeat = "no-repeat";
-            kleurentest.style.backgroundPosition = "center";
-            kleurentest.style.backgroundSize = "cover";
+            kleurentest.style.backgroundImage = "url('Arturo-kleuren/kls-bt-lichtroze.jpg')"
             }
         
 function klsBtPickRoze(){
         
             const kleurentest = document.getElementsByClassName("kleurvlakKls")[0];
             kleurentest.style.backgroundImage = "url('Arturo-kleuren/kls-bt-roze.jpg')";
-            kleurentest.style.backgroundRepeat = "no-repeat";
-            kleurentest.style.backgroundPosition = "center";
-            kleurentest.style.backgroundSize = "cover";
             }
 
 function klsBtPickZand(){
 
                 const kleurentest = document.getElementsByClassName("kleurvlakKls")[0];
-                kleurentest.style.backgroundImage = "url('Arturo-kleuren/kls-bt-zand.jpg')",
-                kleurentest.style.backgroundRepeat = "no-repeat";
-                kleurentest.style.backgroundPosition = "center";
-                kleurentest.style.backgroundSize = "cover";
+                kleurentest.style.backgroundImage = "url('Arturo-kleuren/kls-bt-zand.jpg')"
                 }
             
 function klsBtPickZandgrijs(){
             
                 const kleurentest = document.getElementsByClassName("kleurvlakKls")[0];
                 kleurentest.style.backgroundImage = "url('Arturo-kleuren/kls-bt-zandgrijs.jpg')";
-                kleurentest.style.backgroundRepeat = "no-repeat";
-                kleurentest.style.backgroundPosition = "center";
-                kleurentest.style.backgroundSize = "cover";
                 }
                        
 

@@ -102,17 +102,17 @@ h1{
 
 .onderwerp h2{
     margin-bottom: 20px;
+}
+
+.belichten:hover{
     cursor: pointer;
+    color: #A00025;
 }
 
 .onderwerp h3{
     margin: 30px 15px 0px 0px;
     font-size: 25px;
     color: #3d3d3d;
-}
-
-.onderwerp h2:hover{
-    color: #A00025;
 }
 
 #voorbeeld-taak{
@@ -153,11 +153,15 @@ h1{
 .benodigdheden li{
     margin-right: 15px;
     color: #3d3d3d;
+}
+
+.more-info:hover{
+    color: #A00025;
     cursor: pointer;
 }
 
-.benodigdheden li:hover{
-    color: #A00025;
+.icon{
+    cursor: pointer;
 }
 
 .stappen h3{
@@ -230,10 +234,11 @@ h1{
 .modal-h1{
     width: 100%;
     font-size: 40px;
+    margin: 100px 20px 50px 20px;
 }
 
 #uitleg{
-    width: 100%;
+    width: 90%;
 }
 
 .weg{
@@ -286,6 +291,10 @@ h1{
         flex-direction: column;
     }
 
+    .onderwerp h3{
+        display: none;
+    }
+
     .benodigdheden{
         flex-direction: column;
     }
@@ -297,6 +306,7 @@ h1{
     .container{
         flex-direction: column;
     }
+
 
     .main{
         margin: 0px 0px 10px 0px;
@@ -325,5 +335,16 @@ h1{
     .dagen {
         display: flex;
         justify-content: center;
+    }
+
+    .voorbeeld img{
+        height: 50%;
+        width: 50%;
+
+    }
+
+    .youtube{
+        height: 90%;
+        width: 90%;
     }
 }

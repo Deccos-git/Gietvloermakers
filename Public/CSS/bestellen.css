@@ -89,6 +89,7 @@
   .prijs{
     margin: 0px 15px 15px 15px;
     border-bottom: 1px solid black;
+    display: flex;
   }
 
   .main-prijs-titel{
@@ -131,7 +132,7 @@
 }
 
 #andere-kleur{
-  font-size: 12px;
+  font-size: 14px;
   margin: 10px;
 }
 

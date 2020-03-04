@@ -105,6 +105,9 @@ function dag5(){
         w.addEventListener("click", (e) => {
     
     const tool = w.dataset.tool
+
+    console.log(tool)
+
     localStorage.setItem('bestel-item' + tool, tool);
     window.open("bestellen.html#GereedschappenTitel", "_self");
         })
@@ -143,10 +146,15 @@ function dag5(){
             node.appendChild(iframe)
         }
 
-        // Modal gereedschappen 
+        // Modals
         function modal(a){
             const modalBG = document.getElementsByClassName("modalBG");
+
+            console.log(modalBG)
+
             const mode = modalBG[a]
+
+            console.log(modalBG)
 
             if(mode == undefined){
                 return console.log("disregard error")
@@ -156,123 +164,203 @@ function dag5(){
             
         }
 
-        modal()
+        
 
-        function folie(){
-            modal(0)
-            youtube(0, "https://www.youtube.com/embed/tgbNymZ7vqY")
-        }
+        modal()
 
         function plakband(){
             modal(1)
-            youtube(1, "https://www.youtube.com/embed/tgbNymZ7vqY")
-        }
-
-        function plasticZeil(){
-            modal(2)
-            youtube(2, "https://www.youtube.com/embed/tgbNymZ7vqY")
-        }
-
-        function boormachine(){
-            modal(3)
-            youtube(3, "https://www.youtube.com/embed/tgbNymZ7vqY")
+            youtube(1, "https://www.youtube.com/embed/KmfS_SO5Ia4")
         }
 
         function mengspiraal(){
             modal(4)
-            youtube(4, "https://www.youtube.com/embed/tgbNymZ7vqY")
+            youtube(4, "https://www.youtube.com/embed/KuyTLwSFF2w")
         }
 
         function vlakkeSpaan(){
             modal(5)
-            youtube(5, "https://www.youtube.com/embed/tgbNymZ7vqY")
+            youtube(5, "https://www.youtube.com/embed/LnYPCb_GOYQ")
         }
 
-        function wegwerpkwast(){
+        function wegwerpKwast(){
             modal(6)
-            youtube(6, "https://www.youtube.com/embed/tgbNymZ7vqY")
+            youtube(6, "https://www.youtube.com/embed/mqzEi-Juhs4")
         }
 
         function handschoenen(){
             modal(7)
-            youtube(7, "https://www.youtube.com/embed/tgbNymZ7vqY")
-        }
-
-        function veiligheidsbril(){
-            modal(8)
-            youtube(8, "https://www.youtube.com/embed/tgbNymZ7vqY")
-        }
-
-        function kniebeschermers(){
-            modal(9)
-            youtube(9, "https://www.youtube.com/embed/tgbNymZ7vqY")
-        }
-
-        function reinigingsdoekjes(){
-            modal(10)
-            youtube(10, "https://www.youtube.com/embed/tgbNymZ7vqY")
+            youtube(7, "https://www.youtube.com/embed/rQoP1vOdc8k")
         }
 
         function kwast(){
             modal(11)
-            youtube(11, "https://www.youtube.com/embed/tgbNymZ7vqY")
-        }
-
-        function emmers(){
-            modal(12)
-            youtube(12, "https://www.youtube.com/embed/tgbNymZ7vqY")
-        }
-
-        function schuurpapier(){
-            modal(13)
-            youtube(13, "https://www.youtube.com/embed/tgbNymZ7vqY")
+            youtube(11, "https://www.youtube.com/embed/mqzEi-Juhs4")
         }
 
         function microvezelRoller(){
             modal(14)
-            youtube(14, "https://www.youtube.com/embed/tgbNymZ7vqY")
-        }
-
-        function rollerBeugel(){
-            modal(15)
-            youtube(15, "https://www.youtube.com/embed/tgbNymZ7vqY")
-        }
-
-        function beugelStok(){
-            modal(16)
-            youtube(16, "https://www.youtube.com/embed/tgbNymZ7vqY")
+            youtube(14, "https://www.youtube.com/embed/lT0qx8uiCgQ")
         }
 
         // Modal taken
-        function vocht(){
-            modal(17)
-            youtube(17, "https://www.youtube.com/embed/tgbNymZ7vqY")
+
+        function kleding(){
+            modal(26)
+            youtube(26, "https://www.youtube.com/embed/ie0MrmKvIJ0")
         }
 
-        function mengplek(){
-            modal(18)
-            youtube(18, "https://www.youtube.com/embed/tgbNymZ7vqY")
+        function eenSetSchrap(){
+            modal(27)
+            youtube(27, "https://www.youtube.com/embed/fokgDWdg8pI")
         }
 
-        function schraplaag(){
-            modal(19)
-            youtube(19, "https://www.youtube.com/embed/tgbNymZ7vqY")
+        function gietAbijBSchrap(){
+            modal(28)
+            youtube(28, "https://www.youtube.com/embed/fokgDWdg8pI")
+        }
+
+        function mengenSchrap(){
+            modal(29)
+            youtube(29, "https://www.youtube.com/embed/fokgDWdg8pI")
+        }
+
+        function rilletjeSchrap(){
+            modal(30)
+            youtube(30, "")
+        }
+
+        function spanenSchrap(){
+            modal(31)
+            youtube(31, "")
+        }
+
+        function spanenSchrap(){
+            modal(32)
+            youtube(32, "")
+        }
+
+        function spanenSchrap(){
+            modal(33)
+            youtube(33, "")
+        }
+
+        function reinigSpaan(){
+            modal(34)
+            youtube(34, "https://www.youtube.com/embed/N4H5z2gOkVw")
         }
 
         function gietvloer(){
-            modal(20)
-            youtube(20, "https://www.youtube.com/embed/tgbNymZ7vqY")
+            modal(26)
+            youtube(26, "")
+        }
+
+        function beginnen(){
+            modal(39)
+            youtube(39, "https://www.youtube.com/embed/ZZciwCw_3vI")
+        }
+
+        function kleding(){
+            modal(40)
+            youtube(40, "https://www.youtube.com/embed/ie0MrmKvIJ0")
+        }
+
+        function eenSetGiet(){
+            modal(41)
+            youtube(41, "https://www.youtube.com/embed/fokgDWdg8pI")
+        }
+
+        function gietAbijBGiet(){
+            modal(42)
+            youtube(42, "https://www.youtube.com/embed/fokgDWdg8pI")
+        }
+
+        function mengenGiet(){
+            modal(43)
+            youtube(43, "https://www.youtube.com/embed/fokgDWdg8pI")
+        }
+
+        function emmerGiet(){
+            modal(44)
+            youtube(44, "https://www.youtube.com/embed/RLdgg2k7oM0")
+        }
+
+        function rilletjeGiet(){
+            modal(45)
+            youtube(45, "https://www.youtube.com/embed/NTxYd85o1Tw")
+        }
+
+        function spanenGiet(){
+            modal(46)
+            youtube(46, "https://www.youtube.com/embed/V8mRJwSAHzo")
+        }
+
+        function spanenGiet(){
+            modal(47)
+            youtube(47, "https://www.youtube.com/embed/V8mRJwSAHzo")
+        }
+
+        function spanenGiet(){
+            modal(48)
+            youtube(48, "https://www.youtube.com/embed/V8mRJwSAHzo")
+        }
+
+        function spanenGiet(){
+            modal(49)
+            youtube(49, "https://www.youtube.com/embed/V8mRJwSAHzo")
+        }
+
+        function reinigSpaan(){
+            modal(50)
+            youtube(50, "https://www.youtube.com/embed/N4H5z2gOkVw")
         }
 
         function laklaag(){
-            modal(21)
-            youtube(21, "https://www.youtube.com/embed/tgbNymZ7vqY")
+            modal(26)
+            youtube(26, "")
         }
 
-        function afronden(){
-            modal(22)
-            youtube(22, "https://www.youtube.com/embed/tgbNymZ7vqY")
+        function kleding(){
+            modal(57)
+            youtube(57, "https://www.youtube.com/embed/ie0MrmKvIJ0")
         }
+
+        function gietAbijBLak(){
+            modal(59)
+            youtube(59, "")
+        }
+
+        function mengenLak(){
+            modal(60)
+            youtube(60, "")
+        }
+
+        function randenLak(){
+            modal(61)
+            youtube(61, "https://www.youtube.com/embed/dSdlrdsNJ4M")
+        }
+
+        function rollenLak(){
+            modal(62)
+            youtube(62, "https://www.youtube.com/embed/eiUaOdzJa3Y")
+        }
+
+        function rollenLak(){
+            modal(63)
+            youtube(63, "https://www.youtube.com/embed/eiUaOdzJa3Y")
+        }
+
+        function rollenLak(){
+            modal(64)
+            youtube(64, "https://www.youtube.com/embed/eiUaOdzJa3Y")
+        }
+
+        function rollenLak(){
+            modal(65)
+            youtube(65, "https://www.youtube.com/embed/eiUaOdzJa3Y")
+        }
+
+
         
 
 

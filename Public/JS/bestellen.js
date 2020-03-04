@@ -43,20 +43,6 @@ function bereken(){
     // kleurkeuze alert
     const kleurSelect = document.getElementById("kleurselect");
 
-    // if(kleurSelect.innerHTML == ""){
-    //     kleurSelect.style.borderWidth = "1px"
-    //     kleurSelect.style.borderStyle = "solid"
-    //     kleurSelect.style.borderColor = "rgb(206, 74, 105)"
-    //     kleurSelect.style.backgroundColor = "rgb(206, 74, 105)"
-    //     kleurSelect.style.color = "white"
-    //     kleurSelect.innerHTML = "Nog geen kleur gekozen? Bekijk de <a href='kleuren.html' >Kleurencollectie</a>"
-    //     window.location.href = "#uw-kleur"
-
-
-    // } else {
-    //     console.log("kleur gekozen")
-    // }
-
     // m2
     const m2 = document.getElementById("m2");
 
@@ -144,7 +130,7 @@ function bereken(){
 
     const m2Euro = "€ " + m2Number
 
-    prijs.innerHTML = m2Euro;
+    prijs.innerHTML = m2Euro
 
     // Assistentie
     const ass = document.getElementById("assistentie");
@@ -161,7 +147,7 @@ function bereken(){
             localStorage.setItem('assistentie', assSelect)
 
     const prijsAssistentie = document.getElementById("prijs-assistentie");
-    prijsAssistentie.innerHTML = "€ " + assNumber;
+    prijsAssistentie.innerHTML = "€ " + assNumber 
 
     //Gereedschappen
     const tools = document.querySelectorAll(".tool")
@@ -171,9 +157,7 @@ function bereken(){
             // array met tool id's
     const arrayID = [];
             
-  
     tools.forEach(t => {
-
     
         if(t.checked == true){
     const toolPrijs = t.value;
@@ -182,7 +166,7 @@ function bereken(){
 
     arrayID.push(toolID) 
 
-    const toolNumber = parseInt(toolPrijs, 10)
+    const toolNumber = parseFloat(toolPrijs, 10)
 
     arrayTools.push(toolNumber)
     
@@ -199,7 +183,11 @@ function bereken(){
             }
             const toolTotal = arrayTools.reduce(getSum, 0)
 
-            DOM.innerHTML = "€ " + toolTotal
+            const extraKosten = toolTotal + 15
+
+            const btw = ""
+
+            DOM.innerHTML = "€ " + extraKosten.toFixed(2) 
 
         // Totaal
 
@@ -207,7 +195,7 @@ const totaal = document.getElementById("totaal");
 
 const totaalEuro =  m2Number + assNumber + toolTotal
 
-totaal.innerHTML = "€ " + totaalEuro 
+totaal.innerHTML = "€ " + totaalEuro.toFixed(2) + "  <h5>(Incl. btw)</h5>";
 
       // Anchor link naar prijsoverzicht
       if (m2value == 0){
@@ -227,18 +215,26 @@ totaal.innerHTML = "€ " + totaalEuro
       }
 };
 
+
 // Naar controleren
 
 function bestel(){
    const totaal = document.getElementById("totaal");
    localStorage.setItem('totaal-prijs', totaal.innerHTML);
    const bereken = document.getElementById("button2");
-   const controleer = document.getElementById("button3")
-   const vloerPrijs = document.getElementById("prijs-vloer")
+   const controleer = document.getElementById("button3");
+   const vloerPrijs = document.getElementById("prijs-vloer");
+   const prijs = document.getElementsByClassName("prijs");
+
+   console.log(prijs)
 
    if (totaal.innerHTML == "€0"){
        function berekenen(){
-        bereken.click()
+        bereken.click();
+        prijs.forEach( p => {
+            p.style.color = "#A00025"
+        })
+
        }
        berekenen().then( () => {
 
@@ -283,6 +279,8 @@ if(kleurSelect == null){
  // Gereedschappen uit localstorage
 const winkeltje = document.getElementsByClassName("tool");
 
+console.log(winkeltje)
+
 const winkeltjeArray = Array.from(winkeltje);
 
 winkeltjeArray.forEach(w => {
@@ -291,7 +289,11 @@ winkeltjeArray.forEach(w => {
 
         const storage = localStorage.getItem('bestel-item' + tool);
 
+        console.log(storage)
+
         const afvinken = document.getElementById(storage)
+
+        console.log(afvinken)
 
         if(afvinken == null){
             return console.log("Disregard error")

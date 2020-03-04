@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158745056-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-158745056-1');
+</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bestellen</title>
+    <title>Controleren</title>
     <script>src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"</script>
     <script>src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"</script>
     <link rel="stylesheet" href="CSS/style.css"></link>
@@ -12,6 +22,23 @@
     <link rel="stylesheet" href="CSS/controleer.css"></link>
     <link rel="shortcut icon" href="Images/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Lato|Prata&display=swap" rel="stylesheet">
+     <!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '191716128570076');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=191716128570076&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
 </head>
 <body>
     <nav>
@@ -53,10 +80,8 @@
                     </div>
                     <div class="controleer-div">
                         <h2>Uw gegevens</h2>
-                        <p>Voornaam</p>
-                        <input type="text" name="voornaam" placeholder="Voornaam">
-                        <p>Achternaam</p>
-                        <input type="text" name="Achternaam" placeholder="Achternaam">
+                        <p>Voor en achternaam</p>
+                        <input type="text" name="voornaam" placeholder="Voor en achternaam">
                         <p>Straatnaam en huisnummer</p>
                         <input type="text" name="Achternaam" placeholder="Straatnaam en huisnummer">
                         <p>Postcode</p>
@@ -72,14 +97,12 @@
 
                 <div id="notice">
                     <h2>Besteld, en nu?</h2>
-                    <p>Nadat u op de knop "Verzenden" heeft geklikt krijgt ons een kantoor een mailtje
-                        met daarin uw bestelling en uw contactgegevens. Wij zullen altijd even contact met u opnemen
-                        om eventuele vragen door te nemen en het proces met u door te nemen. Aansluitend op dit gesprek 
-                        maken wij de bestelling voor u in orde. U ontvangt uw bestelling doorgaand 
-                        binnen 5 werkdagen.<br><br> 
+                    <p>Nadat je op de knop “verzenden” hebt geklikt, krijgt ons kantoor een mailtje met jouw contactgegevens. 
+                        Wij zullen dan altijd contact met je opnemen om de bestelling door te spreken. 
+                        Levering kan binnen 5 werkdagen.<br><br> 
                         Mocht u vragen hebben over uw bestelling kunt altijd even contact met ons opnemen.<br><br> 
-                        Tel: 06 432 378 66<br>
-                        Email: info@gietvloermakers.nl
+                        <p><img class="icon" src="Images/tel.png" height=20px>06 432 378 66</p>
+                        <p><img class="icon" src="Images/mail.png" height=15px>info@gietvloermakers.nl</li></p>
                     </p>
                 </div>
 
