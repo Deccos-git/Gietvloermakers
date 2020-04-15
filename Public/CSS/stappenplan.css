@@ -10,6 +10,10 @@ h1{
     width: 100%;
 }
 
+.landing-menu{
+    margin-bottom: 30px;
+}
+
 .overzichtdagen{
         display: flex;
         flex-wrap: wrap;
@@ -17,16 +21,25 @@ h1{
         font-family: 'Prata', serif;
         margin-bottom: 50px;
         cursor: pointer;
+        position: sticky;
+        top: 0.1px;
+        border-bottom: 1px solid #3d3d3d;
+        border-color: #3d3d3d;
+        background-color: #fff;
 }
 
 .overzichtdagen h2{
     margin: 5px;
     padding: 5px;
     color: #3d3d3d;
-    border-bottom: 1px solid #3d3d3d;
-    border-top: 1px solid #3d3d3d;
-    border-color: #A00025;
+    font-size: 20px;
+    font-weight: 100;
+}
 
+#menu-up{
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    align-self: center;
 }
 
 .overzichtdagen h2:hover{
@@ -36,27 +49,23 @@ h1{
 }
 
 #Dag1{
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
   
 #Dag2{
-    display: none;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 #Dag3{
-    display: none;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 #Dag4{
-    display: none;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 #Dag5{
-    display: none;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 #stappenoverzicht{
@@ -113,23 +122,6 @@ h1{
     margin: 30px 15px 0px 0px;
     font-size: 25px;
     color: #3d3d3d;
-}
-
-#voorbeeld-taak{
-    color: #A00025;
-}
-
-#voorbeeld{
-    text-decoration: line-through;
-    color: #999999;
-}
-
-#voorbeeldKlik{
-    color: #A00025;
-}
-
-#voorbeeldDiv{
-    display: flex;
 }
 
 .deel1{
@@ -256,21 +248,6 @@ h1{
     cursor: pointer;
 }
 
-/* Afvinken */
-
-#checkvb{
-    background-image: url(../Images/check-groen.png);
-    height: 20px;
-    width: 20px;
-    border: 1px solid #3d3d3d;
-    border-radius: 50%;
-    margin: 3px 15px 0px 20px;
-    float: right;
-    cursor: pointer;
-    min-height: 20px;
-    min-width: 20px;
-}
-
 .check-id{
     background-image: none;
     height: 20px;
@@ -278,8 +255,7 @@ h1{
     border: 1px solid #3d3d3d;
     border-radius: 50%;
     margin: 3px 15px 0px 20px;
-    float: right;
-    cursor: pointer;
+    float: right; 
     min-height: 20px;
     min-width: 20px;
 }
@@ -346,5 +322,9 @@ h1{
     .youtube{
         height: 90%;
         width: 90%;
+    }
+
+    .overzichtdagen h2{
+        font-size: 16px;
     }
 }

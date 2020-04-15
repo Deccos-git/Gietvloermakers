@@ -58,61 +58,61 @@ function bereken(){
     let prijsVariable = 0
 
     if (m2value > 0 && m2value < 11){
-        prijsVariable = 454
+        prijsVariable = 556
     } else if (m2value > 10 && m2value < 16) {
-        prijsVariable = 523    
+        prijsVariable = 645  
     } else if (m2value > 15 && m2value < 21) {
-        prijsVariable = 593  
+        prijsVariable = 734 
     } else if (m2value > 20 && m2value < 26) {
-        prijsVariable = 815   
+        prijsVariable = 1009   
     } else if (m2value > 25 && m2value < 31) {
-        prijsVariable = 884   
+        prijsVariable = 1098   
     } else if (m2value > 30 && m2value < 36) {
-        prijsVariable = 953 
+        prijsVariable = 1186 
     } else if (m2value > 35 && m2value < 41) {
-        prijsVariable = 1023   
+        prijsVariable = 1275   
     } else if (m2value > 40 && m2value < 46) {
-        prijsVariable = 1245   
+        prijsVariable = 1551   
     } else if (m2value > 45 && m2value < 51) {
-        prijsVariable = 1314
+        prijsVariable = 1639
     } else if (m2value > 50 && m2value < 56) {
-        prijsVariable = 1546
+        prijsVariable = 1920
     } else if (m2value > 55 && m2value < 61) {
-        prijsVariable = 1616
+        prijsVariable = 2009
     } else if (m2value > 60 && m2value < 66) {
-        prijsVariable = 1837
+        prijsVariable = 2284
     } else if (m2value > 65 && m2value < 71) {
-        prijsVariable = 1907
+        prijsVariable = 2373
     } else if (m2value > 70 && m2value < 76) {
-        prijsVariable = 1976 
+        prijsVariable = 2461 
     } else if (m2value > 75 && m2value < 81) {
-        prijsVariable = 2045    
+        prijsVariable = 2550    
     } else if (m2value > 80 && m2value < 91) {
-        prijsVariable = 2336  
+        prijsVariable = 2826  
     } else if (m2value > 90 && m2value < 96) {
-        prijsVariable = 2406   
+        prijsVariable = 3914   
     } else if (m2value > 95 && m2value < 101) {
-        prijsVariable = 2475  
+        prijsVariable = 3092  
     } else if (m2value > 100 && m2value < 106) {
-        prijsVariable = 2860 
+        prijsVariable = 3550 
     } else if (m2value > 105 && m2value < 111) {
-        prijsVariable = 2920   
+        prijsVariable = 3648   
     } else if (m2value > 110 && m2value < 116) {
-        prijsVariable = 2998   
+        prijsVariable = 3737   
     } else if (m2value > 115 && m2value < 121) {
-        prijsVariable = 3068
+        prijsVariable = 3826
     } else if (m2value > 120 && m2value < 126) {
-        prijsVariable = 3290
+        prijsVariable = 4101
     } else if (m2value > 125 && m2value < 131) {
-        prijsVariable = 3359
+        prijsVariable = 4190
     } else if (m2value > 130 && m2value < 136) {
-        prijsVariable = 3428
+        prijsVariable = 4278
     } else if (m2value > 135 && m2value < 141) {
-        prijsVariable = 3498
+        prijsVariable = 4367
     } else if (m2value > 140 && m2value < 146) {
-        prijsVariable = 3720
+        prijsVariable = 4643
     } else if (m2value > 145 && m2value < 151) {
-        prijsVariable = 3789                           
+        prijsVariable = 4731                           
     } else if (m2value > 150){
         alert.innerHTML = " Uw aanvraag is dermate groot, dat wij u willen vragen even contact op te nemen met een van onze adviseurs op info@gietvloermakers.nl of 06 432 378 66" 
         window.location.href = "#aantal-m2";  
@@ -181,21 +181,34 @@ function bereken(){
             function getSum(total, num) {
                 return total + num;
             }
+
             const toolTotal = arrayTools.reduce(getSum, 0)
+
+            if(!toolTotal == 0){
 
             const extraKosten = toolTotal + 15
 
-            const btw = ""
-
             DOM.innerHTML = "€ " + extraKosten.toFixed(2) 
 
-        // Totaal
+            // Totaal
 
-const totaal = document.getElementById("totaal");
+            const totaal = document.getElementById("totaal");
 
-const totaalEuro =  m2Number + assNumber + toolTotal
+            const totaalEuro =  m2Number + assNumber + extraKosten
 
-totaal.innerHTML = "€ " + totaalEuro.toFixed(2) + "  <h5>(Incl. btw)</h5>";
+            totaal.innerHTML = "€ " + totaalEuro.toFixed(2) + "  <h5>(Incl. btw)</h5>";
+
+            } else {
+            DOM.innerHTML = "€ " + toolTotal.toFixed(2)  
+
+            // Totaal
+
+            const totaal = document.getElementById("totaal");
+
+            const totaalEuro =  m2Number + assNumber + toolTotal
+
+            totaal.innerHTML = "€ " + totaalEuro.toFixed(2) + "  <h5>(Incl. btw)</h5>";
+            }
 
       // Anchor link naar prijsoverzicht
       if (m2value == 0){
@@ -225,8 +238,6 @@ function bestel(){
    const controleer = document.getElementById("button3");
    const vloerPrijs = document.getElementById("prijs-vloer");
    const prijs = document.getElementsByClassName("prijs");
-
-   console.log(prijs)
 
    if (totaal.innerHTML == "€0"){
        function berekenen(){
@@ -279,8 +290,6 @@ if(kleurSelect == null){
  // Gereedschappen uit localstorage
 const winkeltje = document.getElementsByClassName("tool");
 
-console.log(winkeltje)
-
 const winkeltjeArray = Array.from(winkeltje);
 
 winkeltjeArray.forEach(w => {
@@ -289,18 +298,11 @@ winkeltjeArray.forEach(w => {
 
         const storage = localStorage.getItem('bestel-item' + tool);
 
-        console.log(storage)
-
         const afvinken = document.getElementById(storage)
-
-        console.log(afvinken)
 
         if(afvinken == null){
             return console.log("Disregard error")
         } else {
             afvinken.checked = true
-        }
-
-        
-       
+        }      
 })

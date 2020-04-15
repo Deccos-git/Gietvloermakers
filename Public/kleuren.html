@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NDMGRJM');</script>
+    <!-- End Google Tag Manager -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158745056-1"></script>
 <script>
@@ -14,7 +21,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kleurencollectie</title>
+    <meta name="keywords" content="zelf gietvloer maken, doe het zelf gietvloer, gietvloer maken kleurencollectie.">
+    <meta name="description" content="Bekijk en vergelijk alle 61 kleuren en vind je droom kleur in de kleurencollectie van Gietvloermakers.">
+    <title>Bekijk en vergelijk alle 61 kleuren in onze kleurencollectie</title>
     <script>src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"</script>
     <script>src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"</script>
     <script>src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"</script>
@@ -41,6 +50,10 @@
   <!-- End Facebook Pixel Code -->
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDMGRJM"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
         <section id="headerGietvloeren">
             <nav>
                 <div id="menu">
@@ -62,22 +75,20 @@
             </nav>
     
             </section>
-<div id="kiezerdiv">
-    <h1 id="kiezer">Kleurencollectie</h1>
-</div>
 
 <div class="style">
-        <h2 onclick="indi()">Industrieel</h2>      
-        <h2 onclick="sprt()">Sportief</h2>
-        <h2 onclick="std()">Stedelijk</h2>  
-        <h2 onclick="mnm()">Minimalistisch</h2>         
-        <h2 onclick="org()">Organisch</h2>  
-        <h2 onclick="spl()">Speels</h2>       
-        <h2 onclick="clt()">Cultuur</h2>      
-        <h2 onclick="lux()">Luxe</h2>  
-        <h2 onclick="kls()">Klassiekers</h2>        
+        <img id="menu-up" src="Images/arrow-up.png" alt="" width="20px" height="20px">
+        <h2 id="ind">Industrieel</h2>      
+        <h2 id="spr">Sportief</h2>
+        <h2 id="std">Stedelijk</h2>  
+        <h2 id="min">Minimalistisch</h2>         
+        <h2 id="org">Organisch</h2>  
+        <h2 id="spl">Speels</h2>       
+        <h2 id="clt">Cultuur</h2>      
+        <h2 id="lux">Luxe</h2>  
+        <h2 id="kls">Klassiekers</h2>        
 </div>
-
+<div class="landing-style" id="landing-ind"></div>
 <main id="industrieel">
         <h1>Industrieel</h1>
     <section class="kleurvlak">
@@ -108,6 +119,7 @@
         </section>
 </main>  
 
+<div class="landing-style" id="landing-spr"></div>
 <main id="sportief">
         <h1>Sportief</h1>
                 <section class="kleurvlakSpr">
@@ -138,6 +150,7 @@
                 </section>
 </main>  
 
+<div class="landing-style" id="landing-std"></div>
 <main id="stedelijk">
         <h1>Stedelijk</h1>
         <section class="kleurvlakStd">
@@ -168,6 +181,7 @@
         </section>
 </main>  
 
+<div class="landing-style" id="landing-min"></div>
 <main id="minimalistisch">
         <h1>Minimalistisch</h1>
         <section class="kleurvlakMnm">
@@ -197,7 +211,8 @@
                     </div>
         </section>
 </main>  
-        
+ 
+<div class="landing-style" id="landing-org"></div>
 <main id="organisch">
         <h1>Organisch</h1>
         <section class="kleurvlakOrg">
@@ -228,6 +243,7 @@
         </section>
 </main>  
 
+<div class="landing-style" id="landing-spl"></div>
 <main id="speels">
         <h1>Speels</h1>
         <section class="kleurvlakSpl">
@@ -258,6 +274,7 @@
         </section>
 </main>  
 
+<div class="landing-style" id="landing-clt"></div>
 <main id="cultuur">
         <h1>Cultuur</h1>
         <section class="kleurvlakClt">
@@ -288,6 +305,7 @@
         </section>
 </main>  
 
+<div class="landing-style" id="landing-lux"></div>
 <main id="luxe">
         <h1>Luxe</h1>
         <section class="kleurvlakLux">
@@ -318,6 +336,7 @@
         </section>
 </main>  
 
+<div class="landing-style" id="landing-kls"></div>
 <main id="klassiekers">
         <h1>Klassiekers</h1>
         <section class="kleurvlakKls">

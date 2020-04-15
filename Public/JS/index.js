@@ -8,6 +8,26 @@ function hamburgerMenu(){
     }
 }
 
+// Show video's on scroll in blog
+
+//     const youtube = document.getElementsByClassName("foto-video")
+
+//    const youtubeArray = Array.from(youtube)
+
+//     youtubeArray.forEach(tube => {
+//         window.scroll(function() {
+//             tube.style.display = "block"
+//         })
+//     });
+
+
+    // const test = document.getElementById("content-dag-1")
+
+    // console.log(test)
+    // test.addEventListener("scroll", () => {
+    //     test.style.display = "none"
+    // })
+
 
 
  

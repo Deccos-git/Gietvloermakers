@@ -12,6 +12,12 @@
   height: auto;
   width: 100%;
 }
+
+#menu-up{
+  border: 1px solid #3d3d3d;
+  border-radius: 50%;
+  align-self: center;
+}
   
 .style{
   display: flex;
@@ -20,15 +26,18 @@
   font-family: 'Prata', serif;
   margin-bottom: 50px;
   cursor: pointer;
+  position: sticky;
+  top: 0px;
+  background-color: #fff;
+  border-bottom: 1px solid #3d3d3d;
 }
 
 .style h2{
   margin: 5px;
   padding: 5px;
-  color: #3d3d3d;
-  border-bottom: 1px solid #3d3d3d;    
-  border-top: 1px solid #3d3d3d;
-  border-color: #A00025;
+  color: #3d3d3d;   
+  font-size: 20px;
+  font-weight: 100;
 }
 
 .style h2:hover{
@@ -41,6 +50,10 @@
   text-decoration: none;
 }
 
+.landing-style{
+  margin-bottom: 90px;
+}
+
 #industrieel{
   display: flex;
   margin: 20px;
@@ -49,49 +62,41 @@
 #sportief{
   display: flex;
   margin: 20px;
-  display: none;
 }
 
 #stedelijk{
   display: flex;
   margin: 20px;
-  display: none;
 }
 
 #minimalistisch{
   display: flex;
   margin: 20px;
-  display: none;
 }
 
 #organisch{
   display: flex;
   margin: 20px;
-  display: none;
 }
 
 #speels{
   display: flex;
   margin: 20px;
-  display: none;
 }
 
 #cultuur{
   display: flex;
   margin: 20px;
-  display: none;
 }
 
 #luxe{
   display: flex;
   margin: 20px;
-  display: none;
 }
 
 #klassiekers{
   display: flex;
   margin: 20px;
-  display: none;
 }
 
 .impressie{
@@ -1351,5 +1356,9 @@ height: 200px;
     #kiezer{
       font-size: 35px;
       margin: 100px 0px 0px 0px;
+  }
+
+  .style h2{
+    font-size: 14px;
   }
 }

@@ -14,7 +14,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Stappenplan</title>
+    <meta name="keywords" content="zelf gietvloer maken, doe het zelf gietvloer, gietvloer maken stappenplan, gietvloer maken tutorial, gietvloermaken guide.">
+    <meta name="description" content="Wat komt er allemaal bij kijken als je zelf je eigen gietvloer wilt maken? Dat valt best wel mee. Bekijk het uitgebreide en overzichtelijke stappenplan van Gietvloermakers.">
+    <title>Stappenplan - Maak zelf eenvoudig je gietvloer met het Gietvloermakers stappenplan</title>
     <script>src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"</script>
     <script>src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"</script>
     <script>src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"</script>
@@ -22,23 +24,6 @@
     <link rel="stylesheet" href="CSS/stappenplan.css"></link>
     <link rel="shortcut icon" href="Images/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Lato|Prata&display=swap" rel="stylesheet">
-     <!-- Facebook Pixel Code -->
-<script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '191716128570076');
-    fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=191716128570076&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Facebook Pixel Code -->
 </head>
 <body>
     <nav>
@@ -62,19 +47,15 @@
             </div>
 </nav>
 
-        
-            <div id="stappenHeadDiv">
-            <h1 id="kiezer">Stappenplan</h1>
-        </div>
-
-        <div class="overzichtdagen">
-            <h2 onclick = "dag1()">Dag 1</h2>
-            <h2 onclick = "dag2()">Dag 2</h2>
-            <h2 onclick = "dag3()">Dag 3</h2>       
-            <h2 onclick = "dag4()">Dag 4</h2>
-            <h2 onclick = "dag5()">Dag 5</h2>
-        </div>
-
+<div class="overzichtdagen">
+    <img id="menu-up" src="Images/arrow-up.png" alt="" width="20px" height="20px">
+    <h2 id="menu-dag-1">Dag 1</h2>
+    <h2 id="menu-dag-2">Dag 2</h2>
+    <h2 id="menu-dag-3">Dag 3</h2>       
+    <h2 id="menu-dag-4">Dag 4</h2>
+</div>
+<button onclick="print()">Print stappenplan</button>
+    
 <!-- Modals Gereedschappen-->
 
     <!--0. Folie -->
@@ -1141,7 +1122,8 @@
 
 <!-- Stappenoverzicht -->
 
-      <!--Dag 1-->  
+      <!--Dag 1--> 
+    <div class="landing-menu" id="landing-Dag1"></div> 
     <div id="Dag1">
         <section id="stappenoverzicht">
                 <div class="dagen">
@@ -1225,142 +1207,134 @@
                             </div>
                     </div>
                 </div>
+
+                <div class="deel1">
+                    <div class="onderwerp">
+                        <h3>Taak</h3>
+                            <h2 onclick="schraplaag()">De primer aanbrengen
+                            </h2>
+                    </div>
+                    <div class="benodigdheden">
+                        <h3>Benodigdheden</h3>
+                            <ul>  
+                                <li >Boormachine
+                                </li>
+                                <li class="more-info" onclick="mengspiraal()">Mengspiraal
+                                    <img class="icon" src="Images/i-icon.jpeg" alt="meer-informatie" height="20px" width="20px">
+                                </li>
+                                <li class="more-info" onclick="vlakkeSpaan()">Vlakke spaan
+                                    <img class="icon" src="Images/i-icon.jpeg" alt="meer-informatie" height="20px" width="20px">
+                                </li>
+                                <li class="more-info" onclick="wegwerpKwast()">Kwast
+                                    <img class="icon" src="Images/i-icon.jpeg" alt="meer-informatie" height="20px" width="20px">
+                                </li>
+                                <li >Schrapmassa E
+                                </li>
+                                <li class="more-info" onclick="handschoenen()">Handschoenen
+                                    <img class="icon" src="Images/i-icon.jpeg" alt="meer-informatie" height="20px" width="20px">
+                                </li>
+                                <li>Veiligheidsbril                                                          
+                                </li>
+                                <li>Kniebeschermers                                                           
+                                </li>
+                                <li>Reinigingsdoekjes
+                                </li>
+                            </ul>
+                    </div>                
+                </div>
+                <div class="stappen">
+                    <div class="container">
+                        <h3>Stappen</h3>
+                            <div class="main">
+                                <div class="stap">
+                                    <div class="check-id" data-nr="19" onclick ="click19()" id="check19"></div>
+                                        <p id="1.19">1. Ruim het afval van gisteren op.</p>
+                                            
+                                </div>
+                                <div class="stap">
+                                    <div class="check-id" data-nr="20" onclick ="click20()" id="check20"></div>
+                                        <p id="1.20">2. Bepaal waar u wilt beginnen met aanbrengen en waar u wilt eindigen.</p>
+                                        
+                                </div>
+                                <div class="stap">
+                                    <div class="check-id" data-nr="21" onclick ="click21()" id="check21"></div>
+                                        <p class="belichten" onclick="kleding()" id="1.21">3. Doe je handschoenen, bril en kniebeschermers aan.
+                                            <img class="icon" src="Images/i-icon.jpeg" alt="meer-informatie" height="20px" width="20px">
+                                        </p>     
+                                            
+                                </div>
+                                <div class="stap">
+                                    <div class="check-id" data-nr="22" onclick ="click22()" id="check22"></div>
+                                        <p class="belichten" onclick="eenSetSchrap()" id="1.22">4. Maak per keer 1 set aan.
+                                            <img class="icon" src="Images/i-icon.jpeg" alt="meer-informatie" height="20px" width="20px">
+                                        </p>  
+                                        
+                                </div>
+                                <div class="stap">
+                                    <div class="check-id" data-nr="23" onclick ="click23()" id="check23"></div>
+                                        <p class="belichten" onclick="gietAbijBSchrap()" id="1.23">5. Giet component B bij component A in het blik.
+                                            <img class="icon" src="Images/i-icon.jpeg" alt="meer-informatie" height="20px" width="20px">
+                                        </p>   
+                                            
+                                </div>
+                                <div class="stap">
+                                    <div class="check-id" data-nr="24" onclick ="click24()" id="check24"></div>
+                                        <p class="belichten" onclick="mengenSchrap()" id="1.24">6. Doe de mengspiraal in de boormachine en meng de inhoud van het blik 1 minuut lang door elkaar.
+                                            <img class="icon" src="Images/i-icon.jpeg" alt="meer-informatie" height="20px" width="20px">
+                                        </p> 
+                                        
+                                </div>
+                                <div class="stap">
+                                    <div class="check-id" data-nr="25" onclick ="click25()" id="check25"></div>
+                                        <p onclick="rilletjeSchrap()" id="1.25">7. Giet een rilletje van c.a. 4 cm breed uit over de vloer parallel aan de muur en 1 meter uit de kant.</p>
+                                            
+                                </div>
+                                <div class="stap">
+                                    <div class="check-id" data-nr="26" onclick ="click26()" id="check26"></div>
+                                        <p onclick="spanenSchrap()" id="1.26">8. Breng het mengsel met de spaan aan.</p>
+                                        
+                                </div>
+                                <div class="stap">
+                                    <div class="check-id" data-nr="27" onclick ="click27()" id="check27"></div>
+                                        <p onclick="schuinSchrap()" id="1.27">9. Houd de spaan 45 graden schuin ten opzichte van de vloer.</p>
+                                            
+                                </div>
+                                <div class="stap">
+                                    <div class="check-id" data-nr="28" onclick ="click28()" id="check28"></div>
+                                        <p onclick="massaSchrap()" id="1.28">10. Spaan de massa uit met een lichte druk op de spaan. Zorg voor een glad resultaat. Voorkom rillen.</p>
+                                        
+                                </div>
+                                <div class="stap">
+                                    <div class="check-id" data-nr="29" onclick ="click29()" id="check29"></div>
+                                        <p class="belichten" onclick="reinigSpaan()" id="1.29">11. Reinig de spaan met de reinigingsdoekjes.
+                                            <img class="icon" src="Images/i-icon.jpeg" alt="meer-informatie" height="20px" width="20px">
+                                        </p>
+                                            
+                                </div>
+                                <div class="stap">
+                                    <div class="check-id" data-nr="30" onclick ="click30()" id="check30"></div>
+                                        <p id="1.30">12. Doe als allerlaatste je handschoenen uit.</p>
+                                        
+                                </div>
+                                <div class="stap">
+                                    <div class="check-id" data-nr="31" onclick ="click31()" id="check31"></div>
+                                        <p id="1.31">13. Laat al het afval staan op de mengplek.</p>
+                                            
+                                </div>
+                            </div>
+                    </div>
+                </div>
             </section>
         </div>
 
         <!--Dag 2-->  
+        <div class="landing-menu" id="landing-Dag2"></div> 
         <div id="Dag2">
                 <section id="stappenoverzicht">
                         <div class="dagen">
                                 <h2> Dag </h2>
                                     <h2>2</h2>
                         </div>
-                                    <div class="deel1">
-                                            <div class="onderwerp">
-                                                <h3>Taak</h3>
-                                                    <h2 onclick="schraplaag()">De schraplaag aanbrengen
-                                                    </h2>
-                                            </div>
-                                            <div class="benodigdheden">
-                                                <h3>Benodigdheden</h3>
-                                                    <ul>  
-                                                        <li >Boormachine
-                                                        </li>
-                                                        <li class="more-info" onclick="mengspiraal()">Mengspiraal
-                                                            <img class="icon" src="Images/i-icon.jpeg" alt="meer-informatie" height="20px" width="20px">
-                                                        </li>
-                                                        <li class="more-info" onclick="vlakkeSpaan()">Vlakke spaan
-                                                            <img class="icon" src="Images/i-icon.jpeg" alt="meer-informatie" height="20px" width="20px">
-                                                        </li>
-                                                        <li class="more-info" onclick="wegwerpKwast()">Kwast
-                                                            <img class="icon" src="Images/i-icon.jpeg" alt="meer-informatie" height="20px" width="20px">
-                                                        </li>
-                                                        <li >Schrapmassa E
-                                                        </li>
-                                                        <li class="more-info" onclick="handschoenen()">Handschoenen
-                                                            <img class="icon" src="Images/i-icon.jpeg" alt="meer-informatie" height="20px" width="20px">
-                                                        </li>
-                                                        <li>Veiligheidsbril                                                          
-                                                        </li>
-                                                        <li>Kniebeschermers                                                           
-                                                        </li>
-                                                        <li>Reinigingsdoekjes
-                                                        </li>
-                                                    </ul>
-                                            </div>                
-                                        </div>
-                                        <div class="stappen">
-                                            <div class="container">
-                                                <h3>Stappen</h3>
-                                                    <div class="main">
-                                                        <div class="stap">
-                                                            <div class="check-id" data-nr="19" onclick ="click19()" id="check19"></div>
-                                                                <p id="1.19">1. Ruim het afval van gisteren op.</p>
-                                                                    
-                                                        </div>
-                                                        <div class="stap">
-                                                            <div class="check-id" data-nr="20" onclick ="click20()" id="check20"></div>
-                                                                <p id="1.20">2. Bepaal waar u wilt beginnen met aanbrengen en waar u wilt eindigen.</p>
-                                                                
-                                                        </div>
-                                                        <div class="stap">
-                                                            <div class="check-id" data-nr="21" onclick ="click21()" id="check21"></div>
-                                                                <p class="belichten" onclick="kleding()" id="1.21">3. Doe je handschoenen, bril en kniebeschermers aan.
-                                                                    <img class="icon" src="Images/i-icon.jpeg" alt="meer-informatie" height="20px" width="20px">
-                                                                </p>     
-                                                                    
-                                                        </div>
-                                                        <div class="stap">
-                                                            <div class="check-id" data-nr="22" onclick ="click22()" id="check22"></div>
-                                                                <p class="belichten" onclick="eenSetSchrap()" id="1.22">4. Maak per keer 1 set aan.
-                                                                    <img class="icon" src="Images/i-icon.jpeg" alt="meer-informatie" height="20px" width="20px">
-                                                                </p>  
-                                                                
-                                                        </div>
-                                                        <div class="stap">
-                                                            <div class="check-id" data-nr="23" onclick ="click23()" id="check23"></div>
-                                                                <p class="belichten" onclick="gietAbijBSchrap()" id="1.23">5. Giet component B bij component A in het blik.
-                                                                    <img class="icon" src="Images/i-icon.jpeg" alt="meer-informatie" height="20px" width="20px">
-                                                                </p>   
-                                                                    
-                                                        </div>
-                                                        <div class="stap">
-                                                            <div class="check-id" data-nr="24" onclick ="click24()" id="check24"></div>
-                                                                <p class="belichten" onclick="mengenSchrap()" id="1.24">6. Doe de mengspiraal in de boormachine en meng de inhoud van het blik 1 minuut lang door elkaar.
-                                                                    <img class="icon" src="Images/i-icon.jpeg" alt="meer-informatie" height="20px" width="20px">
-                                                                </p> 
-                                                                
-                                                        </div>
-                                                        <div class="stap">
-                                                            <div class="check-id" data-nr="25" onclick ="click25()" id="check25"></div>
-                                                                <p onclick="rilletjeSchrap()" id="1.25">7. Giet een rilletje van c.a. 4 cm breed uit over de vloer parallel aan de muur en 1 meter uit de kant.</p>
-                                                                    
-                                                        </div>
-                                                        <div class="stap">
-                                                            <div class="check-id" data-nr="26" onclick ="click26()" id="check26"></div>
-                                                                <p onclick="spanenSchrap()" id="1.26">8. Breng het mengsel met de spaan aan.</p>
-                                                                
-                                                        </div>
-                                                        <div class="stap">
-                                                            <div class="check-id" data-nr="27" onclick ="click27()" id="check27"></div>
-                                                                <p onclick="spanenSchrap()" id="1.27">9. Houd de spaan 45 graden schuin ten opzichte van de vloer.</p>
-                                                                    
-                                                        </div>
-                                                        <div class="stap">
-                                                            <div class="check-id" data-nr="28" onclick ="click28()" id="check28"></div>
-                                                                <p onclick="spanenSchrap()" id="1.28">10. Spaan de massa uit met een lichte druk op de spaan. Zorg voor een glad resultaat. Voorkom rillen.</p>
-                                                                
-                                                        </div>
-                                                        <div class="stap">
-                                                            <div class="check-id" data-nr="29" onclick ="click29()" id="check29"></div>
-                                                                <p class="belichten" onclick="reinigSpaan()" id="1.29">11. Reinig de spaan met de reinigingsdoekjes.
-                                                                    <img class="icon" src="Images/i-icon.jpeg" alt="meer-informatie" height="20px" width="20px">
-                                                                </p>
-                                                                    
-                                                        </div>
-                                                        <div class="stap">
-                                                            <div class="check-id" data-nr="30" onclick ="click30()" id="check30"></div>
-                                                                <p id="1.30">12. Doe als allerlaatste je handschoenen uit.</p>
-                                                                
-                                                        </div>
-                                                        <div class="stap">
-                                                            <div class="check-id" data-nr="31" onclick ="click31()" id="check31"></div>
-                                                                <p id="1.31">13. Laat al het afval staan op de mengplek.</p>
-                                                                    
-                                                        </div>
-                                                    </div>
-                                            </div>
-                                        </div>
-                    </section>
-        </div>
-
-         <!--Dag 3-->  
-         <div id="Dag3">
-            <section id="stappenoverzicht">
-                    <div class="dagen">
-                            <h2> Dag </h2>
-                                <h2>3</h2>
-                    </div>
                                 <div class="deel1">
                                         <div class="onderwerp">
                                             <h3>Taak</h3>
@@ -1480,21 +1454,21 @@
                                                     </div>
                                                     <div class="stap">
                                                         <div class="check-id" data-nr="41" onclick ="click41()" id="check41"></div>
-                                                            <p class="belichten" onclick="spanenGiet()" id="1.41">10. Houd de spaan vlak ten opzichte van de vloer. Laat de spaan drijven op het materiaal.
+                                                            <p class="belichten" onclick="vlakGiet()" id="1.41">10. Houd de spaan vlak ten opzichte van de vloer. Laat de spaan drijven op het materiaal.
                                                                 <img class="icon" src="Images/i-icon.jpeg" alt="meer-informatie" height="20px" width="20px">
                                                             </p>
                                                                 
                                                     </div>
                                                     <div class="stap">
                                                         <div class="check-id" data-nr="42" onclick ="click42()" id="check42"></div>
-                                                            <p class="belichten" onclick="spanenGiet()" id="1.42">11. Spaan de massa uit zonder druk op de spaan. Zorg voor een goede verdeling. Voorkom dikke en dunne plekken.
+                                                            <p class="belichten" onclick="drukGiet()" id="1.42">11. Spaan de massa uit zonder druk op de spaan. Zorg voor een goede verdeling. Voorkom dikke en dunne plekken.
                                                                 <img class="icon" src="Images/i-icon.jpeg" alt="meer-informatie" height="20px" width="20px">
                                                             </p>
                                                             
                                                     </div>
                                                     <div class="stap">
                                                         <div class="check-id" data-nr="43" onclick ="click43()" id="check43"></div>
-                                                            <p class="belichten" onclick="spanenGiet()" id="1.43">12. Giet nu telkens de volgende ril aansluitend uit en verdeel het materiaal met de spaan. Zorg dat het materiaal "nat in nat" aansluit
+                                                            <p class="belichten" onclick="rilGiet()" id="1.43">12. Giet nu telkens de volgende ril aansluitend uit en verdeel het materiaal met de spaan. Zorg dat het materiaal "nat in nat" aansluit
                                                                 <img class="icon" src="Images/i-icon.jpeg" alt="meer-informatie" height="20px" width="20px">
                                                             </p>
                                                             
@@ -1517,12 +1491,13 @@
                 </section>
     </div>
 
-    <!--Dag 4-->  
-    <div id="Dag4">
+    <!--Dag 3-->  
+    <div class="landing-menu" id="landing-Dag3"></div> 
+    <div id="Dag3">
         <section id="stappenoverzicht">
                 <div class="dagen">
                         <h2> Dag </h2>
-                            <h2>4</h2>
+                            <h2>3</h2>
                 </div>
                             <div class="deel1">
                                     <div class="onderwerp">
@@ -1630,21 +1605,21 @@
                                                 </div>
                                                 <div class="stap">
                                                     <div class="check-id" data-nr="56" onclick ="click56()" id="check56"></div>
-                                                        <p class="belichten" onclick="rollenLak()" id="1.56">11. Rol de lak uit haaks op het rilletje.
+                                                        <p class="belichten" onclick="haaksLak()" id="1.56">11. Rol de lak uit haaks op het rilletje.
                                                             <img class="icon" src="Images/i-icon.jpeg" alt="meer-informatie" height="20px" width="20px">
                                                         </p>
                                                             
                                                 </div>
                                                 <div class="stap">
                                                     <div class="check-id" data-nr="57" onclick ="click57()" id="check57"></div>
-                                                        <p class="belichten" onclick="rollenLak()" id="1.57">12. Maak telkens een vak van 2 meter bij 2 meter
+                                                        <p class="belichten" onclick="vakLak()" id="1.57">12. Maak telkens een vak van 2 meter bij 2 meter
                                                             <img class="icon" src="Images/i-icon.jpeg" alt="meer-informatie" height="20px" width="20px">
                                                         </p>
                                                         
                                                 </div>
                                                 <div class="stap">
                                                     <div class="check-id" data-nr="58" onclick ="click58()" id="check58"></div>
-                                                        <p onclick="rollenLak()" id="1.58">13. Rol het zojuist aangebrachte lak nogmaals haaks door.
+                                                        <p onclick="nogmaalsLak()" id="1.58">13. Rol het zojuist aangebrachte lak nogmaals haaks door.
                                                             <img class="icon" src="Images/i-icon.jpeg" alt="meer-informatie" height="20px" width="20px">
                                                         </p>
                                                             
@@ -1675,12 +1650,13 @@
             </section>
 </div>
 
-<!--Dag 5-->  
-<div id="Dag5">
+<!--Dag 4--> 
+<div class="landing-menu" id="landing-Dag4"></div>  
+<div id="Dag4">
     <section id="stappenoverzicht">
             <div class="dagen">
                     <h2> Dag </h2>
-                        <h2>5</h2>
+                        <h2>4</h2>
             </div>
                         <div class="deel1">
                                 <div class="onderwerp">
@@ -1714,16 +1690,6 @@
                             </div>
         </section>
 </div>
-
-<div class="overzichtdagen">
-    <h2 id="dag1" onclick = "dag1()">Dag 1</h2>
-    <h2 id="dag2" onclick = "dag2()">Dag 2</h2>
-    <h2 id="dag3" onclick = "dag3()">Dag 3</h2>       
-    <h2 id="dag4" onclick = "dag4()">Dag 4</h2>
-    <h2 id="dag5" onclick = "dag5()">Dag 5</h2>
-</div>
-
-<button onclick="print()">Print pagina</button>
 
 <footer id="footer">
     <div class="footer-div">

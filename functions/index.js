@@ -31,7 +31,7 @@ app.post("/api/user", urlencodedParser, (req, res) => {
       
       var mailOptions = {
         from: 'gietvloermakers@gmail.com',
-        to: 'gvbeusekom84@hotmail.com',
+        to: 'deccos.nl@gmail.com',
         subject: 'Nieuwe bestelling op Gietvloermakers',
         html: string
       };

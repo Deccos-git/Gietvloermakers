@@ -1,136 +1,34 @@
 
 // Menu
-const industrie = document.getElementById("industrieel");
-const sportief = document.getElementById("sportief");
-const stedelijk = document.getElementById("stedelijk")
-const minimalistisch = document.getElementById("minimalistisch")
-const organisch = document.getElementById("organisch");
-const speels = document.getElementById("speels");
-const cultuur = document.getElementById("cultuur");
-const luxe = document.getElementById("luxe");
-const klassiekers = document.getElementById("klassiekers");
+const industrie = document.getElementById("ind");
+const sportief = document.getElementById("spr");
+const stedelijk = document.getElementById("std")
+const minimalistisch = document.getElementById("min")
+const organisch = document.getElementById("org");
+const speels = document.getElementById("spl");
+const cultuur = document.getElementById("clt");
+const luxe = document.getElementById("lux");
+const klassiekers = document.getElementById("kls");
 
-window.onload = function(){
-    industrie.style.display = "flex";
-    sportief.style.display = "flex";
-    stedelijk.style.display = "flex";
-    minimalistisch.style.display = "flex";
-    organisch.style.display = "flex";
-    speels.style.display = "flex";
-    cultuur.style.display = "flex";
-    luxe.style.display = "flex";
-    klassiekers.style.display = "flex";
-}
+const menuUp = document.getElementById("menu-up")
 
-function indi(){
-    industrie.style.display = "flex";
-    sportief.style.display = "none";
-    stedelijk.style.display = "none";
-    minimalistisch.style.display = "none";
-    organisch.style.display = "none";
-    speels.style.display = "none";
-    cultuur.style.display = "none";
-    luxe.style.display = "none";
-    klassiekers.style.display = "none";
+function subMenu(a,b){
+    a.addEventListener("click", () => {
+        window.location.href = "#" + b;
+    })
+}   
+subMenu(industrie,"landing-ind")
+subMenu(sportief,"landing-spr")
+subMenu(stedelijk,"landing-std")
+subMenu(minimalistisch,"landing-min")
+subMenu(organisch,"landing-org")
+subMenu(speels,"landing-spl")
+subMenu(cultuur,"landing-clt")
+subMenu(luxe,"landing-lux")
+subMenu(klassiekers,"landing-kls")
 
-    // window.location.href = "#industrieel";  
-}
+subMenu(menuUp, "menu")
 
-function sprt(){
-    industrie.style.display = "none";
-    sportief.style.display = "flex";
-    stedelijk.style.display = "none";
-    minimalistisch.style.display = "none";
-    organisch.style.display = "none";
-    speels.style.display = "none";
-    cultuur.style.display = "none";
-    luxe.style.display = "none";
-    klassiekers.style.display = "none";
-}
-
-function std(){
-    stedelijk.style.display = "flex";
-    industrie.style.display = "none";
-    sportief.style.display = "none";
-    minimalistisch.style.display = "none";
-    organisch.style.display = "none";
-    speels.style.display = "none";
-    cultuur.style.display = "none";
-    luxe.style.display = "none";
-    klassiekers.style.display = "none";
-}
-
-function mnm(){
-    minimalistisch.style.display = "flex";
-    stedelijk.style.display = "none";
-    industrie.style.display = "none";
-    sportief.style.display = "none";
-    organisch.style.display = "none";
-    speels.style.display = "none";
-    cultuur.style.display = "none";
-    luxe.style.display = "none";
-    klassiekers.style.display = "none";
-}
-
-function org(){
-    organisch.style.display = "flex";
-    stedelijk.style.display = "none";
-    industrie.style.display = "none";
-    sportief.style.display = "none";
-    minimalistisch.style.display = "none";
-    speels.style.display = "none";
-    cultuur.style.display = "none";
-    luxe.style.display = "none";
-    klassiekers.style.display = "none";
-}
-
-function spl(){
-    speels.style.display = "flex";
-    stedelijk.style.display = "none";
-    industrie.style.display = "none";
-    minimalistisch.style.display = "none";
-    sportief.style.display = "none";
-    organisch.style.display = "none";
-    cultuur.style.display = "none";
-    luxe.style.display = "none";
-    klassiekers.style.display = "none";
-}
-
-function clt(){
-    cultuur.style.display = "flex";
-    stedelijk.style.display = "none";
-    industrie.style.display = "none";
-    minimalistisch.style.display = "none";
-    sportief.style.display = "none";
-    organisch.style.display = "none";
-    speels.style.display = "none";
-    luxe.style.display = "none";
-    klassiekers.style.display = "none";
-}
-
-function lux(){
-    luxe.style.display = "flex";
-    stedelijk.style.display = "none";
-    industrie.style.display = "none";
-    minimalistisch.style.display = "none";
-    sportief.style.display = "none";
-    organisch.style.display = "none";
-    speels.style.display = "none";
-    cultuur.style.display = "none";
-    klassiekers.style.display = "none";
-}
-
-function kls(){
-    klassiekers.style.display = "flex";
-    stedelijk.style.display = "none";
-    industrie.style.display = "none";
-    sportief.style.display = "none";
-    minimalistisch.style.display = "none";
-    organisch.style.display = "none";
-    speels.style.display = "none";
-    cultuur.style.display = "none";
-    luxe.style.display = "none";
-}
 
 // Kleurselectie
 const bestel = document.getElementById("bestel");
