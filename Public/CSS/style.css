@@ -476,14 +476,7 @@ option{
         width: 100%;
         padding: 15px;
         list-style: none;
-    }
-
-    #mobile-menu{
-        text-align: left;
-    }
-
-    #menuItems li{
-        text-align: left;
+        text-align: center;
     }
 
     #menuItems a:link{
