@@ -19,7 +19,6 @@ subMenu(overzicht1, "landing-Dag1")
 subMenu(overzicht2, "landing-Dag2")
 subMenu(overzicht3, "landing-Dag3")
 subMenu(overzicht4, "landing-Dag4")
-subMenu(overzicht5, "landing-Dag5")
 
 subMenu(menuUp, "menu")
 
@@ -48,6 +47,8 @@ subMenu(menuUp, "menu")
 
         wegArray.forEach(w => {
             w.addEventListener("click", () => {
+
+                console.log("weg")
                 const modal = document.getElementsByClassName("modalBG")
                 const modalArray = Array.from(modal)
                     modalArray.forEach(m => {
