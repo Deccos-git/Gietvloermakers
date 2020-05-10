@@ -2,6 +2,15 @@
     height: auto;
 }
 
+#kiezer-kenniscentrum{
+        text-align: center;
+        align-self: center;
+        margin: 100px 100px 100px 100px;
+        font-size: 70px;
+        vertical-align: middle;
+        color: #A00025;
+}
+
 #fotos{
     display: flex;
     justify-content: center;
@@ -21,13 +30,12 @@
     border-radius: 15px;
 }
 
-#kiezer {
+#experts-section{
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    align-self: center;
-    margin: 100px 100px 100px 100px;
-    font-size: 70px;
-    vertical-align: middle;
-    color: #A00025;
 }
 
 #contact-experts{
@@ -44,9 +52,11 @@
 #contact-inner-div{
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: left;
     border-radius: 15px;
     padding: 15px;
+    margin: 0px 100px 0px 100px;
 }
 
 #contact-methods{
@@ -57,15 +67,33 @@
 #blog{
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
     margin-top: 50px;
 }
 
 #blog h2{
     color: #A00025;
+}
+
+#kenniscentrum-adviesgesprek-button{
+    border: green 1px solid;
+    padding: 15px;
+    font-size: 20px;
+    margin: 50px 10px 0px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: green;
+    border-radius: 15px;
+}
+
+#persoonlijk-advies-kenniscentrum-h2{
+    font-family: 'Lato', sans-serif;
+    font-size: 27px;
+    color: #A00025;
+    margin: 50px
 }
 
 /* Articles */
@@ -286,11 +314,165 @@
     text-align: left;
 }
 
+.blog-overview-outer-div{
+    width: 230px;
+    height: 300px;
+    margin: 15px 15px 30px 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+}
+
+.blog-overview-outer-div p{
+    padding: 15px;
+}
+
+.blog-overview-header img{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 130px;
+    padding: -15px -15px 0px -15px;
+}
+
+/* Normale blog posts */
+
+#blog-outer-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    margin: 0px 200px 0px 200px;
+}
+
+#blog-outer-div img{
+    width: 100%;
+}
+
+.blog-title{
+    margin: 100px 0px 50px 0px;
+}
+
+.blog-title h1{
+    font-size: 40px;
+}
+
+.blog-header img{
+    z-index: -1;
+    width: 100%;
+    margin-right: auto;
+}
+
+.blog-text{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    margin: 50px 0px 100px 0px;
+    
+}
+
+.blog-text h3{
+margin: 30px 0px 0px 0px;
+}
+
+.blog-text p{
+    letter-spacing: 1.5px;
+}
+
+.blog-meta{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid rgba(227, 227, 227, 0.5);
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: rgba(227, 227, 227, 0.5);
+  }
+
+  #datum-icon{
+      width: auto !important;
+  }
+
+  #pen-icon{
+    width: auto !important;
+  }
+
+  #prijs-tool{
+      background-color: rgba(227, 227, 227, 0.5);
+      box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 50px 0px 50px 0px;
+  }
+
+  #prijs-tool input{
+      font-size: 18px;
+  }
+
+  #totaal{
+      background-color: white;
+      width: 100%;
+      margin-top: 0px;
+  }
+
+  #button-prijs-tool{
+      color: green !important;
+      cursor: pointer;
+      font-size: 14px;
+      box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  #prijs-vloer{
+      width: 100%;
+  }
+
+  #prijs-tool p{
+      color: #3d3d3d !important;
+  }
+
+  .all-options-prijs-tool{
+      font-size: 14px;
+  }
+
+  #prijs-vloer{
+    font-size: 50px;
+}
+
+.verder-lezen-blog{
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+}
+
 @media only screen and (max-width: 938px){
 
     section{
         width: 100%;
     }
+
+    #kiezer-kenniscentrum{
+        margin: 100px 0px 100px 0px;
+        font-size: 40px;
+}
 
     #fotos{
         flex-direction: column;
@@ -326,15 +508,27 @@
         width: 100%;
     }
 
-    #kiezer {
-        font-size: 40px;
-    }
-
     .text-node{
         width: 80%;
     }
 
     .foto-video iframe {
         width: 95%;
+    }
+
+    #contact-inner-div {
+        margin: 0px 0px 0px 0px;
+    }
+
+    #blog-outer-div {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .blog-text {
+        margin: 50px 20px 100px 20px;
+    }
+
+    .blog-title h1 {
+        margin: 0px 20px 0px 20px;
     }
 }

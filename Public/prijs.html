@@ -22,9 +22,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bestellen</title>
-    <script>src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"</script>
-    <script>src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"</script>
-    <script>src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"</script>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Prata&display=swap" rel="stylesheet">
+    <script src="/__/firebase/7.14.1/firebase-app.js"></script>
+    <script src="/__/firebase/7.14.1/firebase-firestore.js"></script>
     <link rel="stylesheet" href="CSS/style.css"></link>
     <link rel="stylesheet" href="CSS/bestellen.css"></link>
     <link rel="shortcut icon" href="Images/favicon.ico">
@@ -59,15 +59,15 @@
             <ul>
                 <li><a href="/stappenplan.html" >Stappenplan</a></li>
                 <li><a href="/kleuren.html" >Kleurencollectie</a></li>
-                <li><a href ="/experts.html">Onze experts</a></li>
-                <li><a href ="/bestellen.html">Prijs</a></li>
+                <li><a href ="/experts.html">Kenniscentrum</a></li>
+                <li><a href ="/prijs.html">Prijs</a></li>
             </ul>
     </div>
         <div id="menuItems">
-            <li><a href="../stappenplan.html" >Stappenplan</a></li>
-            <li><a href="../kleuren.html" >Kleurencollectie</a></li>
-            <li><a href ="../experts.html">Onze experts</a></li>
-            <li><a href ="../bestellen.html">Prijs</a></li>
+            <li><a href="/stappenplan.html" >Stappenplan</a></li>
+            <li><a href="/kleuren.html" >Kleurencollectie</a></li>
+            <li><a href ="/experts.html">Kenniscentrum</a></li>
+            <li><a href ="/prijs.html">Prijs</a></li>
         </div>
     </nav>
 
@@ -75,7 +75,7 @@
 
 <div class="main">
         <section class="main-bestel">
-                <h2>Uw bestelling</h2>
+                <h2>Mijn keuzes</h2>
                 <p id="uw-kleur">Uw kleur</p>
                 <div id="kleurselect">Nog geen kleur gekozen? Bekijk de <a href="kleuren.html" >Kleurencollectie</a></div>
                 <a href="kleuren.html"><p id="andere-kleur">Kies een kleur</p></a>
@@ -87,7 +87,7 @@
                     <option type="number" value=0 selected>Nee, bedankt (€0)</option>
                     <option type="number" value=500>Graag (€500)</option>
                 </select>
-                <p id="zwolle"><b>Let op:</b> woont u meer dan €100 van Zwolle, dan geldt er een meerprijs van €0,19 per km.</p>
+                <p id="zwolle"><b>Let op:</b> woont u meer dan 100 km van Zwolle, dan geldt er een meerprijs van €0,19 per km.</p>
 
                 <p id="GereedschappenTitel">Gereedschappen</p>
                 <div id="tool-menu">
@@ -99,7 +99,7 @@
                         <input class="tool" type="checkbox" id="Handschoenen" value=9> Handschoenen - 3 stuks van beide (€9,00)</br>
                         <input class="tool" type="checkbox" id="Microvezel-roller" value=3.75> Microvezel roller - 1 stuks (€3,75)</br>
                     </form>
-                    <a href="stappenplan.html"><p id="andere-kleur">Bekijk het stappenplan</p></a>
+                    <a href="#vraag"><p id="andere-kleur">Bekijk het stappenplan</p></a>
                 </div>
                 <button onclick="bereken()" id="button2">Bereken uw prijs</button>
         </section>
@@ -118,14 +118,17 @@
                         <p id="totaal-prijs">Totaal</p>
                         <p id="totaal">€0</p>
                     </div>
-                    <button onclick="bestel()" id="button3">Naar bestellen</button>
+                    <button onclick="verder()" id="button-advies">Gratis advies gesprek</button>
+                    <button onclick="bestel()" id="button-bestellen">Direct bestellen</button>
+                    
+
             </section>
 </div>
 
 
 <footer id="footer">
     <div class="footer-div">
-        <img src="Images/logo350x50Rood.png" alt="Logo Gietvloermakers">
+        <img id="footer-logo" src="Images/logo350x50Rood.png" alt="Logo Gietvloermakers">
     </div>
     <div class="footer-div">
         <p id="slogan-footer">Maak eenvoudig <br> 
@@ -149,5 +152,6 @@
 
 </body>
 <script type="text/javascript" src="JS/index.js"></script>
-<script type="text/javascript" src="JS/bestellen.js"></script>
+<script type="text/javascript" src="JS/prijs.js"></script>
+<script type="text/javascript" src="JS/firebase.js"></script>
 </html>

@@ -25,8 +25,8 @@
     <title>Gietvloermakers - eenvoudig uw eigen gietvloer maken</title>
     <link rel="stylesheet" href="CSS/style.css"></link>
     <link href="https://fonts.googleapis.com/css?family=Lato|Prata&display=swap" rel="stylesheet">
-    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-analytics.js"></script>
+    <script src="/__/firebase/7.14.1/firebase-app.js"></script>
+    <script src="/__/firebase/7.14.1/firebase-firestore.js"></script>
     <link rel="shortcut icon" href="Images/favicon.ico">
 </head>
 <body>
@@ -41,22 +41,39 @@
             <ul>
                 <li><a href="/stappenplan.html" >Stappenplan</a></li>
                 <li><a href="/kleuren.html" >Kleurencollectie</a></li>
-                <li><a href ="/experts.html">Onze experts</a></li>
-                <li><a href ="/bestellen.html">Prijs</a></li>
+                <li><a href ="/experts.html">Kenniscentrum</a></li>
+                <li><a href ="/prijs.html">Prijs</a></li>
             </ul>
     
             <div id="menuItems">
                 <li><a href="../stappenplan.html" >Stappenplan</a></li>
                 <li><a href="../kleuren.html" >Kleurencollectie</a></li>
-                <li><a href ="../experts.html">Onze experts</a></li>
-                <li><a href ="../bestellen.html">Prijs</a></li>
+                <li><a href ="../experts.html">Kenniscentrum</a></li>
+                <li><a href ="../prijs.html">Prijs</a></li>
             </div>
         </div>
 
         <container id="landing-light">
             <div id="titel-light">
                  <h2 id="subtitel">Maak eenvoudig je eigen gietvloer</h2> 
-                <a href="../stappenplan.html"><button>Bekijk het stappenplan</button></a>
+                 <div>
+                    <h3 id="prijs-tool-h3">Bereken je prijs</h3>
+                </div>
+                 <div id="prijs-tool">
+                    <div>
+                        <p id="aantal-m2">Aantal m2</p>
+                        <input id="m2" type="number" placeholder="Aantal m2">
+                        <p onclick="bereken()" id="button-prijs-tool">Bereken prijs</p>
+                    </div>
+                    <div>
+                    <p class="prijs" id="prijs-vloer">€0</p>
+                    </div>
+                    <div>
+                    <a href="../prijs.html"><p class="all-options-prijs-tool">Bekijk alle opties</p></a>
+                    </div>
+                </div>
+
+                </div>
             </div>
         </container> 
 
@@ -99,7 +116,7 @@
 
 <footer id="footer">
     <div class="footer-div">
-        <img id="logo-footer" src="Images/logo350x50Rood.png" alt="Logo Gietvloermakers">
+        <img id="footer-logo" src="Images/logo350x50Rood.png" alt="Logo Gietvloermakers">
     </div>
     <div class="footer-div">
         <p id="slogan-footer">Maak eenvoudig <br> 
@@ -124,4 +141,5 @@
 </body>
 <script type="text/javascript" src="JS/firebase.js"></script>
 <script type="text/javascript" src="JS/index.js"></script>
+<script type="text/javascript" src="JS/prijs.js"></script>
 </html>

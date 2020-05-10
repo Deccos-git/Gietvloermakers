@@ -324,6 +324,10 @@ h1{
         width: 90%;
     }
 
+    .youtube iframe{
+        width: 80%;
+    }
+
     .overzichtdagen h2{
         font-size: 16px;
     }

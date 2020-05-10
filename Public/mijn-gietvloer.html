@@ -59,63 +59,47 @@
             <ul>
                 <li><a href="/stappenplan.html" >Stappenplan</a></li>
                 <li><a href="/kleuren.html" >Kleurencollectie</a></li>
-                <li><a href ="experts.html">Kenniscentrum</a></li>
-                <li><a href ="/bestellen.html">Prijs</a></li>
+                <li><a href ="/experts.html">Kenniscentrum</a></li>
+                <li><a href ="/prijs.html">Prijs</a></li>
             </ul>
     </div>
         <div id="menuItems">
             <li><a href="../stappenplan.html" >Stappenplan</a></li>
             <li><a href="../kleuren.html" >Kleurencollectie</a></li>
-            <li><a href ="experts.html">Kenniscentrum</a></li>
-            <li><a href ="../bestellen.html">Prijs</a></li>
+            <li><a href ="../experts.html">Kennis centrum</a></li>
+            <li><a href ="../prijs.html">Prijs</a></li>
         </div>
     </nav>
 
- 
-                <h1 id="kiezer">Maak uw bestelling compleet</h1>
-            <div id="controle-overzicht">
-                <div id="controlleer-form">
-                    <div class="controleer-div">
-                        <h2>Uw bestelling</h2>
-                        <p>Aantal m2</p>
-                        <input class="controle-input" type="text" name="aantalM2" id="aantalM2" readonly>
-                        <p>Kleur</p>
-                        <input class="controle-input" type="text" name="kleur" id="kleur" readonly>
-                        <p>Assistentie</p>
-                        <input class="controle-input" type="text" name="assistentie" id="assistentie" readonly>
-                        <p>Gereedschappen</p>
-                        <input class="controle-input" type="text" name="gereedschappen" id="gereedschappen" readonly>
-                        <p>Totale prijs</p>
-                        <input  class="controle-input" type="text" name="totale-prijs" id="totale-prijs" readonly>
-                        <a href="bestellen.html"><p id="andere-kleur">Bestelling aanpassen</p></a>
-                    </div>
-                    <div class="controleer-div">
-                        <h2>Uw gegevens</h2>
-                        <p>Voor en achternaam</p>
-                        <input id="naam" type="text" name="voornaam" placeholder="Voor en achternaam">
-                        <p>Straatnaam en huisnummer</p>
-                        <input id="straat" type="text" name="Adres" placeholder="Straatnaam en huisnummer">
-                        <p>Postcode</p>
-                        <input id="postcode" type="text" name="Postcode" placeholder="Postcode">
-                        <p>Telefoonnummer</p>
-                        <input id="telefoon" type="tel" name="telefoonnummer" placeholder="Telefoonnummer">
-                        <p>Emailadres</p>
-                        <input id="email" type="email" name="email" placeholder="Emailadres"><br>
-                        <button onclick="verzenden()" id="verzenden">Verzenden</button> 
-                    </div>
-                </div>
-            </div>
 
-                <div id="notice">
-                    <h2>Besteld, en nu?</h2>
-                    <p>Nadat je op de knop “verzenden” hebt geklikt, krijgt ons kantoor een mailtje met jouw contactgegevens. 
-                        Wij zullen dan altijd contact met je opnemen om de bestelling door te spreken. 
-                        Levering kan binnen 5 werkdagen.<br><br> 
-                        Mocht u vragen hebben over uw bestelling kunt altijd even contact met ons opnemen.<br><br> 
-                        <p><img class="icon" src="Images/tel.png" height=20px>06 432 378 66</p>
-                        <p><img class="icon" src="Images/mail.png" height=15px>info@gietvloermakers.nl</li></p>
-                    </p>
-                </div>
+    <h1 id="kiezer">Gratis advies gesprek</h1>
+    <div id="experts">
+        <p>Om precies te weten wat jij nodig hebt om een mooie gietvloer te maken bieden we je een gratis advies gesprek aan met een van onze experts. 
+            Heb je bijvoorbeeld een vraag over </p>
+            <ul>
+                <li>De kleur?</li>
+                <li>Het aanbrengen?</li>
+                <li>De ondergrond?</li>
+                <li>Een andere vraag?</li>
+            </ul> 
+
+        <p> Onze experts lopen de details van jouw project graag even met je door.</p>  
+        
+            <p id="verplichting-notice">Je gaat hiermee <u>geen</u> koopverplichting aan.</p>
+        <img src="Images/Experts-Jacky.JPG" alt="foto-van-karel" height="370px" width="250">
+    </div>
+    <div id="bel-mij">
+        <h2>Jouw contactgegevens</h2>
+        <h3>Jouw naam</h3>
+        <input class="vraag-input" type="text" id="vraag-naam" placeholder="Naam">
+        <h3>Jouw telefoonnummer</h3>
+        <input class="vraag-input" type="text" id="vraag-email" placeholder="Telefoonnummer">
+        <h3>Eventueel jouw vraag</h3>
+        <textarea name="vraag" id="vraag-textarea" cols="50" rows="10"></textarea>
+        <button id="button-bellen" onclick="vraag()">Verzenden</button>
+        <div id="bedankt-vraag">Je bericht is verstuurd. Je wordt zo snel mogelijk gebeld door een van onze experts.
+        </div>
+    </div>
 
 
                 <footer id="footer">

@@ -27,9 +27,9 @@
     <script>src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"</script>
     <script>src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"</script>
     <script>src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"</script>
-    <link rel="stylesheet" href="CSS/style.css"></link>
-    <link rel="stylesheet" href="CSS/experts.css"></link>
-    <link rel="shortcut icon" href="Images/favicon.ico">
+    <link rel="stylesheet" href="../CSS/style.css"></link>
+    <link rel="stylesheet" href="../CSS/experts.css"></link>
+    <link rel="shortcut icon" href="../Images/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Lato|Prata&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -43,17 +43,17 @@
                     <a id="logo" href="index.html"><img src="../Images/logo350x50Rood.png" height="50px" width="300"></a>
                     <div onclick="hamburgerMenu()" id="hamburger-menu"></div>
                     <ul>
-                        <li><a href="/stappenplan.html" >Stappenplan</a></li>
-                        <li><a href="/kleuren.html" >Kleurencollectie</a></li>
-                        <li><a href ="/experts.html">Onze experts</a></li>
-                        <li><a href ="/bestellen.html">Prijs</a></li>
+                        <li><a href="../stappenplan.html" >Stappenplan</a></li>
+                        <li><a href="../kleuren.html" >Kleurencollectie</a></li>
+                        <li><a href ="../experts.html">Kenniscentrum</a></li>
+                        <li><a href ="../prijs.html">Prijs</a></li>
                     </ul>
             </div>
                 <div id="menuItems">
                     <li><a href="../stappenplan.html" >Stappenplan</a></li>
                     <li><a href="../kleuren.html" >Kleurencollectie</a></li>
-                    <li><a href ="../experts.html">Onze experts</a></li>
-                    <li><a href ="../bestellen.html">Prijs</a></li>
+                    <li><a href ="../experts.html">Kenniscentrum</a></li>
+                    <li><a href ="../prijs.html">Prijs</a></li>
                 </div>
             </nav>
         </section>
@@ -70,7 +70,7 @@
                             Met deze guide lopen we alle 57 stappen één voor één bij langs.
                         </p>
                         <p id="sub-summary">Mocht je het stappenplan daadwerkelijk willen gebruiken tijdens het leggen van je gietvloer? <br><br>
-                            Dan raad ik je aan <a href="stappenplan.html"> dit overzichtelijke en printbare stappenplan </a>te gebruiken. <br><br>
+                            Dan raad ik je aan <a href="../stappenplan.html"> dit overzichtelijke en printbare stappenplan </a>te gebruiken. <br><br>
                             Wil je je eerst inlezen? Lees dan verder:
                         </p>
                     </div>
@@ -135,29 +135,19 @@
                 <h1>Inhoudsopgave</h1>
                 <div id="content-outer-div">
                     <div class="content-inner-div">
-                        <a href="#header-dag-1"> <img  class="dag-image" src="Images/Dag-image-1.png" alt="dag-1" width="80px"></a>
-                        <a href="#"> <h2><u color="#3F3D56">Taak 1:</u> Vochtgehalte van de ondergrond bepalen </h2></a>
-                        <a href="#"><h2><u>Taak 2:</u> Mengplek maken</h2></a>
-                        <a href="#"><h2><u>Taak 3:</u> De primer aanbrengen</h2></a>
-                    </div>
-                    <div class="content-inner-div">
-                        <a href="#header-dag-2"> <img  class="dag-image" src="Images/Dag-image-2.png" alt="dag-2" width="80px"></a>
-                        <a href="#"><h2><u>Taak 4:</u> De gietvloer aanbrengen</h2></a>
-                    </div>
-                    <div class="content-inner-div">
-                        <a href="#header-dag-3"> <img  class="dag-image" src="Images/Dag-image-3.png" alt="dag-3" width="80px"></a>
-                        <a href="#"><h2><u>Taak 5:</u> De laklaag aanbrengen</h2></a>
-                    </div>
-                    <div class="content-inner-div">
-                        <a href="#header-dag-4"> <img  class="dag-image" src="Images/Dag-image-4.png" alt="dag-4" width="80px"></a>
-                        <a href="#"> <h2><u>Taak 6:</u> Afronden</h2></a>
+                        <a href="#taak1"><h2><u>Taak 1:</u> Vochtgehalte van de ondergrond bepalen </h2></a>
+                        <a href="#taak2"><h2><u>Taak 2:</u> Mengplek maken</h2></a>
+                        <a href="#taak3"><h2><u>Taak 3:</u> De primer aanbrengen</h2></a>
+                        <a href="#taak4"><h2><u>Taak 4:</u> De gietvloer aanbrengen</h2></a>
+                        <a href="#taak5"><h2><u>Taak 5:</u> De laklaag aanbrengen</h2></a>
+                        <a href="#taak6"> <h2><u>Taak 6:</u> Afronden</h2></a>
                     </div>
                 </div>
             </div>
 
             <div class="header-dag">
-                <a href="#header-dag-1"> <img  class="dag-image" src="Images/Dag-image-1.png" alt="dag-1" width="80px"></a>
-                <h3>Taak 1</h3>
+                <a href="#header-dag-1"> <img  class="dag-image" src="../Images/Dag-image-1.png" alt="dag-1" width="80px"></a>
+                <h3 id="taak1">Taak 1</h3>
                 <h2>
                     Het vochtgehalte van de ondergrond bepalen
                 </h2>
@@ -172,7 +162,7 @@
                     <ul>
                         <li>Doorzichtig plastic folie van 50cm x 50cm</li>
                         <li>Plakband</li>
-                        <img src="Images/schilderstape.jpeg" alt="schilderstape" width="300px">
+                        <img src="../Images/schilderstape.jpeg" alt="schilderstape" width="300px">
                     </ul>
                 </div>
                 <div class="content-text">
@@ -201,18 +191,18 @@
                                 met het aanbrengen van de gietvloer en het vochtprobleem eerst oplossen. <br><br>
 
                                 Ben je een bestaande klant van Gietvloermakers en heb je vocht aangetroffen in je vloer? 
-                                Dan kun je altijd even sparren met een van onze <a href="experts.html">experts</a>.
+                                Dan kun je altijd even sparren met een van onze <a href="../experts.html">experts</a>.
 
                             </p>
                         </div>
-                        <div class="foto-video"><img src="Images/Experts-Jacky.JPG" alt="" height="600px"></div>
+                        <div class="foto-video"><img src="../Images/Experts-Jacky.JPG" alt="" height="600px"></div>
                     </div>
                 </div>
             </div>
 
             <div class="header-dag">
-                <a href="#header-dag-1"> <img  class="dag-image" src="Images/Dag-image-1.png" alt="dag-1" width="80px"></a>
-                <h3>Taak 2</h3>
+                <a href="#header-dag-1"> <img  class="dag-image" src="../Images/Dag-image-1.png" alt="dag-1" width="80px"></a>
+                <h3 id="taak2">Taak 2</h3>
                 <h2>
                     De mengplek maken
                 </h2>
@@ -224,7 +214,7 @@
                     <ul>
                         <li>Plastic zeil van 2m x 2m </li>
                         <li>Plakband</li>
-                        <img src="Images/schilderstape.jpeg" alt="schilderstape" width="300px">
+                        <img src="../Images/schilderstape.jpeg" alt="schilderstape" width="300px">
                     </ul>
                 </div>
                 <div class="content-text">
@@ -259,8 +249,8 @@
             </div>
 
             <div class="header-dag">
-                <a href="#header-dag-1"> <img  class="dag-image" src="Images/Dag-image-1.png" alt="dag-1" width="80px"></a>
-                <h3>Taak 3</h3>
+                <a href="#header-dag-1"> <img  class="dag-image" src="../Images/Dag-image-1.png" alt="dag-1" width="80px"></a>
+                <h3 id="taak3">Taak 3</h3>
                 <h2>
                     De primer aanbrengen
                 </h2>
@@ -281,13 +271,13 @@
                     <ul>
                         <li>Boormachine</li>
                         <li>Mengspiraal</li>
-                        <img src="Images/Mengspiraal.JPG" alt="schilderstape" width="300px">
+                        <img src="../Images/Mengspiraal.JPG" alt="schilderstape" width="300px">
                         <li>Vlakke spaan</li>
                         <li>Kwast</li>
-                        <img src="Images/Kwast.JPG" alt="schilderstape" width="300px">
+                        <img src="../Images/Kwast.JPG" alt="schilderstape" width="300px">
                         <li>Schrapmassa E</li>
                         <li>Handschoenen</li>
-                        <img src="Images/Handschoenen.JPG" alt="schilderstape" width="300px">
+                        <img src="../Images/Handschoenen.JPG" alt="schilderstape" width="300px">
                         <li>Veiligheidsbril</li>
                         <li>Kniebeschermers</li>
                         <li>Reinigingsdoekjes</li>
@@ -520,8 +510,8 @@
             </div>
 
             <div class="header-dag">
-                <a href="#header-dag-2"> <img  class="dag-image" src="Images/Dag-image-2.png" alt="dag-1" width="80px"></a>
-                <h3>Taak 4</h2>
+                <a href="#header-dag-2"> <img  class="dag-image" src="../Images/Dag-image-2.png" alt="dag-1" width="80px"></a>
+                <h3 id="taak4">Taak 4</h2>
                 <h2>
                     De gietvloer aanbrengen
                 </p>
@@ -535,14 +525,14 @@
                     <ul>
                         <li>Boormachine</li>
                         <li>Mengspiraal</li>
-                        <img src="Images/Mengspiraal.JPG" alt="schilderstape" width="300px">
+                        <img src="../Images/Mengspiraal.JPG" alt="schilderstape" width="300px">
                         <li>Vlakke spaan</li>
                         <li>Kwast</li>
-                        <img src="Images/Kwast.JPG" alt="schilderstape" width="300px">
+                        <img src="../Images/Kwast.JPG" alt="schilderstape" width="300px">
                         <li>Gietvloer PU</li>
                         <li>Schone 12 liter emmer</li>
                         <li>Handschoenen</li>
-                        <img src="Images/Handschoenen.JPG" alt="schilderstape" width="300px">
+                        <img src="../Images/Handschoenen.JPG" alt="schilderstape" width="300px">
                         <li>Veiligheidsbril</li>
                         <li>Kniebeschermers</li>
                         <li>Schone bezemsteel (alleen bij betonlook)</li>
@@ -850,8 +840,8 @@
                 </div>
 
                 <div class="header-dag">
-                    <a href="#header-dag-3"> <img  class="dag-image" src="Images/Dag-image-3.png" alt="dag-3" width="80px"></a>
-                    <h3>Taak 5</h3>
+                    <a href="#header-dag-3"> <img  class="dag-image" src="../Images/Dag-image-3.png" alt="dag-3" width="80px"></a>
+                    <h3 id="taak5">Taak 5</h3>
                     <h2>
                         De laklaag aanbrengen
                     </h2>
@@ -865,9 +855,9 @@
                         <ul>
                             <li>Boormachine</li>
                             <li>Mengspiraal</li>
-                            <img src="Images/Mengspiraal.JPG" alt="schilderstape" width="300px">
+                            <img src="../Images/Mengspiraal.JPG" alt="schilderstape" width="300px">
                             <li>Kwast</li>
-                            <img src="Images/Kwast.JPG" alt="schilderstape" width="300px">
+                            <img src="../Images/Kwast.JPG" alt="schilderstape" width="300px">
                             <li>Lak PU</li>
                             <li>Schone 12 liter emmer</li>
                             <li>Schuurpapier 220 korrel</li>
@@ -875,7 +865,7 @@
                             <li>Beugel voor microvezel roller 25 cm</li>
                             <li>Stok voor beugel</li>
                             <li>Handschoenen</li>
-                            <img src="Images/Handschoenen.JPG" alt="schilderstape" width="300px">
+                            <img src="../Images/Handschoenen.JPG" alt="schilderstape" width="300px">
                             <li>Veiligheidsbril</li>
                             <li>Kniebeschermers</li>
                             <li>Reinigingsdoekjes</li>
@@ -1127,8 +1117,8 @@
                     </div>
 
                     <div class="header-dag">
-                        <a href="#header-dag-4"> <img  class="dag-image" src="Images/Dag-image-4.png" alt="dag-4" width="80px"></a>
-                        <h3>Taak 6</h3>
+                        <a href="#header-dag-4"> <img  class="dag-image" src="../Images/Dag-image-4.png" alt="dag-4" width="80px"></a>
+                        <h3 id="taak6">Taak 6</h3>
                         <h2>
                             Afronden
                         </h2>
@@ -1188,17 +1178,17 @@
 
         <footer id="footer">
             <div class="footer-div">
-                <img src="Images/logo350x50Rood.png" alt="Logo Gietvloermakers">
+                <img id="footer-logo" src="../Images/logo350x50Rood.png" alt="Logo Gietvloermakers">
             </div>
             <div class="footer-div">
                 <p id="slogan-footer">Maak eenvoudig <br> 
                     je eigen gietvloer</p>
             </div>
             <div class="footer-div" id="socials">
-                <a href="https://www.youtube.com/channel/UCYdcC12etngH1QN4p8ldUvQ"><img src="Images/logo-youtube.png" alt="Logo youtube Gietvloermakers" height="30px" width="50px"></a>
+                <a href="https://www.youtube.com/channel/UCYdcC12etngH1QN4p8ldUvQ"><img src="../Images/logo-youtube.png" alt="Logo youtube Gietvloermakers" height="30px" width="50px"></a>
             </div>
             <div class="footer-div" id="socials">
-                <a href="https://www.facebook.com/Gietvloermakers-108859007269670"><img src="Images/Logo-facebook.png" alt="Logo Facebook Gietvloermakers" height="30px" width="30px"></a>
+                <a href="https://www.facebook.com/Gietvloermakers-108859007269670"><img src="../Images/Logo-facebook.png" alt="Logo Facebook Gietvloermakers" height="30px" width="30px"></a>
             </div>
             <div class="footer-div">
                 <p>Een vraag over het maken <br> 
@@ -1206,10 +1196,11 @@
                 </p>
             </div>
             <div class="footer-div">
-                <a href="experts.html"><h2 id="experts-footer">Onze experts</h2></a>
+                <a href="../experts.html"><h2 id="experts-footer">Onze experts</h2></a>
             </div>
         </footer>
                 
             </body>
-                <script type="text/javascript" src="JS/index.js"></script>
+                <script type="text/javascript" src="../JS/index.js"></script>
+                <script type="text/javascript" src="../JS/experts.js"></script>
             </html>
