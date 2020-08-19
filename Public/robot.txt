@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /bedankt-vraag.html
+Disallow: /bedankt.html
+Noindex: /bedankt-vraag.html
+Noindex: /bedankt.html
