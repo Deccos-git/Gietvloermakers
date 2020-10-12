@@ -8,25 +8,26 @@ function hamburgerMenu(){
     }
 }
 
-// Show video's on scroll in blog
+// Cookie notice
 
-//     const youtube = document.getElementsByClassName("foto-video")
+const cookieDiv = document.getElementById("cookie-notice-div")
 
-//    const youtubeArray = Array.from(youtube)
+function cookieAkkoord(){
+    localStorage.setItem("cookies", "OK")
 
-//     youtubeArray.forEach(tube => {
-//         window.scroll(function() {
-//             tube.style.display = "block"
-//         })
-//     });
+    cookieDiv.style.display = "none"
 
+};
 
-    // const test = document.getElementById("content-dag-1")
+!function cookiesOK(){
 
-    // console.log(test)
-    // test.addEventListener("scroll", () => {
-    //     test.style.display = "none"
-    // })
+    const cookiesFromLocal = localStorage.getItem("cookies")
+
+    if(cookiesFromLocal != "OK"){
+        cookieDiv.style.display = "flex"
+    }
+
+}();
 
 
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -18,11 +18,18 @@
   gtag('config', 'UA-158745056-1');
 </script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="zelf gietvloer maken, doe het zelf gietvloer, zelf gietvloer leggen, zelf gietvloer plaatsen">
     <meta name="description" content="Met Gietvloermakers maak je eenvoudig je eigen gietvloer">
-    <title>Gietvloermakers - eenvoudig uw eigen gietvloer maken</title>
+    <meta id="meta-keywords" name="keywords" content="zelf gietvloer maken, doe het zelf gietvloer, zelf gietvloer leggen, zelf gietvloer plaatsen">
+<meta id="meta-description" property="og:description" name="description" content="Met Gietvloermakers maak je eenvoudig je eigen gietvloer">
+<meta id="facebook-url" property="og:url" content="https://gietvloermakers.nl/"/>
+<meta property="og:type"  content="website"/>
+<meta id="facebook-title" property="og:title" content="Gietvloermakers"/>
+<meta id="facebook-description" property="og:description" content="Met Gietvloermakers maak je eenvoudig je eigen gietvloer"/>
+<meta id="facebook-img" property="og:image" content="https://firebasestorage.googleapis.com/v0/b/gietvloermakers.appspot.com/o/Header.jpg?alt=media&token=bfe8993b-f713-46c7-9dbd-8ea7b1926085">
+    <title>Gietvloermakers - maak eenvoudig uw eigen gietvloer</title>
     <link rel="stylesheet" href="CSS/style.css"></link>
     <link href="https://fonts.googleapis.com/css?family=Lato|Prata&display=swap" rel="stylesheet">
     <script src="/__/firebase/7.14.1/firebase-app.js"></script>
@@ -34,15 +41,24 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDMGRJM"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Cookie notice -->
+
+    <div id="cookie-notice-div">
+        <p>Gietvloermakers maakt gebruik van cookies. <a href="privacy-statement.html">Privacy & cookie beleid</a></p>
+        <button onclick="cookieAkkoord()">Ok</button>
+    </div>
+
     <nav id="header">
         <div id="menu">
-            <a id="logo" href="index.html"><img src="../Images/logo350x50Rood.png" height="50px" width="300"></a>
+            <a id="logo" href="index.html" alt="logo van gietvloermakers"><img src="../Images/logo350x50Rood.png" height="50px" width="300"></a>
             <div onclick="hamburgerMenu()" id="hamburger-menu"></div>
             <ul>
                 <li><a href="/stappenplan.html" >Stappenplan</a></li>
                 <li><a href="/kleuren.html" >Kleurencollectie</a></li>
                 <li><a href ="/experts.html">Kenniscentrum</a></li>
                 <li><a href ="/prijs.html">Prijs</a></li>
+                <li><a href ="/over-ons.html">Over ons</a></li>
             </ul>
     
             <div id="menuItems">
@@ -50,29 +66,14 @@
                 <li><a href="../kleuren.html" >Kleurencollectie</a></li>
                 <li><a href ="../experts.html">Kenniscentrum</a></li>
                 <li><a href ="../prijs.html">Prijs</a></li>
+                <li><a href ="/over-ons.html">Over ons</a></li>
             </div>
         </div>
 
         <container id="landing-light">
-            <div id="titel-light">
-                 <h2 id="subtitel">Maak eenvoudig je eigen gietvloer</h2> 
-                 <div>
-                    <h3 id="prijs-tool-h3">Bereken je prijs</h3>
-                </div>
-                 <div id="prijs-tool">
-                    <div>
-                        <p id="aantal-m2">Aantal m2</p>
-                        <input id="m2" type="number" placeholder="Aantal m2">
-                        <p onclick="bereken()" id="button-prijs-tool">Bereken prijs</p>
-                    </div>
-                    <div>
-                    <p class="prijs" id="prijs-vloer">€0</p>
-                    </div>
-                    <div>
-                    <a href="../prijs.html"><p class="all-options-prijs-tool">Bekijk alle opties</p></a>
-                    </div>
-                </div>
-
+                <div id="titel-light">
+                    <h2 id="subtitel">Maak eenvoudig en betaalbaar je eigen gietvloer</h2> 
+                     <button> <a href="mijn-gietvloer.html"> Gratis adviesgesprek</a></button>
                 </div>
             </div>
         </container> 
@@ -128,10 +129,8 @@
     <div class="footer-div" id="socials">
         <a href="https://www.facebook.com/Gietvloermakers-108859007269670"><img src="Images/Logo-facebook.png" alt="Logo Facebook Gietvloermakers" height="30px" width="30px"></a>
     </div>
-    <div class="footer-div">
-        <p>Een vraag over het maken <br> 
-            van je eigen gietvloer?
-        </p>
+    <div class="footer-div" id="officiele-docs">
+        <a href="privacy-statement.html">Privacy beleid</a>
     </div>
     <div class="footer-div">
         <a href="experts.html"><h2 id="experts-footer">Onze experts</h2></a>

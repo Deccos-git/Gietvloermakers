@@ -194,6 +194,7 @@ option{
     flex-direction: column;
     align-items: center;
     margin-top: 150px;
+    text-align: center;
 }
 
 #header{
@@ -308,6 +309,7 @@ option{
 #titelhead{
     font-size: 55px;
     margin: 50px 50px 50px 50px;
+    color: #A00025;
 }
 
 #heading{
@@ -446,6 +448,30 @@ option{
     font-weight: 1000;
 }
 
+#officiele-docs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/*Cookie notice */
+
+#cookie-notice-div{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 30px 0px 30px;
+}
+
+#cookie-notice-div a{
+    font-size: 14px;
+}
+
+#cookie-notice-div button{
+    margin: 8px 0px 0px 0px;
+}
+
 /* bedankt pagina */
 
 #bedankt-pagina{
@@ -478,6 +504,36 @@ option{
     flex-direction: column;
     align-items: center;
     margin: 100px;
+}
+
+/* Over ons */
+
+#over-ons-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 100px 50px 100px;
+}
+
+#over-ons-main h1{
+    color: #A00025;
+ 
+ 
+    font-size: 70px;
+}
+
+/* Privacy statement */
+
+#privacy-statement-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 100px 50px 100px;
+}
+
+#privacy-statement-main h1{
+    color: #A00025;
+    font-size: 70px;
 }
 
 /* Media queries */
@@ -656,5 +712,16 @@ option{
 
     .all-options-prijs-tool{
         font-size: 12px !important;
+    }
+
+    #cookie-notice-div P{
+        font-size: 16px;
+    }
+
+    #over-ons-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 30px 50px 30px;
     }
 }
