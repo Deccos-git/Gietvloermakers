@@ -200,7 +200,7 @@ option{
 #header{
     height: 1050px;
     width: 100%;
-    background-image: url(../Images/Header.jpg);
+    background-image: url(../Images/Keuken-roos-hout.JPG);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -327,8 +327,8 @@ option{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 1000px;
-    width: 100%;
+    height: 550px;
+    width: 80%;
 }
 
 #teller{
@@ -357,6 +357,71 @@ option{
     flex-direction: column;
     align-items: center;
     padding: 30px;
+}
+
+#applicatie-outer-div{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.applicatie-inner-div{
+    height: 400px;
+    width: 300px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 2px;
+    color: white;
+}
+
+.applicatie-inner-div h2{
+    color: white;
+    text-decoration: none;
+}
+
+.applicatie-inner-div:hover{
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+#keuken-landing{
+    background-image: url(../Images/Keuken-roos-hoog.JPG);
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#badkamer-landing{
+    background-image: url(../Images/Badkamer-nathalie0overview.JPG);
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#slaapkamer-landing{
+    background-image: url(../Images/Gietvloer-slaapkamer-K&J.JPG);
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#werkplaats-landing{
+    background-image: url(../Images/Werkplaats.jpg);
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#ondergronden-landing{
+    background-image: url(../Images/Gietvloer-en-marmer.JPG);
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .top{
@@ -393,6 +458,10 @@ option{
 #sectionBHead{
     background-color: #c4c4c4;
     width: 100%;
+}
+
+#sectionBHead a{
+    text-decoration: none;
 }
 
 #sectionB{
@@ -541,14 +610,14 @@ option{
 @media only screen and (max-width: 938px){
     #titelhead{
         font-size: 40px;
-        margin: 150px 0px 50px 0px;
+        margin: 100px 20px 50px 20px;
     }
 
     #titel-light{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 30px;
+        margin-top: 80px;
     }
     
 
@@ -576,7 +645,7 @@ option{
 
     #header{
         background-attachment: scroll;
-        background-image: url(../Images/Header-MQ.jpg);
+        background-image: url(../Images/Keuken-roos-hoog.JPG);
         height: 450px;
         }
 
