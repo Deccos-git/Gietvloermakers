@@ -35,6 +35,7 @@
     <script src="/__/firebase/7.14.1/firebase-app.js"></script>
     <script src="/__/firebase/7.14.1/firebase-firestore.js"></script>
     <link rel="shortcut icon" href="Images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -51,7 +52,7 @@
 
     <nav id="header">
         <div id="menu">
-            <a id="logo" href="index.html" alt="logo van gietvloermakers"><img src="../Images/logo350x50Rood.png" height="50px" width="300"></a>
+            <a id="logo" href="index.html" alt="logo van gietvloermakers"><img id="logo-menu" src="../Images/logo350x50Rood.png"></a>
             <div onclick="hamburgerMenu()" id="hamburger-menu"></div>
             <ul>
                 <li><a href="/stappenplan.html" >Stappenplan</a></li>
@@ -72,8 +73,8 @@
 
         <container id="landing-light">
                 <div id="titel-light">
-                    <h2 id="subtitel">Maak eenvoudig en betaalbaar je eigen gietvloer</h2> 
-                     <button> <a href="mijn-gietvloer.html">Gratis adviesgesprek</a></button>
+                    <h1 id="subtitel">Maak eenvoudig en betaalbaar je eigen gietvloer</h1> 
+                     <button id="title-button"> <a href="mijn-gietvloer.html">Gratis adviesgesprek</a></button>
                 </div>
             </div>
         </container> 
@@ -88,8 +89,8 @@
     </nav>
 <main>
     <section>
-    <h2 id="titelhead">Een gietvloer is een populaire vloer die je prima zelf kunt leggen.</h2>
-    <h3>Gietvloermakers helpt je daar graag bij</h3>
+    <h2 id="titelhead">Een gietvloer is een populaire vloer die je prima zelf kunt leggen</h2>
+    <h3 id="subtitle">Gietvloermakers helpt je daar graag bij</h3>
         <!-- <div id="teller">
             <p></p>
             <a href="../stappenplan.html"><button id="button4">Bekijk het stappenplan</button></a> 
@@ -103,33 +104,33 @@
     </section>
 
     <section id=sectionBHead>
-    <h1 id="titelhead">Leg eenvoudig en betaalbaar zelf een gietvloer in je</h1> 
+    <h2 id="titelhead">Leg eenvoudig en betaalbaar zelf een gietvloer</h2> 
 
         <div id="applicatie-outer-div">
             <a href="Blog/Gietvloer-in-keuken-zelf-leggen.html">
                 <div class="applicatie-inner-div" id="keuken-landing">
-                    <h2>Keuken</h2>
+                    <p>Keuken</p>
                 </div>
             </a> 
             <a href="Blog/Gietvloer-badkamer-zelf-leggen.html">
                 <div class="applicatie-inner-div" id="badkamer-landing">
-                    <h2>Badkamer</h2>
+                    <p>Badkamer</p>
                 </div>
             </a> 
             <a href="Blog/Gietvloer-slaapkamer-zelf-leggen.html">
                 <div class="applicatie-inner-div" id="slaapkamer-landing">
-                    <h2>Slaapkamer</h2>
+                    <p>Slaapkamer</p>
                 </div>
             </a> 
             <a href="Blog/Gietvloer-werkplaats-zelf-leggen.html">
                 <div class="applicatie-inner-div" id="werkplaats-landing">
-                    <h2>Werkplaats</h2>
+                    <p>Werkplaats</p>
                 </div>
             </a> 
 
             <a href="Blog/Zelf-gietvloer-aanbrengen-verschillende-ondergronden.html">
                 <div class="applicatie-inner-div" id="ondergronden-landing">
-                    <h2>Op verschillende ondergronden</h2>
+                    <p>Op verschillende ondergronden</p>
                 </div>
             </a> 
         <div>
@@ -138,7 +139,8 @@
     </section>
 
         <Section id="sectionB">
-            <!-- <a href="../kleuren.html"><button id="button4">Bekijk de kleurencollectie</button></a>     -->
+            <h2>Heb je een vraag over jouw project?</h2>
+            <a href="mijn-gietvloer.html"><button id="button4">Gratis adviesgesprek</button></a>    
         </Section>
 </main>
 
