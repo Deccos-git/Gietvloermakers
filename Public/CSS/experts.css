@@ -115,6 +115,18 @@
     letter-spacing: 1.5px;
     border-bottom: 0.2px solid #FFF;
     padding-bottom: 15px;
+    font-weight: bold;
+}
+
+.inhoudsopgave{
+    border: 1px solid #3d3d3d;
+    border-radius: 15px;
+    padding: 15px;
+    width: 95%;
+}
+
+.inhoudsopgave h3{
+    text-align: center;
 }
 
 #article-heading h2{
@@ -136,6 +148,7 @@
     color: #3d3d3d;
     letter-spacing: 1.5px;
     text-align: left;
+    font-weight: bold;
 }
 
 #article-summary a{
@@ -196,7 +209,7 @@
     flex-direction: column;
     align-content: center;
     text-align: center;
-    padding: 100px;
+    padding: 100px 100px 0px 100px;
 }
 
 #article-content h1{
@@ -261,7 +274,6 @@
 
 .sub-header-pre{
     color: #3d3d3d;
-    width: 75%;
 }
 
 #tools-taak-1{
@@ -381,7 +393,7 @@
 }
 
 .blog-text h3{
-margin: 30px 0px 0px 0px;
+margin: 50px 0px 20px 0px;
 }
 
 .blog-text p{
@@ -485,6 +497,8 @@ table {
     top: 0;
     cursor: pointer;
     padding: 25px 10px 10px 15px;
+    align-self: start;
+    z-index: 5;
 }
 
 #up-div img{
@@ -495,6 +509,18 @@ table {
 
     section{
         width: 100%;
+    }
+
+    #button-prijs-tool{
+        margin: 30px 30px 10px 30px !important;
+    }
+
+    .inhoudsopgave {
+        border: 0px;
+    }
+
+    .blog-title {
+        margin: 30px 0px 50px 0px;
     }
 
     #kiezer-kenniscentrum{
@@ -562,5 +588,9 @@ table {
 
     .image-ondergrond {
         width: 100% !important;
+    }
+
+    #prijs-text{
+        margin: 20px 20px;
     }
 }

@@ -666,7 +666,7 @@ option{
     }
 
     #logo{
-        margin: 0px 20px 0px 20px !important;
+        margin: 7px 20px 0px 20px !important;
     }
 
     #hamburger-menu{
@@ -762,5 +762,13 @@ option{
 
     #logo-menu {
         width: 300px;
+    }
+
+    #slogan-footer {
+        margin: 0px;
+    }
+
+    #socials {
+        margin-top: 0px;
     }
 }
