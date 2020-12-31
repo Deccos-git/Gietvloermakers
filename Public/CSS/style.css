@@ -130,7 +130,6 @@ option{
 }
 
 #menu{
-    background: rgba(227, 227, 227); 
     margin: 0px;
     width: 100%;
     display: flex;
@@ -173,6 +172,7 @@ option{
     color:#3d3d3d;
     font-size: 16px;
     letter-spacing: 0.8px;
+    font-weight: bold;
 }
 
 #menuItems{
@@ -205,14 +205,14 @@ option{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 190px;
+    margin-top: 10px;
     text-align: center;
 }
 
 #header{
     height: 1050px;
     width: 100%;
-    background-image: url(../Images/foto-keuken-roos.jpg);
+    background-image: url(../Images/main-header.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -241,11 +241,13 @@ option{
 }
 
 #subtitel{
-    color: #ffffff;
     margin: 0px 0px 30px 10px;
     font-size: 55px;
     font-weight: 100;
-    text-shadow: 2px 2px #3d3d3d;
+    color: #A00025;
+    text-shadow: 1px 1px 10px white;
+    margin: 20px;
+    padding: 20px;
 }
 
 #kiezer{
@@ -261,13 +263,15 @@ option{
 /* Info */
 
 #titelhead{
-    font-size: 55px;
-    margin: 50px 50px 50px 50px;
+    font-size: 40px;
+    margin: 100px 50px 50px 50px;
     color: #A00025;
+    font-weight: 600;
 }
 
 #subtitle{
     margin: 20px 20px;
+    font-weight: 600;
 }
 
 #heading{
@@ -330,44 +334,57 @@ option{
     cursor: pointer;
     margin: 10px;
     border-radius: 3px;
-    color: white;
-    padding: 5px;
+    background-color: white;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,.7), 0 2px 1px -1px rgba(0,0,0,.1), 0 1px 3px 0 rgba(0,0,0,.6);
 }
 
 .applicatie-inner-div p{
-    color: white;
+    color: #3d3d3d;
     text-decoration: none;
     font-size: 30px;
     text-decoration: bold;
+    font-weight: 600;
+    margin: 30px 0px 30px 0px;
 }
 
 .applicatie-inner-div:hover{
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
 }
 
+#guide-landing{
+    background-image: url(../Images/guide-header.jpg);
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 200px;
+}
+
 #keuken-landing{
     background-image: url(../Images/Keuken-roos-hoog.JPG);
     /* background-attachment: fixed; */
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
+    height: 200px;
 }
 
 #badkamer-landing{
-    background-image: url(../Images/Badkamer-nathalie0overview.JPG);
+    background-image: url(../Images/badkamer.jpg);
     /* background-attachment: fixed; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: 200px;
 }
 
 #slaapkamer-landing{
-    background-image: url(../Images/Gietvloer-slaapkamer-K&J.JPG);
+    background-image: url(../Images/Gietvloer-slaapkamer.JPG);
     /* background-attachment: fixed; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: 200px;
 }
 
 #werkplaats-landing{
@@ -376,6 +393,7 @@ option{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: 200px;
 }
 
 #ondergronden-landing{
@@ -384,6 +402,7 @@ option{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: 200px;
 }
 
 .top{
@@ -443,6 +462,7 @@ option{
     margin-top: 70px;
     margin-bottom: 0px;
     font-size: 30px;
+    font-weight: 600;
 }
 
 .icon{
@@ -585,7 +605,7 @@ option{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 80px;
+        margin-top: 0px;
     }
     
 

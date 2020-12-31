@@ -49,6 +49,66 @@
     color: #A00025;
 }
 
+#schoonmaken{
+    margin-top: 0px;
+    font-weight: 100;
+    text-decoration: underline;
+}
+
+#staal{
+    font-weight: 100;
+    text-decoration: underline;
+}
+
+#eigen-stijl{
+    font-weight: 100;
+    text-decoration: underline;
+}
+
+#duurzaam{
+    font-weight: 100;
+    text-decoration: underline;
+}
+
+#kleur{
+    font-weight: 100;
+    text-decoration: underline;
+}
+
+#makkelijk-schoon{
+    font-weight: 100;
+    text-decoration: underline;
+}
+
+#comfort{
+    font-weight: 100;
+    text-decoration: underline;
+}
+
+#comfortabel{
+    font-weight: 100;
+    text-decoration: underline;
+}
+
+#vloerverwarming{
+    font-weight: 100;
+    text-decoration: underline;
+}
+
+#waterdicht{
+    font-weight: 100;
+    text-decoration: underline;
+}
+
+#schoon{
+    font-weight: 100;
+    text-decoration: underline;
+}
+
+#prijs-text{
+    letter-spacing: 1.5px;
+}
+
 #contact-inner-div{
     display: flex;
     flex-direction: column;
@@ -139,9 +199,8 @@
 
 #article-summary{
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 30px 50px 30px 50px;
+    flex-direction: column;
+    align-items: center;
 }
 
 #article-summary p{
@@ -155,53 +214,17 @@
     color: #3d3d3d;
 }
 
-#text-div{
-    width: 300px;
-}
-
-#SVG-div{
-    width: 500px;
-}
-
 #sub-summary{
-    font-size: 16px;
     color: rgb(49, 49, 49);
+    font-weight: 500 !important;
 }
 
-#article-summary svg{
+#article-summary img{
     width: 100%;
-    margin-top: -50px;
 }
 
-#Animate1{
-    animation-name: checkbox-animation;
-    animation-duration: 6s;
-    fill: #FFF;
-    animation-fill-mode: forwards; 
-    animation-iteration-count: infinite;
-}
-
-#Animate2{
-    animation-name: checkbox-animation;
-    animation-duration: 6s;
-    animation-delay: 2s;
-    fill: #FFF;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-}
-
-#Animate3{
-    animation-name: checkbox-animation;
-    animation-duration: 6s;
-    animation-delay: 4s;
-    fill: #FFF;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-}
-
-@keyframes checkbox-animation{
-    from {fill: #FFF;}
-    to {fill: #A00025;}
+#text-div{
+    margin: 50px 160px;
 }
 
 #article-content{
@@ -209,7 +232,7 @@
     flex-direction: column;
     align-content: center;
     text-align: center;
-    padding: 100px 100px 0px 100px;
+    padding: 50px 100px 0px 100px;
 }
 
 #article-content h1{
@@ -314,8 +337,13 @@
     border-bottom: 1px solid #A00025;
 }
 
-.foto-video{
-    width: auto;
+.foto-video img{
+    width: 50%;
+    height: auto;
+}
+
+#experts-jacky{
+    width: 20%;
 }
 
 .foto-video iframe{
@@ -328,7 +356,7 @@
 
 .blog-overview-outer-div{
     width: 230px;
-    height: 300px;
+    height: 350px;
     margin: 15px 15px 30px 15px;
     border-radius: 5px;
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
@@ -343,7 +371,7 @@
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 130px;
+    height: 200px;
     padding: -15px -15px 0px -15px;
 }
 
@@ -553,6 +581,10 @@ table {
         flex-direction: column;
     }
 
+    #text-div {
+        margin: 20px;
+    }
+
     #content-dag-1 {
         display: flex;
         flex-direction: column;
@@ -568,6 +600,12 @@ table {
 
     .foto-video iframe {
         width: 95%;
+    }
+
+    .foto-video img{
+        width: 100%;
+        height: auto;
+        border-radius: 0px;
     }
 
     #contact-inner-div {
@@ -592,5 +630,9 @@ table {
 
     #prijs-text{
         margin: 20px 20px;
+    }
+
+    #article-content h1 {
+        margin-top: 30px;
     }
 }
