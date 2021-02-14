@@ -107,7 +107,8 @@ option{
 }
 
 #button4{
-    border: #A00025 1px solid;
+    box-shadow: 0 5px 9px -3px rgb(0 0 0 / 20%), 0 7px 21px -15px rgb(0 0 0 / 19%);
+    border-radius: 5px;
     padding: 15px;
     font-size: 25px;
     margin: 50px 10px 50px 10px;
@@ -186,8 +187,28 @@ option{
 
 /* Header */
 
+#title-button{
+    box-shadow: 0 5px 9px -3px rgb(0 0 0 / 20%), 0 7px 21px -15px rgb(0 0 0 / 19%);
+    border-radius: 5px;
+}
+
+#CTA-header-subtile{
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
 #title-button a{
     text-decoration: none;
+    font-size: 20px;
+}
+
+#title-button a:hover{
+    color: #A00025;
+}
+
+.button-cards:hover{
+    box-shadow: 0 5px 9px -5px rgb(0 0 0 / 20%), 0 7px 21px -15px rgb(0 0 0 / 19%);
+    border-radius: 15px;
 }
 
 #titel{
@@ -341,10 +362,11 @@ option{
 .applicatie-inner-div p{
     color: #3d3d3d;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 22px;
     text-decoration: bold;
     font-weight: 600;
     margin: 30px 0px 30px 0px;
+    padding: 0px 10px;
 }
 
 .applicatie-inner-div:hover{
@@ -353,6 +375,42 @@ option{
 
 #guide-landing{
     background-image: url(../Images/guide-header.jpg);
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 200px;
+}
+
+#handig-landing{
+    background-image: url(../Images/jackyactief.JPG);
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 200px;
+}
+
+#youtube-landing{
+    background-image: url(../Images/youtube-channel.png);
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 200px;
+}
+
+#beton-landing{
+    background-image: url(../Images/betonlook-gietvloer.jpg);
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 200px;
+}
+
+#duurzaam-landing{
+    background-image: url(../Images/duurzaam.jpg);
     /* background-attachment: fixed; */
     background-repeat: no-repeat;
     background-position: bottom;
@@ -403,6 +461,18 @@ option{
     background-position: center;
     background-size: cover;
     height: 200px;
+}
+
+#CTA-kenniscentrum{
+    width: 100%;
+    background-color: #c4c4c4;
+    cursor: pointer;
+}
+
+#CTA-kenniscentrum h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 .top{
@@ -563,22 +633,6 @@ option{
     margin: 100px;
 }
 
-/* Over ons */
-
-#over-ons-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 50px 100px 50px 100px;
-}
-
-#over-ons-main h1{
-    color: #A00025;
- 
- 
-    font-size: 70px;
-}
-
 /* Privacy statement */
 
 #privacy-statement-main{
@@ -630,6 +684,7 @@ option{
 
     #kiezer{
         font-size: 40px;
+        margin: 20px;
     }
 
     #header{
@@ -658,7 +713,7 @@ option{
         display: none;
         flex-direction: column;
         align-items: center;
-        background-color: rgba(227, 227, 227);
+        background-color: white;
         width: 100%;
         padding: 15px;
         list-style: none;
@@ -730,7 +785,7 @@ option{
     }
 
     .footer-div{
-        width: 100%;
+        width: auto;
     }
 
     #footer-logo{
@@ -767,13 +822,6 @@ option{
 
     #cookie-notice-div P{
         font-size: 16px;
-    }
-
-    #over-ons-main{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 50px 30px 50px 30px;
     }
 
     #sectionA {
