@@ -55,6 +55,11 @@ a:any-link {
     color: #A00025;
 }
 
+a:any-link:hover {
+    color: #A00025;
+    text-decoration: none;
+}
+
 button{
     border: #c4c4c4;
     padding: 15px;
@@ -418,6 +423,27 @@ option{
     height: 200px;
 }
 
+#CTA-articles{
+    background-color: #c4c4c4;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+}
+
+#CTA-articles p{
+    font-weight: bold;
+}
+
+#FAQ-landing{
+    background-image: url(../Images/Header.jpg);
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 200px;
+}
+
 #keuken-landing{
     background-image: url(../Images/Keuken-roos-hoog.JPG);
     /* background-attachment: fixed; */
@@ -645,6 +671,34 @@ option{
 #privacy-statement-main h1{
     color: #A00025;
     font-size: 70px;
+}
+
+#reference{
+    background-color: #c4c4c4;
+    width: 100%;
+    padding-top: 100px;
+}
+
+#reference-inner-div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.reference-card{
+    padding: 10px 10px 20px 10px;
+    height: auto;
+    width: 300px;
+    margin: 30px 10px 10px 10px;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 70%), 0 2px 1px -1px rgb(0 0 0 / 10%), 0 1px 3px 0 rgb(0 0 0 / 60%);
+}
+
+.reference-card h3{
+    margin: 5px 5px 20px 5px;
+
 }
 
 /* Media queries */

@@ -31,6 +31,13 @@
     box-shadow: 0 5px 9px -3px rgb(0 0 0 / 20%), 0 7px 21px -15px rgb(0 0 0 / 19%);
 }
 
+#adviesgesprek-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(227, 227, 227, 0.5);
+}
+
 #experts-section{
     background-color: rgba(227, 227, 227, 0.5);
     display: flex;
