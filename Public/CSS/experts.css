@@ -190,16 +190,16 @@
 
 .inhoudsopgave{
     background-color: #a7bdbd26;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    padding: 15px;
-    width: 95%;
+    border-radius: 5px;
+    width: 100%;
 }
 
 .inhoudsopgave h3{
     text-align: center;
+}
+
+.inhoudsopgave li{
+    margin-bottom: 5px;
 }
 
 #article-heading h2{
@@ -234,6 +234,7 @@
 
 #article-summary img{
     width: 100%;
+    border-radius: 5px;
 }
 
 #text-div{
@@ -306,10 +307,6 @@
     text-align: center;
     padding: 30px;
     width: 100%;
-}
-
-.sub-header-pre{
-    color: #3d3d3d;
 }
 
 #tools-taak-1{
@@ -402,11 +399,13 @@
     flex-direction: column;
     align-items: center;
     text-align: left;
-    margin: 0px 200px 0px 200px;
+    margin: 0px 100px 0px 100px;
 }
 
 #blog-outer-div img{
     width: 100%;
+    border-radius: 5px;
+    margin-right: 8px;
 }
 
 .blog-title{
@@ -438,10 +437,13 @@
     width: 100%;
     text-align: center;
     background-color: #a7bdbd26;
+    padding: 15px;
+    border-radius: 5px;
 }
 
 .blog-text p{
     letter-spacing: 1.5px;
+    font-weight: 500;
 }
 
 .blog-meta{

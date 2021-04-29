@@ -19,14 +19,6 @@
     text-align: center;
 }
 
-#all-references{
-    margin: 30px 10px 90px 10px;
-    padding: 20px;
-    background-color: rgba(227, 227, 227, 0.5);
-    border-radius: 15px;
-    box-shadow: 0 5px 9px -3px rgb(0 0 0 / 20%), 0 7px 21px -15px rgb(0 0 0 / 19%);
-}
-
 @media only screen and (max-width: 938px){
     #over-ons-main {
         display: flex;
