@@ -541,7 +541,7 @@ option{
 
 #headshot-subtitle{
     height: 100px;
-    width: 80px;
+    width: 100px;
     align-self: center;
     border-radius: 50%;
 }
@@ -741,7 +741,8 @@ option{
 
 .reference-card h3{
     margin: 5px 5px 20px 5px;
-
+    color:#A00025;
+    border-bottom: 1px solid lightgray;
 }
 
 /* Media queries */
