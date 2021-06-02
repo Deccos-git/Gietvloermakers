@@ -11,7 +11,7 @@ canvas{
 }
 
 #style {
-    display: flex;
+    display: none;
     z-index: 3;
     justify-content: center;
     font-family: 'Prata', serif;
@@ -33,11 +33,12 @@ canvas{
 
 select{
     width: fit-content;
-    border: 1px solid lightgray;
+    border: none;
     padding: 10px;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 24px;
     margin: 10px;
+    font-family: 'Prata', serif;
 }
 
 #description-div{
@@ -74,5 +75,33 @@ select{
 }
 
 #color-picker-digital-perspective{
+    display: none;
+}
+
+#color-picker-city-roots{
+    display: none;
+}
+
+#color-picker-honest-pureness{
+    display: none;
+}
+
+#color-picker-structered-matrix{
+    display: none;
+}
+
+#color-picker-retro-pastels{
+    display: none;
+}
+
+#color-picker-global-spirit{
+    display: none;
+}
+
+#color-picker-dark-shine{
+    display: none;
+}
+
+#color-picker-evergreens{
     display: none;
 }
