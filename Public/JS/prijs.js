@@ -38,6 +38,7 @@
         stepDivs[1].style.display = "none"
         stepDivs[2].style.display = "flex"
         m2ToLocalStorage()
+        priceM2ToLocaleStorage()
     });
 
     stepButtons[2].addEventListener("click", () => {
@@ -51,6 +52,8 @@
         stepDivs[4].style.display = "flex"
         toolsToLocalStorage()
         toolsToSelection()
+        toolsToPriceTable()
+        totalPriceTable()
     });
 
     stepButtons[4].addEventListener("click", () => {
@@ -59,7 +62,8 @@
     });
 
     stepButtons[5].addEventListener("click", () => {
-        console.log("succes")
+        stepDivs[5].style.display = "none"
+        stepDivs[6].style.display = "flex"
     });
 
 }();
@@ -94,6 +98,11 @@
         stepDivs[4].style.display = "flex"
     });
 
+    backButtons[5].addEventListener("click", () => {
+        stepDivs[6].style.display = "none"
+        stepDivs[5].style.display = "flex"
+    });
+
 }();
 
 !function setDefaultM2(){
@@ -102,12 +111,11 @@
 
     const m2 = localStorage.getItem('m2')
 
-    if(m2 === ""){
-        m2Input.value = 0
-    } else {
-        m2Input.value = m2
-    };
-
+        if(m2 === ""){
+            m2Input.value = 0
+        } else {
+            m2Input.value = m2
+        };
 }();
 
 function m2ToLocalStorage(){
@@ -115,11 +123,15 @@ function m2ToLocalStorage(){
     const m2Input = document.getElementById("m2-input").value
     const m2Selection = document.getElementById("m2-selection")
 
+    console.log(m2Input)
+
     if(m2Input != 0){
         localStorage.setItem("m2", m2Input)
+        m2Selection.innerText = m2Input
+    } else if (m2Input === ""){
+        m2Selection.innerText = 0
     };
-
-    m2Selection.innerText = m2Input
+    
 };
 
 !function setDefaultAssistance(){
@@ -150,6 +162,8 @@ function assistanceToSelectionForm(){
     } else {
         assistanceSelection.innerText = "Nee"
     };
+
+    assistanceToPriceTable(assSelect)
 };
 
 function toolsToLocalStorage(){
@@ -184,13 +198,17 @@ function toolsToSelection(){
 
     const toolsFromStorage = localStorage.getItem("ToolID")
 
-    const tools = toolsFromStorage.split(",")
-
-    console.log(tools)
-
     let toolLi = ""
 
-    tools.forEach(tool => {
+    if(toolsFromStorage === ""){
+        toolP = document.createElement("p")
+        toolP.innerText = "Geen"
+        toolSelection.appendChild(toolP)
+    } else {
+
+        const tools = toolsFromStorage.split(",")
+
+        tools.forEach(tool => {
 
         toolLi = document.createElement("li")
 
@@ -198,10 +216,10 @@ function toolsToSelection(){
 
         toolUl.appendChild(toolLi)
 
-    });
+        });
 
-    toolSelection.appendChild(toolUl)
-
+        toolSelection.appendChild(toolUl)
+    };
 };
 
 !function preselectToolsFromLocaleStorage(){
@@ -216,8 +234,6 @@ function toolsToSelection(){
 
         const storageIDArray = storageID.split(",")
 
-        console.log(storageIDArray)
-
         storageIDArray.forEach(toolStorage => {
 
             if(toolDOM.id === toolStorage){
@@ -228,25 +244,31 @@ function toolsToSelection(){
     });
 }();
 
-!function fillSelectionForm(){
+!function fillSelectionFormColor(){
     const colorSelection = document.getElementById("color-selection")
     const m2Selection = document.getElementById("m2-selection")
     const color = localStorage.getItem('kleur');
     const style = localStorage.getItem('style')
     const m2 = localStorage.getItem('m2')
 
-    colorSelection.innerHTML = `<b>Stijl</b>: ${style} <br> <b>Kleur</b>: ${color}`
-    m2Selection.innerText = m2
+    if(color === null){
+        colorSelection.innerHTML = `Bekijk de <a href="kleurencollectie.html">kleurencollectie</a>`
+    } else {
+        colorSelection.innerHTML = `<b>Stijl</b>: ${style} <br> <b>Kleur</b>: ${color}`
+    }
 
-
+    if(m2 === null){
+        m2Selection.innerText = "0"
+        console.log(m2Selection.innerText)
+    } else {
+        m2Selection.innerText = m2
+    };
 }();
 
+function priceM2ToLocaleStorage(){
 
+    const m2value = document.getElementById("m2-input").value
 
-//Prijs berekenen
-function bereken(){
-
-    // Prijs variabelen doorlopen
     let prijsVariable = 0
 
     if (m2value > 0 && m2value < 11){
@@ -307,175 +329,109 @@ function bereken(){
         prijsVariable = 4923                           
     } else if (m2value > 150){
         alert.innerHTML = " Uw aanvraag is dermate groot, dat wij u willen vragen even contact op te nemen met een van onze adviseurs op info@gietvloermakers.nl of 06 432 378 66" 
-        window.location.href = "#aantal-m2";  
-        alert.style.display = "block" 
-        m2.style.borderColor = "red"
-        alert.style.color = "white"
-        alert.style.padding = "5px" 
     } else {
         console.log("err")
     }
 
-    const m2Number =  parseInt(prijsVariable, 10)
+    localStorage.setItem("PriceM2", prijsVariable)
 
-    const prijs = document.getElementById("prijs-vloer");
+    priceM2ToPriceTable(prijsVariable)
 
-    const m2Euro = "€ " + m2Number
+    return prijsVariable
 
-    prijs.innerHTML = m2Euro
-
-    // Assistentie
-  
-    const assNumber = parseInt(assSelect, 10)
-
-    const prijsAssistentie = document.getElementById("prijs-assistentie");
-    prijsAssistentie.innerHTML = "€ " + assNumber 
-
-    //Gereedschappen
-    const tools = document.querySelectorAll(".tool")
-
-            // array met tool prijs
-    const arrayTools = [];
-            // array met tool id's
-    const arrayID = [];
-            
-    tools.forEach(t => {
-    
-        if(t.checked == true){
-    const toolPrijs = t.value;
-
-    const toolID = t.id
-
-    arrayID.push(toolID) 
-
-    const toolNumber = parseFloat(toolPrijs, 10)
-
-    arrayTools.push(toolNumber)
-    
-    }   
-    }) 
-
-            // gereedschappen naar localStorage
-            localStorage.setItem('bestelItem', arrayID)
-
-            const DOM = document.getElementById("prijs-gereedschappen");
-
-            function getSum(total, num) {
-                return total + num;
-            }
-
-            const toolTotal = arrayTools.reduce(getSum, 0)
-
-            if(!toolTotal == 0){
-
-            const extraKosten = toolTotal + 15
-
-            DOM.innerHTML = "€ " + extraKosten.toFixed(2) 
-
-            // Totaal
-
-            const totaal = document.getElementById("totaal");
-
-            const totaalEuro =  m2Number + assNumber + extraKosten
-
-            totaal.innerHTML = "€ " + totaalEuro.toFixed(2) + "  <h5>(Incl. btw)</h5>";
-
-            } else {
-            DOM.innerHTML = "€ " + toolTotal.toFixed(2)  
-
-            // Totaal
-
-            const totaal = document.getElementById("totaal");
-
-            const totaalEuro =  m2Number + assNumber + toolTotal
-
-            totaal.innerHTML = "€ " + totaalEuro.toFixed(2) + "  <h5>(Incl. btw)</h5>";
-            }
-
-      // Anchor link naar prijsoverzicht
-      if (m2value == 0){
-        window.location.href = "#aantal-m2";
-        m2.style.borderColor = "red"
-        alert.style.display = "block"
-      } else if (kleurSelect.innerHTML == ""){
-        kleurSelect.style.borderWidth = "1px"
-        kleurSelect.style.borderStyle = "solid"
-        kleurSelect.style.borderColor = "rgb(206, 74, 105)"
-        kleurSelect.style.backgroundColor = "rgb(206, 74, 105)"
-        kleurSelect.style.color = "white"
-        kleurSelect.innerHTML = "Nog geen kleur gekozen? Bekijk de <a href='kleuren.html' >Kleurencollectie</a>"
-        window.location.href = "#uw-kleur"
-      } else {
-        window.location.href = "#uw-prijs";
-      }
 };
 
-// Naar bellen
+function priceM2ToPriceTable(prijsVariable){
 
-function verder(){
-    
-    window.open("mijn-gietvloer.html", "_self")
-}
+    const priceM2PriceTable = document.getElementById("prijs-vloer")
 
-// Naar controleren
+    const priceClean =  parseInt(prijsVariable, 10)
 
-function bestel(){
-   const totaal = document.getElementById("totaal");
-   localStorage.setItem('totaal-prijs', totaal.innerHTML);
-   const bereken = document.getElementById("button2");
-   const controleer = document.getElementById("button3");
-   const vloerPrijs = document.getElementById("prijs-vloer");
-   const prijs = document.getElementsByClassName("prijs");
+    priceM2PriceTable.innerHTML = `€${priceClean}`
 
-   if (totaal.innerHTML == "€0"){
-       function berekenen(){
-        bereken.click();
-        prijs.forEach( p => {
-            p.style.color = "#A00025"
+};
+
+function assistanceToPriceTable(assSelect){
+
+    const assistancePriceTable = document.getElementById("prijs-assistentie")
+
+    if(assSelect === "500"){
+        assistancePriceTable.innerHTML = "€500"
+    } else {
+        assistancePriceTable.innerHTML = "€0"
+    };
+
+};
+
+function assistanceTotalPrice(){
+
+    const assistance = document.getElementById("assistentie");
+    const assOptions = assistance.options;
+    const assValue = assOptions[assOptions.selectedIndex]
+    const assSelect = assValue.value;
+
+    if(assSelect === "500"){
+        return 500
+    } else {
+        return 0
+    };
+};
+
+function toolsToPriceTable(){
+
+    const toolsPriceTable = document.getElementById("prijs-gereedschappen")
+
+    const toolsPrice = localStorage.getItem("ToolPrice")
+
+    if(toolsPrice === ""){
+
+        toolsPriceTable.innerHTML = "€" + 0
+
+        return 0
+
+    } else {
+
+        const priceArray = toolsPrice.split(",")
+
+        const numberArray = []
+
+        priceArray.forEach(price => {
+            const priceNumber = parseFloat(price)
+
+            numberArray.push(priceNumber)
         })
 
-       }
-       berekenen().then( () => {
+        const sum = numberArray.reduce(function(a, b){
+            return a + b;
+        }, 0);
 
-        controleer.click()
-        });
-    
-   } else if (vloerPrijs.innerHTML == "€ 0"){
-    
-    const vloerAlert = document.getElementById("vloer-alert")
+        const extraCosts = sum + 15
 
-    vloerPrijs.style.color = "rgb(206, 74, 105)"
-    vloerAlert.style.display = "block"
-    window.location.href = "#totaal"
-    } else {
-    window.open("controleer.html", "_self")
-   } 
+        toolsPriceTable.innerHTML = "€" + extraCosts.toFixed(2) 
+
+        return extraCosts
+
+    };
+
 };
 
-// Gekozen kleur inladen
-const kleurSelect = document.getElementById("kleurselect");
+function totalPriceTable(){
 
-const kleurKeuze = localStorage.getItem('kleur');
+    const total = priceM2ToLocaleStorage() + assistanceTotalPrice() + toolsToPriceTable()
 
-if(kleurSelect == null){
-    console.log("disregard error")
-} else {
-    kleurSelect.innerHTML = kleurKeuze;
-}
+    const totalPrice = document.getElementById("totaal")
+    const priceSelection = document.getElementById("price-selection")
 
+    totalPrice.innerText = "€" + total.toFixed(2) 
+    priceSelection.innerText = "€" + total.toFixed(2)
 
-        // Vloerkleur naar localstorage voor controle
-        const kleurID = document.getElementsByClassName("colour");
+};
 
-        if(kleurID.length == 0){
-            console.log("disregard error")
-        } else {
-            const kleurSend = kleurID[0].id
+!function sendOrder(){
 
-            localStorage.setItem('vloerkleur', kleurSend)
-        }
+    const button = document.getElementById("order-button")
 
- // Gereedschappen uit localstorage
+    button.addEventListener("click", () => {
 
-
-
+    });
+}();
