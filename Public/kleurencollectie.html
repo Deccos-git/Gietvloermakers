@@ -29,6 +29,7 @@
     <script>src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"</script>
     <link rel="stylesheet" href="CSS/style.css"></link>
     <link rel="stylesheet" href="CSS/three.css"></link>
+    <link rel="stylesheet" href="CSS/kleurencollectie.css"></link>
     <link rel="shortcut icon" href="Images/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Lato|Prata&display=swap" rel="stylesheet">
      <!-- Facebook Pixel Code -->
@@ -61,7 +62,7 @@
                     <div onclick="hamburgerMenu()" id="hamburger-menu"></div>
                     <ul>
                         <li><a href="/stappenplan.html" >Stappenplan</a></li>
-                        <li><a href="/kleuren.html" >Kleurencollectie</a></li>
+                        <li><a href="/kleurencollectie.html" >Kleurencollectie</a></li>
                         <li><a href ="experts.html">Kenniscentrum</a></li>
                         <li><a href ="/prijs.html">Prijs</a></li>
                         <li><a href ="/over-ons.html">Over ons</a></li>
@@ -70,7 +71,7 @@
             <div id="menuItems">
                 <div id="mobile-menu">
                     <li><a href="stappenplan.html" >Stappenplan</a></li>
-                    <li><a href="kleuren.html" >Kleurencollectie</a></li>
+                    <li><a href="kleurencollectie.html" >Kleurencollectie</a></li>
                     <li><a href ="experts.html">Kenniscentrum</a></li>
                     <li><a href ="prijs.html">Prijs</a></li>
                     <li><a href ="/over-ons.html">Over ons</a></li>
@@ -78,21 +79,6 @@
             </div>
             </nav>
     </section>
-
-<div id="style">
-    <p>Selecteer stijl</p>
-    <select name="" id="select-colour" onchange="selectStyle()">
-        <option>Sturdy Signals</option>      
-        <option>Digital Perspective</option>
-        <option>City Roots</option>  
-        <option>Honest Pureness</option>         
-        <option>Structured Matrix</option>  
-        <option>Retro Pastels</option>       
-        <option>Global Spirit</option>      
-        <option>Dark Shine</option>  
-        <option>Evergreens</option>   
-    </select> 
-</div>
 
 <div id="description-div">
     <select name="" id="select-colour" onchange="selectStyle()">
@@ -107,29 +93,35 @@
         <option>Evergreens</option>   
     </select> 
     <h2 id="color-name">Signal Red</h2>
+    <div id="betonlook-indicator-div">
+        <p id="betonlook-indicator">(Betonlook)</p>
+        <div id="select-colour-button">
+            <p>Selecteer deze kleur</p>
+        </div>
+    </div>
 </div>
 
 <div id="room-scene"></div>
 
 <div class="color-div" id="color-picker-sturdy-signals">
-        <div class="color-box" id="Signal Red" onclick="changeColorOfMesh(this)">
-            <img src="Arturo-kleuren/signal-red.jpg" alt="">
-        </div>
-        <div class="color-box" id="Steely Gray" onclick="changeColorOfMesh(this)">
-            <img src="Arturo-kleuren/steely-gray.jpg" alt="">
-        </div>
-        <div class="color-box" id="Grizzled Blue" onclick="changeColorOfMesh(this)">
-            <img src="Arturo-kleuren/grizzled-blue.jpg" alt="">
-        </div>
-        <div class="color-box" id="Cool Gray" onclick="changeColorOfMesh(this)">
-            <img src="Arturo-kleuren/cool-gray.jpg" alt="">
-        </div>
-        <div class="color-box" id="Rough Lead" onclick="changeColorOfMesh(this)">
-            <img src="Arturo-kleuren/rough-lead.jpg" alt="">
-        </div>
-        <div class="color-box" id="Worked Metal" onclick="changeColorOfMesh(this)">
-            <img src="Arturo-kleuren/worked-metal.jpg" alt="">
-        </div>
+    <div class="color-box" id="Signal Red" onclick="changeColorOfMesh(this)">
+        <img src="Arturo-kleuren/signal-red.jpg" alt="">
+    </div>
+    <div class="color-box" id="Steely Gray" onclick="changeColorOfMesh(this)">
+        <img src="Arturo-kleuren/steely-gray.jpg" alt="">
+    </div>
+    <div class="color-box" id="Grizzled Blue" onclick="changeColorOfMesh(this)">
+        <img src="Arturo-kleuren/grizzled-blue.jpg" alt="">
+    </div>
+    <div class="color-box" id="Cool Gray" onclick="changeColorOfMesh(this)">
+        <img src="Arturo-kleuren/cool-gray.jpg" alt="">
+    </div>
+    <div class="color-box" id="Rough Lead" data-type="Betonlook" onclick="changeColorOfMesh(this)">
+        <img src="Arturo-kleuren/rough-lead.jpg" alt="">
+    </div>
+    <div class="color-box" id="Worked Metal" data-type="Betonlook" onclick="changeColorOfMesh(this)">
+        <img src="Arturo-kleuren/worked-metal.jpg" alt="">
+    </div>
 </div>    
 
 <div class="color-div" id="color-picker-digital-perspective">
@@ -145,10 +137,10 @@
     <div class="color-box" id="Dynamic Red" onclick="changeColorOfMesh(this)">
         <img src="Arturo-kleuren/dynamic-red.jpg" alt="">
     </div>
-    <div class="color-box" id="Dark Move" onclick="changeColorOfMesh(this)">
+    <div class="color-box" id="Dark Move" data-type="Betonlook" onclick="changeColorOfMesh(this)">
         <img src="Arturo-kleuren/dark-move.jpg" alt="">
     </div>
-    <div class="color-box" id="Fresh Power" onclick="changeColorOfMesh(this)">
+    <div class="color-box" id="Fresh Power" data-type="Betonlook" onclick="changeColorOfMesh(this)">
         <img src="Arturo-kleuren/fresh-power.jpg" alt="">
     </div>
 </div>  
@@ -166,10 +158,10 @@
     <div class="color-box" id="Heedless Violet" onclick="changeColorOfMesh(this)">
         <img src="Arturo-kleuren/heedless-violet.jpg" alt="">
     </div>
-    <div class="color-box" id="Downtown Mix" onclick="changeColorOfMesh(this)">
+    <div class="color-box" id="Downtown Mix" data-type="Betonlook" onclick="changeColorOfMesh(this)">
         <img src="Arturo-kleuren/downtown-mix.jpg" alt="">
     </div>
-    <div class="color-box" id="Worn Stuff" onclick="changeColorOfMesh(this)">
+    <div class="color-box" id="Worn Stuff" data-type="Betonlook" onclick="changeColorOfMesh(this)">
         <img src="Arturo-kleuren/worn-stuff.jpg" alt="">
     </div>
 </div> 
@@ -187,10 +179,10 @@
     <div class="color-box" id="Natural Gray" onclick="changeColorOfMesh(this)">
         <img src="Arturo-kleuren/natural-gray.jpg" alt="">
     </div>
-    <div class="color-box" id="Mixed Glay" onclick="changeColorOfMesh(this)">
+    <div class="color-box" id="Mixed Glay" data-type="Betonlook" onclick="changeColorOfMesh(this)">
         <img src="Arturo-kleuren/mixed-glay.jpg" alt="">
     </div>
-    <div class="color-box" id="Looming Dust" onclick="changeColorOfMesh(this)">
+    <div class="color-box" id="Looming Dust" data-type="Betonlook" onclick="changeColorOfMesh(this)">
         <img src="Arturo-kleuren/looming-dust.jpg" alt="">
     </div>
 </div> 
@@ -208,10 +200,10 @@
     <div class="color-box" id="Forest Green" onclick="changeColorOfMesh(this)">
         <img src="Arturo-kleuren/forest-green.jpg" alt="">
     </div>
-    <div class="color-box" id="Mild Shades" onclick="changeColorOfMesh(this)">
+    <div class="color-box" id="Mild Shades" data-type="Betonlook" onclick="changeColorOfMesh(this)">
         <img src="Arturo-kleuren/mild-shades.jpg" alt="">
     </div>
-    <div class="color-box" id="Jungle Leafs" onclick="changeColorOfMesh(this)">
+    <div class="color-box" id="Jungle Leafs" data-type="Betonlook" onclick="changeColorOfMesh(this)">
         <img src="Arturo-kleuren/jungle-leafs.jpg" alt="">
     </div>
 </div> 
@@ -229,10 +221,10 @@
     <div class="color-box" id="Cute Blue" onclick="changeColorOfMesh(this)">
         <img src="Arturo-kleuren/cute-blue.jpg" alt="">
     </div>
-    <div class="color-box" id="Early Dew" onclick="changeColorOfMesh(this)">
+    <div class="color-box" id="Early Dew" data-type="Betonlook" onclick="changeColorOfMesh(this)">
         <img src="Arturo-kleuren/early-dew.jpg" alt="">
     </div>
-    <div class="color-box" id="Tender Breeze" onclick="changeColorOfMesh(this)">
+    <div class="color-box" id="Tender Breeze" data-type="Betonlook" onclick="changeColorOfMesh(this)">
         <img src="Arturo-kleuren/tender-breeze.jpg" alt="">
     </div>
 </div>
@@ -250,10 +242,10 @@
     <div class="color-box" id="Terracotta Red" onclick="changeColorOfMesh(this)">
         <img src="Arturo-kleuren/terracotta-red.jpg" alt="">
     </div>
-    <div class="color-box" id="Outback Dream" onclick="changeColorOfMesh(this)">
+    <div class="color-box" id="Outback Dream" data-type="Betonlook" onclick="changeColorOfMesh(this)">
         <img src="Arturo-kleuren/outback-dream.jpg" alt="">
     </div>
-    <div class="color-box" id="Cosmic Fusion" onclick="changeColorOfMesh(this)">
+    <div class="color-box" id="Cosmic Fusion" data-type="Betonlook" onclick="changeColorOfMesh(this)">
         <img src="Arturo-kleuren/cosmic-fusion.jpg" alt="">
     </div>
 </div> 
@@ -271,10 +263,10 @@
     <div class="color-box" id="Distinct Green" onclick="changeColorOfMesh(this)">
         <img src="Arturo-kleuren/distinct-green.jpg" alt="">
     </div>
-    <div class="color-box" id="Rich Flow" onclick="changeColorOfMesh(this)">
+    <div class="color-box" id="Rich Flow" data-type="Betonlook" onclick="changeColorOfMesh(this)">
         <img src="Arturo-kleuren/rich-flow.jpg" alt="">
     </div>
-    <div class="color-box" id="Chique Motion" onclick="changeColorOfMesh(this)">
+    <div class="color-box" id="Chique Motion" data-type="Betonlook" onclick="changeColorOfMesh(this)">
         <img src="Arturo-kleuren/chique-motion.jpg" alt="">
     </div>
 </div> 
@@ -302,31 +294,257 @@
         <img src="Arturo-kleuren/basic-white.jpg" alt="">
     </div>
 
-    <div class="color-box" id="Graphite Touch" onclick="changeColorOfMesh(this)">
+    <div class="color-box" id="Graphite Touch" data-type="Betonlook" onclick="changeColorOfMesh(this)">
         <img src="Arturo-kleuren/graphite-touch.jpg" alt="">
     </div>
-    <div class="color-box" id="Raw Basalt" onclick="changeColorOfMesh(this)">
+    <div class="color-box" id="Raw Basalt" data-type="Betonlook" onclick="changeColorOfMesh(this)">
         <img src="Arturo-kleuren/raw-basalt.jpg" alt="">
     </div>
-    <div class="color-box" id="Frozen Cosmic" onclick="changeColorOfMesh(this)">
+    <div class="color-box" id="Frozen Cosmic" data-type="Betonlook" onclick="changeColorOfMesh(this)">
         <img src="Arturo-kleuren/frozen-cosmic.jpg" alt="">
     </div>
-    <div class="color-box" id="Soft Stone" onclick="changeColorOfMesh(this)">
+    <div class="color-box" id="Soft Stone" data-type="Betonlook" onclick="changeColorOfMesh(this)">
         <img src="Arturo-kleuren/soft-stone.jpg" alt="">
     </div>
-    <div class="color-box" id="Morning Flow" onclick="changeColorOfMesh(this)">
+    <div class="color-box" id="Morning Flow"  data-type="Betonlook" onclick="changeColorOfMesh(this)">
         <img src="Arturo-kleuren/morning-flow.jpg" alt="">
     </div>
-    <div class="color-box" id="Calm Breeze" onclick="changeColorOfMesh(this)">
+    <div class="color-box" id="Calm Breeze" data-type="Betonlook" onclick="changeColorOfMesh(this)">
         <img src="Arturo-kleuren/calm-breeze.jpg" alt="">
     </div>
-    <div class="color-box" id="Sandy Shades" onclick="changeColorOfMesh(this)">
+    <div class="color-box" id="Sandy Shades" data-type="Betonlook" onclick="changeColorOfMesh(this)">
         <img src="Arturo-kleuren/sandy-shades.jpg" alt="">
     </div>
-    <div class="color-box" id="Basic Whash" onclick="changeColorOfMesh(this)">
+    <div class="color-box" id="Basic Whash" data-type="Betonlook" onclick="changeColorOfMesh(this)">
         <img src="Arturo-kleuren/basic-wash.jpg" alt="">
     </div>
 </div> 
+
+
+<div id="complete-view-div">
+    <!-- <p id="complete-view-button">Bekijk complete kleurenoverzicht</p> -->
+    <div id="complete-view-inner-div">
+        <div class="complete-div" id="complete-view-sturdy-signals">
+            <div class="color-box" id="Signal Red" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/signal-red.jpg" alt="">
+            </div>
+            <div class="complete-box" id="Steely Gray" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/steely-gray.jpg" alt="">
+            </div>
+            <div class="complete-box" id="Grizzled Blue" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/grizzled-blue.jpg" alt="">
+            </div>
+            <div class="complete-box" id="Cool Gray" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/cool-gray.jpg" alt="">
+            </div>
+            <div class="complete-box" id="Rough Lead" data-type="Betonlook" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/rough-lead.jpg" alt="">
+            </div>
+            <div class="complete-box" id="Worked Metal" data-type="Betonlook" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/worked-metal.jpg" alt="">
+            </div>
+        </div>    
+        
+        <div class="complete-box" id="color-picker-digital-perspective">
+            <div class="color-box" id="Medal Yellow" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/medal-yellow.jpg" alt="">
+            </div>
+            <div class="color-box" id="3D Blue" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/3D-blue.jpg" alt="">
+            </div>
+            <div class="color-box" id="Cyber Blue" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/cyber-blue.jpg" alt="">
+            </div>
+            <div class="color-box" id="Dynamic Red" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/dynamic-red.jpg" alt="">
+            </div>
+            <div class="color-box" id="Dark Move" data-type="Betonlook" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/dark-move.jpg" alt="">
+            </div>
+            <div class="color-box" id="Fresh Power" data-type="Betonlook" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/fresh-power.jpg" alt="">
+            </div>
+        </div>  
+        
+        <div class="complete-box" id="color-picker-city-roots">
+            <div class="color-box" id="Modest Green" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/modest-green.jpg" alt="">
+            </div>
+            <div class="color-box" id="Comfortable Taupe" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/comfortable-taupe.jpg" alt="">
+            </div>
+            <div class="color-box" id="Inky Blue" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/inky-blue.jpg" alt="">
+            </div>
+            <div class="color-box" id="Heedless Violet" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/heedless-violet.jpg" alt="">
+            </div>
+            <div class="color-box" id="Downtown Mix" data-type="Betonlook" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/downtown-mix.jpg" alt="">
+            </div>
+            <div class="color-box" id="Worn Stuff" data-type="Betonlook" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/worn-stuff.jpg" alt="">
+            </div>
+        </div> 
+        
+        <div class="complete-box" id="color-picker-honest-pureness">
+            <div class="color-box" id="Planespoken Blue" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/plainspoken-blue.jpg" alt="">
+            </div>
+            <div class="color-box" id="Pure White" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/pure-white.jpg" alt="">
+            </div>
+            <div class="color-box" id="Simple Gray" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/simple-gray.jpg" alt="">
+            </div>
+            <div class="color-box" id="Natural Gray" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/natural-gray.jpg" alt="">
+            </div>
+            <div class="color-box" id="Mixed Glay" data-type="Betonlook" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/mixed-glay.jpg" alt="">
+            </div>
+            <div class="color-box" id="Looming Dust" data-type="Betonlook" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/looming-dust.jpg" alt="">
+            </div>
+        </div> 
+        
+        <div class="complete-box" id="color-picker-structered-matrix">
+            <div class="color-box" id="Rib Beige" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/rib-beige.jpg" alt="">
+            </div>
+            <div class="color-box" id="Intense Green" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/intense-green.jpg" alt="">
+            </div>
+            <div class="color-box" id="Deepwater Green" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/deepwater-green.jpg" alt="">
+            </div>
+            <div class="color-box" id="Forest Green" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/forest-green.jpg" alt="">
+            </div>
+            <div class="color-box" id="Mild Shades" data-type="Betonlook" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/mild-shades.jpg" alt="">
+            </div>
+            <div class="color-box" id="Jungle Leafs" data-type="Betonlook" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/jungle-leafs.jpg" alt="">
+            </div>
+        </div> 
+        
+        <div class="complete-box" id="color-picker-retro-pastels">
+            <div class="color-box" id="Pale Green" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/pale-green.jpg" alt="">
+            </div>
+            <div class="color-box" id="Cotton White" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/cotton-white.jpg" alt="">
+            </div>
+            <div class="color-box" id="Faded Rose" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/faded-rose.jpg" alt="">
+            </div>
+            <div class="color-box" id="Cute Blue" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/cute-blue.jpg" alt="">
+            </div>
+            <div class="color-box" id="Early Dew" data-type="Betonlook" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/early-dew.jpg" alt="">
+            </div>
+            <div class="color-box" id="Tender Breeze" data-type="Betonlook" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/tender-breeze.jpg" alt="">
+            </div>
+        </div>
+        
+        <div class="complete-box" id="color-picker-global-spirit">
+            <div class="color-box" id="Cozy Beige" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/cozy-beige.jpg" alt="">
+            </div>
+            <div class="color-box" id="Sunset Gold" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/sunset-gold.jpg" alt="">
+            </div>
+            <div class="color-box" id="Easy Grey" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/easy-grey.jpg" alt="">
+            </div>
+            <div class="color-box" id="Terracotta Red" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/terracotta-red.jpg" alt="">
+            </div>
+            <div class="color-box" id="Outback Dream" data-type="Betonlook" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/outback-dream.jpg" alt="">
+            </div>
+            <div class="color-box" id="Cosmic Fusion" data-type="Betonlook" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/cosmic-fusion.jpg" alt="">
+            </div>
+        </div> 
+        
+        <div class="complete-box" id="color-picker-dark-shine">
+            <div class="color-box" id="Splendid Bronze" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/splendid-bronze.jpg" alt="">
+            </div>
+            <div class="color-box" id="Avenue Leather" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/avenue-leather.jpg" alt="">
+            </div>
+            <div class="color-box" id="Elegant Grey" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/elegant-grey.jpg" alt="">
+            </div>
+            <div class="color-box" id="Distinct Green" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/distinct-green.jpg" alt="">
+            </div>
+            <div class="color-box" id="Rich Flow" data-type="Betonlook" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/rich-flow.jpg" alt="">
+            </div>
+            <div class="color-box" id="Chique Motion" data-type="Betonlook" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/chique-motion.jpg" alt="">
+            </div>
+        </div> 
+        
+        <div class="complete-box" id="color-picker-evergreens">
+            <div class="color-box" id="Stylish Grey" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/stylish-grey.jpg" alt="">
+            </div>
+            <div class="color-box" id="Dusty Grey" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/dusty-grey.jpg" alt="">
+            </div>
+            <div class="color-box" id="Iron Grey" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/iron-grey.jpg" alt="">
+            </div>
+            <div class="color-box" id="Calm Grey" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/calm-grey.jpg" alt="">
+            </div>
+            <div class="color-box" id="Misty Grey" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/misty-grey.jpg" alt="">
+            </div>
+            <div class="color-box" id="Fossil Grey" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/fossil-grey.jpg" alt="">
+            </div>
+            <div class="color-box" id="Basic White" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/basic-white.jpg" alt="">
+            </div>
+        
+            <div class="complete-box" id="Graphite Touch" data-type="Betonlook" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/graphite-touch.jpg" alt="">
+            </div>
+            <div class="color-box" id="Raw Basalt" data-type="Betonlook" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/raw-basalt.jpg" alt="">
+            </div>
+            <div class="color-box" id="Frozen Cosmic" data-type="Betonlook" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/frozen-cosmic.jpg" alt="">
+            </div>
+            <div class="color-box" id="Soft Stone" data-type="Betonlook" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/soft-stone.jpg" alt="">
+            </div>
+            <div class="color-box" id="Morning Flow"  data-type="Betonlook" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/morning-flow.jpg" alt="">
+            </div>
+            <div class="color-box" id="Calm Breeze" data-type="Betonlook" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/calm-breeze.jpg" alt="">
+            </div>
+            <div class="color-box" id="Sandy Shades" data-type="Betonlook" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/sandy-shades.jpg" alt="">
+            </div>
+            <div class="color-box" id="Basic Whash" data-type="Betonlook" onclick="changeColorOfMesh(this)">
+                <img src="Arturo-kleuren/basic-wash.jpg" alt="">
+            </div>
+        </div> 
+    </div>
+</div>
+
+
+
 
 
 

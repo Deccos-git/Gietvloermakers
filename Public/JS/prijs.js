@@ -1,58 +1,250 @@
 // localStorage.clear()
 
-// m2 uit localstorage
-const m2 = document.getElementById("m2");
-const m2Storage = localStorage.getItem('prijs-m2');
+!function colourFromLocalStorage(){
 
-if(m2 == null){
-    console.log("disregard error")
-} else {
-    m2.value = m2Storage
-}
+    const colourDiv = document.getElementById("selected-colour")
 
-// // 100 km rond Zwolle -alert bij Assistentie
-function zwolle(){
+    const color = localStorage.getItem('kleur');
+    const style = localStorage.getItem('style')
 
-    const ass = document.getElementById("assistentie");
-    const assOptions = ass.options;
-    const assSelect = assOptions[assOptions.selectedIndex].value;
+    const colorP = document.createElement("p")
+    const styleP = document.createElement("p")
 
-    if (assSelect == 500){
-    const zwolle = document.getElementById("zwolle");
-    zwolle.style.display = "block"
-    } else if(assSelect == 0){
-        zwolle.style.display = "none"
+    if(color != null){
+        colorP.innerText = `Kleur: ${color}`
+        styleP.innerText = `Stijl: ${style}`
     } else {
-        console.log("disregard error")
+        colorP.style.display = "none"
+        styleP.innerHTML = `Bekijk de <a href="kleurencollectie.html">kleurencollectie</a>`
     }
-}
 
-// // Assistentie uit localstorage
-const ass = document.getElementById("assistentie");
-const assStorage = localStorage.getItem('assistentie');
+    colourDiv.appendChild(styleP)
+    colourDiv.appendChild(colorP)
 
-if(assStorage == null){
-    console.log("disregard error")
-} else {
-    ass.value = assStorage
-}
+    colourDiv.style.backgroundImage = `url("Arturo-kleuren/${color}")`
+}();
+
+!function nextStep(){
+
+    const stepButtons = document.getElementsByClassName("next-step")
+    const stepDivs = document.getElementsByClassName("step-div")
+
+    stepButtons[0].addEventListener("click", () => {
+        stepDivs[0].style.display = "none"
+        stepDivs[1].style.display = "flex"
+    });
+
+    stepButtons[1].addEventListener("click", () => {
+        stepDivs[1].style.display = "none"
+        stepDivs[2].style.display = "flex"
+        m2ToLocalStorage()
+    });
+
+    stepButtons[2].addEventListener("click", () => {
+        stepDivs[2].style.display = "none"
+        stepDivs[3].style.display = "flex"
+        assistanceToSelectionForm()
+    });
+
+    stepButtons[3].addEventListener("click", () => {
+        stepDivs[3].style.display = "none"
+        stepDivs[4].style.display = "flex"
+        toolsToLocalStorage()
+        toolsToSelection()
+    });
+
+    stepButtons[4].addEventListener("click", () => {
+        stepDivs[4].style.display = "none"
+        stepDivs[5].style.display = "flex"
+    });
+
+    stepButtons[5].addEventListener("click", () => {
+        console.log("succes")
+    });
+
+}();
+
+!function previousStep(){
+
+    const backButtons = document.getElementsByClassName("step-back")
+    const stepDivs = document.getElementsByClassName("step-div")
+
+    backButtons[0].addEventListener("click", () => {
+        stepDivs[1].style.display = "none"
+        stepDivs[0].style.display = "flex"
+    });
+
+    backButtons[1].addEventListener("click", () => {
+        stepDivs[2].style.display = "none"
+        stepDivs[1].style.display = "flex"
+    });
+
+    backButtons[2].addEventListener("click", () => {
+        stepDivs[3].style.display = "none"
+        stepDivs[2].style.display = "flex"
+    });
+
+    backButtons[3].addEventListener("click", () => {
+        stepDivs[4].style.display = "none"
+        stepDivs[3].style.display = "flex"
+    });
+
+    backButtons[4].addEventListener("click", () => {
+        stepDivs[5].style.display = "none"
+        stepDivs[4].style.display = "flex"
+    });
+
+}();
+
+!function setDefaultM2(){
+
+    const m2Input = document.getElementById("m2-input")
+
+    const m2 = localStorage.getItem('m2')
+
+    if(m2 === ""){
+        m2Input.value = 0
+    } else {
+        m2Input.value = m2
+    };
+
+}();
+
+function m2ToLocalStorage(){
+
+    const m2Input = document.getElementById("m2-input").value
+    const m2Selection = document.getElementById("m2-selection")
+
+    if(m2Input != 0){
+        localStorage.setItem("m2", m2Input)
+    };
+
+    m2Selection.innerText = m2Input
+};
+
+!function setDefaultAssistance(){
+
+    assistanceLocalStorage = localStorage.getItem("assistance")
+    const assistance = document.getElementById("assistentie")
+
+    if(assistanceLocalStorage === "500"){
+        assistance.selectedIndex = 1
+    } else {
+        assistance.selectedIndex = 0
+    };
+
+}();
+
+function assistanceToSelectionForm(){
+
+    const assistanceSelection = document.getElementById("assistance-selection")
+    const assistance = document.getElementById("assistentie");
+    const assOptions = assistance.options;
+    const assValue = assOptions[assOptions.selectedIndex]
+    const assSelect = assValue.value;
+
+    localStorage.setItem('assistance', assSelect)
+
+    if(assSelect === "500"){
+        assistanceSelection.innerText = "Ja (€500)" 
+    } else {
+        assistanceSelection.innerText = "Nee"
+    };
+};
+
+function toolsToLocalStorage(){
+
+    const priceArray = []
+    const idArray = []
+
+    const tools = document.querySelectorAll(".tool")
+
+    tools.forEach(tool => {
+    
+        if(tool.checked == true){
+            const toolPrice = tool.value;
+            const toolNumber = parseFloat(toolPrice, 10)
+
+            priceArray.push(toolNumber)
+            idArray.push(tool.id)
+        
+        };  
+    }); 
+
+    localStorage.setItem("ToolPrice", priceArray)
+    localStorage.setItem("ToolID", idArray)
+};
+
+function toolsToSelection(){
+
+    const toolSelection = document.getElementById("tools-selection")
+    const toolUl = document.createElement("ul")
+
+    toolSelection.innerText = ""
+
+    const toolsFromStorage = localStorage.getItem("ToolID")
+
+    const tools = toolsFromStorage.split(",")
+
+    console.log(tools)
+
+    let toolLi = ""
+
+    tools.forEach(tool => {
+
+        toolLi = document.createElement("li")
+
+        toolLi.innerText = tool
+
+        toolUl.appendChild(toolLi)
+
+    });
+
+    toolSelection.appendChild(toolUl)
+
+};
+
+!function preselectToolsFromLocaleStorage(){
+
+    const toolsDOM = document.getElementsByClassName("tool");
+
+    const toolsArray = Array.from(toolsDOM);
+
+    toolsArray.forEach(toolDOM => {
+
+        const storageID = localStorage.getItem("ToolID");
+
+        const storageIDArray = storageID.split(",")
+
+        console.log(storageIDArray)
+
+        storageIDArray.forEach(toolStorage => {
+
+            if(toolDOM.id === toolStorage){
+
+            toolDOM.checked = true 
+            }; 
+        });
+    });
+}();
+
+!function fillSelectionForm(){
+    const colorSelection = document.getElementById("color-selection")
+    const m2Selection = document.getElementById("m2-selection")
+    const color = localStorage.getItem('kleur');
+    const style = localStorage.getItem('style')
+    const m2 = localStorage.getItem('m2')
+
+    colorSelection.innerHTML = `<b>Stijl</b>: ${style} <br> <b>Kleur</b>: ${color}`
+    m2Selection.innerText = m2
+
+
+}();
+
+
 
 //Prijs berekenen
 function bereken(){
-
-    // kleurkeuze alert
-    const kleurSelect = document.getElementById("kleurselect");
-
-    // m2
-    const m2 = document.getElementById("m2");
-
-    const m2value = m2.value;
-
-            // m2 naar localStorage
-            localStorage.setItem('prijs-m2', m2value)
-
-    // Alert uit DOM halen        
-    const alert = document.getElementById("alert-m2")
 
     // Prijs variabelen doorlopen
     let prijsVariable = 0
@@ -133,18 +325,8 @@ function bereken(){
     prijs.innerHTML = m2Euro
 
     // Assistentie
-    const ass = document.getElementById("assistentie");
-
-    const assOptions = ass.options;
-
-    const assValue = assOptions[assOptions.selectedIndex]
-
-    const assSelect = assValue.value;
   
     const assNumber = parseInt(assSelect, 10)
-
-            // Assistentie naar localStorage
-            localStorage.setItem('assistentie', assSelect)
 
     const prijsAssistentie = document.getElementById("prijs-assistentie");
     prijsAssistentie.innerHTML = "€ " + assNumber 
@@ -294,23 +476,6 @@ if(kleurSelect == null){
         }
 
  // Gereedschappen uit localstorage
-const winkeltje = document.getElementsByClassName("tool");
 
-const winkeltjeArray = Array.from(winkeltje);
-
-winkeltjeArray.forEach(w => {
-   
-    const tool = w.id
-
-        const storage = localStorage.getItem('bestel-item' + tool);
-
-        const afvinken = document.getElementById(storage)
-
-        if(afvinken == null){
-            return console.log("Disregard error")
-        } else {
-            afvinken.checked = true
-        }      
-})
 
 

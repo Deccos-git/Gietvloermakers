@@ -10,19 +10,6 @@ canvas{
     width: 100% !important;
 }
 
-#style {
-    display: none;
-    z-index: 3;
-    justify-content: center;
-    font-family: 'Prata', serif;
-    margin-bottom: 50px;
-    cursor: pointer;
-    position: sticky;
-    top: 0px;
-    background-color: #fff;
-    box-shadow: 0 5px 9px -5px rgb(0 0 0 / 20%), 0 7px 21px -15px rgb(0 0 0 / 19%);
-}
-
 #style h2 {
     margin: 5px;
     padding: 5px;
@@ -31,9 +18,46 @@ canvas{
     font-weight: 100;
 }
 
+#complete-view-button{
+    cursor: pointer;
+}
+
+#complete-view-inner-div{
+    display: none;
+}
+
+#select-colour-button{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#select-colour-button p {
+    padding: 7px;
+    border-radius: 15px;
+    font-size: 14px;
+    background-color: rgba(227, 227, 227, 0.5);
+}
+
+#betonlook-indicator-div{
+    min-height: 25px;
+}
+
+#complete-view-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid lightgray;
+  }
+  
+  #betonlook-indicator{
+    display: none;
+    margin-top: -20px;
+  }
+
 select{
     width: fit-content;
-    border: none;
+    border: 1px solid lightgrey;
     padding: 10px;
     border-radius: 5px;
     font-size: 24px;

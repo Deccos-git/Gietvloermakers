@@ -50,6 +50,18 @@
   text-decoration: none;
 }
 
+#complete-view-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid lightgray;
+}
+
+#betonlook-indicator{
+  display: none;
+  margin-top: -20px;
+}
+
 #industrieel{
   display: flex;
   margin: 20px;
@@ -262,7 +274,7 @@
 #ind-rood{
       height: 200px;
       width: 200px;
-      background-image: url(../Arturo-kleuren/ind-rood.jpg);
+      background-image: url(../Arturo-kleuren/signal-red.jpg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -279,7 +291,7 @@
   #ind-lichtgrijs{
     height: 200px;
       width: 200px;
-      background-image: url(../Arturo-kleuren/ind-lichtgrijs.jpg);
+      background-image: url(../Arturo-kleuren/steely-gray.jpg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -296,7 +308,7 @@
   #ind-blauw{
     height: 200px;
       width: 200px;
-      background-image: url(../Arturo-kleuren/ind-blauw.jpg);
+      background-image: url(../Arturo-kleuren/grizzled-blue.jpg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -313,7 +325,7 @@
   #ind-donkergrijs{
     height: 200px;
       width: 200px;
-      background-image: url(../Arturo-kleuren/ind-donkergrijs.jpg);
+      background-image: url(../Arturo-kleuren/cool-gray.jpg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -330,7 +342,7 @@
   #ind-bt-grijs{
     height: 200px;
       width: 200px;
-      background-image: url(../Arturo-kleuren/ind-bt-grijs.jpg);
+      background-image: url(../Arturo-kleuren/worked-metal.jpg);
       background-repeat: repeat;
       background-position: center;
       background-size: cover;
@@ -347,7 +359,7 @@
   #ind-bt-lichtgrijs{
     height: 200px;
       width: 200px;
-      background-image: url(../Arturo-kleuren/ind-bt-lichtgrijs.jpg);
+      background-image: url(../Arturo-kleuren/rough-lead.jpg);
       background-repeat: repeat;
       background-position: center;
       background-size: cover;
@@ -366,7 +378,7 @@
 #spr-blauw{
   height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/spr-blauw.jpg);
+  background-image: url(../Arturo-kleuren/cyber-blue.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -383,7 +395,7 @@
 #spr-geel{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/spr-geel.jpg);
+  background-image: url(../Arturo-kleuren/medal-yellow.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -400,7 +412,7 @@ height: 200px;
 #spr-lichtblauw{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/spr-lichtblauw.jpg);
+  background-image: url(../Arturo-kleuren/3D-blue.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -417,7 +429,7 @@ height: 200px;
 #spr-rood{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/spr-rood.jpg);
+  background-image: url(../Arturo-kleuren/dynamic-red.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -434,7 +446,7 @@ height: 200px;
 #spr-bt-donkergrijs{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/spr-bt-donkergrijs.jpg);
+  background-image: url(../Arturo-kleuren/dark-move.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -451,7 +463,7 @@ height: 200px;
 #spr-bt-lichtgrijs{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/spr-bt-lichtgrijs.jpg);
+  background-image: url(../Arturo-kleuren/fresh-power.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -470,7 +482,7 @@ height: 200px;
 #std-blauw{
   height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/std-blauw.jpg);
+  background-image: url(../Arturo-kleuren/inky-blue.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -487,7 +499,7 @@ height: 200px;
 #std-groen{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/std-groen.jpg);
+  background-image: url(../Arturo-kleuren/modest-green.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -504,7 +516,7 @@ height: 200px;
 #std-taupe{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/std-taupe.jpg);
+  background-image: url(../Arturo-kleuren/comfortable-taupe.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -521,7 +533,7 @@ height: 200px;
 #std-violet{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/std-violet.jpg);
+  background-image: url(../Arturo-kleuren/heedless-violet.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -538,7 +550,7 @@ height: 200px;
 #std-bt-blauw{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/std-bt-blauw.jpg);
+  background-image: url(../Arturo-kleuren/worn-stuff.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -555,7 +567,7 @@ height: 200px;
 #std-bt-grijs{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/std-bt-grijs.jpg);
+  background-image: url(../Arturo-kleuren/downtown-mix.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -574,7 +586,7 @@ height: 200px;
 #mnm-blauw{
   height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/mnm-blauw.jpg);
+  background-image: url(../Arturo-kleuren/plainspoken-blue.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -591,7 +603,7 @@ height: 200px;
 #mnm-grijs{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/mnm-grijs.jpg);
+  background-image: url(../Arturo-kleuren/simple-gray.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -608,7 +620,7 @@ height: 200px;
 #mnm-lichtgrijs{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/mnm-lichtgrijs.jpg);
+  background-image: url(../Arturo-kleuren/natural-gray.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -625,7 +637,7 @@ height: 200px;
 #mnm-wit{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/mnm-wit.jpg);
+  background-image: url(../Arturo-kleuren/pure-white.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -642,7 +654,7 @@ height: 200px;
 #mnm-bt-klei{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/mnm-bt-klei.jpg);
+  background-image: url(../Arturo-kleuren/mixed-glay.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -659,7 +671,7 @@ height: 200px;
 #mnm-bt-lichtgrijs{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/mnm-bt-lichtgrijs.jpg);
+  background-image: url(../Arturo-kleuren/looming-dust.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -678,7 +690,7 @@ height: 200px;
 #org-beige{
   height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/org-beige.jpg);
+  background-image: url(../Arturo-kleuren/rib-beige.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -695,7 +707,7 @@ height: 200px;
 #org-bruingroen{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/org-bruingroen.jpg);
+  background-image: url(../Arturo-kleuren/deepwater-green.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -712,7 +724,7 @@ height: 200px;
 #org-geelgroen{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/org-geelgroen.jpg);
+  background-image: url(../Arturo-kleuren/forest-green.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -729,7 +741,7 @@ height: 200px;
 #org-groen{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/org-groen.jpg);
+  background-image: url(../Arturo-kleuren/intense-green.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -746,7 +758,7 @@ height: 200px;
 #org-bt-donkergrijs{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/org-bt-donkergrijs.jpg);
+  background-image: url(../Arturo-kleuren/jungle-leafs.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -763,7 +775,7 @@ height: 200px;
 #org-bt-lichtgrijs{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/org-bt-lichtgrijs.jpg);
+  background-image: url(../Arturo-kleuren/mild-shades.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -782,7 +794,7 @@ height: 200px;
 #spl-blauw{
   height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/spl-blauw.jpg);
+  background-image: url(../Arturo-kleuren/cute-blue.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -799,7 +811,7 @@ height: 200px;
 #spl-groen{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/spl-groen.jpg);
+  background-image: url(../Arturo-kleuren/pale-green.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -816,7 +828,7 @@ height: 200px;
 #spl-roze{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/spl-roze.jpg);
+  background-image: url(../Arturo-kleuren/faded-rose.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -833,7 +845,7 @@ height: 200px;
 #spl-wit{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/spl-wit.jpg);
+  background-image: url(../Arturo-kleuren/cotton-white.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -850,7 +862,7 @@ height: 200px;
 #spl-bt-blauw{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/spl-bt-blauw.jpg);
+  background-image: url(../Arturo-kleuren/tender-breeze.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -867,7 +879,7 @@ height: 200px;
 #spl-bt-rood{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/spl-bt-rood.jpg);
+  background-image: url(../Arturo-kleuren/early-dew.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -886,7 +898,7 @@ height: 200px;
 #clt-beige{
   height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/clt-beige.jpg);
+  background-image: url(../Arturo-kleuren/cozy-beige.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -903,7 +915,7 @@ height: 200px;
 #clt-goud{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/clt-goud.jpg);
+  background-image: url(../Arturo-kleuren/sunset-gold.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -920,7 +932,7 @@ height: 200px;
 #clt-grijs{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/clt-grijs.jpg);
+  background-image: url(../Arturo-kleuren/easy-grey.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -937,7 +949,7 @@ height: 200px;
 #clt-terracotta{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/clt-terracotta.jpg);
+  background-image: url(../Arturo-kleuren/terracotta-red.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -954,7 +966,7 @@ height: 200px;
 #clt-bt-bruin{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/clt-bt-bruin.jpg);
+  background-image: url(../Arturo-kleuren/outback-dream.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -971,7 +983,7 @@ height: 200px;
 #clt-bt-lichtgrijs{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/clt-bt-lichtgrijs.jpg);
+  background-image: url(../Arturo-kleuren/cosmic-fusion.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -990,7 +1002,7 @@ height: 200px;
 #lux-brons{
   height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/lux-brons.jpg);
+  background-image: url(../Arturo-kleuren/splendid-bronze.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1007,7 +1019,7 @@ height: 200px;
 #lux-bruin{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/lux-bruin.jpg);
+  background-image: url(../Arturo-kleuren/avenue-leather.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1024,7 +1036,7 @@ height: 200px;
 #lux-grijs{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/lux-grijs.jpg);
+  background-image: url(../Arturo-kleuren/elegant-grey.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1041,7 +1053,7 @@ height: 200px;
 #lux-groen{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/lux-groen.jpg);
+  background-image: url(../Arturo-kleuren/distinct-green.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1058,7 +1070,7 @@ height: 200px;
 #lux-bt-groen{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/lux-bt-groen.jpg);
+  background-image: url(../Arturo-kleuren/rich-flow.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1075,7 +1087,7 @@ height: 200px;
 #lux-bt-paars{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/lux-bt-paars.jpg);
+  background-image: url(../Arturo-kleuren/chique-motion.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1094,7 +1106,7 @@ height: 200px;
 #kls-blauwgrijs{
   height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/kls-blauwgrijs.jpg);
+  background-image: url(../Arturo-kleuren/iron-grey.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1111,7 +1123,7 @@ height: 200px;
 #kls-bruingrijs{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/kls-bruingrijs.jpg);
+  background-image: url(../Arturo-kleuren/dusty-grey.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1128,7 +1140,7 @@ height: 200px;
 #kls-grijs{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/kls-grijs.jpg);
+  background-image: url(../Arturo-kleuren/stylish-grey.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1145,7 +1157,7 @@ height: 200px;
 #kls-grijsgrijs{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/kls-grijsgrijs.jpg);
+  background-image: url(../Arturo-kleuren/calm-grey.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1162,7 +1174,7 @@ height: 200px;
 #kls-lichtgrijs{
   height: 200px;
     width: 200px;
-    background-image: url(../Arturo-kleuren/kls-lichtgrijs.jpg);
+    background-image: url(../Arturo-kleuren/misty-grey.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1179,7 +1191,7 @@ height: 200px;
   #kls-roodgrijs{
   height: 200px;
     width: 200px;
-    background-image: url(../Arturo-kleuren/kls-roodgrijs.jpg);
+    background-image: url(../Arturo-kleuren/fossil-grey.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1196,7 +1208,7 @@ height: 200px;
   #kls-wit{
   height: 200px;
     width: 200px;
-    background-image: url(../Arturo-kleuren/kls-wit.jpg);
+    background-image: url(../Arturo-kleuren/basic-white.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1213,7 +1225,7 @@ height: 200px;
 #kls-bt-blauwgrijs{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/kls-bt-blauwgrijs.jpg);
+  background-image: url(../Arturo-kleuren/graphite-touch.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1230,7 +1242,7 @@ height: 200px;
 #kls-bt-donkergrijs{
 height: 200px;
   width: 200px;
-  background-image: url(../Arturo-kleuren/kls-bt-donkergrijs.jpg);
+  background-image: url(../Arturo-kleuren/raw-basalt.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1247,7 +1259,7 @@ height: 200px;
 #kls-bt-grijs{
   height: 200px;
     width: 200px;
-    background-image: url(../Arturo-kleuren/kls-bt-grijs.jpg);
+    background-image: url(../Arturo-kleuren/frozen-cosmic.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1264,7 +1276,7 @@ height: 200px;
   #kls-bt-lichtgrijs{
   height: 200px;
     width: 200px;
-    background-image: url(../Arturo-kleuren/kls-bt-lichtgrijs.jpg);
+    background-image: url(../Arturo-kleuren/soft-stone.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1281,7 +1293,7 @@ height: 200px;
   #kls-bt-lichtroze{
     height: 200px;
       width: 200px;
-      background-image: url(../Arturo-kleuren/kls-bt-lichtroze.jpg);
+      background-image: url(../Arturo-kleuren/morning-flow.jpg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -1298,7 +1310,7 @@ height: 200px;
     #kls-bt-roze{
     height: 200px;
       width: 200px;
-      background-image: url(../Arturo-kleuren/kls-bt-roze.jpg);
+      background-image: url(../Arturo-kleuren/calm-breeze.jpg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -1315,7 +1327,7 @@ height: 200px;
     #kls-bt-zand{
       height: 200px;
         width: 200px;
-        background-image: url(../Arturo-kleuren/kls-bt-zand.jpg);
+        background-image: url(../Arturo-kleuren/sandy-shades.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -1332,7 +1344,7 @@ height: 200px;
       #kls-bt-zandgrijs{
       height: 200px;
         width: 200px;
-        background-image: url(../Arturo-kleuren/kls-bt-zandgrijs.jpg);
+        background-image: url(../Arturo-kleuren/basic-wash.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;

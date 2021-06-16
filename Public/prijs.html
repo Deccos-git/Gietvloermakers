@@ -60,7 +60,7 @@
             <div onclick="hamburgerMenu()" id="hamburger-menu"></div>
             <ul>
                 <li><a href="/stappenplan.html" >Stappenplan</a></li>
-                <li><a href="/kleuren.html" >Kleurencollectie</a></li>
+                <li><a href="/kleurencollectie.html" >Kleurencollectie</a></li>
                 <li><a href ="/experts.html">Kenniscentrum</a></li>
                 <li><a href ="/prijs.html">Prijs</a></li>
                 <li><a href ="/over-ons.html">Over ons</a></li>
@@ -69,7 +69,7 @@
     <div id="menuItems">
         <div id="mobile-menu">
             <li><a href="stappenplan.html" >Stappenplan</a></li>
-            <li><a href="kleuren.html" >Kleurencollectie</a></li>
+            <li><a href="kleurencollectie.html" >Kleurencollectie</a></li>
             <li><a href ="experts.html">Kenniscentrum</a></li>
             <li><a href ="prijs.html">Prijs</a></li>
             <li><a href ="/over-ons.html">Over ons</a></li>
@@ -79,7 +79,146 @@
 
                 <h1 id="kiezer">Prijs</h1>
 
-<div class="main">
+<div class='step-div' id="colour-div">
+    <img class="progress-bar" src="Images/Design/SetI.png" alt="">
+    <h2 class="step-div-h2">Stap 1: Selecteer een kleur</h2>
+    <div id="selected-colour">
+    </div>
+    <p> <a id="link-to-colorcollection" href="kleurencollectie.html">Bekijk kleurencollectie</a> </p>
+    <div class="next-step">
+        <p>Volgende</p>
+        <img src="Images/Design/arrow-right-icon.png" alt="">
+    </div>
+    <p class="advise-button"><a href="mijn-gietvloer.html">Gratis adviesgesprek</a></p>
+</div>
+
+<div class='step-div' id="size-div">
+    <img class="progress-bar" src="Images/Design/SetII.png" alt="">
+    <h2 class="step-div-h2">Stap 2: Selecteer aantal m2</h2>
+    <img src="Images/Design/M2Image.png" alt="">
+    <input id="m2-input" type="number" placeholder="Schrijf hier het aantal m2">
+    <div class="navigation-div">
+        <div class="step-back">
+            <img src="Images/Design/arrow-left-icon.png" alt="">
+            <p>Terug</p>
+        </div>
+        <div class="next-step">
+            <p>Volgende</p>
+            <img src="Images/Design/arrow-right-icon.png" alt="">
+        </div>
+    </div>
+    <p class="advise-button"><a href="mijn-gietvloer.html">Gratis adviesgesprek</a></p>
+</div>
+
+<div class='step-div' id="assistance-div">
+    <img class="progress-bar" src="Images/Design/SetIII.png" alt="">
+    <h2 class="step-div-h2">Stap 3: Selecteer assistentie</h2>
+    <p>Wilt u een dag assistentie van gietvloer expert Karel?</p>
+    <img id="assistance-image" src="Images/KarelCTAButton.png" alt="">
+    <select id="assistentie">
+        <option type="number" value=0 >Nee, bedankt (€0)</option>
+        <option type="number" value=500 selected>Graag (€500)</option>
+    </select>
+    <p id="zwolle"><b>Let op:</b> woont u meer dan 100 km van Zwolle, dan geldt er een meerprijs van €0,19 per km.</p>
+    <div class="navigation-div">
+        <div class="step-back">
+            <img src="Images/Design/arrow-left-icon.png" alt="">
+            <p>Terug</p>
+        </div>
+        <div class="next-step">
+            <p>Volgende</p>
+            <img src="Images/Design/arrow-right-icon.png" alt="">
+        </div>
+    </div>
+    <p class="advise-button"><a href="mijn-gietvloer.html">Gratis adviesgesprek</a></p>
+</div>
+
+<div class='step-div' id="tools-div">
+    <img class="progress-bar" src="Images/Design/SetIIII.png" alt="">
+    <h2 class="step-div-h2">Stap 4: Selecteer gereedschappen</h2>
+
+    <form id="tools">
+        <input class="tool" type="checkbox" id="Plakband" value=9.50> <b>Plakband</b> - 1 stuks (€9,50)</br>
+        <input class="tool" type="checkbox" id="Mengspiraal" value=13> <b>Mengspiraal</b> - 1 stuks (€13,00)</br>
+        <input class="tool" type="checkbox" id="Vlakke spaan" value=8.50> <b>Vlakke spaan</b> - 1 stuks (€8,50)</br>
+        <input class="tool" type="checkbox" id="Wegwerpkwast" value=6> <b>Kwast</b> - 2 stuks (€6,00)</br>
+        <input class="tool" type="checkbox" id="Handschoenen" value=9> <b>Handschoenen</b> - 3 stuks van beide (€9,00)</br>
+        <input class="tool" type="checkbox" id="Microvezel roller" value=3.75> <b>Microvezel roller</b> - 1 stuks (€3,75)</br>
+    </form>
+
+    <a href="stappenplan.html">Bekijk stappenplan</a>
+    
+    <div class="navigation-div">
+        <div class="step-back">
+            <img src="Images/Design/arrow-left-icon.png" alt="">
+            <p>Terug</p>
+        </div>
+        <div class="next-step">
+            <p>Prijs berekenen</p>
+            <img src="Images/Design/arrow-right-icon.png" alt="">
+        </div>
+    </div>
+    <p class="advise-button"><a href="mijn-gietvloer.html">Gratis adviesgesprek</a></p>
+</div>
+
+<div class='step-div' id="overview-div">
+    <h2 class="step-div-h2">Uw prijs</h2>
+
+    <section class="main-prijs">
+        <p class="main-prijs-titel"> Primer, gietvloer en lak</p>
+        <p class="prijs" id="prijs-vloer">€0</p>
+        <p class="main-prijs-titel">1 dag assistentie</p>
+        <p class="prijs" id="prijs-assistentie">€0</p>
+        <p class="main-prijs-titel">Gereedschappen</p>
+        <p class="prijs" id="prijs-gereedschappen">€0</p>
+        <h5 id="pk-kosten">(Incl. €15,00 pak & verzendkosten)</h5>
+        <div id="total-prijs">
+            <p id="totaal-prijs">Totaal</p>
+            <p id="totaal">€0</p>
+        </div>
+    </section>
+    <div class="navigation-div">
+        <div class="step-back">
+            <img src="Images/Design/arrow-left-icon.png" alt="">
+            <p>Terug</p>
+        </div>
+        <div class="next-step">
+            <p>Bestellen</p>
+            <img src="Images/Design/arrow-right-icon.png" alt="">
+        </div>
+    </div>
+    <p class="advise-button"><a href="mijn-gietvloer.html">Gratis adviesgesprek</a></p>
+</div>
+
+<div class='step-div' id="selection-div">
+    <div id="selection-inner-div">
+        <h1>Uw bestelling</h1>
+        <h2>Kleur</h2>
+        <p id="color-selection"></p>
+        <h2>Aantal m2</h2>
+        <p id="m2-selection"></p>
+        <h2>Assistentie</h2>
+        <p id="assistance-selection"></p>
+        <h2>Gereedschappen</h2>
+        <p id="tools-selection"></p>
+        <h2>Prijs</h2>
+        <p id="price-selection"></p>
+    </div>
+
+    <div class="navigation-div">
+        <div class="step-back">
+            <img src="Images/Design/arrow-left-icon.png" alt="">
+            <p>Terug</p>
+        </div>
+        <div class="next-step">
+            <p>Versturen</p>
+            <img src="Images/Design/arrow-right-icon.png" alt="">
+        </div>
+    </div>
+    <p class="advise-button"><a href="mijn-gietvloer.html">Gratis adviesgesprek</a></p>
+</div>
+
+<!-- <div class="main">
         <section class="main-bestel">
                 <h2>Mijn keuzes</h2>
                 <p id="uw-kleur">Uw kleur</p>
@@ -129,7 +268,7 @@
                     
 
             </section>
-</div>
+</div> -->
 
 
 <footer id="footer">

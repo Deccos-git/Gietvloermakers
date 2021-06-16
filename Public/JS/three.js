@@ -1,7 +1,7 @@
 
 const room = document.getElementById("room-scene")
 
-let scene, camera, camera2, renderer, roomScene, light, plant
+let scene, camera, camera2, renderer, roomScene, light, plant, matGroup
 
 let newColor = "/Arturo-kleuren/signal-red.jpg"
 
@@ -28,12 +28,43 @@ function changeColorOfMesh(elem){
     newColor = elem.firstElementChild.src
 
     const canvas = room.firstElementChild
+
+    canvas.scrollIntoView()
+
     room.removeChild(canvas)
     changeColourTitle(elem)
+    betonlook(elem)
 
     init()
 
 }
+
+// !function showCompleteView(){
+
+//     const button = document.getElementById("complete-view-button")
+//     const completeInnerDiv = document.getElementById("complete-view-inner-div")
+
+//     button.addEventListener("click", () => {
+
+//         if(completeInnerDiv.style.display === "flex"){
+//             completeInnerDiv.style.display = "none"
+//         } else {
+//             completeInnerDiv.style.display = "flex"
+//         };
+//     });
+// }();
+
+function betonlook(elem){
+
+    const betonlookIndicator = document.getElementById("betonlook-indicator")
+
+    if(elem.dataset.type === "Betonlook"){
+        betonlookIndicator.style.display = "block"
+    } else {
+        betonlookIndicator.style.display = "none"
+    };
+
+};
 
 function setColorDiv(option){
 
@@ -149,16 +180,72 @@ function init(){
     scene = new THREE.Scene();
     scene.background = new THREE.Color( 0xFFFFFF );
 
-    camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
-    camera.position.z = 5;
-    camera.position.y = 1.3;
-    camera.position.x = 0;
+    const aspectRatio = window.innerWidth / window.innerHeight
+    const cameraWidth = 7.5
+    const cameraHeight = cameraWidth / aspectRatio
 
+    camera = new THREE.OrthographicCamera( 
+        cameraWidth / - 2, 
+        cameraWidth / 2, 
+        cameraHeight / 2, 
+        cameraHeight / - 2, 
+        1, 1000 );
+
+    // camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
     renderer = new THREE.WebGLRenderer({ antialias: true});
     renderer.setSize( window.innerWidth, window.innerHeight );
     room.appendChild(renderer.domElement)
 
     plant = new THREE.Group()
+    matGroup = new THREE.Group()
+
+    addPlantToScene(plant)
+    addMatToScene(matGroup)
+
+    const geometry = new THREE.BoxGeometry(5,0.1,5);
+    const texture = new THREE.TextureLoader().load( newColor );
+    const material = new THREE.MeshBasicMaterial({ map: texture})
+    cube = new THREE.Mesh( geometry, material );
+    cube.castShadow = true
+    cube.position.y = 0.2
+
+
+    roomScene = new THREE.Group()
+    roomScene.add(cube)
+    // roomScene.add(matGroup)
+    // roomScene.add(plant)
+
+    if (window.innerWidth < 500){
+        camera.position.z = 40;
+        camera.position.y = 1;
+        camera.position.x = 0;
+        roomScene.rotation.x = 0.8;
+    } else {
+        camera.position.z = 200;
+        camera.position.y = 0.5;
+        camera.position.x = 0;
+        roomScene.rotation.x = 0.3;
+    }
+
+    scene.add(roomScene)
+    
+};
+
+function addMatToScene(matGroup){
+
+    const geometry = new THREE.BoxGeometry(1,0.01,1);
+    const texture = new THREE.TextureLoader().load( "Images/welkom-mat.jpg" );
+    const material = new THREE.MeshBasicMaterial({ map: texture})
+    mat = new THREE.Mesh( geometry, material );
+    mat.castShadow = true
+    mat.position.y = 0.3
+    mat.position.z = 2.2
+
+    matGroup.add(mat)
+
+}
+
+function addPlantToScene(plant){
 
     const baseGeometry = new THREE.BoxGeometry(0.2, 0.5, 0.2);
     const baseMaterial = new THREE.MeshBasicMaterial({ color: 0xA00025})
@@ -183,19 +270,6 @@ function init(){
     plant.add(base)
     plant.add(stem)
     plant.add(leaves)
-
-    const geometry = new THREE.BoxGeometry(5,0.1,5);
-    const texture = new THREE.TextureLoader().load( newColor );
-    const material = new THREE.MeshBasicMaterial({ map: texture})
-    cube = new THREE.Mesh( geometry, material );
-    cube.castShadow = true
-    cube.position.y = 0.2
-
-    roomScene = new THREE.Group()
-    roomScene.add(cube)
-    roomScene.add(plant)
-    scene.add(roomScene)
-    
 };
 
 function animate() {
@@ -204,7 +278,7 @@ function animate() {
     roomScene.rotation.y += 0.001;
 
 	renderer.render( scene, camera );
-}
+};
 
 function onWindowRezise(){
 
@@ -214,7 +288,29 @@ function onWindowRezise(){
 
 };
 
-window.addEventListener("rezise", onWindowRezise, false)
+window.addEventListener("rezise", onWindowRezise)
 
 init();
 animate();
+
+!function selectColour(){
+
+    const button = document.getElementById("select-colour-button")
+
+    button.addEventListener("click", () => {
+
+    const style = document.getElementById("select-colour")
+    const colour = document.getElementById("color-name").innerText
+
+    const option = style.options
+    const selected = option[option.selectedIndex].innerHTML
+
+    localStorage.setItem('kleur', colour)
+    localStorage.setItem('style', selected)
+
+    setTimeout(() => {
+            window.open("prijs.html", "_self");
+    }, 1000);
+
+    });
+}();
