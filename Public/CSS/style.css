@@ -345,6 +345,10 @@ option{
     color: #A00025;
 }
 
+#karel-photo{
+    border-radius: 50%;
+  }
+
 #infoSectionA{
     display: flex;
     flex-wrap: wrap;

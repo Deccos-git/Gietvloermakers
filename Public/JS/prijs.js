@@ -433,5 +433,89 @@ function totalPriceTable(){
 
     button.addEventListener("click", () => {
 
+        const m2 = document.getElementById("m2-selection").innerHTML
+        const color = document.getElementById("color-selection").innerHTML
+        const assistance = document.getElementById("assistance-selection").innerHTML
+        const tools = document.getElementById("tools-selection").innerHTML
+        const price = document.getElementById("price-selection").innerHTML
+        const name = document.getElementById("name").value
+        const street = document.getElementById("street").value
+        const phone = document.getElementById("phone").value
+        const email = document.getElementById("email").value
+        const zip = document.getElementById("zip").value
+        const town = document.getElementById("town").value
+
+        sendMailToGietvloermakers(name, street, zip, town, phone, email, m2, color, assistance, tools, price)
+
     });
 }();
+
+
+
+    
+
+function sendMailToGietvloermakers(name, street, zip, town, phone, email, m2, color, assistance, tools, price){
+    db.collection("mail").doc().set({
+        to: "info@gietvloermakers.nl", 
+        cc: "gvbeusekom84@hotmail.com",
+    message: {
+    subject: `Nieuwe bestelling op Gietvloermakers`,
+    html: `<h2>Naam</h2> ${name}<br>
+            <h2>Straat & huisnummer</h2>${street}<br>
+            <h2>Postcode</h2>${zip}<br>
+            <h2>Woonplaats</h2>${town}
+            <h2>Telefoonnummer</h2>${phone}<br>
+            <h2>Emailadres</h2>${email}<br>
+            <h2>Aantal m2</h2>${m2}<br>
+            <h2>Kleur</h2>${color}<br>
+            <h2>Assistentie</h2>${assistance}<br>
+            <h2>Gereedschappen</h2>${tools}<br>
+            <h2>Totale prijs</h2>${price}<br>
+            `,
+    }
+            
+    }).catch((err) => {
+        console.log(err)
+    }).then(() => {
+        sendMailToClient(name, street, zip, town, phone, email, m2, color, assistance, tools, price)
+    })
+};
+
+function sendMailToClient(name, street, zip, town, phone, email, m2, color, assistance, tools, price){
+    db.collection("mail").doc().set({
+        to: email, 
+        cc: "info@gietvloermakers.nl",
+    message: {
+    subject: `Jouw bestelling op Gietvloermakers`,
+    html: ` <h2>Bedankt voor je bestelling op Gietvloermakers.</h2>
+            Wij zullen spoedig contact met je opnemen om de bestelling even met je door te nemen. <br>
+            Als je vragen heeft kun je ons altijd even bellen op 06 432 378 66 
+            of een mailtje sturen naar info@gietvloermakers.nl <br><br>
+
+            <h2>Jouw bestelling</h2>
+            
+            <h3>Naam</h3> ${name}<br> 
+            <h3>Straat & huisnummer</h3>${street}<br>
+            <h3>Postcode</h3>${zip}<br>
+            <h3>Woonplaats</h3>${town}
+            <h3>Telefoonnummer</h3>${phone}<br>
+            <h3>Emailadres</h3>${email}<br>
+            <h3>Aantal m2</h3>${m2}<br>
+            <h3>Kleur</h3>${color}<br>
+            <h3>Assistentie</h3>${assistance}<br>
+            <h3>Gereedschappen</h3>${tools}<br>
+            <h3>Totale prijs</h3>${price}<br><br>
+
+            Met vriendelijke groet, <br><br>
+
+            Het Gietvloermakers team.<br><br>
+            <a href="www.gietvloermakers.nl">www.gietvloermakers.nl</a>
+            `,
+    }
+            
+    }).catch((err) => {
+        console.log(err)
+    }).then(() => {
+        window.open("bedankt.html", "_self")
+    })
+};
