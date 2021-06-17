@@ -54,7 +54,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid lightgray;
+  border-top: 3px solid lightgray;
+}
+
+#complete-view-button-div{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#complete-view-button-div img{
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+#complete-view-inner-div{
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.complete-div{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 #betonlook-indicator{

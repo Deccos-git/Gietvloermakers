@@ -3,7 +3,7 @@ const room = document.getElementById("room-scene")
 
 let scene, camera, camera2, renderer, roomScene, light, plant, matGroup
 
-let newColor = "/Arturo-kleuren/signal-red.jpg"
+let newColor = "/Arturo-kleuren/Signal Red.jpg"
 
 function selectStyle(){
 
@@ -36,15 +36,16 @@ function changeColorOfMesh(elem){
     betonlook(elem)
 
     init()
-
-}
+};
 
 // !function showCompleteView(){
 
-//     const button = document.getElementById("complete-view-button")
+//     const button = document.getElementById("complete-view-button-div")
 //     const completeInnerDiv = document.getElementById("complete-view-inner-div")
 
 //     button.addEventListener("click", () => {
+
+//         console.log("test")
 
 //         if(completeInnerDiv.style.display === "flex"){
 //             completeInnerDiv.style.display = "none"

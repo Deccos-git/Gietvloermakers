@@ -21,7 +21,7 @@
     colourDiv.appendChild(styleP)
     colourDiv.appendChild(colorP)
 
-    colourDiv.style.backgroundImage = `url("Arturo-kleuren/${color}")`
+    colourDiv.style.backgroundImage = `url("Arturo-kleuren/${color}.jpg")`
 }();
 
 !function nextStep(){
@@ -489,7 +489,7 @@ function sendMailToClient(name, street, zip, town, phone, email, m2, color, assi
     subject: `Jouw bestelling op Gietvloermakers`,
     html: ` <h2>Bedankt voor je bestelling op Gietvloermakers.</h2>
             Wij zullen spoedig contact met je opnemen om de bestelling even met je door te nemen. <br>
-            Als je vragen heeft kun je ons altijd even bellen op 06 432 378 66 
+            Als je vragen hebt kun je ons altijd even bellen op 06 432 378 66 
             of een mailtje sturen naar info@gietvloermakers.nl <br><br>
 
             <h2>Jouw bestelling</h2>
