@@ -22,10 +22,6 @@ canvas{
     cursor: pointer;
 }
 
-#complete-view-inner-div{
-    display: none;
-}
-
 #select-colour-button{
     display: flex;
     justify-content: center;
@@ -75,10 +71,11 @@ select{
 }
 
 .color-box img{
-    height: 30px;
-    width: 30px;
+    height: 100px;
+    width: 100px;
     border-radius: 5px;
     cursor: pointer;
+    margin: 10px;
     box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
 }
 
@@ -96,36 +93,4 @@ select{
     padding: 5px;
     z-index: 2;
     margin-bottom: 30px;
-}
-
-#color-picker-digital-perspective{
-    display: none;
-}
-
-#color-picker-city-roots{
-    display: none;
-}
-
-#color-picker-honest-pureness{
-    display: none;
-}
-
-#color-picker-structered-matrix{
-    display: none;
-}
-
-#color-picker-retro-pastels{
-    display: none;
-}
-
-#color-picker-global-spirit{
-    display: none;
-}
-
-#color-picker-dark-shine{
-    display: none;
-}
-
-#color-picker-evergreens{
-    display: none;
 }

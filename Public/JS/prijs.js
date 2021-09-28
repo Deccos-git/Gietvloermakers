@@ -10,12 +10,12 @@
     const colorP = document.createElement("p")
     const styleP = document.createElement("p")
 
-    if(color != null){
-        colorP.innerText = `Kleur: ${color}`
-        styleP.innerText = `Stijl: ${style}`
-    } else {
+    if(color === null || style === null){
         colorP.style.display = "none"
         styleP.innerHTML = `Bekijk de <a href="kleurencollectie.html">kleurencollectie</a>`
+    } else {
+        colorP.innerText = `Kleur: ${color}`
+        styleP.innerText = `Stijl: ${style}`
     }
 
     colourDiv.appendChild(styleP)
