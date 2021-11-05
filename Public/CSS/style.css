@@ -256,8 +256,9 @@ iframe{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
     text-align: center;
+    background-color: #0000002e;
+    height: 750px;
 }
 
 #landing{
