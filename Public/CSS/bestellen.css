@@ -39,6 +39,11 @@
   border: 1px solid lightgray;
   margin: 20px 0px;
   font-size: 20px;
+  width: 90%;
+}
+
+#m2-img{
+  width: 90%;
 }
 
 .step-div-h2{
