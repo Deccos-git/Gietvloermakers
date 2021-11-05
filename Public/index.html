@@ -52,24 +52,29 @@
 
     <nav id="header">
         <div id="menu">
-            <a id="logo" href="index.html" alt="logo van gietvloermakers"><img id="logo-menu" src="../Images/logo350x50Rood.png"></a>
-            <div onclick="hamburgerMenu()" id="hamburger-menu"></div>
+            <div class="logo-container">
+                <a id="logo" href="index.html" alt="logo van gietvloermakers"><img id="logo-menu" src="../Images/logo350x50Rood.png"></a>
+                <div onclick="hamburgerMenu()" id="hamburger-menu"></div>
+            </div>
             <ul>
                 <li><a href="/stappenplan.html" >Stappenplan</a></li>
                 <li><a href="/kleurencollectie.html" >Kleurencollectie</a></li>
                 <li><a href ="/experts.html">Kenniscentrum</a></li>
                 <li><a href ="/prijs.html">Prijs</a></li>
+                <li><a href ="/ervaringen.html">Ervaringen</a></li>
                 <li><a href ="/over-ons.html">Over ons</a></li>
             </ul>
     
             <div id="menuItems">
-                <li><a href="../stappenplan.html" >Stappenplan</a></li>
-                <li><a href="../kleurencollectie.html" >Kleurencollectie</a></li>
-                <li><a href ="../experts.html">Kenniscentrum</a></li>
-                <li><a href ="../prijs.html">Prijs</a></li>
+                <li><a href="/stappenplan.html" >Stappenplan</a></li>
+                <li><a href="/kleurencollectie.html" >Kleurencollectie</a></li>
+                <li><a href ="/experts.html">Kenniscentrum</a></li>
+                <li><a href ="/prijs.html">Prijs</a></li>
+                <li><a href ="/ervaringen.html">Ervaringen</a></li>
                 <li><a href ="/over-ons.html">Over ons</a></li>
             </div>
         </div>
+    </nav>
 
         <container id="landing-light">
                 <div id="titel-light">
@@ -85,14 +90,6 @@
             </div>
         </container> 
 
-        <!-- <container id="landing">
-            <div id="titel">
-                <h1 id="titeltext">Gietvloermakers</h1> -->
-                 <!-- <h2 id="subtitel">Maak eenvoudig je eigen gietvloer</h2>  -->
-                <!-- <a href="../stappenplan.html"><button>Bekijk het stappenplan</button></a>
-            </div>
-        </container> --> 
-    </nav>
 <main>
     <section>
     <h2 id="titelhead">Een gietvloer is een populaire vloer die je prima zelf kunt leggen</h2>
@@ -183,25 +180,25 @@
     <section id="reference">
         <h1>Ervaringen van klanten</h1>
         <div id="reference-inner-div">
-
-            <div class="reference-card">
-                <h3>Ron Wouda</h3>
-                <p>Hoi Karel<br>
-                    Vloer ligt erin. Prima gelukt. <br>
-                    Zoon en schoondochter helemaal blij. <br>
-                    Verwerking ging goed <br>
-                </p>
-                <a href="/mijn-gietvloer.html#all-references"><button id="read-more-button">Lees meer</button></a> 
+            <div id='video-container-landing'>
+                <p>"Het was makkelijker dan ik van te voren had gedacht" - Martijn</p>
+                <iframe 
+                src="https://www.youtube.com/embed/mEuIHQ-M7Pw" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+                </iframe>
             </div>
-
-            <div class="reference-card" >
-                <h3>Hans Bouwens</h3>
-                <p>In navolging van een collega van mij die zeer tevreden was over de door u geleverde producten en de prettige en goede telefonische ondersteuning, heb ik ook de producten bij u besteld voor het in eigen beheer maken van een gietvloer. Ook ik ben tevreden over de door u geleverde producten. 
-                </p>
-               <a href="/mijn-gietvloer.html#all-references"><button id="read-more-button">Lees meer</button></a> 
-            </div>
-
         </div>
+        <div>
+            <p>
+                <a href="/ervaringen.html">
+                    Bekijk alle ervaringen
+                </a>
+            </p> 
+        </div>
+            
     </section>
 
     <Section id="sectionB">

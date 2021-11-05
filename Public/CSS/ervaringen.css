@@ -1,0 +1,53 @@
+iframe{
+    border-radius: 15px;
+    width: 90%;
+    height: 300px;
+}
+
+.experience-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.title-container{
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+
+.title-container h2{
+    text-align: center;
+}
+
+.title-container img{
+    width: 200px;
+    height: auto;
+}
+
+.video-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+
+.video-container{
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+}
+
+@media only screen and (max-width: 938px){
+
+    iframe {
+        border-radius: 15px;
+        width: 150%;
+        height: auto;
+        margin-bottom: 40px;
+    }
+}

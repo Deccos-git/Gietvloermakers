@@ -131,6 +131,12 @@ option{
     border-radius: 15px;
 }
 
+iframe{
+    border-radius: 15px;
+    width: 90%;
+    height: 300px;
+}
+
 /* Menu */
 
 #logo {
@@ -148,6 +154,8 @@ option{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 2px 1px -1px rgb(0 0 0 / 12%);
 }
 
 #menu a:link{
@@ -200,7 +208,7 @@ option{
 /* Header */
 
 #title-button{
-    box-shadow: 0 5px 9px -3px rgb(0 0 0 / 20%), 0 7px 21px -15px rgb(0 0 0 / 19%);
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 2px 1px -1px rgb(0 0 0 / 12%);
     border-radius: 5px;
 }
 
@@ -252,16 +260,6 @@ option{
     text-align: center;
 }
 
-#header{
-    height: 1050px;
-    width: 100%;
-    background-image: url(../Images/main-header.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
 #landing{
     display: flex;
     align-items: center;
@@ -271,9 +269,14 @@ option{
 
 #landing-light{
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    height: 750px;
+    width: 100%;
+    background-image: url(../Images/main-header.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #titeltext{
@@ -321,6 +324,11 @@ option{
     font-size: 70px;
     display: flex;
     margin: 50px 50px 50px 50px;
+}
+
+#reference-inner-div img{
+    height: 300px;
+
 }
 
 #sectionA{
@@ -383,6 +391,10 @@ option{
     border-radius: 3px;
     background-color: white;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,.7), 0 2px 1px -1px rgba(0,0,0,.1), 0 1px 3px 0 rgba(0,0,0,.6);
+}
+
+#video-container-landing{
+    margin: 20px;
 }
 
 .applicatie-inner-div p{
@@ -730,7 +742,7 @@ option{
 #reference{
     background-color: #c4c4c4;
     width: 100%;
-    padding-top: 100px;
+    padding: 100px 0px;
 }
 
 #reference-inner-div{
@@ -796,16 +808,21 @@ option{
         margin: 20px;
     }
 
-    #header{
-        background-attachment: scroll;
-        background-image: url(../Images/Keuken-roos-hoog.JPG);
+    #landing-light{
+        display: flex;
+        flex-direction: column;
         height: 550px;
-        }
+        width: 100%;
+        background-image: url(../Images/Keuken-roos-hoog.JPG);
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
 
     #menu{
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     #menu ul{
@@ -858,7 +875,7 @@ option{
     }
 
     #logo{
-        margin: 7px 20px 0px 20px !important;
+        margin: 7px 10px 0px 20px !important;
     }
 
     #hamburger-menu{
@@ -869,7 +886,7 @@ option{
         width: 20px;
         height: 20px;
         align-self: center;
-        margin: 10px 10px 20px 10px;
+        margin-right: 10px;
         }
 
     .modal-h1{
@@ -951,5 +968,9 @@ option{
 
     #socials {
         margin-top: 0px;
+    }
+
+    .logo-container{
+        display: flex;
     }
 }
