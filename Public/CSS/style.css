@@ -381,6 +381,7 @@ iframe{
     flex-wrap: wrap;
     margin-top: 30px;
     justify-content: center;
+    width: 80%;
 }
 
 .applicatie-inner-div{
@@ -596,6 +597,9 @@ iframe{
 #sectionBHead{
     background-color: #c4c4c4;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #sectionBHead a{
