@@ -18,6 +18,27 @@
   border-radius: 50%;
   align-self: center;
 }
+
+.show-color{
+  margin-top: 0px;
+  cursor: pointer;
+  font-weight: 400 !important;
+  font-size: 11px !important;
+}
+
+.select-color-container img{
+  height: 30px;
+}
+
+.select-color{
+  margin-top: -65px;
+  cursor: pointer;
+  font-weight: 400 !important;
+  font-size: 11px !important;
+  border: 1px solid #131313;
+  padding: 3px;
+  border-radius: 5px;
+}
   
 .style{
   display: flex;

@@ -24,3 +24,16 @@ const observer = new IntersectionObserver((entries, observer) => {
 videos.forEach((video) => {
   observer.observe(video);
 });
+
+function watchVideo(e){
+  const videoDiv = e.nextElementSibling
+
+  if(videoDiv.style.display === 'block'){
+    videoDiv.style.display ='none'
+  } else {
+    videoDiv.style.display ='block'
+  }
+
+ 
+
+}
