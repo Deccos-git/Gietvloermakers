@@ -260,11 +260,33 @@
 }
 
 .progress-bar{
-  width: 60%;
+  width: 40%;
 }
 
 .navigation-div{
   display: flex;
+}
+
+.tool-inner-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#toolbox-container{
+  margin-bottom: 50px;
+}
+
+.tool-inner-container img{
+  margin-right: 10px;
+}
+
+#toolbox-select{
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  margin: 20px 0px;
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 938px){
