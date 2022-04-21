@@ -21,7 +21,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="keywords" content="zelf gietvloer maken, doe het zelf gietvloer, gietvloer maken kleurencollectie.">
+    <meta name="keywords" content="gietvloer kleuren">
     <meta name="description" content="Bekijk en vergelijk alle 61 kleuren en vind je droom kleur in de kleurencollectie van Gietvloermakers.">
     <title>Bekijk en vergelijk alle 61 kleuren in onze kleurencollectie</title>
     <script>src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"</script>
@@ -31,24 +31,9 @@
     <link rel="stylesheet" href="CSS/three.css"></link>
     <link rel="stylesheet" href="CSS/kleurencollectie.css"></link>
     <link rel="shortcut icon" href="Images/favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Prata&display=swap" rel="stylesheet">
-     <!-- Facebook Pixel Code -->
-<script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '191716128570076');
-    fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=191716128570076&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Facebook Pixel Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -59,7 +44,7 @@
             <nav id="header">
                 <div id="menu">
                     <div class="logo-container">
-                        <a id="logo" href="index.html" alt="logo van gietvloermakers"><img id="logo-menu" src="../Images/logo350x50Rood.png"></a>
+                        <a id="logo" href="index.html"><img id="logo-menu" src="../Images/logo350x50Rood.png" alt="logo van gietvloermakers"></a>
                         <div onclick="hamburgerMenu()" id="hamburger-menu"></div>
                     </div>
                     <ul>
@@ -91,25 +76,25 @@
                 <h3>Monolook</h3>
                 <div class="style-container">
                     <div class="color-box" id="Signal Red" data-style="Sturdy Signals">
-                        <img src="Arturo-kleuren/Signal Red.jpg" alt="">
+                        <img src="Arturo-kleuren/Signal Red.jpg" alt="Signal red kleur">
                         <p class='select-color' data-color="Signal Red" data-style="Sturdy Signals" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Signal red</p>
                     </div>
                     <div class="color-box" id="Steely Gray" data-style="Sturdy Signals" onclick="changeColor(this)">
-                        <img src="Arturo-kleuren/Steely Gray.jpg" alt="">
+                        <img src="Arturo-kleuren/Steely Gray.jpg" alt="Stelley gray kleuir">
                         <p class='select-color' data-color="Steely Gray" data-style="Sturdy Signals" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Steely Gray</p>
                     </div>
                     <div class="color-box" id="Grizzled Blue" data-style="Sturdy Signals" >
-                        <img src="Arturo-kleuren/Grizzled Blue.jpg" alt="">
+                        <img src="Arturo-kleuren/Grizzled Blue.jpg" alt="grizzled blue kleur">
                         <p class='select-color' data-color="Grizzled Blue" data-style="Sturdy Signals" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Grizzled Blue</p>
                     </div>
                     <div class="color-box" id="Cool Gray" data-style="Sturdy Signals" >
-                        <img src="Arturo-kleuren/Cool Gray.jpg" alt="">
+                        <img src="Arturo-kleuren/Cool Gray.jpg" alt="cool gray kleur">
                         <p class='select-color' data-color="Cool Gray" data-style="Sturdy Signals" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Cool Gray</p>
@@ -118,13 +103,13 @@
                 <h3>Betonlook</h3>
                 <div class="style-container">
                     <div class="color-box" id="Rough Lead" data-type="Betonlook" data-style="Sturdy Signals" >
-                        <img src="Arturo-kleuren/Rough Lead.jpg" alt="">
+                        <img src="Arturo-kleuren/Rough Lead.jpg" alt="Rough lead kleur">
                         <p class='select-color' data-color="Rough Lead" data-style="Sturdy Signals" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Rough Lead</p>
                     </div>
                     <div class="color-box" id="Worked Metal" data-type="Betonlook" data-style="Sturdy Signals" >
-                        <img src="Arturo-kleuren/Worked Metal.jpg" alt="">
+                        <img src="Arturo-kleuren/Worked Metal.jpg" alt="worked metal kleur">
                         <p class='select-color' data-color="Worked Metal" data-style="Sturdy Signals" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Worked Metal</p>
@@ -136,25 +121,25 @@
                 <h3>Monolook</h3>
                 <div class="style-container">
                     <div class="color-box" id="Medal Yellow" data-style="Digital Perspective" >
-                        <img src="Arturo-kleuren/Medal Yellow.jpg" alt="">
+                        <img src="Arturo-kleuren/Medal Yellow.jpg" alt="medal yellow kleur">
                         <p class='select-color' data-color="Medal Yellow" data-style="Digital Perspective" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Medal Yellow</p>
                     </div>
                     <div class="color-box" id="3D Blue" data-style="Digital Perspective" >
-                        <img src="Arturo-kleuren/3D Blue.jpg" alt="">
+                        <img src="Arturo-kleuren/3D Blue.jpg" alt="3d blue kleur">
                         <p class='select-color' data-color="3D Blue" data-style="Digital Perspective" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>3D Blue</p>
                     </div>
                     <div class="color-box" id="Cyber Blue" data-style="Digital Perspective" >
-                        <img src="Arturo-kleuren/Cyber Blue.jpg" alt="">
+                        <img src="Arturo-kleuren/Cyber Blue.jpg" alt="cyber blue kleur">
                         <p class='select-color' data-color="Cyber Blue" data-style="Digital Perspective" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Cyber Blue</p>
                     </div>
                     <div class="color-box" id="Dynamic Red" data-style="Digital Perspective" >
-                        <img src="Arturo-kleuren/Dynamic Red.jpg" alt="">
+                        <img src="Arturo-kleuren/Dynamic Red.jpg" alt="dynamic red kleur">
                         <p class='select-color' data-color="Dynamic Red" data-style="Digital Perspective" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Dynamic Red</p>
@@ -163,13 +148,13 @@
                 <h3>Betonlook</h3>
                 <div class="style-container">
                     <div class="color-box" id="Dark Move" data-type="Betonlook" data-style="Digital Perspective" >
-                        <img src="Arturo-kleuren/Dark Move.jpg" alt="">
+                        <img src="Arturo-kleuren/Dark Move.jpg" alt="dark move kleur">
                         <p class='select-color' data-color="Dark Move" data-style="Digital Perspective" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Dark Move</p>
                     </div>
                     <div class="color-box" id="Fresh Power" data-type="Betonlook" data-style="Digital Perspective" >
-                        <img src="Arturo-kleuren/Fresh Power.jpg" alt="">
+                        <img src="Arturo-kleuren/Fresh Power.jpg" alt="fresh power kleur">
                         <p class='select-color' data-color="Fresh Power" data-style="Digital Perspective" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Fresh Power</p>
@@ -181,25 +166,25 @@
                 <h3>Monolook</h3>
                 <div class="style-container">
                     <div class="color-box" id="Modest Green" data-style="City Roots">
-                        <img src="Arturo-kleuren/Modest Green.jpg" alt="">
+                        <img src="Arturo-kleuren/Modest Green.jpg" alt="modest green kleur">
                         <p class='select-color' data-color="Modest Green" data-style="City Roots" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Modest Green</p>
                     </div>
                     <div class="color-box" id="Comfortable Taupe" data-style="City Roots">
-                        <img src="Arturo-kleuren/Comfortable Taupe.jpg" alt="">
+                        <img src="Arturo-kleuren/Comfortable Taupe.jpg" alt="comfortable taupe kleur">
                         <p class='select-color' data-color="Comfortable Taupe" data-style="City Roots" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Comfortable Taupe</p>
                     </div>
                     <div class="color-box" id="Inky Blue" data-style="City Roots">
-                        <img src="Arturo-kleuren/Inky Blue.jpg" alt="">
+                        <img src="Arturo-kleuren/Inky Blue.jpg" alt="Inky blue kleur">
                         <p class='select-color' data-color="Inky Blue" data-style="City Roots" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Inky Blue</p>
                     </div>
                     <div class="color-box" id="Heedless Violet" data-style="City Roots">
-                        <img src="Arturo-kleuren/Heedless Violet.jpg" alt="">
+                        <img src="Arturo-kleuren/Heedless Violet.jpg" alt="heedless violet kleur">
                         <p class='select-color' data-color="Heedless Violet" data-style="City Roots" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Heedless Violet</p>
@@ -208,13 +193,13 @@
                 <h3>Betonlook</h3>
                 <div class="style-container">
                     <div class="color-box" id="Downtown Mix" data-type="Betonlook" data-style="City Roots">
-                        <img src="Arturo-kleuren/Downtown Mix.jpg" alt="">
+                        <img src="Arturo-kleuren/Downtown Mix.jpg" alt="downtown mix kleur">
                         <p class='select-color' data-color="Downtown Mix" data-style="City Roots" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Downtown Mix</p>
                     </div>
                     <div class="color-box" id="Worn Stuff" data-type="Betonlook" data-style="City Roots">
-                        <img src="Arturo-kleuren/Worn Stuff.jpg" alt="">
+                        <img src="Arturo-kleuren/Worn Stuff.jpg" alt="worn stuff kleur">
                         <p class='select-color' data-color="Worn Stuff" data-style="City Roots" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Worn Stuff</p>
@@ -226,25 +211,25 @@
                 <h3>Monolook</h3>
                 <div class="style-container">
                     <div class="color-box" id="Plainspoken Blue" data-style="Honest Pureness">
-                        <img src="Arturo-kleuren/Plainspoken Blue.jpg" alt="">
+                        <img src="Arturo-kleuren/Plainspoken Blue.jpg" alt="plainspoken blue kleur">
                         <p class='select-color' data-color="Plainspoken Blue" data-style="Honest Pureness" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Plainspoken Blue</p>
                     </div>
                     <div class="color-box" id="Pure White" data-style="Honest Pureness">
-                        <img src="Arturo-kleuren/Pure White.jpg" alt="">
+                        <img src="Arturo-kleuren/Pure White.jpg" alt="pure white kleur">
                         <p class='select-color' data-color="Pure White" data-style="Honest Pureness" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Pure White</p>
                     </div>
                     <div class="color-box" id="Simple Gray" data-style="Honest Pureness">
-                        <img src="Arturo-kleuren/Simple Gray.jpg" alt="">
+                        <img src="Arturo-kleuren/Simple Gray.jpg" alt="simple gray kleur">
                         <p class='select-color' data-color="Simple Gray" data-style="Honest Pureness" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Simple Gray</p>
                     </div>
                     <div class="color-box" id="Natural Gray" data-style="Honest Pureness">
-                        <img src="Arturo-kleuren/Natural Gray.jpg" alt="">
+                        <img src="Arturo-kleuren/Natural Gray.jpg" alt="natural gray kleur">
                         <p class='select-color' data-color="Natural Gray" data-style="Honest Pureness" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Natural Gray</p>
@@ -253,13 +238,13 @@
                 <h3>Betonlook</h3>
                 <div class="style-container">
                     <div class="color-box" id="Mixed Glay" data-type="Betonlook" data-style="Honest Pureness">
-                        <img src="Arturo-kleuren/Mixed Glay.jpg" alt="">
+                        <img src="Arturo-kleuren/Mixed Glay.jpg" alt="mixed glay kleur">
                         <p class='select-color' data-color="Mixed Glay" data-style="Honest Pureness" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Mixed Glay</p>
                     </div>
                     <div class="color-box" id="Looming Dust" data-type="Betonlook" data-style="Honest Pureness">
-                        <img src="Arturo-kleuren/Looming Dust.jpg" alt="">
+                        <img src="Arturo-kleuren/Looming Dust.jpg" alt="looming dust kleur">
                         <p class='select-color' data-color="Looming Dust" data-style="Honest Pureness" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Looming Dust</p>
@@ -271,25 +256,25 @@
                 <h3>Monolook</h3>
                 <div class="style-container">
                     <div class="color-box" id="Rib Beige" data-style="Structured Matrix">
-                        <img src="Arturo-kleuren/Rib Beige.jpg" alt="">
+                        <img src="Arturo-kleuren/Rib Beige.jpg" alt="rib beige kleur">
                         <p class='select-color' data-color="Rib Beige" data-style="Structured Matrix" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Rib Beige</p>
                     </div>
                     <div class="color-box" id="Intense Green" data-style="Structured Matrix">
-                        <img src="Arturo-kleuren/Intense Green.jpg" alt="">
+                        <img src="Arturo-kleuren/Intense Green.jpg" alt="intense green kleur">
                         <p class='select-color' data-color="Intense Green" data-style="Structured Matrix" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Intense Green</p>
                     </div>
                     <div class="color-box" id="Deepwater Green" data-style="Structured Matrix">
-                        <img src="Arturo-kleuren/Deepwater Green.jpg" alt="">
+                        <img src="Arturo-kleuren/Deepwater Green.jpg" alt="deepwater green kleur">
                         <p class='select-color' data-color="Deepwater Green" data-style="Structured Matrix" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Deepwater Green</p>
                     </div>
                     <div class="color-box" id="Forest Green" data-style="Structured Matrix">
-                        <img src="Arturo-kleuren/Forest Green.jpg" alt="">
+                        <img src="Arturo-kleuren/Forest Green.jpg" alt="forest green kleur">
                         <p class='select-color' data-color="Forest Green" data-style="Structured Matrix" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Forest Green</p>
@@ -298,13 +283,13 @@
                 <h3>Betonlook</h3>
                 <div class="style-container">
                     <div class="color-box" id="Mild Shades" data-type="Betonlook" data-style="Structured Matrix">
-                        <img src="Arturo-kleuren/Mild Shades.jpg" alt="">
+                        <img src="Arturo-kleuren/Mild Shades.jpg" alt="mild shades kleur">
                         <p class='select-color' data-color="Mild Shades" data-style="Structured Matrix" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Mild Shades</p>
                     </div>
                     <div class="color-box" id="Jungle Leafs" data-type="Betonlook" data-style="Structured Matrix">
-                        <img src="Arturo-kleuren/Jungle Leafs.jpg" alt="">
+                        <img src="Arturo-kleuren/Jungle Leafs.jpg" alt="jungle leafs kleur">
                         <p class='select-color' data-color="Jungle Leafs" data-style="Structured Matrix" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Jungle Leafs</p>
@@ -316,25 +301,25 @@
                 <h3>Monolook</h3>
                 <div class="style-container">
                     <div class="color-box" id="Pale Green" data-style="Retro Pastels">
-                        <img src="Arturo-kleuren/Pale Green.jpg" alt="">
+                        <img src="Arturo-kleuren/Pale Green.jpg" alt="pale green kleur">
                         <p class='select-color' data-color="Pale Green" data-style="Retro Pastels" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Pale Green</p>
                     </div>
                     <div class="color-box" id="Cotton White" data-style="Retro Pastels">
-                        <img src="Arturo-kleuren/Cotton White.jpg" alt="">
+                        <img src="Arturo-kleuren/Cotton White.jpg" alt="cotton white kleur">
                         <p class='select-color' data-color="Cotton White" data-style="Retro Pastels" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Cotton White</p>
                     </div>
                     <div class="color-box" id="Faded Rose" data-style="Retro Pastels">
-                        <img src="Arturo-kleuren/Faded Rose.jpg" alt="">
+                        <img src="Arturo-kleuren/Faded Rose.jpg" alt="faded rose kleur">
                         <p class='select-color' data-color="Faded Rose" data-style="Retro Pastels" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Faded Rose</p>
                     </div>
                     <div class="color-box" id="Cute Blue" data-style="Retro Pastels">
-                        <img src="Arturo-kleuren/Cute Blue.jpg" alt="">
+                        <img src="Arturo-kleuren/Cute Blue.jpg" alt="cute blue kleur">
                         <p class='select-color' data-color="Cute Blue" data-style="Retro Pastels" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Cute Blue</p>
@@ -343,13 +328,13 @@
                 <h3>Betonlook</h3>
                 <div class="style-container">
                     <div class="color-box" id="Early Dew" data-type="Betonlook" data-style="Retro Pastels">
-                        <img src="Arturo-kleuren/Early Dew.jpg" alt="">
+                        <img src="Arturo-kleuren/Early Dew.jpg" alt="early dew kleur">
                         <p class='select-color' data-color="Early Dew" data-style="Retro Pastels" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Early Drew</p>
                     </div>
                     <div class="color-box" id="Tender Breeze" data-type="Betonlook" data-style="Retro Pastels">
-                        <img src="Arturo-kleuren/Tender Breeze.jpg" alt="">
+                        <img src="Arturo-kleuren/Tender Breeze.jpg" alt="tender breeze kleur">
                         <p class='select-color' data-color="Tender Breeze" data-style="Retro Pastels" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Tender Breeze</p>
@@ -361,25 +346,25 @@
                 <h3>Monolook</h3>
                 <div class="style-container">
                     <div class="color-box" id="Cozy Beige" data-style="Global Spirit">
-                        <img src="Arturo-kleuren/Cozy Beige.jpg" alt="">
+                        <img src="Arturo-kleuren/Cozy Beige.jpg" alt="cozy beige kleur">
                         <p class='select-color' data-color="Cozy Beige" data-style="Global Spirit" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Cozy Beige</p>
                     </div>
                     <div class="color-box" id="Sunset Gold" data-style="Global Spirit">
-                        <img src="Arturo-kleuren/Sunset Gold.jpg" alt="">
+                        <img src="Arturo-kleuren/Sunset Gold.jpg" alt="sunset gold kleur">
                         <p class='select-color' data-color="Sunset Gold" data-style="Global Spirit" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Sunset Gold</p>
                     </div>
                     <div class="color-box" id="Easy Grey" data-style="Global Spirit">
-                        <img src="Arturo-kleuren/Easy Grey.jpg" alt="">
+                        <img src="Arturo-kleuren/Easy Grey.jpg" alt="eady grey kleur">
                         <p class='select-color' data-color="Easy Grey" data-style="Global Spirit" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Easy Grey</p>
                     </div>
                     <div class="color-box" id="Terracotta Red" data-style="Global Spirit">
-                        <img src="Arturo-kleuren/Terracotta Red.jpg" alt="">
+                        <img src="Arturo-kleuren/Terracotta Red.jpg" alt="terracotta red kleur">
                         <p class='select-color' data-color="Terracotta Red" data-style="Global Spirit" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Terracotta Red</p>
@@ -388,13 +373,13 @@
                 <h3>Betonlook</h3>
                 <div class="style-container">
                     <div class="color-box" id="Outback Dream" data-type="Betonlook" data-style="Global Spirit">
-                        <img src="Arturo-kleuren/Outback Dream.jpg" alt="">
+                        <img src="Arturo-kleuren/Outback Dream.jpg" alt="outback dream kleur">
                         <p class='select-color' data-color="Outback Dream" data-style="Global Spirit" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Outback Dream</p>
                     </div>
                     <div class="color-box" id="Cosmic Fusion" data-type="Betonlook" data-style="Global Spirit">
-                        <img src="Arturo-kleuren/Cosmic Fusion.jpg" alt="">
+                        <img src="Arturo-kleuren/Cosmic Fusion.jpg" alt="cosmic fusion kleur">
                         <p class='select-color' data-color="Cosmic Fusion" data-style="Global Spirit" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Cosmic Fusion</p>
@@ -406,25 +391,25 @@
                 <h3>Monolook</h3>
                 <div class="style-container">
                     <div class="color-box" id="Splendid Bronze" data-style="Dark Shine">
-                        <img src="Arturo-kleuren/Splendid Bronze.jpg" alt="">
+                        <img src="Arturo-kleuren/Splendid Bronze.jpg" alt="spledid bronze kleur">
                         <p class='select-color' data-color="Splendid Bronze" data-style="Dark Shine" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Splendid Bronze</p>
                     </div>
                     <div class="color-box" id="Avenue Leather" data-style="Dark Shine">
-                        <img src="Arturo-kleuren/Avenue Leather.jpg" alt="">
+                        <img src="Arturo-kleuren/Avenue Leather.jpg" alt="avenue leather kleur">
                         <p class='select-color' data-color="Avenue Leather" data-style="Dark Shine" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Avenue Leather</p>
                     </div>
                     <div class="color-box" id="Elegant Grey" data-style="Dark Shine">
-                        <img src="Arturo-kleuren/Elegant Grey.jpg" alt="">
+                        <img src="Arturo-kleuren/Elegant Grey.jpg" alt="elegant grey kleur">
                         <p class='select-color' data-color="Elegant Grey" data-style="Dark Shine" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Elegant Grey</p>
                     </div>
                     <div class="color-box" id="Distinct Green" data-style="Dark Shine">
-                        <img src="Arturo-kleuren/Distinct Green.jpg" alt="">
+                        <img src="Arturo-kleuren/Distinct Green.jpg" alt="distinct green kleur">
                         <p class='select-color' data-color="Distinct Green" data-style="Dark Shine" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Distinct Green</p>
@@ -433,13 +418,13 @@
                 <h3>Betonlook</h3>
                 <div class="style-container">
                     <div class="color-box" id="Rich Flow" data-type="Betonlook" data-style="Dark Shine">
-                        <img src="Arturo-kleuren/Rich Flow.jpg" alt="">
+                        <img src="Arturo-kleuren/Rich Flow.jpg" alt="rich flow kleur">
                         <p class='select-color' data-color="Rich Flow" data-style="Dark Shine" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Rich Flow</p>
                     </div>
                     <div class="color-box" id="Chique Motion" data-type="Betonlook" data-style="Dark Shine">
-                        <img src="Arturo-kleuren/Chique Motion.jpg" alt="">
+                        <img src="Arturo-kleuren/Chique Motion.jpg" alt="chique motion kleur">
                         <p class='select-color' data-color="Chique Motion" data-style="Dark Shine" onClick="selectColour(this)">Selecteer</p>
                         <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                         <p>Chique Motion</p>
@@ -451,43 +436,43 @@
                 <h3>Monolook</h3>
                 <div class="style-container">
                 <div class="color-box" id="Stylish Grey" data-style="Evergreens">
-                    <img src="Arturo-kleuren/Stylish Grey.jpg" alt="">
+                    <img src="Arturo-kleuren/Stylish Grey.jpg" alt="stylish grey kleur">
                     <p class='select-color' data-color="Stylish Grey" data-style="Evergreens" onClick="selectColour(this)">Selecteer</p>
                     <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                     <p>Stylish Grey</p>
                 </div>
                 <div class="color-box" id="Dusty Grey" data-style="Evergreens">
-                    <img src="Arturo-kleuren/Dusty Grey.jpg" alt="">
+                    <img src="Arturo-kleuren/Dusty Grey.jpg" alt="dusty grey kleur">
                     <p class='select-color' data-color="Dusty Grey" data-style="Evergreens" onClick="selectColour(this)">Selecteer</p>
                     <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                     <p>Dusty Grey</p>
                 </div>
                 <div class="color-box" id="Iron Grey" data-style="Evergreens">
-                    <img src="Arturo-kleuren/Iron Grey.jpg" alt="">
+                    <img src="Arturo-kleuren/Iron Grey.jpg" alt="iron grey kleur">
                     <p class='select-color' data-color="Iron Grey" data-style="Evergreens" onClick="selectColour(this)">Selecteer</p>
                     <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                     <p>Iron Grey</p>
                 </div>
                 <div class="color-box" id="Calm Grey" data-style="Evergreens">
-                    <img src="Arturo-kleuren/Calm Grey.jpg" alt="">
+                    <img src="Arturo-kleuren/Calm Grey.jpg" alt="calm grey kleur">
                     <p class='select-color' data-color="Calm Grey" data-style="Evergreens" onClick="selectColour(this)">Selecteer</p>
                     <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                     <p>Calm Grey</p>
                 </div>
                 <div class="color-box" id="Misty Grey" data-style="Evergreens">
-                    <img src="Arturo-kleuren/Misty Grey.jpg" alt="">
+                    <img src="Arturo-kleuren/Misty Grey.jpg" alt="misty grey kleur">
                     <p class='select-color' data-color="Misty Grey" data-style="Evergreens" onClick="selectColour(this)">Selecteer</p>
                     <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                     <p>Misty Grey</p>
                 </div>
                 <div class="color-box" id="Fossil Grey" data-style="Evergreens">
-                    <img src="Arturo-kleuren/Fossil Grey.jpg" alt="">
+                    <img src="Arturo-kleuren/Fossil Grey.jpg" alt="fossil grey kleur">
                     <p class='select-color' data-color="Fossil Grey" data-style="Evergreens" onClick="selectColour(this)">Selecteer</p>
                     <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                     <p>Fossil Grey</p>
                 </div>
                 <div class="color-box" id="Basic White" data-style="Evergreens">
-                    <img src="Arturo-kleuren/Basic White.jpg" alt="">
+                    <img src="Arturo-kleuren/Basic White.jpg" alt="basic white kleur">
                     <p class='select-color' data-color="Basic White" data-style="Evergreens" onClick="selectColour(this)">Selecteer</p>
                     <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                     <p>Basic White</p>
@@ -496,49 +481,49 @@
             <h3>Betonlook</h3>
             <div class="style-container">
                 <div class="color-box" id="Graphite Touch" data-type="Betonlook" data-style="Evergreens">
-                    <img src="Arturo-kleuren/Graphite Touch.jpg" alt="">
+                    <img src="Arturo-kleuren/Graphite Touch.jpg" alt="Graphite touch kleur">
                     <p class='select-color' data-color="Graphite Touch" data-style="Evergreens" onClick="selectColour(this)">Selecteer</p>
                     <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                     <p>Graphite Touch</p>
                 </div>
                 <div class="color-box" id="Raw Basalt" data-type="Betonlook" data-style="Evergreens">
-                    <img src="Arturo-kleuren/Raw Basalt.jpg" alt="">
+                    <img src="Arturo-kleuren/Raw Basalt.jpg" alt="raw basalt kleur">
                     <p class='select-color' data-color="Raw Basalt" data-style="Evergreens" onClick="selectColour(this)">Selecteer</p>
                     <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                     <p>Raw Basalt</p>
                 </div>
                 <div class="color-box" id="Frozen Cosmic" data-type="Betonlook" data-style="Evergreens">
-                    <img src="Arturo-kleuren/Frozen Cosmic.jpg" alt="">
+                    <img src="Arturo-kleuren/Frozen Cosmic.jpg" alt="frozen cosmic kleur">
                     <p class='select-color' data-color="Frozen Cosmic" data-style="Evergreens" onClick="selectColour(this)">Selecteer</p>
                     <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                     <p>Frozen Cosmic</p>
                 </div>
                 <div class="color-box" id="Soft Stone" data-type="Betonlook" data-style="Evergreens">
-                    <img src="Arturo-kleuren/Soft Stone.jpg" alt="">
+                    <img src="Arturo-kleuren/Soft Stone.jpg" alt="soft stone kleur">
                     <p class='select-color' data-color="Soft Stone" data-style="Evergreens" onClick="selectColour(this)">Selecteer</p>
                     <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                     <p>Soft Stone</p>
                 </div>
                 <div class="color-box" id="Morning Flow"  data-type="Betonlook" data-style="Evergreens">
-                    <img src="Arturo-kleuren/Morning Flow.jpg" alt="">
+                    <img src="Arturo-kleuren/Morning Flow.jpg" alt="Morning flow kleur">
                     <p class='select-color' data-color="Morning Flow" data-style="Evergreens" onClick="selectColour(this)">Selecteer</p>
                     <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                     <p>Morning Flow</p>
                 </div>
                 <div class="color-box" id="Calm Breeze" data-type="Betonlook" data-style="Evergreens">
-                    <img src="Arturo-kleuren/Calm Breeze.jpg" alt="">
+                    <img src="Arturo-kleuren/Calm Breeze.jpg" alt="calm breeze kleur">
                     <p class='select-color' data-color="Calm Breeze" data-style="Evergreens" onClick="selectColour(this)">Selecteer</p>
                     <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                     <p>Calm Breeze</p>
                 </div>
                 <div class="color-box" id="Sandy Shades" data-type="Betonlook" data-style="Evergreens">
-                    <img src="Arturo-kleuren/Sandy Shades.jpg" alt="">
+                    <img src="Arturo-kleuren/Sandy Shades.jpg" alt="sandy shades kleur">
                     <p class='select-color' data-color="Sandy Shades" data-style="Evergreens" onClick="selectColour(this)">Selecteer</p>
                     <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                     <p>Sandy Shades</p>
                 </div>
                 <div class="color-box" id="Basic Wash" data-type="Betonlook" data-style="Evergreens">
-                    <img src="Arturo-kleuren/Basic Wash.jpg" alt="">
+                    <img src="Arturo-kleuren/Basic Wash.jpg" alt="basic wash kleur">
                     <p class='select-color' data-color="Basic Wash" data-style="Evergreens" onClick="selectColour(this)">Selecteer</p>
                     <p class="show-color" onclick="changeColor(this)">Bekijk</p>
                     <p>Basic Wash</p>
@@ -572,7 +557,7 @@
         <a href="privacy-statement.html">Privacy beleid</a>
     </div>
     <div class="footer-div">
-        <a href="experts.html"><h2 id="experts-footer">Onze experts</h2></a>
+        <a href="Blog/zelf-gietvloer-leggen.html"><h2 id="experts-footer">Gietvloer zelf doen</h2></a>
         <a href="partners.html">Partners</a>
     </div>
 </footer>

@@ -10,13 +10,13 @@ body{
 }
 
 p{
-    font-family: 'Lato', sans-serif;
+    font-family: "Poppins",sans-serif;
     color: #131313;
     font-size: 20px;
 }
 
 li{
-    font-family: 'Lato', sans-serif;
+    font-family: "Poppins",sans-serif;
     color: #131313;
     font-size: 20px;
 }
@@ -30,22 +30,24 @@ h1{
 }
 
 h2{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Prata', serif;
     font-size: 27px;
     color: #131313;
 }
 
 h3{
     color: #131313;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Prata', serif;
     font-size: 22px;
 }
 
 h4{
+    font-family: 'Prata', serif;
     font-size: 20px;
 }
 
 h5{
+    font-family: 'Prata', serif; 
     margin-top: 7px;
     font-size: 14px;
     font-weight: 100;
@@ -77,7 +79,7 @@ button:hover{
 }
 
 form{
-    font-family: 'Lato', sans-serif;
+    font-family: "Poppins",sans-serif; 
     font-size: 20px;
     color: #131313;
     margin: 30px
@@ -145,7 +147,7 @@ iframe{
 }
 
 #logo-menu{
-    width: 220px;
+    width: 80%;
 }
 
 #menu{
@@ -176,7 +178,7 @@ iframe{
 #menu a:hover{
     text-decoration: none;
     color: #A00025; 
-    font-weight: 700;  
+    font-weight: 400;  
 }
 
 #menu ul{
@@ -193,7 +195,6 @@ iframe{
     color:#131313;
     font-size: 16px;
     letter-spacing: 0.8px;
-    font-weight: bold;
 }
 
 #menuItems{
@@ -215,10 +216,12 @@ iframe{
 #CTA-header-subtile{
     font-size: 15px;
     margin: 5px 0px 0px 0px;
+    font-weight: 400;
 }
 
 #headshot-CTA-button{
     height: 80px;
+    width: 80px;
     border-radius: 50%;
 }
 
@@ -273,7 +276,7 @@ iframe{
     flex-direction: column;
     height: 750px;
     width: 100%;
-    background-image: url(../Images/main-header.jpg);
+    background-image: url(../Images/main-header.webp);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -291,8 +294,7 @@ iframe{
     margin: 0px 0px 30px 10px;
     font-size: 55px;
     font-weight: 100;
-    color: #A00025;
-    text-shadow: 1px 1px 10px white;
+    color: #fff;
     margin: 20px;
     padding: 20px;
 }
@@ -329,6 +331,7 @@ iframe{
 
 #reference-inner-div img{
     height: 300px;
+    width: 153px;
 
 }
 
@@ -337,7 +340,7 @@ iframe{
     flex-direction: column;
     align-items: left;
     flex-wrap: wrap;
-    background-image: url(../Images/jackyactiefCleanIII.png);
+    background-image: url(../Images/jackyactiefCleanIII.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -402,8 +405,7 @@ iframe{
 .applicatie-inner-div p{
     text-decoration: none;
     font-size: 22px;
-    text-decoration: bold;
-    font-weight: 600;
+    font-weight: 400;
     margin: 30px 0px 30px 0px;
     padding: 0px 10px;
 }
@@ -413,7 +415,7 @@ iframe{
 }
 
 #guide-landing{
-    background-image: url(../Images/guide-header.jpg);
+    background-image: url(../Images/guide-header.webp);
     /* background-attachment: fixed; */
     background-repeat: no-repeat;
     background-position: bottom;
@@ -431,7 +433,7 @@ iframe{
 }
 
 #youtube-landing{
-    background-image: url(../Images/youtube-channel.png);
+    background-image: url(../Images/youtube-channel.webp);
     /* background-attachment: fixed; */
     background-repeat: no-repeat;
     background-position: bottom;
@@ -440,7 +442,7 @@ iframe{
 }
 
 #beton-landing{
-    background-image: url(../Images/betonlook-gietvloer.jpg);
+    background-image: url(../Images/betonlook-gietvloer.webp);
     /* background-attachment: fixed; */
     background-repeat: no-repeat;
     background-position: bottom;
@@ -449,7 +451,7 @@ iframe{
 }
 
 #duurzaam-landing{
-    background-image: url(../Images/duurzaam.jpg);
+    background-image: url(../Images/duurzaam.webp);
     /* background-attachment: fixed; */
     background-repeat: no-repeat;
     background-position: bottom;
@@ -470,7 +472,7 @@ iframe{
 }
 
 #FAQ-landing{
-    background-image: url(../Images/Header.jpg);
+    background-image: url(../Images/Header.webp);
     /* background-attachment: fixed; */
     background-repeat: no-repeat;
     background-position: bottom;
@@ -479,7 +481,7 @@ iframe{
 }
 
 #keuken-landing{
-    background-image: url(../Images/Keuken-roos-hoog.JPG);
+    background-image: url(../Images/Keuken-roos-hoog.webp);
     /* background-attachment: fixed; */
     background-repeat: no-repeat;
     background-position: bottom;
@@ -612,7 +614,7 @@ iframe{
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    background-image: url(../Images/karelkleurClean.png);
+    background-image: url(../Images/karelkleurClean.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -642,16 +644,13 @@ iframe{
     flex-wrap: wrap;
     padding-bottom: 0px; 
     text-align: center;
+    align-items: center;
 }
 
 .footer-div{
     width: auto;
     text-align: center;
     margin: 15px;
-}
-
-.footer-div img{
-    margin-top: 15px;
 }
 
 #experts-footer{
@@ -669,7 +668,7 @@ iframe{
 }
 
 #slogan-footer{
-    font-weight: 1000;
+    font-weight: 400;
 }
 
 #officiele-docs{
@@ -818,7 +817,7 @@ iframe{
         flex-direction: column;
         height: 550px;
         width: 100%;
-        background-image: url(../Images/Keuken-roos-hoog.JPG);
+        background-image: url(../Images/Keuken-roos-hoog.webp);
         background-attachment: scroll;
         background-repeat: no-repeat;
         background-position: center;
@@ -909,7 +908,7 @@ iframe{
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
-        background-image: url(../Images/karelkleurClean.png);
+        background-image: url(../Images/karelkleurClean.webp);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -925,10 +924,6 @@ iframe{
 
     .footer-div{
         width: auto;
-    }
-
-    #footer-logo{
-        width: 75%;
     }
 
     #prijs-tool input{
@@ -961,10 +956,6 @@ iframe{
 
     #sectionA {
         width: 100%;
-    }
-
-    #logo-menu {
-        width: 300px;
     }
 
     #slogan-footer {

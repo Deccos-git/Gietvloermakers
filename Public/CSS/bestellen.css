@@ -159,6 +159,10 @@
   font-size: 16px;
 }
 
+#client-meta p{
+  font-weight: bold;
+}
+
 #order-button{
   border: green 1px solid;
   padding: 10px;
