@@ -371,61 +371,61 @@
         let prijsVariable = 0
     
         if (m2value > 0 && m2value < 11){
-            prijsVariable = 645
+            prijsVariable = 678
         } else if (m2value > 10 && m2value < 16) {
-            prijsVariable = 748  
+            prijsVariable = 786 
         } else if (m2value > 15 && m2value < 21) {
-            prijsVariable = 852 
+            prijsVariable = 895 
         } else if (m2value > 20 && m2value < 26) {
-            prijsVariable = 1171   
+            prijsVariable = 1230   
         } else if (m2value > 25 && m2value < 31) {
-            prijsVariable = 1274   
+            prijsVariable = 1338   
         } else if (m2value > 30 && m2value < 36) {
-            prijsVariable = 1376 
+            prijsVariable = 1445 
         } else if (m2value > 35 && m2value < 41) {
-            prijsVariable = 1479   
+            prijsVariable = 1553   
         } else if (m2value > 40 && m2value < 46) {
-            prijsVariable = 1799   
+            prijsVariable = 1889   
         } else if (m2value > 45 && m2value < 51) {
-            prijsVariable = 2124
+            prijsVariable = 2231
         } else if (m2value > 50 && m2value < 56) {
-            prijsVariable = 2227
+            prijsVariable = 2339
         } else if (m2value > 55 && m2value < 61) {
-            prijsVariable = 2331
+            prijsVariable = 2448
         } else if (m2value > 60 && m2value < 66) {
-            prijsVariable = 2650
+            prijsVariable = 2783
         } else if (m2value > 65 && m2value < 71) {
-            prijsVariable = 2753
+            prijsVariable = 2891
         } else if (m2value > 70 && m2value < 76) {
-            prijsVariable = 2856 
+            prijsVariable = 2999 
         } else if (m2value > 75 && m2value < 81) {
-            prijsVariable = 2958    
+            prijsVariable = 3106    
         } else if (m2value > 80 && m2value < 91) {
-            prijsVariable = 3380  
+            prijsVariable = 3549  
         } else if (m2value > 90 && m2value < 96) {
-            prijsVariable = 3929   
+            prijsVariable = 4126   
         } else if (m2value > 95 && m2value < 101) {
-            prijsVariable = 4032  
+            prijsVariable = 4237  
         } else if (m2value > 100 && m2value < 106) {
-            prijsVariable = 4351 
+            prijsVariable = 4569 
         } else if (m2value > 105 && m2value < 111) {
-            prijsVariable = 4455   
+            prijsVariable = 4678   
         } else if (m2value > 110 && m2value < 116) {
-            prijsVariable = 4558   
+            prijsVariable = 4786   
         } else if (m2value > 115 && m2value < 121) {
-            prijsVariable = 4764
+            prijsVariable = 5003
         } else if (m2value > 120 && m2value < 126) {
-            prijsVariable = 4980
+            prijsVariable = 5229
         } else if (m2value > 125 && m2value < 131) {
-            prijsVariable = 5083
+            prijsVariable = 5338
         } else if (m2value > 130 && m2value < 136) {
-            prijsVariable = 5185
+            prijsVariable = 5445
         } else if (m2value > 135 && m2value < 141) {
-            prijsVariable = 5289
+            prijsVariable = 5554
         } else if (m2value > 140 && m2value < 146) {
-            prijsVariable = 5608
+            prijsVariable = 5889
         } else if (m2value > 145 && m2value < 151) {
-            prijsVariable = 5711                           
+            prijsVariable = 5997                           
         } else if (m2value > 150){
             alert.innerHTML = " Uw aanvraag is dermate groot, dat wij u willen vragen even contact op te nemen met een van onze adviseurs op info@gietvloermakers.nl of 06 432 378 66" 
         } else {
